@@ -2,6 +2,9 @@ User-agent: *
 Disallow: /thank-you.html
 Disallow: /payment-success.html
 Disallow: /success.html
+Disallow: /thank-you
+Disallow: /payment-success
+Disallow: /success
 Disallow: /download/
 
 # Allow everything else
