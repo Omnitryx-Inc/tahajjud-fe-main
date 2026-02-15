@@ -143,6 +143,24 @@ nav {
 	display: block;
 }
 
+.hero-hook {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.1rem, 3vw, 1.35rem);
+    color: var(--text-medium);
+    line-height: 1.7;
+    margin: 2rem auto 2.5rem;
+    max-width: 650px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+@media (min-width: 768px) {
+    .hero-hook {
+        text-align: left;
+        margin-left: 0;
+    }
+}
+
 .hero-subtitle {
 	font-family: "Allrounder Monument Test", serif;
 	font-size: clamp(0.95rem, 3vw, 1.6rem);
@@ -435,6 +453,21 @@ nav {
 	min-height: 400px;
 }
 
+.look-inside-intro {
+    max-width: 900px;
+    margin: 0 auto 3rem;
+    text-align: center;
+}
+
+.look-inside-intro p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.15rem, 3vw, 1.4rem);
+    color: var(--text-medium);
+    line-height: 1.8;
+    font-weight: 500;
+    font-style: italic;
+}
+
 @media (min-width: 768px) {
 	.book-preview {
 		grid-template-columns: repeat(2, 1fr);
@@ -666,7 +699,7 @@ nav {
 }
 
 .author-bio {
-	font-size: clamp(0.95rem, 2.5vw, 1.25rem);
+	font-size: clamp(0.90rem, 2.5vw, 1.25rem);
 	line-height: 1.9;
 	color: var(--text-medium);
 }
@@ -768,6 +801,75 @@ footer {
 	.social-proof-badge {
 		left: -30px;
 	}
+}
+
+/* Footer */
+footer {
+    background: var(--cream-white);
+    padding: 2.5rem 5% 1.5rem;
+    text-align: center;
+    color: var(--text-medium);
+    font-size: 0.95rem;
+    border-top: 1px solid var(--beige-warm);
+}
+
+.footer-content {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    font-size: clamp(0.85rem, 2vw, 0.95rem);
+}
+
+.footer-links a {
+    color: var(--text-dark);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--gold-primary);
+    text-decoration: underline;
+}
+
+.separator {
+    color: var(--text-light);
+    opacity: 0.5;
+    display: none;
+}
+
+.copyright {
+    margin-bottom: 0.5rem;
+    font-size: clamp(0.8rem, 2vw, 0.9rem);
+}
+
+.legal-info {
+    font-size: clamp(0.7rem, 1.8vw, 0.8rem);
+    color: var(--text-light);
+    opacity: 0.8;
+    line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+    footer {
+        padding: 3rem 5% 2rem;
+    }
+
+    .separator {
+        display: inline;
+    }
+
+    .footer-links {
+        gap: 0.5rem 1rem;
+    }
 }
 
 /* Animations */
