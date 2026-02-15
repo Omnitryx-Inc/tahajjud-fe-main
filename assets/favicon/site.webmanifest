@@ -1,0 +1,20 @@
+{
+    "name": "The Power of Tahajjud",
+    "short_name": "Tahajjud",
+    "description": "Real Stories of Success and Miracles through Night Prayer",
+    "background_color": "#fdfbf7",
+    "theme_color": "#c08948",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "/assets/favicon/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/favicon/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

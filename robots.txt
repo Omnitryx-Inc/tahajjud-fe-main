@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /thank-you.html
+Disallow: /payment-success.html
+Disallow: /success.html
+Disallow: /download/
+
+# Allow everything else
+Allow: /
+
+Sitemap: https://poweroftahajjud.com/sitemap.xml

@@ -1,0 +1,63 @@
+title: "The Power of Tahajjud: Real Stories of Success and Miracles"
+description: "Discover the transformative power of Tahajjud through 15+ real stories of people who witnessed miracles through night prayer. A spiritual guide by Jawwad Ahmed Abbasi."
+
+url: "https://poweroftahajjud.com"
+baseurl: ""
+logo: "assets/favicon/favicon-32x32.png"
+
+author: "Jawwad Ahmed Abbasi"
+email: "support@omnitryx.ca"
+instagram_username: "jawwad_ab"
+github_username: "jawwadabbasi"
+amazon_author: "https://amazon.com/author/jawwadabbasi"
+
+markdown: kramdown
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# SEO settings for jekyll-seo-tag
+social:
+  name: "The Power of Tahajjud"
+  links:
+    - https://poweroftahajjud.com
+    - https://instagram.com/jawwad_ab
+    - https://github.com/jawwadabbasi
+    - https://amazon.com/author/jawwadabbasi
+
+# Google Analytics (add your tracking ID when ready)
+# google_analytics: UA-XXXXXXXXX-X
+
+# Disable collections if not using them
+# collections:
+#   services:
+#     output: true
+#     permalink: /services/:name/
+
+include:
+  - pages
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+      image: "assets/images/The_Power_of_Tahajjud__Display_Art_.jpeg"
+
+permalink: pretty
+
+sass:
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
+  - _site
+  - .gitignore
+  - .DS_Store
+  - CNAME
