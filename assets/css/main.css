@@ -48,7 +48,7 @@ header {
 	left: 0;
 	right: 0;
 	z-index: 1000;
-	padding: 1.2rem 5%;
+	padding: 1rem 4%;
 	background: rgba(253, 251, 247, 0.98);
 	backdrop-filter: blur(10px);
 	border-bottom: 1px solid var(--beige-warm);
@@ -61,32 +61,51 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	gap: 1rem;
 }
 
 .logo {
 	font-family: "Allrounder Monument Test", serif;
-	font-size: clamp(0.95rem, 2.5vw, 1.15rem);
+	font-size: clamp(0.8rem, 2.5vw, 1.15rem);
 	font-weight: 700;
 	color: var(--text-dark);
 	letter-spacing: 0.5px;
+	flex-shrink: 1;
+	min-width: 0;
 }
 
 .nav-cta {
-	padding: 0.8rem 2rem;
+	padding: 0.65rem 1.5rem;
 	background: var(--text-dark);
 	color: var(--cream-white);
 	text-decoration: none;
 	border-radius: 8px;
 	font-weight: 600;
-	font-size: clamp(0.9rem, 2vw, 1rem);
+	font-size: clamp(0.8rem, 2vw, 1rem);
 	transition: all 0.3s ease;
 	white-space: nowrap;
+	flex-shrink: 0;
 }
 
 .nav-cta:hover {
 	background: var(--text-medium);
 	transform: translateY(-2px);
 	box-shadow: 0 4px 12px rgba(45, 37, 32, 0.2);
+}
+
+@media (min-width: 768px) {
+	header {
+		padding: 1.2rem 5%;
+	}
+
+	.logo {
+		font-size: clamp(0.95rem, 2.5vw, 1.15rem);
+	}
+
+	.nav-cta {
+		padding: 0.8rem 2rem;
+		font-size: clamp(0.9rem, 2vw, 1rem);
+	}
 }
 
 /* HERO SECTION */
@@ -511,7 +530,7 @@ nav {
 
 .preview-text {
 	font-family: 'Cormorant Garamond', serif;
-	font-size: clamp(0.95rem, 2.5vw, 1.15rem);
+	font-size: clamp(1.0rem, 2.5vw, 1.15rem);
 	line-height: 1.8;
 	color: var(--text-dark);
 	margin-bottom: 1.5rem;
@@ -540,7 +559,7 @@ nav {
 }
 
 .toc-story {
-	font-size: clamp(0.75rem, 2vw, 1rem);
+	font-size: clamp(0.85rem, 2vw, 1rem);
 	color: var(--text-dark);
 	margin: 0.5rem 0;
 	padding-left: 1.5rem;
