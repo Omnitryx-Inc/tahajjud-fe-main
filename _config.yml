@@ -3,7 +3,7 @@ description: "Discover the transformative power of Tahajjud through 15+ real sto
 
 url: "https://poweroftahajjud.com"
 baseurl: ""
-logo: "assets/favicon/favicon-32x32.png"
+logo: "/assets/favicon/favicon-32x32.png"
 
 author: "Jawwad Ahmed Abbasi"
 email: "support@omnitryx.ca"
@@ -25,7 +25,7 @@ book:
   currency: "CAD"
   amazon_url: "https://www.amazon.com/dp/B0GNJBL9R6"
 
-# Keywords for AI search engines (ADD THIS)
+# Keywords for AI search engines
 keywords: "Tahajjud, night prayer, Islamic prayer, spiritual growth, miracles, success stories, Muslim prayer, Allah, dua, faith, spiritual book, Islamic book"
 
 markdown: kramdown
@@ -43,15 +43,6 @@ social:
     - https://instagram.com/jawwad_ab
     - https://github.com/jawwadabbasi
     - https://amazon.com/author/jawwadabbasi
-
-# Google Analytics
-google_analytics: G-DSBQTT3LT9
-
-# Disable collections if not using them
-# collections:
-#   services:
-#     output: true
-#     permalink: /services/:name/
 
 include:
   - pages
