@@ -11,6 +11,23 @@ instagram_username: "jawwad_ab"
 github_username: "jawwadabbasi"
 amazon_author: "https://amazon.com/author/jawwadabbasi"
 
+tagline: "Real Stories of Success and Miracles"
+locale: "en_US"
+
+# Twitter/Social Cards (ADD THIS)
+twitter:
+  card: summary_large_image
+
+# Book-specific metadata
+book:
+  isbn: "B0GNJBL9R6"
+  price: "19.99"
+  currency: "CAD"
+  amazon_url: "https://www.amazon.com/dp/B0GNJBL9R6"
+
+# Keywords for AI search engines (ADD THIS)
+keywords: "Tahajjud, night prayer, Islamic prayer, spiritual growth, miracles, success stories, Muslim prayer, Allah, dua, faith, spiritual book, Islamic book"
+
 markdown: kramdown
 
 plugins:
@@ -27,8 +44,8 @@ social:
     - https://github.com/jawwadabbasi
     - https://amazon.com/author/jawwadabbasi
 
-# Google Analytics (add your tracking ID when ready)
-# google_analytics: UA-XXXXXXXXX-X
+# Google Analytics
+google_analytics: G-DSBQTT3LT9
 
 # Disable collections if not using them
 # collections:
