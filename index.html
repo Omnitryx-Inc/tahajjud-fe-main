@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Power of Tahajjud - Real Stories of Success and Miracles by Jawwad Abbasi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: "Allrounder Monument Test";
+            src: url("https://db.onlinewebfonts.com/t/7f09473e2d90ede1aa176b58e021d609.eot");
+            src: url("https://db.onlinewebfonts.com/t/7f09473e2d90ede1aa176b58e021d609.eot?#iefix")format("embedded-opentype"),
+            url("https://db.onlinewebfonts.com/t/7f09473e2d90ede1aa176b58e021d609.woff2")format("woff2"),
+            url("https://db.onlinewebfonts.com/t/7f09473e2d90ede1aa176b58e021d609.woff")format("woff"),
+            url("https://db.onlinewebfonts.com/t/7f09473e2d90ede1aa176b58e021d609.ttf")format("truetype"),
+            url("https://db.onlinewebfonts.com/t/7f09473e2d90ede1aa176b58e021d609.svg#Allrounder Monument Test")format("svg");
+        }
+
+        :root {
+            /* Elegant light palette */
+            --cream-white: #fdfbf7;
+            --cream-light: #f9f6f0;
+            --beige-soft: #f0ebe3;
+            --beige-warm: #e8dfd4;
+            --text-dark: #2d2520;
+            --text-medium: #4a3f35;
+            --text-light: #6b5d52;
+            --gold-primary: #c08948;
+            --gold-dark: #9d6f3a;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--cream-white);
+            color: var(--text-dark);
+            overflow-x: hidden;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 1.2rem 5%;
+            background: rgba(253, 251, 247, 0.98);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--beige-warm);
+            box-shadow: 0 2px 10px rgba(45, 37, 32, 0.03);
+        }
+
+        nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: "Allrounder Monument Test", serif;
+            font-size: clamp(0.95rem, 2.5vw, 1.15rem);
+            font-weight: 700;
+            color: var(--text-dark);
+            letter-spacing: 0.5px;
+        }
+
+        .nav-cta {
+            padding: 0.8rem 2rem;
+            background: var(--text-dark);
+            color: var(--cream-white);
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: clamp(0.9rem, 2vw, 1rem);
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .nav-cta:hover {
+            background: var(--text-medium);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(45, 37, 32, 0.2);
+        }
+
+        /* HERO SECTION */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 10rem 5% 6rem;
+            background: linear-gradient(to bottom, var(--cream-white) 0%, var(--cream-light) 100%);
+        }
+
+        .hero-container {
+            max-width: 1400px;
+            width: 100%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-content {
+            order: 2;
+            text-align: center;
+        }
+
+        .eyebrow {
+            display: inline-block;
+            padding: 0.6rem 1.5rem;
+            background: var(--beige-soft);
+            color: var(--text-medium);
+            font-size: clamp(0.8rem, 2vw, 0.9rem);
+            font-weight: 600;
+            border-radius: 30px;
+            margin-bottom: 2rem;
+            letter-spacing: 0.5px;
+        }
+
+        .hero-content h1 {
+            font-family: "Allrounder Monument Test", serif;
+            font-size: clamp(2.8rem, 8vw, 5rem);
+            font-weight: 700;
+            color: var(--text-dark);
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.5px;
+        }
+
+        .hero-content h1 .gold {
+            color: var(--gold-primary);
+            display: block;
+        }
+
+        .hero-subtitle {
+            font-family: "Allrounder Monument Test", serif;
+            font-size: clamp(1.1rem, 3.5vw, 1.6rem);
+            color: var(--gold-primary);
+            font-weight: 500;
+            margin-bottom: 2.5rem;
+            line-height: 1.4;
+            letter-spacing: 0.5px;
+        }
+
+        .value-props {
+            margin: 3rem auto;
+            max-width: 650px;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .value-prop {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            text-align: left;
+            padding: 1.5rem;
+            background: var(--white);
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(45, 37, 32, 0.04);
+            transition: all 0.3s ease;
+        }
+
+        .value-prop:hover {
+            box-shadow: 0 8px 24px rgba(45, 37, 32, 0.08);
+            transform: translateY(-2px);
+        }
+
+        .value-icon {
+            flex-shrink: 0;
+            width: 32px;
+            height: 32px;
+            background: var(--gold-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1rem;
+            font-weight: 700;
+        }
+
+        .value-prop-text strong {
+            font-size: clamp(1.05rem, 2.5vw, 1.2rem);
+            color: var(--text-dark);
+            display: block;
+            margin-bottom: 0.4rem;
+            font-weight: 600;
+        }
+
+        .value-prop-text p {
+            font-size: clamp(0.95rem, 2vw, 1.05rem);
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        /* CTA Buttons */
+        .cta-group {
+            display: flex;
+            gap: 1.2rem;
+            flex-wrap: wrap;
+            margin-top: 3rem;
+            justify-content: center;
+        }
+
+        .btn {
+            padding: 1.2rem 3rem;
+            font-size: clamp(1.05rem, 2.5vw, 1.15rem);
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            display: inline-block;
+            cursor: pointer;
+            border: none;
+            font-family: 'Inter', sans-serif;
+            white-space: nowrap;
+        }
+
+        .btn-primary {
+            background: var(--text-dark);
+            color: var(--cream-white);
+            box-shadow: 0 4px 16px rgba(45, 37, 32, 0.15);
+        }
+
+        .btn-primary:hover {
+            background: var(--text-medium);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(45, 37, 32, 0.25);
+        }
+
+        .btn-secondary {
+            background: var(--white);
+            color: var(--text-dark);
+            border: 2px solid var(--text-dark);
+            box-shadow: 0 2px 8px rgba(45, 37, 32, 0.08);
+        }
+
+        .btn-secondary:hover {
+            background: var(--beige-soft);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(45, 37, 32, 0.15);
+        }
+
+        .guarantee {
+            margin-top: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.8rem;
+            color: var(--text-medium);
+            font-size: clamp(0.9rem, 2vw, 1rem);
+        }
+
+        .guarantee::before {
+            content: '✓';
+            display: inline-block;
+            width: 22px;
+            height: 22px;
+            background: var(--gold-primary);
+            border-radius: 50%;
+            color: white;
+            text-align: center;
+            line-height: 22px;
+            font-weight: 700;
+            font-size: 0.95rem;
+        }
+
+        /* Book Visual */
+        .hero-visual {
+            order: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .book-showcase {
+            position: relative;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .book-image {
+            width: 100%;
+            height: auto;
+            border-radius: 16px;
+            box-shadow: 0 30px 80px rgba(45, 37, 32, 0.2);
+        }
+
+        .social-proof-badge {
+            position: absolute;
+            bottom: -20px;
+            left: -20px;
+            background: var(--white);
+            padding: 1.5rem 2rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(45, 37, 32, 0.15);
+            border: 1px solid var(--beige-warm);
+        }
+
+        .badge-stars {
+            color: var(--gold-primary);
+            font-size: 1.4rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .badge-text {
+            font-size: 0.95rem;
+            color: var(--text-dark);
+            font-weight: 700;
+        }
+
+        .badge-subtext {
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        /* Trust Bar */
+        .trust-bar {
+            background: var(--white);
+            padding: 3rem 5%;
+            border-top: 1px solid var(--beige-warm);
+            border-bottom: 1px solid var(--beige-warm);
+        }
+
+        .trust-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2.5rem;
+            text-align: center;
+        }
+
+        .trust-number {
+            font-family: "Allrounder Monument Test", serif;
+            font-size: clamp(3rem, 7vw, 4rem);
+            font-weight: 800;
+            color: var(--gold-primary);
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+
+        .trust-label {
+            font-size: clamp(1rem, 2vw, 1.15rem);
+            color: var(--text-medium);
+            font-weight: 500;
+        }
+
+        /* Quote Section */
+        .quote-section {
+            padding: clamp(5rem, 12vw, 8rem) 5%;
+            background: var(--cream-light);
+        }
+
+        .quote-content {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .stars-decoration {
+            color: var(--gold-primary);
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+        }
+
+        .quote-text {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(1.4rem, 4vw, 2.2rem);
+            line-height: 1.7;
+            color: var(--text-dark);
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .quote-author {
+            margin-top: 2rem;
+            font-size: clamp(1rem, 2vw, 1.2rem);
+            color: var(--gold-primary);
+            font-weight: 600;
+        }
+
+        /* Chapters */
+        .chapters {
+            padding: clamp(5rem, 12vw, 8rem) 5%;
+            background: var(--cream-white);
+        }
+
+        .section-title {
+            font-family: "Allrounder Monument Test", serif;
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            font-weight: 700;
+            color: var(--text-dark);
+            text-align: center;
+            margin-bottom: 1rem;
+            letter-spacing: -0.5px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: clamp(1.1rem, 3vw, 1.3rem);
+            color: var(--text-medium);
+            font-style: italic;
+            margin-bottom: 4rem;
+        }
+
+        .chapters-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+            gap: 2.5rem;
+        }
+
+        .chapter-card {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 16px;
+            border-left: 5px solid var(--gold-primary);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(45, 37, 32, 0.06);
+        }
+
+        .chapter-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 32px rgba(45, 37, 32, 0.12);
+        }
+
+        .chapter-number {
+            font-family: "Allrounder Monument Test", serif;
+            font-size: 3.5rem;
+            color: var(--gold-primary);
+            font-weight: 800;
+            opacity: 0.25;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+
+        .chapter-card h3 {
+            font-family: "Allrounder Monument Test", serif;
+            font-size: clamp(1.4rem, 3vw, 1.75rem);
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        .chapter-card p {
+            color: var(--text-medium);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .story-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--beige-soft);
+        }
+
+        .story-item {
+            font-size: 0.95rem;
+            color: var(--gold-primary);
+            font-style: italic;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .story-item::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--gold-primary);
+            font-weight: 600;
+        }
+
+        /* Author */
+        .author {
+            padding: clamp(5rem, 12vw, 8rem) 5%;
+            background: var(--white);
+        }
+
+        .author-container {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .author-name {
+            font-family: "Allrounder Monument Test", serif;
+            font-size: clamp(2rem, 5vw, 3rem);
+            color: var(--gold-primary);
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        .author-bio {
+            font-size: clamp(1.1rem, 2.5vw, 1.25rem);
+            line-height: 1.9;
+            color: var(--text-medium);
+        }
+
+        .company {
+            margin-top: 2.5rem;
+            font-size: 1.05rem;
+            color: var(--text-light);
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        /* Final CTA */
+        .final-cta {
+            padding: clamp(6rem, 14vw, 10rem) 5%;
+            background: var(--text-dark);
+            text-align: center;
+            color: var(--cream-white);
+        }
+
+        .final-cta h2 {
+            font-family: "Allrounder Monument Test", serif;
+            font-size: clamp(2.8rem, 7vw, 4.5rem);
+            font-weight: 700;
+            margin-bottom: 2rem;
+            line-height: 1.2;
+        }
+
+        .final-cta p {
+            font-size: clamp(1.2rem, 3vw, 1.5rem);
+            margin-bottom: 3rem;
+            opacity: 0.95;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .final-cta .btn-primary {
+            background: var(--gold-primary);
+            color: white;
+        }
+
+        .final-cta .btn-primary:hover {
+            background: var(--gold-dark);
+        }
+
+        .final-cta .btn-secondary {
+            background: transparent;
+            border-color: var(--cream-white);
+            color: var(--cream-white);
+        }
+
+        .final-cta .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .final-cta .cta-group {
+            justify-content: center;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--cream-white);
+            padding: 2.5rem 5%;
+            text-align: center;
+            color: var(--text-medium);
+            font-size: 0.95rem;
+            border-top: 1px solid var(--beige-warm);
+        }
+
+        /* Desktop Layout */
+        @media (min-width: 768px) {
+            .hero-container {
+                grid-template-columns: 1.1fr 1fr;
+                gap: 6rem;
+            }
+
+            .hero-content {
+                order: 1;
+                text-align: left;
+            }
+
+            .hero-visual {
+                order: 2;
+            }
+
+            .cta-group {
+                justify-content: flex-start;
+            }
+
+            .guarantee {
+                justify-content: flex-start;
+            }
+
+            .value-props {
+                margin-left: 0;
+            }
+
+            .social-proof-badge {
+                left: -30px;
+            }
+        }
+
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">The Power of Tahajjud</div>
+            <a href="#purchase" class="nav-cta">Get Your Copy</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="eyebrow">BY JAWWAD AHMED ABBASI</span>
+                <h1>The Power of <span class="gold">Tahajjud</span></h1>
+                <p class="hero-subtitle">Real Stories of Success and Miracles</p>
+
+                <div class="value-props">
+                    <div class="value-prop">
+                        <div class="value-icon">✓</div>
+                        <div class="value-prop-text">
+                            <strong>15+ Real Stories of Transformation</strong>
+                            <p>Actual people who witnessed miracles through night prayer</p>
+                        </div>
+                    </div>
+                    <div class="value-prop">
+                        <div class="value-icon">✓</div>
+                        <div class="value-prop-text">
+                            <strong>5 Life-Changing Chapters</strong>
+                            <p>Every struggle you face has a path back to Allah</p>
+                        </div>
+                    </div>
+                    <div class="value-prop">
+                        <div class="value-icon">✓</div>
+                        <div class="value-prop-text">
+                            <strong>Practical Lessons & Guidance</strong>
+                            <p>Learn how to unlock the power of Tahajjud in your life</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cta-group">
+                    <a href="#purchase" class="btn btn-primary">Get the Book Now</a>
+                    <a href="#chapters" class="btn btn-secondary">See What's Inside</a>
+                </div>
+
+                <div class="guarantee">
+                    Instant digital access • Premium print on Amazon
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="book-showcase">
+                    <img src="assets/images/The_Power_of_Tahajjud__Display_Art_.jpeg" class="book-image" alt="The Power of Tahajjud Book">
+                    <div class="social-proof-badge">
+                        <div class="badge-stars">★★★★★</div>
+                        <div class="badge-text">Readers love it</div>
+                        <div class="badge-subtext">Life-changing stories</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="trust-bar">
+        <div class="trust-container">
+            <div class="trust-item">
+                <div class="trust-number">5</div>
+                <div class="trust-label">Powerful Chapters</div>
+            </div>
+            <div class="trust-item">
+                <div class="trust-number">15+</div>
+                <div class="trust-label">Real Stories</div>
+            </div>
+            <div class="trust-item">
+                <div class="trust-number">100%</div>
+                <div class="trust-label">Authentic Experiences</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote -->
+    <section class="quote-section fade-in">
+        <div class="quote-content">
+            <div class="stars-decoration">★ ★ ★ ★ ★</div>
+            <p class="quote-text">
+                "This book came into my life exactly when I needed it. The stories are so powerful and relatable. I've started praying Tahajjud regularly, and I can already feel the difference in my life."
+            </p>
+            <p class="quote-author">— Sarah M., Toronto</p>
+        </div>
+    </section>
+
+    <!-- Chapters -->
+    <section class="chapters fade-in" id="chapters">
+        <h2 class="section-title">What's Inside</h2>
+        <p class="section-subtitle">Five powerful chapters that will transform your relationship with Allah</p>
+        <div class="chapters-grid">
+            <div class="chapter-card">
+                <div class="chapter-number">01</div>
+                <h3>Illusion of Control</h3>
+                <p>When life spirals beyond your grasp, discover how prayer becomes the anchor.</p>
+                <div class="story-list">
+                    <div class="story-item">Please, God… Don't Take Her Away</div>
+                    <div class="story-item">Get Me Out of This Prison!</div>
+                    <div class="story-item">I Missed My Deadline</div>
+                </div>
+            </div>
+
+            <div class="chapter-card">
+                <div class="chapter-number">02</div>
+                <h3>Where Are You, God?</h3>
+                <p>In moments of doubt, witness how Tahajjud rebuilds faith when it feels distant.</p>
+                <div class="story-list">
+                    <div class="story-item">Are You There, God? It's Me.</div>
+                    <div class="story-item">Are You Even Listening?</div>
+                    <div class="story-item">I Hate What I See in the Mirror</div>
+                </div>
+            </div>
+
+            <div class="chapter-card">
+                <div class="chapter-number">03</div>
+                <h3>Finding Allah's Treasure</h3>
+                <p>Miraculous moments when doors open, paths clear, and blessings rain down.</p>
+                <div class="story-list">
+                    <div class="story-item">We Regret to Inform You…</div>
+                    <div class="story-item">I Struck Gold</div>
+                </div>
+            </div>
+
+            <div class="chapter-card">
+                <div class="chapter-number">04</div>
+                <h3>Love, Written Before the Heavens</h3>
+                <p>Stories of love, marriage, and family—how Tahajjud brings hearts together.</p>
+                <div class="story-list">
+                    <div class="story-item">Love in the Last Third of the Night</div>
+                    <div class="story-item">Love on My Doorstep</div>
+                    <div class="story-item">You're Not Having a Baby</div>
+                </div>
+            </div>
+
+            <div class="chapter-card">
+                <div class="chapter-number">05</div>
+                <h3>Between Pain and Qadr</h3>
+                <p>When suffering tests the soul, discover how night prayer transforms pain into strength.</p>
+                <div class="story-list">
+                    <div class="story-item">Thirteen Years of Suffering</div>
+                    <div class="story-item">Your Best Option is Surgery</div>
+                    <div class="story-item">Soul of My Soul</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Author -->
+    <section class="author fade-in">
+        <div class="author-container">
+            <h2 class="section-title">About the Author</h2>
+            <p class="author-name">Jawwad Ahmed Abbasi</p>
+            <p class="author-bio">
+                Jawwad Ahmed Abbasi writes about the overlooked power of Tahajjud and the path it offers back to Allah. Through real stories of hardship, hope, and perseverance, he speaks to those who are struggling and reminds them that returning to Allah brings strength and closeness when nothing else does.
+            </p>
+            <p class="company">OMNITRYX INC.</p>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta" id="purchase">
+        <h2>Begin Your Journey Tonight</h2>
+        <p>Get your copy and discover the miracles waiting in the stillness of the night.</p>
+        <div class="cta-group">
+            <a href="#" class="btn btn-primary" onclick="alert('Stripe payment integration coming soon! Digital PDF - $14.99')">Buy Digital Edition - $14.99</a>
+            <a href="https://www.amazon.com/dp/B0GNJBL9R6" target="_blank" class="btn btn-secondary">Order Premium Print on Amazon</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Omnitryx Inc. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Scroll animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offset = 80;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - offset;
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
