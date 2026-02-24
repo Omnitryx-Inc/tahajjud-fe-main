@@ -1041,3 +1041,61 @@ footer {
 .payment-container .support a:hover {
 	text-decoration: underline;
 }
+
+/* FAQ Section */
+.faq-section {
+    padding: clamp(5rem, 12vw, 8rem) 5%;
+    background: var(--cream-white);
+}
+
+.faq-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+    .faq-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+    }
+}
+
+.faq-item {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(45, 37, 32, 0.06);
+    border-left: 4px solid var(--gold-primary);
+}
+
+.faq-question {
+    font-family: "Allrounder Monument Test", serif;
+    font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.faq-answer {
+    font-size: clamp(0.95rem, 2vw, 1.05rem);
+    color: var(--text-medium);
+    line-height: 1.7;
+}
+
+.faq-answer a {
+    color: var(--gold-primary);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.faq-answer a:hover {
+    color: var(--gold-dark);
+}
