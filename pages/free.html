@@ -1,0 +1,243 @@
+---
+layout: default
+title: "Get Your Free Copy - The Power of Tahajjud"
+description: "Can't afford the book or Amazon doesn't deliver to your area? Get your free PDF copy. All we ask is an honest review and to share with others who might benefit."
+permalink: /free/
+---
+
+<style>
+.free-hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 8rem 5% 4rem;
+    background: linear-gradient(to bottom, var(--cream-white) 0%, var(--cream-light) 100%);
+}
+
+.free-container {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.free-title {
+    font-family: "Allrounder Monument Test", serif;
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.free-subtitle {
+    font-size: clamp(1.1rem, 3vw, 1.4rem);
+    color: var(--text-medium);
+    margin-bottom: 2rem;
+    line-height: 1.7;
+}
+
+.free-box {
+    background: var(--white);
+    padding: 1rem 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(45, 37, 32, 0.1);
+    margin: 3rem 0;
+}
+
+.free-conditions {
+    text-align: left;
+    margin: 2rem 0;
+    padding: 2rem;
+    background: var(--beige-soft);
+    border-radius: 12px;
+    border-left: 4px solid var(--gold-primary);
+}
+
+.free-conditions h3 {
+    font-family: "Allrounder Monument Test", serif;
+    font-size: 1.3rem;
+    color: var(--gold-primary);
+    margin-bottom: 1rem;
+}
+
+.free-conditions ul {
+    list-style: none;
+    padding: 0;
+}
+
+.free-conditions li {
+    padding: 0.8rem 0;
+    padding-left: 2rem;
+    position: relative;
+    color: var(--text-dark);
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.free-conditions li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--gold-primary);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.email-form {
+    margin-top: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-input {
+    width: 100%;
+    padding: 1.2rem 1.5rem;
+    font-size: 1.1rem;
+    border: 2px solid var(--beige-warm);
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--gold-primary);
+    box-shadow: 0 0 0 3px rgba(192, 137, 72, 0.1);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 1.3rem 2rem;
+    background: var(--text-dark);
+    color: var(--cream-white);
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Inter', sans-serif;
+}
+
+.submit-btn:hover {
+    background: var(--text-medium);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(45, 37, 32, 0.2);
+}
+
+.trust-note {
+    margin-top: 1.5rem;
+    font-size: 0.95rem;
+    color: var(--text-light);
+    font-style: italic;
+}
+
+.payment-options {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--beige-warm);
+}
+
+.payment-options p {
+    color: var(--text-medium);
+    margin-bottom: 1.5rem;
+}
+
+.payment-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.payment-links a {
+    padding: 0.9rem 2rem;
+    border: 2px solid var(--text-dark);
+    color: var(--text-dark);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.payment-links a:hover {
+    background: var(--text-dark);
+    color: var(--cream-white);
+}
+</style>
+
+<section class="free-hero">
+    <div class="free-container">
+        <h1 class="free-title">Get Your Free Copy</h1>
+        <p class="free-subtitle">
+            Can't afford the book or Amazon doesn't deliver to your area? 
+            We believe everyone should have access to these stories.
+        </p>
+
+        <div class="free-box">
+            <div class="free-conditions">
+                <h3>Help Us Spread the Message:</h3>
+                <ul>
+                    <li>If this book helps you, leave an honest review on Amazon (this helps us most)</li>
+                    <li>Recommend it to friends and family who might benefit</li>
+                    <li>Spread the word on social media and tag us (@jawwad_ab)</li>
+                    <li>Treat this PDF as an amanah — please don't distribute it publicly</li>
+                </ul>
+
+                <p style="margin-top: 1.5rem; font-size: 0.95rem; color: var(--text-medium); font-style: italic;">
+                    This is a trust-based system. We're giving you this book freely — all we ask is that you honor the spirit of this gift.
+                </p>
+            </div>
+
+            <form class="email-form" id="freeBookForm">
+                <div class="form-group">
+                    <input 
+                        type="email" 
+                        class="form-input" 
+                        placeholder="Enter your email address" 
+                        required
+                        id="emailInput"
+                    >
+                </div>
+                <button type="submit" class="submit-btn">Get Free PDF</button>
+            </form>
+
+            <p class="trust-note">
+                We'll never spam you or share your email.
+            </p>
+        </div>
+
+        <div class="payment-options">
+            <p><strong>If you can afford it, please consider supporting the work:</strong></p>
+            <div class="payment-links">
+                <a href="https://buy.stripe.com/cNi28t5Eq1ub3jW7BndUY0d" target="_blank">Buy Digital</a>
+                <a href="https://www.amazon.ca/dp/B0GNJBL9R6" target="_blank">Buy Paperback</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+document.getElementById('freeBookForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    const email = document.getElementById('emailInput').value;
+    const submitBtn = document.querySelector('.submit-btn');
+    
+    // Show loading
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Please wait...';
+    
+    // Call API (fire and forget)
+    fetch('https://vdpgnhnqoc.execute-api.us-east-1.amazonaws.com/prod/collect-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: email })
+    }).catch(() => {}); // Silently ignore errors
+    
+    // Redirect immediately
+    window.location.href = '/download/';
+});
+</script>
