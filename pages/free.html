@@ -38,7 +38,7 @@ permalink: /free/
 
 .free-box {
     background: var(--white);
-    padding: 1rem 2.5rem;
+    padding: 3rem 2.5rem;
     border-radius: 16px;
     box-shadow: 0 10px 40px rgba(45, 37, 32, 0.1);
     margin: 3rem 0;
@@ -66,21 +66,19 @@ permalink: /free/
 }
 
 .free-conditions li {
-    padding: 0.8rem 0;
+    padding: 0.7rem 0;
     padding-left: 2rem;
     position: relative;
     color: var(--text-dark);
-    font-size: 1.05rem;
     line-height: 1.6;
 }
 
 .free-conditions li::before {
-    content: '✓';
+    content: '→';
     position: absolute;
     left: 0;
     color: var(--gold-primary);
     font-weight: 700;
-    font-size: 1.2rem;
 }
 
 .email-form {
@@ -225,10 +223,6 @@ document.getElementById('freeBookForm').addEventListener('submit', async functio
     
     const email = document.getElementById('emailInput').value;
     const submitBtn = document.querySelector('.submit-btn');
-    
-    // Show loading
-    submitBtn.disabled = true;
-    submitBtn.textContent = 'Please wait...';
     
     // Call API (fire and forget)
     fetch('https://vdpgnhnqoc.execute-api.us-east-1.amazonaws.com/prod/collect-email', {
