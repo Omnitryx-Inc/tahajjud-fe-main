@@ -224,14 +224,18 @@ document.getElementById('freeBookForm').addEventListener('submit', async functio
     const email = document.getElementById('emailInput').value;
     const submitBtn = document.querySelector('.submit-btn');
     
-    // Call API (fire and forget)
-    fetch('https://vdpgnhnqoc.execute-api.us-east-1.amazonaws.com/prod/collect-email', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email: email })
-    }).catch(() => {}); // Silently ignore errors
+    // Call API and wait for it to complete
+    try {
+        await fetch('https://vdpgnhnqoc.execute-api.us-east-1.amazonaws.com/prod/collect-email', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email: email })
+        });
+    } catch (error) {
+        // Ignore errors
+    }
     
-    // Redirect immediately
+    // Redirect after API call completes (or fails)
     window.location.href = '/download/';
 });
 </script>
