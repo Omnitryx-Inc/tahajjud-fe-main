@@ -1,0 +1,588 @@
+---
+layout: default
+title: "Support Our Work - The Power of Tahajjud"
+description: "Help us keep The Power of Tahajjud free and accessible to every Muslim, everywhere. Your support funds free copies, future books, and a growing mission."
+permalink: /support/
+---
+
+<style>
+/* ── Hero ── */
+.support-hero {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    padding: 9rem 5% 5rem;
+    background: linear-gradient(to bottom, var(--cream-white) 0%, var(--cream-light) 100%);
+    text-align: center;
+}
+
+.support-hero-inner {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.support-eyebrow {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold-primary);
+    margin-bottom: 1.5rem;
+}
+
+.support-title {
+    font-family: "Allrounder Monument Test", serif;
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    color: var(--text-dark);
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.support-subtitle {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    color: var(--text-medium);
+    line-height: 1.8;
+    max-width: 600px;
+    margin: 0 auto 2.5rem;
+}
+
+.support-hero-cta {
+    display: inline-block;
+    padding: 1.2rem 3rem;
+    background: var(--gold-primary);
+    color: var(--cream-white);
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.support-hero-cta:hover {
+    background: var(--gold-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(192, 137, 72, 0.3);
+}
+
+/* ── Mission Section ── */
+.mission-section {
+    padding: 6rem 5%;
+    background: var(--white);
+}
+
+.mission-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+}
+
+.mission-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold-primary);
+    margin-bottom: 1rem;
+}
+
+.mission-heading {
+    font-family: "Allrounder Monument Test", serif;
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    color: var(--text-dark);
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 1.5rem;
+}
+
+.mission-body {
+    font-size: 1.05rem;
+    color: var(--text-medium);
+    line-height: 1.9;
+}
+
+.mission-body p + p {
+    margin-top: 1.2rem;
+}
+
+.mission-quote-block {
+    background: var(--beige-soft);
+    border-left: 4px solid var(--gold-primary);
+    border-radius: 0 12px 12px 0;
+    padding: 2.5rem 2rem;
+}
+
+.mission-quote-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.35rem;
+    font-style: italic;
+    color: var(--text-dark);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.mission-quote-attribution {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--gold-primary);
+    letter-spacing: 0.05em;
+}
+
+@media (max-width: 768px) {
+    .mission-inner {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
+
+/* ── What Your Support Does ── */
+.impact-section {
+    padding: 6rem 5%;
+    background: var(--cream-light);
+}
+
+.section-header {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 4rem;
+}
+
+.section-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold-primary);
+    margin-bottom: 1rem;
+}
+
+.section-title {
+    font-family: "Allrounder Monument Test", serif;
+    font-size: clamp(1.5rem, 3.5vw, 2.5rem);
+    color: var(--text-dark);
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.impact-grid {
+    max-width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.impact-card {
+    background: var(--white);
+    border-radius: 14px;
+    padding: 2.5rem 2rem;
+    box-shadow: 0 4px 16px rgba(45, 37, 32, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.impact-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(45, 37, 32, 0.1);
+}
+
+.impact-icon {
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+    display: block;
+}
+
+.impact-card-title {
+    font-family: "Allrounder Monument Test", serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 0.75rem;
+}
+
+.impact-card-body {
+    font-size: 0.95rem;
+    color: var(--text-medium);
+    line-height: 1.7;
+}
+
+/* ── Ways to Support ── */
+.ways-section {
+    padding: 6rem 5%;
+    background: var(--white);
+}
+
+.ways-grid {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.way-card {
+    border: 2px solid var(--beige-warm);
+    border-radius: 14px;
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.way-card.featured {
+    border-color: var(--gold-primary);
+    box-shadow: 0 6px 24px rgba(192, 137, 72, 0.12);
+}
+
+.way-card-tag {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold-primary);
+    background: rgba(192, 137, 72, 0.08);
+    padding: 0.3rem 0.75rem;
+    border-radius: 100px;
+    margin-bottom: 1.2rem;
+}
+
+.way-card-title {
+    font-family: "Allrounder Monument Test", serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 0.75rem;
+}
+
+.way-card-desc {
+    font-size: 0.95rem;
+    color: var(--text-medium);
+    line-height: 1.7;
+    margin-bottom: 1.8rem;
+}
+
+.way-btn {
+    display: block;
+    padding: 0.9rem 1.5rem;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.way-btn-primary {
+    background: var(--gold-primary);
+    color: var(--cream-white);
+}
+
+.way-btn-primary:hover {
+    background: var(--gold-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(192, 137, 72, 0.3);
+}
+
+.way-btn-secondary {
+    background: transparent;
+    color: var(--text-dark);
+    border: 2px solid var(--text-dark);
+}
+
+.way-btn-secondary:hover {
+    background: var(--text-dark);
+    color: var(--cream-white);
+}
+
+@media (max-width: 768px) {
+    .ways-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ── Author Note ── */
+.author-note-section {
+    padding: 6rem 5%;
+    background: var(--cream-light);
+}
+
+.author-note-inner {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.author-note-quote {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.2rem, 3vw, 1.55rem);
+    font-style: italic;
+    color: var(--text-dark);
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.author-note-quote::before {
+    content: '\201C';
+    color: var(--gold-primary);
+    font-size: 3rem;
+    line-height: 0;
+    vertical-align: -0.6rem;
+    margin-right: 0.2rem;
+}
+
+.author-note-quote::after {
+    content: '\201D';
+    color: var(--gold-primary);
+    font-size: 3rem;
+    line-height: 0;
+    vertical-align: -0.6rem;
+    margin-left: 0.2rem;
+}
+
+.author-note-name {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--gold-primary);
+    letter-spacing: 0.05em;
+}
+
+.author-note-title {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-top: 0.3rem;
+}
+
+/* ── Final CTA ── */
+.support-cta-section {
+    padding: 7rem 5%;
+    background: var(--text-dark);
+    text-align: center;
+}
+
+.support-cta-inner {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.support-cta-title {
+    font-family: "Allrounder Monument Test", serif;
+    font-size: clamp(1.6rem, 4vw, 2.8rem);
+    color: var(--cream-white);
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 1.2rem;
+}
+
+.support-cta-subtitle {
+    font-size: 1.05rem;
+    color: rgba(253, 251, 247, 0.7);
+    line-height: 1.8;
+    margin-bottom: 2.5rem;
+}
+
+.support-cta-btn {
+    display: inline-block;
+    padding: 1.2rem 3rem;
+    background: var(--gold-primary);
+    color: var(--cream-white);
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.support-cta-btn:hover {
+    background: var(--gold-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(192, 137, 72, 0.4);
+}
+
+.support-cta-secondary {
+    margin-top: 1.5rem;
+    font-size: 0.95rem;
+    color: rgba(253, 251, 247, 0.5);
+}
+
+.support-cta-secondary a {
+    color: rgba(253, 251, 247, 0.7);
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
+.support-cta-secondary a:hover {
+    color: var(--cream-white);
+}
+</style>
+
+<!-- Hero -->
+<section class="support-hero">
+    <div class="support-hero-inner">
+        <span class="support-eyebrow">Support the Mission</span>
+        <h1 class="support-title">Help Us Keep Tahajjud's Light Within Reach</h1>
+        <p class="support-subtitle">
+            We made this book free because we believe knowledge like this shouldn't have a price barrier.
+            If it's moved you — consider making it possible for someone else.
+        </p>
+        <a href="https://donate.stripe.com/cNi9AV7My7Szg6If3PdUY0e" target="_blank" class="support-hero-cta">
+            Support the Mission
+        </a>
+    </div>
+</section>
+
+<!-- The Mission -->
+<section class="mission-section">
+    <div class="mission-inner">
+        <div class="mission-text">
+            <p class="mission-label">Why We Made It Free</p>
+            <h2 class="mission-heading">Reaching Every Muslim Who Needs These Stories</h2>
+            <div class="mission-body">
+                <p>
+                    When <em>The Power of Tahajjud</em> was written, the goal was never just to sell books.
+                    It was to reach every Muslim who needed to hear these stories — the one praying
+                    alone at 3am, the one who feels like Allah isn't listening, the one who gave up
+                    on night prayer years ago and doesn't know how to find their way back.
+                </p>
+                <p>
+                    But Amazon doesn't deliver everywhere. Not everyone can afford $20. So we made
+                    it free. And we intend to keep it that way — as long as there are people who
+                    believe in this mission enough to support it.
+                </p>
+                <p>
+                    This isn't about one book. It's about building a body of work that helps Muslims
+                    reconnect with their deen — starting with the most powerful prayer they're
+                    probably neglecting.
+                </p>
+            </div>
+        </div>
+        <div class="mission-quote-block">
+            <p class="mission-quote-text">
+                Every single night, Allah descends to the lowest heaven, calling out to His servants
+                so He can grant their needs. These stories exist so people know — that call is real,
+                and it's meant for them.
+            </p>
+            <p class="mission-quote-attribution">— The Mission Behind This Book</p>
+        </div>
+    </div>
+</section>
+
+<!-- What Your Support Does -->
+<section class="impact-section">
+    <div class="section-header">
+        <p class="section-label">Your Impact</p>
+        <h2 class="section-title">What Your Support Makes Possible</h2>
+    </div>
+    <div class="impact-grid">
+        <div class="impact-card">
+            <span class="impact-icon">📖</span>
+            <h3 class="impact-card-title">Keeps the Book Free</h3>
+            <p class="impact-card-body">
+                Every contribution goes toward keeping <em>The Power of Tahajjud</em> accessible
+                to readers in countries where Amazon doesn't deliver, or who simply can't afford it.
+            </p>
+        </div>
+        <div class="impact-card">
+            <span class="impact-icon">✍️</span>
+            <h3 class="impact-card-title">Funds Future Books</h3>
+            <p class="impact-card-body">
+                Jawwad is already working on the next project. Your support gives him the space
+                to keep writing, researching, and sharing stories that matter.
+            </p>
+        </div>
+        <div class="impact-card">
+            <span class="impact-icon">🌍</span>
+            <h3 class="impact-card-title">Grows the Reach</h3>
+            <p class="impact-card-body">
+                More reach means more people discovering Tahajjud. That's more duas answered,
+                more lives changed, more miracles witnessed — in places you'll never expect.
+            </p>
+        </div>
+        <div class="impact-card">
+            <span class="impact-icon">🤲</span>
+            <h3 class="impact-card-title">Supports an Independent Voice</h3>
+            <p class="impact-card-body">
+                There's no big publisher or corporate sponsor behind this. Just a writer, a
+                mission, and the people who believe it's worth carrying forward.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Ways to Support -->
+<section class="ways-section">
+    <div class="section-header">
+        <p class="section-label">How to Help</p>
+        <h2 class="section-title">Every Contribution Matters</h2>
+    </div>
+    <div class="ways-grid">
+        <div class="way-card featured">
+            <span class="way-card-tag">Most Impactful</span>
+            <h3 class="way-card-title">Give a Donation</h3>
+            <p class="way-card-desc">
+                Directly fund free copies and future projects. Any amount — big or small —
+                goes toward keeping this mission alive.
+            </p>
+            <a href="https://donate.stripe.com/cNi9AV7My7Szg6If3PdUY0e" target="_blank" class="way-btn way-btn-primary">
+                Donate Now
+            </a>
+        </div>
+        <div class="way-card">
+            <span class="way-card-tag">Digital</span>
+            <h3 class="way-card-title">Buy the Digital Edition</h3>
+            <p class="way-card-desc">
+                Get instant access to the full book and support the work at the same time.
+                Read it anywhere, anytime.
+            </p>
+            <a href="https://buy.stripe.com/28EbJ37My8WDcUw7BndUY0g" target="_blank" class="way-btn way-btn-secondary">
+                Buy Digital
+            </a>
+        </div>
+        <div class="way-card">
+            <span class="way-card-tag">Paperback</span>
+            <h3 class="way-card-title">Buy the Physical Copy</h3>
+            <p class="way-card-desc">
+                Hold it in your hands. Keep it on your shelf. Give it to someone who needs it.
+                Available on Amazon worldwide.
+            </p>
+            <a href="https://www.amazon.ca/dp/B0GNJBL9R6" target="_blank" class="way-btn way-btn-secondary">
+                Buy on Amazon
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Author Note -->
+<section class="author-note-section">
+    <div class="author-note-inner">
+        <p class="author-note-quote">
+            I wrote this book because I needed these stories myself. Every person in these
+            pages is real. Every miracle happened. And if even one reader wakes up before
+            Fajr because of what they read — that is worth everything. Your support doesn't
+            just fund a book. It helps someone find their way back to Allah.
+        </p>
+        <p class="author-note-name">Jawwad Ahmed Abbasi</p>
+        <p class="author-note-title">Author, The Power of Tahajjud</p>
+    </div>
+</section>
+
+<!-- Final CTA -->
+<section class="support-cta-section">
+    <div class="support-cta-inner">
+        <h2 class="support-cta-title">If This Work Has Touched You, Pay It Forward</h2>
+        <p class="support-cta-subtitle">
+            Someone out there is praying in the dark, wondering if Allah hears them.
+            Your support puts this book in their hands.
+        </p>
+        <a href="https://donate.stripe.com/cNi9AV7My7Szg6If3PdUY0e" target="_blank" class="support-cta-btn">
+            Support the Mission
+        </a>
+        <p class="support-cta-secondary">
+            Questions? Reach out at <a href="mailto:contact@omnitryx.ca">contact@omnitryx.ca</a>
+        </p>
+    </div>
+</section>
