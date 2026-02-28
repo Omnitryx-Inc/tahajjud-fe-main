@@ -509,6 +509,29 @@ permalink: /download/
     box-shadow: 0 8px 40px rgba(45, 37, 32, 0.1);
 }
 
+/* ── Section Divider ── */
+.section-divider {
+    padding: 2.5rem 5%;
+    background: var(--cream-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+.section-divider::before,
+.section-divider::after {
+    content: '';
+    width: 60px;
+    height: 1px;
+    background: var(--beige-warm);
+}
+
+.section-divider-icon {
+    font-size: 1rem;
+    opacity: 0.5;
+}
+
 /* ── Closing Dua ── */
 .dua-section {
     padding: 5rem 5%;
@@ -662,12 +685,16 @@ permalink: /download/
     </div>
 </section>
 
+<div class="section-divider">
+    <span class="section-divider-icon">🌙</span>
+</div>
+
 <!-- Bottom Download -->
 <section class="dl-final-section">
     <div class="dl-final-inner">
         <p class="dl-final-label">Your copy</p>
         <h2 class="dl-final-title">Here's Your PDF</h2>
-        <p class="dl-final-sub">May this book be a source of light for you. Your PDF is waiting — tap the button below to save it.</p>
+        <p class="dl-final-sub">Thank you for reading this first. May every story bring you closer to Him.</p>
         <div class="dl-final-card">
             <p class="dl-book-name">The Power of Tahajjud</p>
             <p class="dl-book-author">by Jawwad Ahmed Abbasi</p>
