@@ -6,97 +6,334 @@ permalink: /free/
 ---
 
 <style>
-.free-hero {
-    min-height: 80vh;
-    display: flex;
-    align-items: center;
-    padding: 8rem 5% 4rem;
-    background: linear-gradient(to bottom, var(--cream-white) 0%, var(--cream-light) 100%);
-}
 
-.free-container {
-    max-width: 700px;
-    margin: 0 auto;
+/* ── Hero ── */
+.fp-hero {
+    padding: 9rem 5% 6rem;
+    background: radial-gradient(ellipse at 50% 0%, rgba(192, 137, 72, 0.1) 0%, var(--cream-white) 65%);
     text-align: center;
 }
 
-.free-title {
-    font-family: "Allrounder Monument Test", serif;
-    font-size: clamp(1rem, 6vw, 3.5rem);
-    color: var(--text-dark);
-    margin-bottom: 1.5rem;
+.fp-inner {
+    max-width: 660px;
+    margin: 0 auto;
+}
+
+.fp-eyebrow {
+    font-size: 0.78rem;
     font-weight: 700;
-    line-height: 1.2;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold-primary);
+    margin-bottom: 0.75rem;
 }
 
-.free-subtitle {
-    font-size: clamp(1.0rem, 3vw, 1.2rem);
+.fp-title {
+    font-family: "Allrounder Monument Test", serif;
+    font-size: clamp(2rem, 6vw, 3rem);
+    color: var(--text-dark);
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 1.2rem;
+}
+
+.fp-subtitle {
+    font-size: clamp(1rem, 2.5vw, 1.15rem);
     color: var(--text-medium);
-    margin-bottom: 2rem;
-    line-height: 1.7;
+    line-height: 1.8;
 }
 
-.free-box {
+/* ── Section shared styles ── */
+.section-label {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold-primary);
+    margin-bottom: 0.75rem;
+    text-align: center;
+}
+
+.section-title {
+    font-family: "Allrounder Monument Test", serif;
+    font-size: clamp(1.5rem, 4vw, 2.2rem);
+    color: var(--text-dark);
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 0.9rem;
+    text-align: center;
+}
+
+.section-subtitle {
+    font-size: 1rem;
+    color: var(--text-medium);
+    line-height: 1.75;
+    text-align: center;
+    max-width: 580px;
+    margin: 0 auto 3.5rem;
+}
+
+/* ── Purchase Section ── */
+.purchase-section {
+    padding: 6rem 5%;
     background: var(--white);
-    padding: 3rem 2.5rem;
-    border-radius: 16px;
-    box-shadow: 0 10px 40px rgba(45, 37, 32, 0.1);
-    margin: 3rem 0;
 }
 
-.free-conditions {
-    text-align: left;
-    margin: 2rem 0;
-    padding: 2rem;
+.purchase-inner {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.purchase-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.purchase-card {
+    background: var(--white);
+    border-radius: 14px;
+    padding: 2.5rem 2rem;
+    box-shadow: 0 4px 16px rgba(45, 37, 32, 0.06);
+    display: flex;
+    flex-direction: column;
+}
+
+.purchase-card.featured {
+    border: 2px solid var(--gold-primary);
+    box-shadow: 0 6px 24px rgba(192, 137, 72, 0.12);
+}
+
+.purchase-card-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.purchase-card-tag {
+    display: inline-block;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold-primary);
+    background: rgba(192, 137, 72, 0.08);
+    padding: 0.28rem 0.75rem;
+    border-radius: 100px;
+    margin-bottom: 1rem;
+    align-self: flex-start;
+}
+
+.purchase-card-title {
+    font-family: "Allrounder Monument Test", serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    line-height: 1.3;
+    margin-bottom: 0.75rem;
+}
+
+.purchase-card-desc {
+    font-size: 0.95rem;
+    color: var(--text-medium);
+    line-height: 1.75;
+    flex: 1;
+    margin-bottom: 1.8rem;
+}
+
+.purchase-card-btn {
+    display: block;
+    padding: 0.9rem 1.2rem;
+    border-radius: 8px;
+    font-size: 0.92rem;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.purchase-card-btn.btn-gold {
+    background: var(--gold-primary);
+    color: var(--cream-white);
+}
+
+.purchase-card-btn.btn-gold:hover {
+    background: var(--gold-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(192, 137, 72, 0.3);
+}
+
+.purchase-card-btn.btn-dark {
+    background: var(--text-dark);
+    color: var(--cream-white);
+}
+
+.purchase-card-btn.btn-dark:hover {
+    background: var(--text-medium);
+    transform: translateY(-2px);
+}
+
+.purchase-card-btn.btn-outline {
+    background: transparent;
+    color: var(--text-dark);
+    border: 2px solid var(--text-dark);
+}
+
+.purchase-card-btn.btn-outline:hover {
+    background: var(--text-dark);
+    color: var(--cream-white);
+}
+
+@media (max-width: 760px) {
+    .purchase-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ── Bridge ── */
+.bridge {
+    padding: 5rem 5%;
+    background: var(--cream-light);
+    text-align: center;
+}
+
+.bridge-inner {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.bridge-divider {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.bridge-divider::before,
+.bridge-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--beige-warm);
+}
+
+.bridge-divider-label {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--text-light);
+    white-space: nowrap;
+}
+
+.bridge-title {
+    font-family: "Allrounder Monument Test", serif;
+    font-size: clamp(1.3rem, 3.5vw, 1.9rem);
+    color: var(--text-dark);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.bridge-body {
+    font-size: 1rem;
+    color: var(--text-medium);
+    line-height: 1.8;
+}
+
+/* ── Free Access Section ── */
+.free-section {
+    padding: 6rem 5%;
+    background: var(--white);
+}
+
+.free-inner {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+/* Asks */
+.asks-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+    margin: 2.5rem 0;
+}
+
+.ask-item {
     background: var(--beige-soft);
     border-radius: 12px;
-    border-left: 4px solid var(--gold-primary);
+    padding: 1.5rem 1.6rem;
+    border-left: 3px solid var(--gold-primary);
 }
 
-.free-conditions h3 {
+.ask-item-icon {
+    font-size: 1.3rem;
+    margin-bottom: 0.6rem;
+    display: block;
+}
+
+.ask-item-title {
+    font-family: "Allrounder Monument Test", serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 0.4rem;
+}
+
+.ask-item-body {
+    font-size: 0.88rem;
+    color: var(--text-medium);
+    line-height: 1.65;
+}
+
+@media (max-width: 580px) {
+    .asks-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Form */
+.free-form-box {
+    background: var(--cream-light);
+    border-radius: 16px;
+    padding: 2.5rem 2rem;
+    margin-top: 2.5rem;
+}
+
+.free-form-label {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold-primary);
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.free-form-heading {
     font-family: "Allrounder Monument Test", serif;
     font-size: 1.3rem;
-    color: var(--gold-primary);
-    margin-bottom: 1rem;
-}
-
-.free-conditions ul {
-    list-style: none;
-    padding: 0;
-}
-
-.free-conditions li {
-    padding: 0.7rem 0;
-    padding-left: 2rem;
-    position: relative;
-    color: var(--text-dark);
-    line-height: 1.6;
-}
-
-.free-conditions li::before {
-    content: '→';
-    position: absolute;
-    left: 0;
-    color: var(--gold-primary);
     font-weight: 700;
-}
-
-.email-form {
-    margin-top: 2rem;
+    color: var(--text-dark);
+    margin-bottom: 1.8rem;
 }
 
 .form-group {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
 }
 
 .form-input {
     width: 100%;
-    padding: 1.2rem 1.5rem;
-    font-size: 1.1rem;
+    padding: 1.1rem 1.4rem;
+    font-size: 1rem;
     border: 2px solid var(--beige-warm);
     border-radius: 10px;
     font-family: 'Inter', sans-serif;
+    background: var(--white);
     transition: all 0.3s ease;
+    box-sizing: border-box;
 }
 
 .form-input:focus {
@@ -110,6 +347,7 @@ select.form-input {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23555' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: right 1.2rem center;
+    background-color: var(--white);
     padding-right: 2.5rem;
     color: var(--text-dark);
     cursor: pointer;
@@ -117,16 +355,17 @@ select.form-input {
 
 .submit-btn {
     width: 100%;
-    padding: 1.3rem 2rem;
+    padding: 1.2rem 2rem;
     background: var(--text-dark);
     color: var(--cream-white);
     border: none;
     border-radius: 10px;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     font-weight: 700;
     cursor: pointer;
     transition: all 0.3s ease;
     font-family: 'Inter', sans-serif;
+    margin-top: 0.5rem;
 }
 
 .submit-btn:hover {
@@ -136,92 +375,151 @@ select.form-input {
 }
 
 .trust-note {
-    margin-top: 1.5rem;
-    font-size: 0.95rem;
+    margin-top: 1.2rem;
+    font-size: 0.88rem;
     color: var(--text-light);
     font-style: italic;
-}
-
-.payment-options {
-    margin-top: 3rem;
-    padding-top: 2rem;
-    border-top: 1px solid var(--beige-warm);
-}
-
-.payment-options p {
-    color: var(--text-medium);
-    margin-bottom: 1.5rem;
-}
-
-.payment-links {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.payment-links a {
-    padding: 0.9rem 2rem;
-    border: 2px solid var(--text-dark);
-    color: var(--text-dark);
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    min-width: 180px;
     text-align: center;
 }
 
-.payment-links a:hover {
-    background: var(--text-dark);
-    color: var(--cream-white);
-}
 </style>
 
-<section class="free-hero">
-    <div class="free-container">
-        <h1 class="free-title">Get Your Free Copy</h1>
-        <p class="free-subtitle">
-            Can't afford the book or Amazon doesn't deliver to your area? 
+<!-- Hero -->
+<section class="fp-hero">
+    <div class="fp-inner">
+        <p class="fp-eyebrow">The Power of Tahajjud</p>
+        <h1 class="fp-title">Get Your Free Copy</h1>
+        <p class="fp-subtitle">
+            Can't afford the book or Amazon doesn't deliver to your area?
             We believe everyone deserves the chance to discover the power of Tahajjud.
         </p>
+    </div>
+</section>
 
-        <div class="free-conditions">
-                <h3>Help Us Spread the Message:</h3>
-                <ul>
-                    <li>If this book helps you, leave an honest review on Amazon (this helps us most)</li>
-                    <li>Share on social media and tag us (@jawwad_ab on Instagram/TikTok)</li>
-                    <li>Recommend it to friends and family who might benefit</li>
-                    <li>Treat this PDF as an amanah — please don't distribute it publicly</li>
-                </ul>
+<!-- Purchase First -->
+<section class="purchase-section">
+    <div class="purchase-inner">
+        <p class="section-label">Support the Mission</p>
+        <h2 class="section-title">If You're Able To — Please Consider Buying a Copy</h2>
+        <p class="section-subtitle">
+            Every purchase keeps this mission going and helps us create more work for the Ummah.
+        </p>
 
-                <p style="margin-top: 1.5rem; font-size: 0.95rem; color: var(--text-medium); font-style: italic;">
-                    This is a trust-based system. We're giving you this book freely — all we ask is that you honor the spirit of this gift.
+        <div class="purchase-grid">
+
+            <div class="purchase-card featured">
+                <span class="purchase-card-icon">📖</span>
+                <span class="purchase-card-tag">Digital</span>
+                <h3 class="purchase-card-title">Buy the Digital PDF</h3>
+                <p class="purchase-card-desc">
+                    Instant download. Read on any device, anywhere in the world.
+                    Your purchase directly supports this mission.
+                </p>
+                <a href="https://buy.stripe.com/28EbJ37My8WDcUw7BndUY0g" target="_blank" class="purchase-card-btn btn-gold">
+                    Buy Digital
+                </a>
+            </div>
+
+            <div class="purchase-card">
+                <span class="purchase-card-icon">📚</span>
+                <span class="purchase-card-tag">Paperback</span>
+                <h3 class="purchase-card-title">Buy the Physical Book</h3>
+                <p class="purchase-card-desc">
+                    A real book on your shelf — one you'll return to again and again.
+                    Available on Amazon worldwide.
+                </p>
+                <a href="https://www.amazon.ca/dp/B0GNJBL9R6" target="_blank" class="purchase-card-btn btn-dark">
+                    Buy on Amazon
+                </a>
+            </div>
+
+            <div class="purchase-card">
+                <span class="purchase-card-icon">🤲</span>
+                <span class="purchase-card-tag">Donate</span>
+                <h3 class="purchase-card-title">Support the Work</h3>
+                <p class="purchase-card-desc">
+                    Already have the book? A contribution — any amount — helps keep
+                    this mission alive and reaching more people.
+                </p>
+                <a href="https://donate.stripe.com/cNi9AV7My7Szg6If3PdUY0e" target="_blank" class="purchase-card-btn btn-outline">
+                    Contribute
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Bridge -->
+<section class="bridge">
+    <div class="bridge-inner">
+        <div class="bridge-divider">
+            <span class="bridge-divider-label">Can't afford it right now?</span>
+        </div>
+        <h2 class="bridge-title">We truly believe everyone deserves to experience the power of Tahajjud.</h2>
+        <p class="bridge-body">
+            If the book is out of reach or Amazon doesn't ship to your country — no problem.
+            Fill in your details below and we'll take you straight to your PDF.
+        </p>
+    </div>
+</section>
+
+<!-- Free Access -->
+<section class="free-section">
+    <div class="free-inner">
+
+        <p class="section-label" style="text-align: left;">How You Can Give Back</p>
+        <h2 class="section-title" style="text-align: left;">Other Ways to Support Us</h2>
+        <p class="section-subtitle" style="text-align: left; margin: 0 0 0.5rem;">
+            You don't have to support us financially to make a difference.
+            These four things mean just as much to us:
+        </p>
+
+        <div class="asks-list">
+
+            <div class="ask-item">
+                <span class="ask-item-icon">⭐</span>
+                <p class="ask-item-title">Leave an Amazon Review</p>
+                <p class="ask-item-body">
+                    After you've read it, an honest review on Amazon helps more Muslims find this book
+                    than anything else we can do. It only takes two minutes.
                 </p>
             </div>
 
-            <!-- <div class="payment-options">
-                <p><strong>If you can afford it, please consider supporting the work:</strong></p>
-                <div class="payment-links">
-                    <a href="https://buy.stripe.com/28EbJ37My8WDcUw7BndUY0g" target="_blank">Buy Digital</a>
-                    <a href="https://www.amazon.ca/dp/B0GNJBL9R6" target="_blank">Buy Paperback</a>
-                </div>
-            </div> -->
-
-            <div class="payment-options">
-                <p><strong>If you can afford it right now, please consider supporting the work:</strong></p>
-                <div class="payment-links">
-                    <a href="https://buy.stripe.com/28EbJ37My8WDcUw7BndUY0g" target="_blank">Buy Digital</a>
-                    <a href="https://www.amazon.ca/dp/B0GNJBL9R6" target="_blank">Buy Paperback</a>
-                </div>
-                <p style="margin-top: 1rem; font-size: 0.95rem; color: var(--text-light); font-style: italic;">
-                    Can't right now? No problem — get your free copy below.
+            <div class="ask-item">
+                <span class="ask-item-icon">📲</span>
+                <p class="ask-item-title">Tag Us on Instagram or TikTok</p>
+                <p class="ask-item-body">
+                    Share what moved you. Tag <strong>@jawwad_ab</strong> — your story
+                    might be exactly what someone else needed to see today.
                 </p>
             </div>
 
-        <div class="free-box">
+            <div class="ask-item">
+                <span class="ask-item-icon">🗣️</span>
+                <p class="ask-item-title">Tell Someone About It</p>
+                <p class="ask-item-body">
+                    Recommend it to a friend or family member who might benefit.
+                    Word of mouth is how this reaches people who need it most.
+                </p>
+            </div>
 
-            <form class="email-form" id="freeBookForm">
+            <div class="ask-item">
+                <span class="ask-item-icon">🔒</span>
+                <p class="ask-item-title">Keep It as an Amanah</p>
+                <p class="ask-item-body">
+                    Please don't share or distribute the PDF publicly. This is a
+                    trust between us — honor the spirit of it.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="free-form-box">
+            <span class="free-form-label">Free Access</span>
+            <p class="free-form-heading">Your PDF is one step away.</p>
+
+            <form id="freeBookForm">
                 <div class="form-group">
                     <input
                         type="email"
@@ -245,27 +543,22 @@ select.form-input {
                         <option value="Other">Other</option>
                     </select>
                 </div>
-                <button type="submit" class="submit-btn">Get Free PDF</button>
+                <button type="submit" class="submit-btn">Get My Free PDF</button>
             </form>
 
-            <p class="trust-note">
-                We'll never spam you or share your email.
-            </p>
+            <p class="trust-note">We'll never spam you or share your email.</p>
         </div>
 
-        
     </div>
 </section>
 
 <script>
 document.getElementById('freeBookForm').addEventListener('submit', async function(e) {
     e.preventDefault();
-    
+
     const email = document.getElementById('emailInput').value;
     const country = document.getElementById('countryInput').value;
-    const submitBtn = document.querySelector('.submit-btn');
 
-    // Call API and wait for it to complete
     try {
         await fetch('https://vdpgnhnqoc.execute-api.us-east-1.amazonaws.com/prod/collect-email', {
             method: 'POST',
@@ -275,8 +568,7 @@ document.getElementById('freeBookForm').addEventListener('submit', async functio
     } catch (error) {
         // Ignore errors
     }
-    
-    // Redirect after API call completes (or fails)
+
     window.location.href = '/download/';
 });
 </script>
