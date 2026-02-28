@@ -105,6 +105,16 @@ permalink: /free/
     box-shadow: 0 0 0 3px rgba(192, 137, 72, 0.1);
 }
 
+select.form-input {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23555' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1.2rem center;
+    padding-right: 2.5rem;
+    color: var(--text-dark);
+    cursor: pointer;
+}
+
 .submit-btn {
     width: 100%;
     padding: 1.3rem 2rem;
@@ -213,13 +223,27 @@ permalink: /free/
 
             <form class="email-form" id="freeBookForm">
                 <div class="form-group">
-                    <input 
-                        type="email" 
-                        class="form-input" 
-                        placeholder="Enter your email address" 
+                    <input
+                        type="email"
+                        class="form-input"
+                        placeholder="Enter your email address"
                         required
                         id="emailInput"
                     >
+                </div>
+                <div class="form-group">
+                    <select class="form-input" id="countryInput" required>
+                        <option value="" disabled selected>Select your country</option>
+                        <option value="United States">United States</option>
+                        <option value="United Kingdom">United Kingdom</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Saudi Arabia">Saudi Arabia</option>
+                        <option value="UAE">UAE</option>
+                        <option value="Pakistan">Pakistan</option>
+                        <option value="India">India</option>
+                        <option value="Other">Other</option>
+                    </select>
                 </div>
                 <button type="submit" class="submit-btn">Get Free PDF</button>
             </form>
@@ -238,14 +262,15 @@ document.getElementById('freeBookForm').addEventListener('submit', async functio
     e.preventDefault();
     
     const email = document.getElementById('emailInput').value;
+    const country = document.getElementById('countryInput').value;
     const submitBtn = document.querySelector('.submit-btn');
-    
+
     // Call API and wait for it to complete
     try {
         await fetch('https://vdpgnhnqoc.execute-api.us-east-1.amazonaws.com/prod/collect-email', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ email: email })
+            body: JSON.stringify({ email: email, country: country })
         });
     } catch (error) {
         // Ignore errors
