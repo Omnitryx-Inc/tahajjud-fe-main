@@ -18,12 +18,20 @@ locale: "en_US"
 twitter:
   card: summary_large_image
 
+# Stripe payment links
+stripe_buy_url: "https://buy.stripe.com/28EbJ37My8WDcUw7BndUY0g"
+stripe_donate_url: "https://donate.stripe.com/cNi9AV7My7Szg6If3PdUY0e"
+
+# Amazon links
+amazon_url: "https://www.amazon.ca/dp/B0GNJBL9R6"
+amazon_review_url: "https://www.amazon.ca/dp/B0GNJBL9R6#customerReviews"
+
 # Book-specific metadata
 book:
   isbn: "B0GNJBL9R6"
   price: "19.99"
   currency: "CAD"
-  amazon_url: "https://www.amazon.com/dp/B0GNJBL9R6"
+  amazon_url: "https://www.amazon.ca/dp/B0GNJBL9R6"
 
 # Keywords for AI search engines
 keywords: "Tahajjud, night prayer, tahajjud in ramadan, Islamic prayer, spiritual growth, miracles, success stories, Muslim prayer, Allah, dua, faith, spiritual book, Islamic book, tahajjud miracles, tahajjud success stories, power of prayer, night worship, Islamic spirituality"
