@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Your Copy is Ready - The Power of Tahajjud"
-description: "Download your free PDF copy of The Power of Tahajjud"
+description: "Download your PDF of The Power of Tahajjud"
 permalink: /download/
 ---
 
@@ -375,17 +375,6 @@ permalink: /download/
     transform: translateY(-1px);
 }
 
-.gift-btn-outline {
-    background: transparent;
-    color: var(--text-dark);
-    border: 2px solid var(--beige-warm);
-}
-
-.gift-btn-outline:hover {
-    border-color: var(--text-dark);
-    transform: translateY(-1px);
-}
-
 @media (max-width: 620px) {
     .gift-options {
         grid-template-columns: 1fr;
@@ -462,6 +451,64 @@ permalink: /download/
     font-style: italic;
 }
 
+/* ── Scroll hint ── */
+.dl-scroll-hint {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: var(--text-light);
+    letter-spacing: 0.05em;
+    animation: bob 2s ease-in-out infinite;
+}
+
+@keyframes bob {
+    0%, 100% { transform: translateY(0); }
+    50%       { transform: translateY(5px); }
+}
+
+/* ── Bottom Download ── */
+.dl-final-section {
+    padding: 5rem 5%;
+    background: var(--cream-light);
+    text-align: center;
+}
+
+.dl-final-inner {
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+.dl-final-label {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold-primary);
+    margin-bottom: 0.75rem;
+}
+
+.dl-final-title {
+    font-family: "Allrounder Monument Test", serif;
+    font-size: clamp(1.5rem, 4vw, 2.2rem);
+    color: var(--text-dark);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 0.6rem;
+}
+
+.dl-final-sub {
+    font-size: 0.95rem;
+    color: var(--text-medium);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.dl-final-card {
+    background: var(--white);
+    border-radius: 16px;
+    padding: 2.5rem 2rem;
+    box-shadow: 0 8px 40px rgba(45, 37, 32, 0.1);
+}
+
 /* ── Closing Dua ── */
 .dua-section {
     padding: 5rem 5%;
@@ -497,25 +544,13 @@ permalink: /download/
             </svg>
         </div>
 
-        <p class="dl-eyebrow">Your copy is ready</p>
+        <p class="dl-eyebrow">Your copy is ready below</p>
         <h1 class="dl-title">JazakAllah Khair.</h1>
         <p class="dl-subtitle">
-            May this book be a source of light for you. Your PDF is waiting — tap the button below to save it.
+            Before you dive in — take a moment to read this.
+            Your PDF download is waiting at the bottom of this page.
         </p>
-
-        <div class="dl-card">
-            <p class="dl-book-name">The Power of Tahajjud</p>
-            <p class="dl-book-author">by Jawwad Ahmed Abbasi</p>
-
-            <a href="/assets/pdf/The_Power_of_Tahajjud.pdf" download class="dl-btn">
-                <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                Download PDF
-            </a>
-
-            <p class="dl-mobile-tip">
-                <strong>On mobile?</strong> Tap download, then use your browser's share button to save the PDF to your device.
-            </p>
-        </div>
+        <p class="dl-scroll-hint">↓ Scroll down</p>
 
     </div>
 </section>
@@ -585,36 +620,18 @@ permalink: /download/
             <p class="gift-label">Gift a Copy</p>
             <h2 class="gift-title">The Best Sadaqah is One That Keeps Giving</h2>
             <p class="gift-subtitle">
-                Two ways to get this book into someone else's hands — choose what works for you.
+                Know someone who needs this? Buy them the paperback on Amazon — shipped straight to their door.
             </p>
         </div>
 
-        <div class="gift-options">
-
-            <!-- Gift: free copy -->
-            <div class="gift-option">
-                <h3 class="gift-option-title">Send Them a Free Copy</h3>
-                <p class="gift-option-desc">
-                    Share the free page with someone. They'll fill in their own email and receive
-                    their own copy — no cost to either of you. Perfect for friends and family
-                    anywhere in the world.
-                </p>
-                <div class="gift-btns">
-                    <a href="https://wa.me/?text=Assalamu%20Alaikum%21%20I%20just%20read%20this%20book%20about%20the%20power%20of%20Tahajjud%20and%20immediately%20thought%20of%20you.%20You%20can%20get%20a%20free%20copy%20here%3A%20https%3A%2F%2Fpoweroftahajjud.com%2Ffree%2F" target="_blank" class="gift-btn gift-btn-dark">
-                        Gift via WhatsApp
-                    </a>
-                    <a href="mailto:?subject=A%20Book%20I%20Think%20You%27ll%20Love&body=Assalamu%20Alaikum%21%0A%0AI%20just%20finished%20reading%20%22The%20Power%20of%20Tahajjud%22%20and%20it%20immediately%20made%20me%20think%20of%20you.%20You%20can%20get%20a%20free%20copy%20here%3A%0A%0Ahttps%3A%2F%2Fpoweroftahajjud.com%2Ffree%2F%0A%0AMay%20it%20benefit%20you%20as%20much%20as%20it%20did%20me." class="gift-btn gift-btn-outline">
-                        Gift via Email
-                    </a>
-                </div>
-            </div>
+        <div class="gift-options" style="grid-template-columns: 1fr; max-width: 480px; margin: 0 auto;">
 
             <!-- Gift: physical book -->
             <div class="gift-option">
                 <h3 class="gift-option-title">Buy Them the Physical Book</h3>
                 <p class="gift-option-desc">
-                    Want to give something tangible? Buy the paperback on Amazon and ship it directly
-                    to their address. A real book on their shelf — one they'll return to again and again.
+                    Buy the paperback on Amazon and ship it directly to their address.
+                    A real book on their shelf — one they'll return to again and again.
                 </p>
                 <div class="gift-btns">
                     <a href="https://www.amazon.ca/dp/B0GNJBL9R6" target="_blank" class="gift-btn gift-btn-dark">
@@ -642,9 +659,29 @@ permalink: /download/
         <a href="https://www.amazon.ca/dp/B0GNJBL9R6#customerReviews" target="_blank" class="review-btn">
             Leave a Review on Amazon
         </a>
-        <p class="review-amanah">
-            Also: please treat this PDF as an amanah — don't distribute it publicly. Share the free page instead.
-        </p>
+    </div>
+</section>
+
+<!-- Bottom Download -->
+<section class="dl-final-section">
+    <div class="dl-final-inner">
+        <p class="dl-final-label">Your copy</p>
+        <h2 class="dl-final-title">Here's Your PDF</h2>
+        <p class="dl-final-sub">May this book be a source of light for you. Your PDF is waiting — tap the button below to save it.</p>
+        <div class="dl-final-card">
+            <p class="dl-book-name">The Power of Tahajjud</p>
+            <p class="dl-book-author">by Jawwad Ahmed Abbasi</p>
+            <a href="/assets/pdf/The_Power_of_Tahajjud.pdf" download class="dl-btn" style="width: 100%; justify-content: center; box-sizing: border-box;">
+                <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                Download PDF
+            </a>
+            <p class="dl-mobile-tip">
+                <strong>On mobile?</strong> Tap download, then use your browser's share button to save the PDF to your device.
+            </p>
+            <p class="review-amanah">
+                Please treat this PDF as an amanah — don't distribute it publicly.
+            </p>
+        </div>
     </div>
 </section>
 
