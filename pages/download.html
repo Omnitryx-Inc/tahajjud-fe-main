@@ -1,222 +1,658 @@
 ---
 layout: default
-title: "Download Your Copy - The Power of Tahajjud"
-description: "Download your PDF copy of The Power of Tahajjud"
+title: "Your Copy is Ready - The Power of Tahajjud"
+description: "Download your free PDF copy of The Power of Tahajjud"
 permalink: /download/
 ---
 
 <style>
-.download-hero {
-    min-height: 90vh;
-    display: flex;
-    align-items: center;
-    padding: 8rem 5% 4rem;
-    background: linear-gradient(to bottom, var(--cream-white) 0%, var(--cream-light) 100%);
-}
 
-.download-container {
-    max-width: 700px;
-    margin: 0 auto;
+/* ── Hero: Download Moment ── */
+.dl-hero {
+    padding: 9rem 5% 6rem;
+    background: radial-gradient(ellipse at 50% 0%, rgba(192, 137, 72, 0.1) 0%, var(--cream-white) 65%);
     text-align: center;
 }
 
-.checkmark-circle {
-    width: 60px;
-    height: 60px;
+.dl-inner {
+    max-width: 620px;
+    margin: 0 auto;
+}
+
+.dl-check {
+    width: 76px;
+    height: 76px;
     background: var(--gold-primary);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto 2rem;
+    box-shadow:
+        0 0 0 14px rgba(192, 137, 72, 0.1),
+        0 0 0 28px rgba(192, 137, 72, 0.05);
+    animation: ring-pulse 1.5s ease-out forwards;
 }
 
-.checkmark-circle svg {
-    width: 40px;
-    height: 40px;
+@keyframes ring-pulse {
+    0%   { box-shadow: 0 0 0 0 rgba(192,137,72,0.5), 0 0 0 0 rgba(192,137,72,0.25); }
+    100% { box-shadow: 0 0 0 14px rgba(192,137,72,0.1), 0 0 0 28px rgba(192,137,72,0.05); }
+}
+
+.dl-check svg {
+    width: 38px;
+    height: 38px;
     stroke: white;
     stroke-width: 3;
     fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 55;
+    stroke-dashoffset: 55;
+    animation: draw-check 0.55s ease forwards 0.4s;
 }
 
-.download-title {
-    font-family: "Allrounder Monument Test", serif;
-    font-size: clamp(1.0rem, 6vw, 1.5rem);
-    color: var(--text-dark);
-    margin-bottom: 1rem;
+@keyframes draw-check {
+    to { stroke-dashoffset: 0; }
+}
+
+.dl-eyebrow {
+    font-size: 0.78rem;
     font-weight: 700;
-}
-
-.download-subtitle {
-    font-size: clamp(1.1rem, 3vw, 1.3rem);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
     color: var(--gold-primary);
-    margin-bottom: 3rem;
+    margin-bottom: 0.75rem;
 }
 
-.download-box {
+.dl-title {
+    font-family: "Allrounder Monument Test", serif;
+    font-size: clamp(2rem, 6vw, 2.5rem);
+    color: var(--text-dark);
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 0.9rem;
+}
+
+.dl-subtitle {
+    font-size: clamp(1rem, 2.5vw, 1.15rem);
+    color: var(--text-medium);
+    line-height: 1.8;
+    margin-bottom: 2.8rem;
+}
+
+/* Download Card */
+.dl-card {
     background: var(--white);
-    padding: 3rem 2.5rem;
     border-radius: 16px;
-    box-shadow: 0 10px 40px rgba(45, 37, 32, 0.1);
-    margin: 2rem 0;
+    padding: 2.5rem 2rem;
+    box-shadow: 0 8px 40px rgba(45, 37, 32, 0.1);
 }
 
-.download-btn {
-    display: inline-block;
-    padding: 1.5rem 3rem;
+.dl-book-name {
+    font-family: "Allrounder Monument Test", serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 0.2rem;
+}
+
+.dl-book-author {
+    font-size: 0.88rem;
+    color: var(--text-light);
+    margin-bottom: 1.8rem;
+}
+
+.dl-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1.3rem 3rem;
     background: var(--gold-primary);
     color: white;
     text-decoration: none;
     border-radius: 10px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 700;
+    font-family: 'Inter', sans-serif;
     transition: all 0.3s ease;
-    margin: 2rem 0;
 }
 
-.download-btn:hover {
+.dl-btn:hover {
     background: var(--gold-dark);
-    transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(192, 137, 72, 0.3);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 28px rgba(192, 137, 72, 0.35);
 }
 
-.reminder-box {
-    background: var(--beige-soft);
-    padding: 2rem;
-    border-radius: 12px;
-    margin: 2rem 0;
-    border-left: 4px solid var(--gold-primary);
-    text-align: left;
+.dl-btn svg {
+    width: 18px;
+    height: 18px;
+    stroke: white;
+    stroke-width: 2.5;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
 }
 
-.reminder-box h3 {
-    font-family: "Allrounder Monument Test", serif;
-    color: var(--gold-primary);
-    margin-bottom: 1rem;
-    font-size: 1.3rem;
-}
-
-.reminder-box ul {
-    list-style: none;
-    padding: 0;
-}
-
-.reminder-box li {
-    padding: 0.7rem 0;
-    padding-left: 2rem;
-    position: relative;
-    color: var(--text-dark);
+.dl-mobile-tip {
+    margin-top: 1.2rem;
+    font-size: 0.85rem;
+    color: var(--text-light);
     line-height: 1.6;
 }
 
-.reminder-box li::before {
-    content: '→';
-    position: absolute;
-    left: 0;
-    color: var(--gold-primary);
-    font-weight: 700;
-}
-
-.share-section {
-    margin-top: 3rem;
-    padding: 2rem;
+/* ── Three Asks ── */
+.asks-section {
+    padding: 6rem 5%;
     background: var(--cream-light);
-    border-radius: 12px;
 }
 
-.share-section h3 {
+.asks-header {
+    text-align: center;
+    max-width: 580px;
+    margin: 0 auto 3.5rem;
+}
+
+.asks-label {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold-primary);
+    margin-bottom: 0.75rem;
+}
+
+.asks-title {
     font-family: "Allrounder Monument Test", serif;
+    font-size: clamp(1.4rem, 3.5vw, 2.2rem);
     color: var(--text-dark);
-    margin-bottom: 1.5rem;
+    font-weight: 700;
+    line-height: 1.3;
 }
 
-.share-buttons {
+.asks-grid {
+    max-width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.ask-card {
+    background: var(--white);
+    border-radius: 14px;
+    padding: 2.5rem 2rem;
+    box-shadow: 0 4px 16px rgba(45, 37, 32, 0.06);
     display: flex;
-    gap: 1rem;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 1.5rem;
+    flex-direction: column;
 }
 
-.share-btn {
-    padding: 0.9rem 2rem;
+.ask-card.featured {
+    border: 2px solid var(--gold-primary);
+    box-shadow: 0 6px 24px rgba(192, 137, 72, 0.12);
+}
+
+.ask-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.ask-tag {
+    display: inline-block;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold-primary);
+    background: rgba(192, 137, 72, 0.08);
+    padding: 0.28rem 0.75rem;
+    border-radius: 100px;
+    margin-bottom: 1rem;
+    align-self: flex-start;
+}
+
+.ask-title {
+    font-family: "Allrounder Monument Test", serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+}
+
+.ask-body {
+    font-size: 0.95rem;
+    color: var(--text-medium);
+    line-height: 1.75;
+    flex: 1;
+    margin-bottom: 1.8rem;
+}
+
+.ask-btn {
+    display: block;
+    padding: 0.9rem 1.2rem;
+    border-radius: 8px;
+    font-size: 0.92rem;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.ask-btn-gold {
+    background: var(--gold-primary);
+    color: var(--cream-white);
+}
+
+.ask-btn-gold:hover {
+    background: var(--gold-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(192, 137, 72, 0.3);
+}
+
+.ask-btn-dark {
     background: var(--text-dark);
     color: var(--cream-white);
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    min-width: 200px;
-    text-align: center;
 }
 
-.share-btn:hover {
+.ask-btn-dark:hover {
     background: var(--text-medium);
     transform: translateY(-2px);
 }
 
-.dua {
-    margin-top: 1rem;
-    font-size: 1.1rem;
+.ask-btn-outline {
+    background: transparent;
+    color: var(--text-dark);
+    border: 2px solid var(--text-dark);
+}
+
+.ask-btn-outline:hover {
+    background: var(--text-dark);
+    color: var(--cream-white);
+}
+
+@media (max-width: 768px) {
+    .asks-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ── Gifting Section ── */
+.gift-section {
+    padding: 6rem 5%;
+    background: var(--white);
+}
+
+.gift-inner {
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+.gift-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.gift-label {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold-primary);
+    margin-bottom: 0.75rem;
+}
+
+.gift-title {
+    font-family: "Allrounder Monument Test", serif;
+    font-size: clamp(1.4rem, 3.5vw, 2.1rem);
+    color: var(--text-dark);
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 0.75rem;
+}
+
+.gift-subtitle {
+    font-size: 1rem;
     color: var(--text-medium);
-    font-style: italic;
+    line-height: 1.7;
+}
+
+.gift-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.gift-option {
+    background: var(--beige-soft);
+    border-radius: 14px;
+    padding: 2rem 1.8rem;
+    border-left: 4px solid var(--gold-primary);
+}
+
+.gift-option-title {
+    font-family: "Allrounder Monument Test", serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 0.6rem;
+}
+
+.gift-option-desc {
+    font-size: 0.9rem;
+    color: var(--text-medium);
+    line-height: 1.7;
+    margin-bottom: 1.4rem;
+}
+
+.gift-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.gift-btn {
+    display: block;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    font-size: 0.88rem;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.gift-btn-dark {
+    background: var(--text-dark);
+    color: var(--cream-white);
+}
+
+.gift-btn-dark:hover {
+    background: var(--text-medium);
+    transform: translateY(-1px);
+}
+
+.gift-btn-outline {
+    background: transparent;
+    color: var(--text-dark);
+    border: 2px solid var(--beige-warm);
+}
+
+.gift-btn-outline:hover {
+    border-color: var(--text-dark);
+    transform: translateY(-1px);
+}
+
+@media (max-width: 620px) {
+    .gift-options {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ── Amazon Review ── */
+.review-section {
+    padding: 5rem 5%;
+    background: var(--cream-light);
+    text-align: center;
+}
+
+.review-inner {
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.review-stars {
+    font-size: 1.5rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 1.2rem;
+    display: block;
+}
+
+.review-label {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold-primary);
+    margin-bottom: 0.75rem;
+}
+
+.review-title {
+    font-family: "Allrounder Monument Test", serif;
+    font-size: clamp(1.3rem, 3vw, 1.9rem);
+    color: var(--text-dark);
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+}
+
+.review-body {
+    font-size: 1rem;
+    color: var(--text-medium);
     line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.review-btn {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background: var(--text-dark);
+    color: var(--cream-white);
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.review-btn:hover {
+    background: var(--text-medium);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(45, 37, 32, 0.2);
+}
+
+.review-amanah {
+    margin-top: 1.5rem;
+    font-size: 0.88rem;
+    color: var(--text-light);
+    font-style: italic;
+}
+
+/* ── Closing Dua ── */
+.dua-section {
+    padding: 5rem 5%;
+    background: var(--white);
+    text-align: center;
+}
+
+.dua-text {
+    max-width: 580px;
+    margin: 0 auto;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+    font-style: italic;
+    color: var(--text-medium);
+    line-height: 1.9;
+}
+
+.dua-moon {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    display: block;
+    opacity: 0.7;
 }
 </style>
 
-<section class="download-hero">
-    <div class="download-container">
-        <div class="checkmark-circle">
+<!-- Download Hero -->
+<section class="dl-hero">
+    <div class="dl-inner">
+
+        <div class="dl-check">
             <svg viewBox="0 0 50 50">
-                <path d="M10 25 L20 35 L40 15" />
+                <path d="M10 26 L21 37 L42 14" />
             </svg>
         </div>
 
-        <h1 class="download-title">JazakAllah Khair!</h1>
-        <p class="download-subtitle">Your copy is ready</p>
+        <p class="dl-eyebrow">Your copy is ready</p>
+        <h1 class="dl-title">JazakAllah Khair.</h1>
+        <p class="dl-subtitle">
+            May this book be a source of light for you. Your PDF is waiting — tap the button below to save it.
+        </p>
 
-        <div class="download-box">
-            <p style="font-size: 1.2rem; color: var(--text-dark); margin-bottom: 0.5rem; font-weight: 600;">
-                The Power of Tahajjud
-            </p>
-            
-            <a href="/assets/pdf/The_Power_of_Tahajjud.pdf" download class="download-btn">
+        <div class="dl-card">
+            <p class="dl-book-name">The Power of Tahajjud</p>
+            <p class="dl-book-author">by Jawwad Ahmed Abbasi</p>
+
+            <a href="/assets/pdf/The_Power_of_Tahajjud.pdf" download class="dl-btn">
+                <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                 Download PDF
             </a>
 
-            <p style="font-size: 0.9rem; color: var(--text-light); margin-top: 1rem;">
-                <strong>On mobile?</strong> Tap the button, then use your browser's download/share button to save the PDF.
+            <p class="dl-mobile-tip">
+                <strong>On mobile?</strong> Tap download, then use your browser's share button to save the PDF to your device.
             </p>
         </div>
 
-        <div class="reminder-box">
-            <h3>Help Us Spread the Message:</h3>
-            <ul>
-                <li>If this book helps you, leave an honest review on Amazon (this helps us most)</li>
-                <li>Share on social media and tag us (@jawwad_ab on Instagram/TikTok)</li>
-                <li>Recommend it to friends and family who might benefit</li>
-                <li>Treat this PDF as an amanah — please don't distribute it publicly</li>
-            </ul>
+    </div>
+</section>
+
+<!-- Three Asks -->
+<section class="asks-section">
+    <div class="asks-header">
+        <p class="asks-label">Before You Start Reading</p>
+        <h2 class="asks-title">Three Ways to Make This Book Count</h2>
+    </div>
+
+    <div class="asks-grid">
+
+        <!-- Support -->
+        <div class="ask-card featured">
+            <span class="ask-icon">🤲</span>
+            <span class="ask-tag">Most Impactful</span>
+            <h3 class="ask-title">Support the Mission</h3>
+            <p class="ask-body">
+                If this book has meant something to you, consider giving back. Your support funds
+                future work, keeps this mission growing, and helps us reach people who need these
+                stories the most. Every contribution, big or small, makes a difference.
+            </p>
+            <a href="https://donate.stripe.com/cNi9AV7My7Szg6If3PdUY0e" target="_blank" class="ask-btn ask-btn-gold">
+                Support the Work
+            </a>
         </div>
 
-        <div class="share-section">
-            <h3>Gift This to Someone:</h3>
-            <p style="color: var(--text-medium); margin-bottom: 1rem;">
-                Share this link with friends and family:
+        <!-- Gift -->
+        <div class="ask-card">
+            <span class="ask-icon">🎁</span>
+            <span class="ask-tag">Spread the Barakah</span>
+            <h3 class="ask-title">Gift This to Someone</h3>
+            <p class="ask-body">
+                Know someone who's been struggling? Someone who's lost their connection to prayer?
+                This book was written for them. Send them a copy — it costs you nothing, and it might
+                change everything for them.
             </p>
-            <p style="font-weight: 700; color: var(--gold-primary); font-size: 1.1rem; margin-bottom: 1.5rem;">
-                PowerOfTahajjud.com
+            <a href="#gift-section" class="ask-btn ask-btn-dark">
+                See How to Gift →
+            </a>
+        </div>
+
+        <!-- Review -->
+        <div class="ask-card">
+            <span class="ask-icon">⭐</span>
+            <span class="ask-tag">After You Read</span>
+            <h3 class="ask-title">Leave a Review</h3>
+            <p class="ask-body">
+                An honest Amazon review is one of the most powerful things you can do for this work.
+                It helps more Muslims discover the book — and it only takes two minutes. We ask you to
+                do this after you've read it.
             </p>
-            
-            <div class="share-buttons">
-                <a href="https://wa.me/?text=I thought you'd love this book about The Power of Tahajjud: https://poweroftahajjud.com/" target="_blank" class="share-btn">Share on WhatsApp</a>
-                <a href="https://twitter.com/intent/tweet?text=Just finished reading The Power of Tahajjud — real stories of success and miracles through Tahajjud:&url=https://poweroftahajjud.com/" target="_blank" class="share-btn">Share on X</a>
-                <a href="https://www.facebook.com/sharer/sharer.php?u=https://poweroftahajjud.com/" target="_blank" class="share-btn">Share on Facebook</a>
+            <a href="https://www.amazon.ca/dp/B0GNJBL9R6#customerReviews" target="_blank" class="ask-btn ask-btn-outline">
+                Leave a Review
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- Gifting Section -->
+<section class="gift-section" id="gift-section">
+    <div class="gift-inner">
+
+        <div class="gift-header">
+            <p class="gift-label">Gift a Copy</p>
+            <h2 class="gift-title">The Best Sadaqah is One That Keeps Giving</h2>
+            <p class="gift-subtitle">
+                Two ways to get this book into someone else's hands — choose what works for you.
+            </p>
+        </div>
+
+        <div class="gift-options">
+
+            <!-- Gift: free copy -->
+            <div class="gift-option">
+                <h3 class="gift-option-title">Send Them a Free Copy</h3>
+                <p class="gift-option-desc">
+                    Share the free page with someone. They'll fill in their own email and receive
+                    their own copy — no cost to either of you. Perfect for friends and family
+                    anywhere in the world.
+                </p>
+                <div class="gift-btns">
+                    <a href="https://wa.me/?text=Assalamu%20Alaikum%21%20I%20just%20read%20this%20book%20about%20the%20power%20of%20Tahajjud%20and%20immediately%20thought%20of%20you.%20You%20can%20get%20a%20free%20copy%20here%3A%20https%3A%2F%2Fpoweroftahajjud.com%2Ffree%2F" target="_blank" class="gift-btn gift-btn-dark">
+                        Gift via WhatsApp
+                    </a>
+                    <a href="mailto:?subject=A%20Book%20I%20Think%20You%27ll%20Love&body=Assalamu%20Alaikum%21%0A%0AI%20just%20finished%20reading%20%22The%20Power%20of%20Tahajjud%22%20and%20it%20immediately%20made%20me%20think%20of%20you.%20You%20can%20get%20a%20free%20copy%20here%3A%0A%0Ahttps%3A%2F%2Fpoweroftahajjud.com%2Ffree%2F%0A%0AMay%20it%20benefit%20you%20as%20much%20as%20it%20did%20me." class="gift-btn gift-btn-outline">
+                        Gift via Email
+                    </a>
+                </div>
             </div>
-        </div>
 
-        <p class="dua">
-            May Allah accept this from us and you. May the stories in this book inspire you to rise in the last third of the night and witness the power of Tahajjud in your own life. 🌙
+            <!-- Gift: physical book -->
+            <div class="gift-option">
+                <h3 class="gift-option-title">Buy Them the Physical Book</h3>
+                <p class="gift-option-desc">
+                    Want to give something tangible? Buy the paperback on Amazon and ship it directly
+                    to their address. A real book on their shelf — one they'll return to again and again.
+                </p>
+                <div class="gift-btns">
+                    <a href="https://www.amazon.ca/dp/B0GNJBL9R6" target="_blank" class="gift-btn gift-btn-dark">
+                        Buy on Amazon — Gift It
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Amazon Review -->
+<section class="review-section">
+    <div class="review-inner">
+        <span class="review-stars">★★★★★</span>
+        <p class="review-label">After You've Read It</p>
+        <h2 class="review-title">Your Review Changes Everything</h2>
+        <p class="review-body">
+            Amazon reviews are the single biggest thing you can do to help more Muslims
+            find this book. An honest two-minute review — whether you loved it or simply
+            found it useful — opens the door for thousands of people who haven't heard of
+            it yet. Please come back and leave one after you've read it.
+        </p>
+        <a href="https://www.amazon.ca/dp/B0GNJBL9R6#customerReviews" target="_blank" class="review-btn">
+            Leave a Review on Amazon
+        </a>
+        <p class="review-amanah">
+            Also: please treat this PDF as an amanah — don't distribute it publicly. Share the free page instead.
         </p>
     </div>
+</section>
+
+<!-- Closing Dua -->
+<section class="dua-section">
+    <p class="dua-text">
+        May Allah accept this from us and from you. May these stories inspire you to rise in the
+        last third of the night — and may you witness the power of Tahajjud in your own life.
+    </p>
+    <span class="dua-moon">🌙</span>
 </section>
