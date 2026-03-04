@@ -19,7 +19,7 @@ twitter:
   card: summary_large_image
 
 # Stripe payment links
-stripe_buy_url: "https://buy.stripe.com/28EbJ37My8WDcUw7BndUY0g"
+stripe_buy_url: "https://buy.stripe.com/6oUaEZ9UG8WDbQsaNzdUY0h"
 stripe_donate_url: "https://donate.stripe.com/cNi9AV7My7Szg6If3PdUY0e"
 
 # Amazon links
