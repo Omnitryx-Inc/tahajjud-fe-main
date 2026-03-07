@@ -415,7 +415,7 @@ select.form-input {
                     Instant download. Read on any device, anywhere in the world.
                     Your purchase directly supports this mission.
                 </p>
-                <a href="{{ site.stripe_buy_url }}" target="_blank" class="purchase-card-btn btn-gold">
+                <a href="{{ site.stripe_buy_url }}" target="_blank" class="purchase-card-btn btn-gold" onclick="gtag('event', 'click_buy_digital', {'button_location': 'free_page'})">
                     Buy Digital
                 </a>
             </div>
@@ -428,7 +428,7 @@ select.form-input {
                     A real book on your shelf — one you'll return to again and again.
                     Available on Amazon worldwide.
                 </p>
-                <a href="{{ site.amazon_url }}" target="_blank" class="purchase-card-btn btn-dark">
+                <a href="{{ site.amazon_url }}" target="_blank" class="purchase-card-btn btn-dark" onclick="gtag('event', 'click_buy_physical', {'button_location': 'free_page'})">
                     Buy on Amazon
                 </a>
             </div>

@@ -597,7 +597,7 @@ permalink: /download/
                 future work, keeps this mission growing, and helps us reach people who need these
                 stories the most. Every contribution, big or small, makes a difference.
             </p>
-            <a href="{{ site.stripe_donate_url }}" target="_blank" class="ask-btn ask-btn-gold">
+            <a href="{{ site.stripe_donate_url }}" target="_blank" class="ask-btn ask-btn-gold" onclick="gtag('event', 'click_donate', {'button_location': 'download_page'})">
                 Support the Work
             </a>
         </div>
@@ -671,7 +671,7 @@ permalink: /download/
                     A real book on their shelf — one they'll return to again and again.
                 </p>
                 <div class="gift-btns">
-                    <a href="{{ site.amazon_url }}" target="_blank" class="gift-btn gift-btn-dark">
+                    <a href="{{ site.amazon_url }}" target="_blank" class="gift-btn gift-btn-dark" onclick="gtag('event', 'click_buy_physical', {'button_location': 'download_gift'})">
                         Buy on Amazon — Gift It
                     </a>
                 </div>
