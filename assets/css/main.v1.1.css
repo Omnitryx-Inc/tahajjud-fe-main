@@ -473,7 +473,8 @@ nav {
 }
 
 .testimonial-card .quote-text {
-	font-size: clamp(1rem, 2.5vw, 1.3rem);
+	font-size: clamp(1.15rem, 2.5vw, 1.3rem);
+	line-height: 1.8;
 }
 
 /* Social Proof */
