@@ -409,7 +409,7 @@ nav {
 /* Quote Section */
 .quote-section {
 	padding: clamp(5rem, 12vw, 8rem) 5%;
-	background: var(--cream-light);
+	background: var(--white);
 }
 
 .quote-content {
@@ -482,7 +482,13 @@ nav {
 	color: var(--gold-primary);
 	font-weight: 600;
 	margin-bottom: 2.5rem;
-	text-align: left;
+	text-align: center;
+}
+
+@media (min-width: 768px) {
+	.social-proof {
+		text-align: left;
+	}
 }
 
 /* Chapter Discovery Cards */
@@ -536,7 +542,7 @@ nav {
 /* Look Inside Section */
 .look-inside {
 	padding: clamp(5rem, 12vw, 8rem) 5%;
-	background: var(--beige-soft);
+	background: var(--cream-soft);
 }
 
 .look-inside-container {
