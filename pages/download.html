@@ -557,6 +557,13 @@ permalink: /download/
 }
 </style>
 
+<!-- Google Ads Conversion: fires only for paid downloads -->
+<script>
+  if (new URLSearchParams(window.location.search).get('type') === 'paid') {
+    gtag('event', 'conversion_event_purchase');
+  }
+</script>
+
 <!-- Download Hero -->
 <section class="dl-hero">
     <div class="dl-inner">
