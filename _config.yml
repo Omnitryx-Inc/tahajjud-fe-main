@@ -23,8 +23,8 @@ stripe_buy_url: "https://buy.stripe.com/6oUaEZ9UG8WDbQsaNzdUY0h"
 stripe_donate_url: "https://donate.stripe.com/cNi9AV7My7Szg6If3PdUY0e"
 
 # Amazon links
-amazon_url: "https://www.amazon.ca/dp/B0GNJBL9R6"
-amazon_review_url: "https://www.amazon.ca/dp/B0GNJBL9R6#customerReviews"
+amazon_url: "https://www.amazon.co.uk/dp/B0GNJBL9R6"
+amazon_review_url: "https://www.amazon.co.uk/dp/B0GNJBL9R6#customerReviews"
 
 # Book-specific metadata
 book:
