@@ -61,6 +61,10 @@ defaults:
     values:
       layout: "default"
       image: "assets/images/The_Power_of_Tahajjud__Display_Art_.jpeg"
+  - scope:
+      path: "assets/pdf"
+    values:
+      sitemap: false
 
 permalink: pretty
 

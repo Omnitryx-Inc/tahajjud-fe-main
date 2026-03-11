@@ -6,6 +6,7 @@ Disallow: /thank-you
 Disallow: /payment-success
 Disallow: /success
 Disallow: /download/
+Disallow: /assets/pdf/
 
 # Allow everything else
 Allow: /
