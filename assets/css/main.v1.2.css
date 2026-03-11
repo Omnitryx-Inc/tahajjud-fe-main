@@ -47,7 +47,7 @@ header {
 	top: 0;
 	left: 0;
 	right: 0;
-	z-index: 1000;
+	z-index: 1010;
 	padding: 1rem 4%;
 	background: rgba(253, 251, 247, 0.98);
 	backdrop-filter: blur(10px);
@@ -74,37 +74,151 @@ nav {
 	min-width: 0;
 }
 
-.nav-cta {
-	padding: 0.65rem 1.5rem;
-	background: var(--text-dark);
-	color: var(--cream-white);
-	text-decoration: none;
-	border-radius: 8px;
-	font-weight: 600;
-	font-size: clamp(0.8rem, 2vw, 1rem);
-	transition: all 0.3s ease;
-	white-space: nowrap;
+/* Hamburger button — mobile only */
+.nav-hamburger {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 5px;
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 0.4rem;
 	flex-shrink: 0;
 }
 
-.nav-cta:hover {
-	background: var(--text-medium);
-	transform: translateY(-2px);
-	box-shadow: 0 4px 12px rgba(45, 37, 32, 0.2);
+.nav-hamburger span {
+	display: block;
+	width: 22px;
+	height: 2px;
+	background: var(--text-dark);
+	border-radius: 2px;
+	transition: all 0.25s ease;
+	transform-origin: center;
 }
 
+
+.nav-hamburger--open span:nth-child(1) {
+	transform: translateY(7px) rotate(45deg);
+}
+
+.nav-hamburger--open span:nth-child(2) {
+	opacity: 0;
+	transform: scaleX(0);
+}
+
+.nav-hamburger--open span:nth-child(3) {
+	transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Fullscreen mobile overlay — lives outside <header> so backdrop-filter doesn't trap it */
+.nav-menu {
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	inset: 0;
+	background: #f5f0e8;
+	z-index: 1005;
+	gap: 0;
+}
+
+.nav-menu--open {
+	display: flex;
+}
+
+body.nav-open {
+	overflow: hidden;
+}
+
+/* Overlay link styles */
+.nav-menu a {
+	display: block;
+	width: 100%;
+	padding: 1.2rem 2rem;
+	font-size: clamp(1.4rem, 5vw, 1.9rem);
+	font-family: "Allrounder Monument Test", serif;
+	font-weight: 600;
+	text-decoration: none;
+	text-align: center;
+	letter-spacing: 0.5px;
+	color: var(--text-dark);
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid var(--gold-primary);
+	transition: color 0.2s ease;
+}
+
+.nav-menu a:last-child {
+	border-bottom: none;
+}
+
+.nav-menu a:hover {
+	color: var(--gold-primary);
+}
+
+/* Desktop nav group inside header */
+.nav-desktop {
+	display: none;
+}
+
+/* Desktop: show inline nav group, hide hamburger and overlay */
 @media (min-width: 768px) {
 	header {
 		padding: 1.2rem 5%;
 	}
 
-	.logo {
-		font-size: clamp(0.95rem, 2.5vw, 1.15rem);
+	.nav-hamburger {
+		display: none;
 	}
 
-	.nav-cta {
-		padding: 0.8rem 2rem;
-		font-size: clamp(0.9rem, 2vw, 1rem);
+	.nav-menu {
+		display: none !important;
+	}
+
+	.nav-desktop {
+		display: flex;
+		align-items: center;
+		gap: 0.75rem;
+	}
+
+	.nav-desktop .nav-link,
+	.nav-desktop .nav-cta {
+		display: inline-block;
+		padding: 0.6rem 1.4rem;
+		font-size: clamp(0.85rem, 1.5vw, 1rem);
+		font-weight: 600;
+		text-decoration: none;
+		border-radius: 8px;
+		border: 2px solid var(--text-dark);
+		text-align: center;
+		white-space: nowrap;
+		transition: background 0.2s ease, color 0.2s ease;
+	}
+
+	.nav-desktop .nav-link {
+		background: transparent;
+		color: var(--text-dark);
+	}
+
+	.nav-desktop .nav-link:hover {
+		background: var(--text-dark);
+		color: var(--cream-white);
+	}
+
+	.nav-desktop .nav-cta {
+		background: var(--text-dark);
+		color: var(--cream-white);
+	}
+
+	.nav-desktop .nav-cta:hover {
+		background: var(--text-medium);
+		border-color: var(--text-medium);
+	}
+
+	.logo {
+		font-size: clamp(0.95rem, 2.5vw, 1.15rem);
 	}
 }
 

@@ -1,0 +1,267 @@
+/* ============================================
+   BLOG — matches main site design language
+   ============================================ */
+
+/* Blog Index Page */
+.blog-hero {
+    padding: clamp(8rem, 16vw, 11rem) 5% clamp(4rem, 8vw, 6rem);
+    background: linear-gradient(to bottom, var(--cream-white) 0%, var(--cream-light) 100%);
+    text-align: center;
+}
+
+.blog-hero h1 {
+    font-family: "Allrounder Monument Test", serif;
+    font-size: clamp(2.2rem, 7vw, 4.5rem);
+    font-weight: 700;
+    color: var(--text-dark);
+    letter-spacing: -0.5px;
+    margin-bottom: 1rem;
+}
+
+.blog-hero p {
+    font-size: clamp(0.95rem, 3vw, 1.2rem);
+    color: var(--text-medium);
+    font-style: italic;
+    font-family: 'Cormorant Garamond', serif;
+    max-width: 520px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+.blog-grid-section {
+    padding: clamp(5rem, 12vw, 8rem) 5%;
+    background: var(--cream-white);
+}
+
+.blog-grid-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.blog-card {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(45, 37, 32, 0.06);
+    border-left: 4px solid var(--gold-primary);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(45, 37, 32, 0.12);
+}
+
+.blog-card-meta {
+    font-size: 0.8rem;
+    color: var(--text-light);
+    letter-spacing: 0.3px;
+    margin-bottom: 0.85rem;
+    font-weight: 500;
+}
+
+.blog-card h2 {
+    font-family: "Allrounder Monument Test", serif;
+    font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+    font-weight: 600;
+    color: var(--text-dark);
+    line-height: 1.4;
+    margin-bottom: 0.85rem;
+}
+
+.blog-card p {
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    color: var(--text-medium);
+    line-height: 1.7;
+    flex: 1;
+    margin-bottom: 1.5rem;
+}
+
+.blog-card-link {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--gold-primary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.blog-card-link:hover {
+    color: var(--gold-dark);
+    text-decoration: underline;
+}
+
+/* Blog Post Page */
+.post-article {
+    padding-top: 0;
+}
+
+.post-container {
+    max-width: 740px;
+    margin: 0 auto;
+    padding: clamp(7rem, 14vw, 9rem) 5% 6rem;
+}
+
+.post-back a {
+    font-size: 0.88rem;
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    transition: color 0.2s ease;
+}
+
+.post-back a:hover {
+    color: var(--gold-primary);
+}
+
+.post-header {
+    margin: 2rem 0 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--beige-warm);
+}
+
+.post-meta {
+    font-size: 0.8rem;
+    color: var(--text-light);
+    letter-spacing: 0.3px;
+    margin-bottom: 1.25rem;
+    font-weight: 500;
+}
+
+.post-title {
+    font-family: "Allrounder Monument Test", serif;
+    font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+    font-weight: 700;
+    color: var(--text-dark);
+    line-height: 1.3;
+    letter-spacing: -0.2px;
+    margin-bottom: 1.25rem;
+}
+
+.post-description {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.1rem, 3vw, 1.3rem);
+    color: var(--text-medium);
+    line-height: 1.7;
+    font-style: italic;
+    font-weight: 500;
+}
+
+/* Post body */
+.post-body {
+    font-size: clamp(1rem, 2.5vw, 1.1rem);
+    color: var(--text-dark);
+    line-height: 1.85;
+}
+
+.post-body a {
+    color: var(--gold-primary);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.post-body a:hover {
+    color: var(--gold-dark);
+}
+
+.post-body h2 {
+    font-family: "Allrounder Monument Test", serif;
+    font-size: clamp(1.4rem, 3.5vw, 1.8rem);
+    font-weight: 600;
+    color: var(--text-dark);
+    margin: 3rem 0 1.25rem;
+    letter-spacing: -0.2px;
+}
+
+.post-body h3 {
+    font-family: "Allrounder Monument Test", serif;
+    font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+    font-weight: 600;
+    color: var(--gold-primary);
+    margin: 2rem 0 0.75rem;
+}
+
+.post-body p {
+    margin-bottom: 1.5rem;
+}
+
+.post-body ul,
+.post-body ol {
+    margin: 0 0 1.5rem 1.5rem;
+}
+
+.post-body li {
+    margin-bottom: 0.6rem;
+}
+
+.post-body blockquote {
+    border-left: 4px solid var(--gold-primary);
+    background: var(--beige-soft);
+    padding: 1.25rem 1.5rem;
+    margin: 2.5rem 0;
+    border-radius: 0 8px 8px 0;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: var(--text-medium);
+    font-size: clamp(1.1rem, 2.5vw, 1.25rem);
+    line-height: 1.7;
+}
+
+.post-body strong {
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.post-body hr {
+    border: none;
+    border-top: 1px solid var(--beige-warm);
+    margin: 3rem 0;
+}
+
+/* CTA box */
+.post-cta-box {
+    margin-top: 4rem;
+    padding: 3rem 2.5rem;
+    background: var(--white);
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(45, 37, 32, 0.08);
+    text-align: center;
+}
+
+.post-cta-title {
+    font-family: "Allrounder Monument Test", serif;
+    font-size: clamp(1.6rem, 4vw, 2.2rem);
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+    letter-spacing: -0.3px;
+}
+
+.post-cta-text {
+    font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+    color: var(--text-medium);
+    line-height: 1.7;
+    max-width: 480px;
+    margin: 0 auto 2rem;
+}
+
+.post-cta-box .cta-group {
+    justify-content: center;
+    margin-top: 0;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+}

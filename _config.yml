@@ -65,8 +65,13 @@ defaults:
       path: "assets/pdf"
     values:
       sitemap: false
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
 
-permalink: pretty
+permalink: /blog/:title/
 
 sass:
   style: compressed

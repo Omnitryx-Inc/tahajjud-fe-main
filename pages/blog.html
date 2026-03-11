@@ -1,0 +1,27 @@
+---
+layout: default
+title: "Tahajjud Blog"
+description: "Practical guides, real stories, and spiritual insights about Tahajjud, night prayer, and finding your way back to Allah."
+permalink: /blog/
+---
+
+<section class="blog-hero">
+    <h1>The Tahajjud Blog</h1>
+    <p>Practical guides, real stories, and spiritual insights about the power of night prayer.</p>
+</section>
+
+<section class="blog-grid-section">
+    <div class="blog-grid-inner">
+        <h2 class="section-title">All Posts</h2>
+        <div class="blog-grid">
+            {% for post in site.posts %}
+            <div class="blog-card">
+                <p class="blog-card-meta">{{ post.date | date: "%B %-d, %Y" }} &nbsp;&bull;&nbsp; {{ post.read_time }} min read</p>
+                <h2>{{ post.title }}</h2>
+                <p>{{ post.description }}</p>
+                <a href="{{ post.url }}" class="blog-card-link">Read Article &rarr;</a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
