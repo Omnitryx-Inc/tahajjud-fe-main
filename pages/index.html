@@ -450,6 +450,14 @@ permalink: /
 </script>
 
 <script>
+    // Hide free copy notice for paid ad traffic
+    (function() {
+        var p = new URLSearchParams(window.location.search);
+        if (p.get('utm_source') === 'google' && p.get('utm_medium') === 'cpc' && p.get('utm_campaign') === 'tahajjud_book') {
+            document.querySelectorAll('.free-copy-notice').forEach(function(el) { el.style.display = 'none'; });
+        }
+    })();
+
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
