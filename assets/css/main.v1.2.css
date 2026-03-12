@@ -526,6 +526,13 @@ body.nav-open {
 	background: var(--white);
 }
 
+@media (max-width: 900px) {
+	.quote-section {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
 .quote-content {
 	max-width: 900px;
 	margin: 0 auto;
@@ -565,8 +572,23 @@ body.nav-open {
 
 @media (max-width: 900px) {
 	.testimonials-grid {
-		grid-template-columns: 1fr;
-		max-width: 600px;
+		display: flex;
+		flex-direction: row;
+		overflow-x: auto;
+		scroll-snap-type: x mandatory;
+		-webkit-overflow-scrolling: touch;
+		gap: 1.25rem;
+		max-width: 100%;
+		padding: 0 5% 1rem;
+		scrollbar-width: none;
+	}
+	.testimonials-grid::-webkit-scrollbar {
+		display: none;
+	}
+	.testimonial-card {
+		flex: 0 0 82vw;
+		max-width: 360px;
+		scroll-snap-align: center;
 	}
 }
 
