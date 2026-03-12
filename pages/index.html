@@ -94,7 +94,32 @@ permalink: /
             <p class="quote-author">— A.C., United Kingdom</p>
         </div>
     </div>
+    <div class="testimonial-dots" id="testimonialDots">
+        <span class="testimonial-dot testimonial-dot--active"></span>
+        <span class="testimonial-dot"></span>
+        <span class="testimonial-dot"></span>
+    </div>
 </section>
+
+<script>
+(function() {
+    if (window.innerWidth > 900) return;
+    var grid = document.querySelector('.testimonials-grid');
+    var dots = document.querySelectorAll('.testimonial-dot');
+    if (!grid || !dots.length) return;
+    grid.addEventListener('scroll', function() {
+        var cards = grid.querySelectorAll('.testimonial-card');
+        var closest = 0, minDist = Infinity;
+        cards.forEach(function(card, i) {
+            var dist = Math.abs(card.getBoundingClientRect().left - grid.getBoundingClientRect().left);
+            if (dist < minDist) { minDist = dist; closest = i; }
+        });
+        dots.forEach(function(d, i) {
+            d.classList.toggle('testimonial-dot--active', i === closest);
+        });
+    }, { passive: true });
+})();
+</script>
 
 <!-- Look Inside Preview -->
 <section class="look-inside" id="chapters">

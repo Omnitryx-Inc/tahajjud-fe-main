@@ -625,6 +625,30 @@ body.nav-open {
 	line-height: 1.8;
 }
 
+/* Testimonial Dots */
+.testimonial-dots {
+	display: none;
+}
+
+@media (max-width: 900px) {
+	.testimonial-dots {
+		display: flex;
+		justify-content: center;
+		gap: 0.5rem;
+		margin-top: 1.25rem;
+	}
+	.testimonial-dot {
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		background: rgba(0, 0, 0, 0.15);
+		transition: background 0.3s;
+	}
+	.testimonial-dot--active {
+		background: var(--gold-primary);
+	}
+}
+
 /* Social Proof */
 .social-proof {
 	font-size: clamp(0.9rem, 2vw, 1.1rem);
