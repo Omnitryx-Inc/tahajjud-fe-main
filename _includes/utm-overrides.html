@@ -1,0 +1,34 @@
+<script>
+(function() {
+    var p = new URLSearchParams(window.location.search);
+    var src = p.get('utm_source');
+    var med = p.get('utm_medium');
+    var cam = p.get('utm_campaign');
+
+    // Persist UTM params for the session
+    if (src) sessionStorage.setItem('utm_source', src);
+    if (med) sessionStorage.setItem('utm_medium', med);
+    if (cam) sessionStorage.setItem('utm_campaign', cam);
+
+    // Fall back to session values on subsequent pages
+    var utmSource   = src || sessionStorage.getItem('utm_source');
+    var utmMedium   = med || sessionStorage.getItem('utm_medium');
+    var utmCampaign = cam || sessionStorage.getItem('utm_campaign');
+
+    var isGoogle = utmSource === 'google';
+    var isCpc    = isGoogle && utmMedium === 'cpc' && utmCampaign === 'tahajjud_book';
+
+    if (isCpc) {
+        document.querySelectorAll('.free-copy-notice, .js-free-faq').forEach(function(el) {
+            el.style.display = 'none';
+        });
+    }
+
+    if (isGoogle) {
+        var amazonCpcUrl = 'https://www.amazon.co.uk/dp/B0GNJBL9R6?maas=maas_adg_8B2B46705A6465EC7F8DCEE6A0747A28_afap_abs&ref_=aa_maas&tag=maas';
+        document.querySelectorAll('.js-amazon-link').forEach(function(el) {
+            el.href = amazonCpcUrl;
+        });
+    }
+})();
+</script>
