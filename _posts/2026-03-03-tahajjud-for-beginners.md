@@ -1,7 +1,7 @@
 ---
 title: "Tahajjud for Beginners: A Complete Guide"
 description: "Everything you need to start praying Tahajjud: what it is, how many rakats, when to pray, and how to build a practice that actually lasts. A straightforward guide for those just starting out."
-date: 2026-03-09
+date: 2026-03-03
 read_time: 8
 ---
 

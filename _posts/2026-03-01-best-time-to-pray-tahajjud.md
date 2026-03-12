@@ -1,7 +1,7 @@
 ---
 title: "The Best Time to Pray Tahajjud (According to Hadith)"
 description: "When exactly is Tahajjud time? Learn what the Hadith says about the last third of the night, how to calculate it for your location, and why this specific hour is unlike any other."
-date: 2026-03-07
+date: 2026-03-01
 read_time: 5
 ---
 

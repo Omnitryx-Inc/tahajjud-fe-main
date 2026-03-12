@@ -61,12 +61,13 @@
     box-shadow: 0 12px 32px rgba(45, 37, 32, 0.12);
 }
 
-.blog-card-meta {
+.blog-card p.blog-card-meta {
     font-size: 0.8rem;
     color: var(--text-light);
     letter-spacing: 0.3px;
-    margin-bottom: 0.85rem;
+    margin-bottom: 0.5rem;
     font-weight: 500;
+    flex: none;
 }
 
 .blog-card h2 {
@@ -75,6 +76,7 @@
     font-weight: 600;
     color: var(--text-dark);
     line-height: 1.4;
+    margin-top: 0;
     margin-bottom: 0.85rem;
 }
 

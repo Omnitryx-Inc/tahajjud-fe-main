@@ -36,6 +36,8 @@ book:
 # Keywords for AI search engines
 keywords: "Tahajjud, night prayer, tahajjud in ramadan, Islamic prayer, spiritual growth, miracles, success stories, Muslim prayer, Allah, dua, faith, spiritual book, Islamic book, tahajjud miracles, tahajjud success stories, power of prayer, night worship, Islamic spirituality"
 
+future: true
+
 markdown: kramdown
 
 plugins:

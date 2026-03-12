@@ -1,7 +1,7 @@
 ---
 title: "How to Wake Up for Tahajjud (Even If You're Not a Morning Person)"
 description: "Waking up for Tahajjud feels impossible when you're exhausted. Here's what actually works: practical steps to build a consistent night prayer routine, even if you've tried and failed before."
-date: 2026-03-01
+date: 2026-02-25
 read_time: 6
 ---
 

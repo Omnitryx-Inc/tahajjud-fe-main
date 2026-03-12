@@ -1,7 +1,7 @@
 ---
 title: "What to Say in Tahajjud If You Don't Know Arabic"
 description: "You don't need to be fluent in Arabic to pray Tahajjud. Here's what to recite, how to make dua in your own language, and why the most powerful prayer you can offer might already be within you."
-date: 2026-03-05
+date: 2026-02-27
 read_time: 7
 ---
 
