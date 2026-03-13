@@ -99,4 +99,4 @@ That is not passivity. That is the most active form of faith there is.
 
 ---
 
-*Read the real stories of people who brought their loneliness, their longing, and their prayers for love to the last third of the night in* [The Power of Tahajjud](/)*.*
+*Read the real stories of people who brought their loneliness, their longing, and their prayers for love to the last third of the night in* [The Power of Tahajjud](/#purchase)*.*

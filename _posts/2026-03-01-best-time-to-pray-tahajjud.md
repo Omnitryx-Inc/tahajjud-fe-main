@@ -50,4 +50,4 @@ Start there. Everything else can come later.
 
 ---
 
-*Read the true accounts of people who discovered the power of this hour in* [The Power of Tahajjud](/)*.*
+*Read the true accounts of people who discovered the power of this hour in* [The Power of Tahajjud](/#purchase)*.*

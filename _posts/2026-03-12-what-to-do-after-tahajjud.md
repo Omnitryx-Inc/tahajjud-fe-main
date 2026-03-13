@@ -109,4 +109,6 @@ The night does not give up its gifts to those who rush through it. Stay a little
 
 ---
 
-*For more on what to say during and after Tahajjud, including the full dua the Prophet ﷺ made upon waking, read* [What to Say in Tahajjud](/blog/what-to-say-in-tahajjud/) *or pick up* [The Power of Tahajjud](/)*.*
+*For more on what to say during and after Tahajjud, including the full dua the Prophet ﷺ made upon waking, read [What to Say in Tahajjud](/blog/what-to-say-in-tahajjud/).*
+
+*Read real stories of ordinary people who showed up in the last third of the night and what happened next. Pick up [The Power of Tahajjud](/#purchase).*

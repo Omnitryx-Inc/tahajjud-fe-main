@@ -88,4 +88,4 @@ The companions used to say this dua frequently, and it is comprehensive. It asks
 
 ---
 
-*To read the complete stories of people whose dua was answered through Tahajjud, pick up a copy of* [The Power of Tahajjud](/)*.*
+*To read the complete stories of people whose dua was answered through Tahajjud, pick up a copy of* [The Power of Tahajjud](/#purchase)*.*

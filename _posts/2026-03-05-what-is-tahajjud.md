@@ -91,4 +91,4 @@ The only requirement is that you show up. Allah will meet you there.
 
 ---
 
-*Read the true stories of ordinary people who turned to Tahajjud in their hardest moments in* [The Power of Tahajjud](/)*.*
+*Read the true stories of ordinary people who turned to Tahajjud in their hardest moments in* [The Power of Tahajjud](/#purchase)*.*

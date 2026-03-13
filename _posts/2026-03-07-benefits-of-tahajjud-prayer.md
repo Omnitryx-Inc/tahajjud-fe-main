@@ -109,4 +109,4 @@ The only question is whether you will accept it.
 
 ---
 
-*Read the true stories of ordinary people who prayed Tahajjud through their hardest seasons, and what happened, in* [The Power of Tahajjud](/)*.*
+*Read the true stories of ordinary people who prayed Tahajjud through their hardest seasons, and what happened, in* [The Power of Tahajjud](/#purchase)*.*
