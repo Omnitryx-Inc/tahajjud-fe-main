@@ -3,6 +3,15 @@ title: "The Best Time to Pray Tahajjud (According to Hadith)"
 description: "When exactly is Tahajjud time? Learn what the Hadith says about the last third of the night, how to calculate it for your location, and why this specific hour is unlike any other."
 date: 2026-03-01
 read_time: 5
+faq:
+  - q: "When is the best time to pray Tahajjud?"
+    a: "The best time for Tahajjud is the last third of the night, before Fajr. According to hadith in Bukhari and Muslim, Allah descends to the lowest heaven during this time and answers the calls of those who are awake and praying."
+  - q: "How do I calculate Tahajjud prayer time for my location?"
+    a: "The easiest way is to use a prayer times app like Pray Watch, which shows the exact start of the last third of the night for your location without any manual calculation needed."
+  - q: "Can I pray Tahajjud just before Fajr?"
+    a: "Yes. Waking up 20 minutes before Fajr puts you squarely in the last third of the night, the prime Tahajjud window. This is a practical starting point since you already need to wake for Fajr."
+  - q: "What are the Tahajjud timings and when does it end?"
+    a: "Tahajjud can be prayed anytime after sleeping post-Isha up until the Fajr prayer begins. The last third of the night is the most recommended window and ends at the Fajr adhan."
 ---
 
 If you've started exploring Tahajjud, you've likely come across the phrase *"the last third of the night"* and then immediately wondered: *What does that mean in actual clock time?*

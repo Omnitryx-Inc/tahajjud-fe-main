@@ -4,6 +4,15 @@ description: "If you have been making dua and feel like nothing is happening, th
 date: 2026-03-14
 read_time: 6
 layout: post
+faq:
+  - q: "Why is my dua not being answered by Allah?"
+    a: "According to hadith, every dua is answered in one of three ways: Allah gives you what you asked for, stores it as reward for the hereafter, or uses it to remove a harm from your path. What feels like no answer is often one of the latter two."
+  - q: "What should I do if I made dua but Allah did not answer?"
+    a: "Keep asking, and do not give up. The Prophet warned that impatience and saying your dua was not answered is itself what can close the door. Shift when you ask by praying Tahajjud in the last third of the night, the time Allah described as His most open hour."
+  - q: "What blocks dua from being accepted?"
+    a: "Scholars identify several things that can slow the acceptance of dua: consuming haram income, giving up in impatience, making dua for something sinful, and cutting family ties. Addressing these areas can remove barriers to acceptance."
+  - q: "Is dua ever truly rejected by Allah?"
+    a: "No dua made sincerely and without sin is wasted. The Prophet said every supplication is granted unless the person supplicates for something sinful or cuts family ties, and then only if they do not grow impatient and give up entirely."
 ---
 
 You made dua. You cried. You asked again and again. And nothing changed.

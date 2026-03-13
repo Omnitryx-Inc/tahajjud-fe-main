@@ -4,6 +4,15 @@ description: "Anxiety is exhausting. It runs on a loop that will not stop. Here 
 date: 2026-03-18
 read_time: 6
 layout: post
+faq:
+  - q: "Does Tahajjud help with anxiety?"
+    a: "Tahajjud creates specific conditions that counter anxiety: genuine silence at night, the physical act of sujood as a posture of surrender, a concrete outlet for fears through dua, and a reminder that Allah is governing what you cannot control."
+  - q: "What does Islam say about anxiety and stress?"
+    a: "The Quran states that hearts find comfort in the remembrance of Allah (13:28). The Prophet, when distressed, would pray immediately rather than waiting. Prayer was his first response to difficulty, not a last resort."
+  - q: "How does Tahajjud reduce stress practically?"
+    a: "Praying Tahajjud during a sleepless anxious night replaces the mental loop with structured worship and dua, gives the nervous system genuine quiet, and creates a place to hand your worries explicitly to Allah rather than holding them alone."
+  - q: "Can I pray Tahajjud if anxiety is keeping me awake at night?"
+    a: "Yes, and that is exactly the right time to use it. If anxiety is already keeping you awake, get up, make wudu, pray two rakats, and make dua naming every fear. Then return to sleep or stay awake until Fajr."
 ---
 
 Anxiety has a specific quality that makes it different from ordinary worry. It does not stay in one place. It migrates. You solve one fear and another takes its place. The loop keeps running even when there is nothing concrete left to be afraid of.

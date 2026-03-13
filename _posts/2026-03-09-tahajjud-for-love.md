@@ -3,6 +3,15 @@ title: "Tahajjud for Love: How to Make Dua for Marriage and Relationships at the
 description: "If you are asking Allah for a righteous spouse, a mended relationship, or love in your life, here is why Tahajjud is the most powerful time to ask, and what to say."
 date: 2026-03-09
 read_time: 6
+faq:
+  - q: "Can I pray Tahajjud to ask Allah for a spouse or marriage?"
+    a: "Yes. Allah included a dua for a righteous spouse in the Quran itself (25:74) as an example of what the righteous ask for. Asking for marriage at Tahajjud is exactly where this kind of dua belongs."
+  - q: "What dua should I make at Tahajjud for marriage?"
+    a: "You can use the Quranic dua from 25:74 directly, or speak plainly in your own language asking Allah to bring the right person into your life. There is no requirement for formality — sincerity and specificity matter most."
+  - q: "Why is Tahajjud considered the best time to make dua for love?"
+    a: "The last third of the night is when Allah, according to authentic hadith, descends to the lowest heaven and actively invites His servants to ask. Matters of the heart that cannot be controlled by effort alone are precisely the things best placed before Allah at this hour."
+  - q: "How long should I pray Tahajjud for a dua about marriage to be answered?"
+    a: "There is no fixed timeline. The practice is built on consistency and tawakkul, trusting Allah with the outcome while continuing to ask. Many people describe a change in how they held the waiting, not just the eventual answer, as part of what Tahajjud gave them."
 ---
 
 If you have been waiting for a spouse for longer than you expected, or carrying the weight of a relationship that is broken, or feeling the particular ache of loneliness that is hard to explain to anyone else, this post is for you.

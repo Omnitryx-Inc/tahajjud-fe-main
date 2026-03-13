@@ -3,6 +3,15 @@ title: "Tahajjud for Beginners: A Complete Guide"
 description: "Everything you need to start praying Tahajjud: what it is, how many rakats, when to pray, and how to build a practice that actually lasts. A straightforward guide for those just starting out."
 date: 2026-03-03
 read_time: 8
+faq:
+  - q: "How do you perform Tahajjud prayer step by step?"
+    a: "Make the intention before sleeping, wake up in the last third of the night, perform wudu, then pray in pairs of 2 rakats with a closing salam after each pair. After completing your rakats, sit and make dua, speaking honestly to Allah about whatever you need."
+  - q: "How many rakats is Tahajjud?"
+    a: "The minimum is 2 rakats. Beginners are advised to start with just 2 sincere rakats rather than attempting 8 or more, as consistency matters more than quantity."
+  - q: "How do I start Tahajjud prayer if I have never done it before?"
+    a: "Set an alarm for the last third of the night, wake up, make wudu, and pray 2 rakats followed by dua. Start small and stay consistent rather than attempting a large number of rakats on your first night."
+  - q: "Can I make dua in English during Tahajjud?"
+    a: "Yes. You can speak to Allah in Arabic, English, or any language. Your dua does not need to be formal or memorized — the most powerful dua is the one that comes from your heart in that moment."
 ---
 
 Tahajjud is one of the most talked-about forms of worship in Islam, and one of the least practiced. The reason is usually simple: it requires waking up in the last third of the night, and most of us are already struggling to do what we're obligated to do, let alone add something voluntary.
