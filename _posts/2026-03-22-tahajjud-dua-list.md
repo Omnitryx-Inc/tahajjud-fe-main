@@ -173,6 +173,28 @@ For the parent who lies awake worrying about who their children will become.
 
 ---
 
+### For a Child: When You Are Waiting and Struggling
+
+For the couple who has been trying, who has prayed and hoped and watched others receive what they are asking for. This is one of the oldest duas in the Quran.
+
+> *"O Allah, You gave Zakariyya a son when he was old and his wife was barren. You gave Ibrahim a child when all hope seemed closed. You are the One who opens the womb and the One who knows every soul before it is born. O Allah, I am asking You for a child. Not because I have the right to it, but because I know You can give it. I know You hear this dua at this hour. O Allah, if there is a child written for me, send them to me. Heal whatever needs to be healed in my body or my spouse's body. Remove every barrier we cannot see. And if there is wisdom in the waiting that I do not yet understand, give me patience that does not break my heart. I trust You with this."*
+
+The dua of Zakariyya alayhis salam:
+
+> *"And ˹remember˺ when Zachariah cried out to his Lord, 'My Lord! Do not leave me childless, though You are the Best of Successors.'"*
+>
+> ([Quran 21:89](https://quran.com/21/89))
+
+And Ibrahim's (AS) supplication:
+
+> *"My Lord! Surely my bones have become brittle, and grey hair has spread across my head, but I have never been disappointed in my prayer to You, my Lord! And I am concerned about ˹the faith of˺ my relatives after me, since my wife is barren. So grant me, by Your grace, an heir..."*
+>
+> ([Quran 19:4-5](https://quran.com/19/4))
+
+Say it. Say it again. He was answered.
+
+---
+
 ### For Your Future Generations Until the End of Days
 
 One of the duas of Ibrahim alayhis salam was not just for his son, but for his descendants until the end of time. You can make the same kind of dua.
