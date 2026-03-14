@@ -7,8 +7,6 @@ layout: post
 faq:
   - q: "Is making dua after salah a sunnah?"
     a: "Yes. The Prophet ﷺ regularly made dua after prayer, and he taught specific duas to be said after the obligatory prayers. After Tahajjud specifically, the Prophet would remain in dua and dhikr until Fajr approached. Making dua after salah is an established sunnah, and the time right after Tahajjud is among the most powerful windows for supplication."
-  - q: "What is the best posture for making dua after salah?"
-    a: "The established sunnah is to raise both hands to the level of the chest or slightly higher, with palms facing upward. This is the posture of a person receiving something. The Prophet ﷺ described this position in the context of dua and indicated that Allah does not turn away the raised hands of His servant empty."
   - q: "Can I make dua in English or my own language after salah?"
     a: "Yes, without any reservation. The dua after salah, as opposed to the recitations within the salah itself, can be made in any language. Allah understands every language and created every language. Speak to Him in the language that lets you be most honest and specific."
   - q: "What should I say at the end of my dua?"
