@@ -414,8 +414,8 @@ select.form-input {
                 <span class="purchase-card-tag">Digital</span>
                 <h3 class="purchase-card-title">Buy the Digital PDF</h3>
                 <p class="purchase-card-desc">
-                    Instant download. Read on any device, anywhere in the world.
-                    Your purchase directly supports this mission.
+                    The complete book, all chapters and all stories, as an instant PDF download.
+                    Read on any device, anywhere in the world. Your purchase directly supports this mission.
                 </p>
                 <a href="{{ site.stripe_buy_url }}" target="_blank" class="purchase-card-btn btn-gold" onclick="gtag('event', 'click_buy_digital', {'button_location': 'free_page'})">
                     Buy Digital
@@ -427,7 +427,7 @@ select.form-input {
                 <span class="purchase-card-tag">Paperback</span>
                 <h3 class="purchase-card-title">Buy the Physical Book</h3>
                 <p class="purchase-card-desc">
-                    A real book on your shelf — one you'll return to again and again.
+                    A real book on your shelf, one you'll return to again and again.
                     Available on Amazon worldwide.
                 </p>
                 <a href="{{ site.amazon_url }}" target="_blank" class="purchase-card-btn btn-dark" onclick="gtag('event', 'click_buy_physical', {'button_location': 'free_page'})">
@@ -440,7 +440,7 @@ select.form-input {
                 <span class="purchase-card-tag">Donate</span>
                 <h3 class="purchase-card-title">Support the Work</h3>
                 <p class="purchase-card-desc">
-                    Already have the book? A contribution — any amount — helps keep
+                    Already have the book? Any contribution helps keep
                     this mission alive and reaching more people.
                 </p>
                 <a href="/support-the-mission/" class="purchase-card-btn btn-outline">
@@ -460,7 +460,7 @@ select.form-input {
         </div>
         <h2 class="bridge-title">We truly believe everyone deserves to experience the power of Tahajjud.</h2>
         <p class="bridge-body">
-            If the book is out of reach or Amazon doesn't ship to your country — no problem.
+            If the book is out of reach or Amazon doesn't ship to your country, no problem.
             Fill in your details below and we'll take you straight to your PDF.
         </p>
     </div>
@@ -470,6 +470,10 @@ select.form-input {
 <section class="free-section">
     <div class="free-inner">
 
+        <!-- ======================================================
+             ORIGINAL "Other Ways to Support Us" block — commented out
+             Replaced below with a note about what's not in the free version
+             ======================================================
         <p class="section-label" style="text-align: left;">How You Can Give Back</p>
         <h2 class="section-title" style="text-align: left;">Other Ways to Support Us</h2>
         <p class="section-subtitle" style="text-align: left; margin: 0 0 0.5rem;">
@@ -516,7 +520,25 @@ select.form-input {
             </div>
 
         </div>
+        ====================================================== -->
 
+        <!-- FREE VERSION NOTE -->
+        <div class="ask-item" style="margin-bottom: 2rem; border-left-color: var(--gold-primary); background: var(--beige-soft);">
+            <span class="ask-item-icon">📖</span>
+            <p class="ask-item-title">A note about this version</p>
+            <p class="ask-item-body">
+                The free PDF is a genuine gift and we hope it benefits you deeply.
+                That said, it's a curated selection of the book. A few chapters are only in the full edition,
+                including <em>Pain &amp; Qadr</em> and <em>How to Unlock the Power of Tahajjud</em>.
+                If you ever want the complete experience, the full book is available on Amazon or as a digital PDF above.
+            </p>
+        </div>
+
+        <!-- ======================================================
+             ORIGINAL auto-download form — commented out (email-gate strategy v1)
+             This form collected email + country and redirected to /download?type=free
+             Replacing with a manual email request flow below.
+             ======================================================
         <div class="free-form-box">
             <span class="free-form-label">Free Access</span>
             <p class="free-form-heading">Your PDF is one step away.</p>
@@ -550,11 +572,39 @@ select.form-input {
 
             <p class="trust-note">We'll never spam you or share your email.</p>
         </div>
+        ====================================================== -->
+
+        <!-- EMAIL REQUEST FORM (email-gate strategy v2) -->
+        <div class="free-form-box">
+            <span class="free-form-label">Free Access</span>
+            <p class="free-form-heading">Request your free copy.</p>
+
+            <div class="form-group">
+                <select class="form-input" id="countryInputGate" required>
+                    <option value="" disabled selected>Select your country</option>
+                    <option value="United States">United States</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Saudi Arabia">Saudi Arabia</option>
+                    <option value="UAE">UAE</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="India">India</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <button class="submit-btn" id="requestCopyBtn">Send My Request</button>
+
+            <p class="trust-note">This opens your email app with a pre-filled message. We'll get your PDF to you, though it may take 7 business days or more.</p>
+        </div>
 
     </div>
 </section>
 
-<script>
+<!-- ======================================================
+     ORIGINAL form submit script — commented out (email-gate strategy v1)
+     ======================================================
+<script-disabled>
 document.getElementById('freeBookForm').addEventListener('submit', async function(e) {
     e.preventDefault();
 
@@ -572,5 +622,27 @@ document.getElementById('freeBookForm').addEventListener('submit', async functio
     }
 
     window.location.href = '/download?type=free';
+});
+</script-disabled>
+====================================================== -->
+
+<!-- EMAIL REQUEST SCRIPT (email-gate strategy v2) -->
+<script>
+document.getElementById('requestCopyBtn').addEventListener('click', function() {
+    const countrySelect = document.getElementById('countryInputGate');
+    const country = countrySelect.value;
+
+    if (!country) {
+        countrySelect.focus();
+        countrySelect.style.borderColor = 'var(--gold-primary)';
+        return;
+    }
+
+    const subject = encodeURIComponent('Free Copy Request');
+    const body = encodeURIComponent(
+        'Hi,\n\nI would like to request a free copy of The Power of Tahajjud.\n\nCountry: ' + country + '\n\nThank you.'
+    );
+
+    window.location.href = 'mailto:admin@omnitryx.ca?subject=' + subject + '&body=' + body;
 });
 </script>
