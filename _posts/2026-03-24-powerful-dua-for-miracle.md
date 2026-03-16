@@ -136,4 +136,4 @@ You do not need a formula. You need to keep asking. Bring your need to the times
 
 *For everything you need to know about starting Tahajjud, including how to pray it and what to say, visit our [Beginners Guide](/blog/tahajjud-for-beginners/).*
 
-*Read the actual accounts of people who asked for the impossible in the last third of the night. Pick up [The Power of Tahajjud](/#purchase).*
+*Read the actual accounts of people who asked for the impossible in the last third of the night. Pick up [The Power of Tahajjud](/).*

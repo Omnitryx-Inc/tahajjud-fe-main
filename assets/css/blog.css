@@ -241,7 +241,7 @@
 
 .post-cta-title {
     font-family: "Allrounder Monument Test", serif;
-    font-size: clamp(1.6rem, 4vw, 2.2rem);
+    font-size: clamp(1.2rem, 4vw, 1.8rem);
     font-weight: 700;
     color: var(--text-dark);
     margin-bottom: 1rem;
@@ -259,6 +259,25 @@
 .post-cta-box .cta-group {
     justify-content: center;
     margin-top: 0;
+}
+
+.post-more-articles {
+    text-align: center;
+    margin: 3rem 0 1.5rem;
+}
+
+.post-more-articles-link {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--gold-primary);
+    text-decoration: none;
+    letter-spacing: 0.3px;
+    transition: color 0.2s ease;
+}
+
+.post-more-articles-link:hover {
+    color: var(--gold-dark);
+    text-decoration: underline;
 }
 
 /* Responsive */

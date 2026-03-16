@@ -69,6 +69,4 @@ So wake up and pray tonight.
 
 ---
 
-*To learn how to begin Tahajjud and what to say during the last third of the night, visit the [Beginners Guide](/blog/tahajjud-for-beginners/).*
-
-*Read real stories of ordinary people who brought their anxiety to the last third of the night and found peace. Pick up [The Power of Tahajjud](/#purchase).*
+*Read real stories of ordinary people who brought their anxiety to the last third of the night and found peace. Pick up [The Power of Tahajjud](/).*

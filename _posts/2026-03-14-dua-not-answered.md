@@ -106,6 +106,4 @@ Keep asking.
 
 ---
 
-*For guidance on how to begin Tahajjud or what to say when you make dua at night, visit our [Beginners Guide](/blog/tahajjud-for-beginners/).*
-
-*Read real stories of ordinary people who kept asking and what Allah gave them. Pick up [The Power of Tahajjud](/#purchase).*
+*Read real stories of ordinary people who kept asking and what Allah gave them. Pick up [The Power of Tahajjud](/).*

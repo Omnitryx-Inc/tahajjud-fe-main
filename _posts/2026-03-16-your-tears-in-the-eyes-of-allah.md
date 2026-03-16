@@ -54,6 +54,4 @@ You will not be ignored.
 
 ---
 
-*To learn how to begin praying Tahajjud and make the most of the last third of the night, visit the [Beginners Guide](/blog/tahajjud-for-beginners/).*
-
-*Read real stories of ordinary people who brought their grief to Allah in Tahajjud, and what He did with it. Pick up [The Power of Tahajjud](/#purchase).*
+*Read real stories of ordinary people who brought their grief to Allah in Tahajjud, and what He did with it. Pick up [The Power of Tahajjud](/).*

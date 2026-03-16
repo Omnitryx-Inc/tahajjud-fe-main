@@ -69,4 +69,4 @@ The alarm isn't asking you to be a different person. It's just asking you to get
 
 ---
 
-*Want to read the complete Tahajjud stories from the book? Get your copy of* [The Power of Tahajjud](/#purchase)*.*
+*Want to read the complete Tahajjud stories from the book? Get your copy of* [The Power of Tahajjud](/)*.*

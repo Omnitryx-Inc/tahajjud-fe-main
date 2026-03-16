@@ -71,6 +71,4 @@ Keep showing up. Keep asking. Keep ending with Ameen.
 
 ---
 
-*For a complete walkthrough of how to pray Tahajjud, from the first rakat to the final dua, visit our [Beginners Guide](/blog/tahajjud-for-beginners/).*
-
-*Read what happened when real people began making sincere dua in the last third of the night, consistently. Pick up [The Power of Tahajjud](/#purchase).*
+*Read what happened when real people began making sincere dua in the last third of the night, consistently. Pick up [The Power of Tahajjud](/).*

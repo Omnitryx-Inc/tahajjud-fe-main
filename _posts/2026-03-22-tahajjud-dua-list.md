@@ -263,6 +263,4 @@ The asking is worship. The reaching toward Allah at 3am when everything is quiet
 
 ---
 
-*For a full guide on how to pray Tahajjud from start to finish, including how many rakats to pray and what to recite, visit our [Beginners Guide](/blog/tahajjud-for-beginners/).*
-
-*Read accounts of real people whose dua in the last third of the night changed the direction of their lives. Pick up [The Power of Tahajjud](/#purchase).*
+*Read accounts of real people whose dua in the last third of the night changed the direction of their lives. Pick up [The Power of Tahajjud](/).*

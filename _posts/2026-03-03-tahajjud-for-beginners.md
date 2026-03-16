@@ -125,4 +125,4 @@ Whatever brought you to this page, whether you're curious, desperate, or somewhe
 
 ---
 
-*Read the real Tahajjud stories of ordinary people who turned to night prayer in their hardest moments in* [The Power of Tahajjud](/#purchase)*.*
+*Read the real Tahajjud stories of ordinary people who turned to night prayer in their hardest moments in* [The Power of Tahajjud](/)*.*

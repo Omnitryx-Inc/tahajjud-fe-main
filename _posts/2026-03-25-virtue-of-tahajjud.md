@@ -63,4 +63,4 @@ The virtue of Tahajjud is real. The praised station is real. The best voluntary 
 
 *For a complete beginner's introduction to how to pray Tahajjud, when to pray it, and what to say, visit our [Beginners Guide](/blog/tahajjud-for-beginners/).*
 
-*Read the testimonies of real people who experienced the transformation that comes from this prayer. Pick up [The Power of Tahajjud](/#purchase).*
+*Read the testimonies of real people who experienced the transformation that comes from this prayer. Pick up [The Power of Tahajjud](/).*
