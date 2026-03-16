@@ -470,10 +470,6 @@ select.form-input {
 <section class="free-section">
     <div class="free-inner">
 
-        <!-- ======================================================
-             ORIGINAL "Other Ways to Support Us" block — commented out
-             Replaced below with a note about what's not in the free version
-             ======================================================
         <p class="section-label" style="text-align: left;">How You Can Give Back</p>
         <h2 class="section-title" style="text-align: left;">Other Ways to Support Us</h2>
         <p class="section-subtitle" style="text-align: left; margin: 0 0 0.5rem;">
@@ -496,7 +492,7 @@ select.form-input {
                 <span class="ask-item-icon">📲</span>
                 <p class="ask-item-title">Tag Us on Instagram or TikTok</p>
                 <p class="ask-item-body">
-                    Share what moved you. Tag <strong>@jawwad_ab</strong> — your story
+                    Share what moved you. Tag <a href="https://www.instagram.com/jawwad_ab/" target="_blank" style="color: var(--gold-primary); font-weight: 700; text-decoration: none;">@jawwad_ab</a> — your story
                     might be exactly what someone else needed to see today.
                 </p>
             </div>
@@ -520,9 +516,11 @@ select.form-input {
             </div>
 
         </div>
-        ====================================================== -->
 
-        <!-- FREE VERSION NOTE -->
+        <!-- ======================================================
+             FREE VERSION NOTE (email-gate strategy v2) — commented out
+             Reverted back to original strategy (auto-download)
+             ======================================================
         <div class="ask-item" style="margin-bottom: 2rem; border-left-color: var(--gold-primary); background: var(--beige-soft);">
             <span class="ask-item-icon">📖</span>
             <p class="ask-item-title">A note about this version</p>
@@ -533,12 +531,37 @@ select.form-input {
                 If you ever want the complete experience, the full book is available on Amazon or as a digital PDF above.
             </p>
         </div>
+        ====================================================== -->
 
         <!-- ======================================================
-             ORIGINAL auto-download form — commented out (email-gate strategy v1)
-             This form collected email + country and redirected to /download?type=free
-             Replacing with a manual email request flow below.
+             EMAIL REQUEST FORM (email-gate strategy v2) — commented out
+             Reverted back to original strategy (auto-download)
              ======================================================
+        <div class="free-form-box">
+            <span class="free-form-label">Free Access</span>
+            <p class="free-form-heading">Request your free copy.</p>
+
+            <div class="form-group">
+                <select class="form-input" id="countryInputGate" required>
+                    <option value="" disabled selected>Select your country</option>
+                    <option value="United States">United States</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Saudi Arabia">Saudi Arabia</option>
+                    <option value="UAE">UAE</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="India">India</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <button class="submit-btn" id="requestCopyBtn">Send My Request</button>
+
+            <p class="trust-note">This opens your email app with a pre-filled message. We'll get your PDF to you, though it may take 7 business days or more.</p>
+        </div>
+        ====================================================== -->
+
+        <!-- ORIGINAL auto-download form (restored) -->
         <div class="free-form-box">
             <span class="free-form-label">Free Access</span>
             <p class="free-form-heading">Your PDF is one step away.</p>
@@ -572,62 +595,15 @@ select.form-input {
 
             <p class="trust-note">We'll never spam you or share your email.</p>
         </div>
-        ====================================================== -->
-
-        <!-- EMAIL REQUEST FORM (email-gate strategy v2) -->
-        <div class="free-form-box">
-            <span class="free-form-label">Free Access</span>
-            <p class="free-form-heading">Request your free copy.</p>
-
-            <div class="form-group">
-                <select class="form-input" id="countryInputGate" required>
-                    <option value="" disabled selected>Select your country</option>
-                    <option value="United States">United States</option>
-                    <option value="United Kingdom">United Kingdom</option>
-                    <option value="Canada">Canada</option>
-                    <option value="Australia">Australia</option>
-                    <option value="Saudi Arabia">Saudi Arabia</option>
-                    <option value="UAE">UAE</option>
-                    <option value="Pakistan">Pakistan</option>
-                    <option value="India">India</option>
-                    <option value="Other">Other</option>
-                </select>
-            </div>
-            <button class="submit-btn" id="requestCopyBtn">Send My Request</button>
-
-            <p class="trust-note">This opens your email app with a pre-filled message. We'll get your PDF to you, though it may take 7 business days or more.</p>
-        </div>
 
     </div>
 </section>
 
 <!-- ======================================================
-     ORIGINAL form submit script — commented out (email-gate strategy v1)
+     EMAIL REQUEST SCRIPT (email-gate strategy v2) — commented out
+     Reverted back to original strategy (auto-download)
      ======================================================
 <script-disabled>
-document.getElementById('freeBookForm').addEventListener('submit', async function(e) {
-    e.preventDefault();
-
-    const email = document.getElementById('emailInput').value;
-    const country = document.getElementById('countryInput').value;
-
-    try {
-        await fetch('https://vdpgnhnqoc.execute-api.us-east-1.amazonaws.com/prod/collect-email', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ email: email, country: country })
-        });
-    } catch (error) {
-        // Ignore errors
-    }
-
-    window.location.href = '/download?type=free';
-});
-</script-disabled>
-====================================================== -->
-
-<!-- EMAIL REQUEST SCRIPT (email-gate strategy v2) -->
-<script>
 document.getElementById('requestCopyBtn').addEventListener('click', function() {
     const countrySelect = document.getElementById('countryInputGate');
     const country = countrySelect.value;
@@ -646,5 +622,30 @@ document.getElementById('requestCopyBtn').addEventListener('click', function() {
     gtag('event', 'click_free_copy_email_request', { 'button_location': 'free_page', 'country': country });
 
     window.location.href = 'mailto:admin@omnitryx.ca?subject=' + subject + '&body=' + body;
+});
+</script-disabled>
+====================================================== -->
+
+<!-- ORIGINAL form submit script (restored) -->
+<script>
+document.getElementById('freeBookForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+
+    const email = document.getElementById('emailInput').value;
+    const country = document.getElementById('countryInput').value;
+
+    gtag('event', 'click_free_pdf_form_submit', { 'button_location': 'free_page', 'country': country });
+
+    try {
+        await fetch('https://vdpgnhnqoc.execute-api.us-east-1.amazonaws.com/prod/collect-email', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email: email, country: country })
+        });
+    } catch (error) {
+        // Ignore errors
+    }
+
+    window.location.href = '/download?type=free';
 });
 </script>
