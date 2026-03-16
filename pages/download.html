@@ -635,7 +635,7 @@ sitemap: false
                 If you enjoyed the book, we'd be incredibly grateful if you'd consider leaving a review
                 after you've read it — but no obligation!
             </p>
-            <a href="{{ site.amazon_review_url }}" target="_blank" class="ask-btn ask-btn-outline">
+            <a href="{{ site.amazon_review_url }}" target="_blank" class="ask-btn ask-btn-outline" onclick="gtag('event', 'click_leave_review', { 'button_location': 'download_asks' })">
                 Leave a Review
             </a>
         </div>
@@ -649,7 +649,7 @@ sitemap: false
                 Share what moved you. Tag <strong>@jawwad_ab</strong> — your story
                 might be exactly what someone else needed to see today.
             </p>
-            <a href="https://www.instagram.com/jawwad_ab" target="_blank" class="ask-btn ask-btn-dark">
+            <a href="https://www.instagram.com/jawwad_ab" target="_blank" class="ask-btn ask-btn-dark" onclick="gtag('event', 'click_instagram', { 'button_location': 'download_asks' })">
                 Follow @jawwad_ab
             </a>
         </div>
@@ -701,7 +701,7 @@ sitemap: false
             found it useful — opens the door for thousands of people who haven't heard of
             it yet. If it resonated with you, we'd be incredibly grateful if you'd consider leaving one after you've read it.
         </p>
-        <a href="{{ site.amazon_review_url }}" target="_blank" class="review-btn">
+        <a href="{{ site.amazon_review_url }}" target="_blank" class="review-btn" onclick="gtag('event', 'click_leave_review', { 'button_location': 'download_review_section' })">
             Leave a Review on Amazon
         </a>
     </div>
@@ -720,7 +720,7 @@ sitemap: false
         <div class="dl-final-card">
             <p class="dl-book-name">The Power of Tahajjud</p>
             <p class="dl-book-author">by Jawwad Ahmed Abbasi</p>
-            <a href="/assets/pdf/The_Power_of_Tahajjud.pdf" download class="dl-btn" style="width: 100%; justify-content: center; box-sizing: border-box;">
+            <a href="/assets/pdf/The_Power_of_Tahajjud.pdf" download class="dl-btn" style="width: 100%; justify-content: center; box-sizing: border-box;" onclick="var _t = new URLSearchParams(window.location.search).get('type'); gtag('event', _t === 'paid' ? 'click_paid_pdf_downloaded' : 'click_free_pdf_downloaded', { 'button_location': 'download_page' })">
                 <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                 Download PDF
             </a>

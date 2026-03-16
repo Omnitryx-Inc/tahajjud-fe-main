@@ -638,10 +638,12 @@ document.getElementById('requestCopyBtn').addEventListener('click', function() {
         return;
     }
 
-    const subject = encodeURIComponent('Free Copy Request');
+    const subject = encodeURIComponent('Free Copy Request for The Power of Tahajjud');
     const body = encodeURIComponent(
-        'Hi,\n\nI would like to request a free copy of The Power of Tahajjud.\n\nCountry: ' + country + '\n\nThank you.'
+        'Salam,\n\nI would like to request a free copy of The Power of Tahajjud.\n\nCountry: ' + country + '\n\nJazakAllah khair.'
     );
+
+    gtag('event', 'click_free_copy_email_request', { 'button_location': 'free_page', 'country': country });
 
     window.location.href = 'mailto:admin@omnitryx.ca?subject=' + subject + '&body=' + body;
 });
