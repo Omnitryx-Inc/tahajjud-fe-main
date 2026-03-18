@@ -193,6 +193,22 @@
     border-top: 1px solid var(--beige-warm);
 }
 
+.post-support {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: var(--text-light);
+}
+
+.post-support a {
+    color: var(--gold-primary);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.post-support a:hover {
+    text-decoration: underline;
+}
+
 /* Post body */
 .post-body {
     font-size: clamp(1rem, 2.5vw, 1.1rem);
