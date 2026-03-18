@@ -47,6 +47,8 @@ In Arabic: *Rabbana atina fid-dunya hasanatan wa fil-akhirati hasanatan wa qina 
 
 This single dua is comprehensive. Everything good in this life. Everything good in the next. Protection from the worst. When you do not know what else to ask for, return to this.
 
+If you are not sure what to ask for, or want a more comprehensive guide on what to bring to Allah in the last third of the night, read: [The Most Comprehensive Tahajjud Dua List: What to Say and Ask Allah in the Last Third of the Night](/blog/tahajjud-dua-list/).
+
 ## Dua in Your Own Language
 
 Everything above can and should be supplemented with dua in your own language. The formal Arabic duas and the Quranic phrases are anchors. Your personal dua is the conversation.

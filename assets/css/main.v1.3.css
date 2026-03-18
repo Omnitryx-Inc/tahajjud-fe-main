@@ -979,8 +979,31 @@ body.nav-open {
 	font-family: "Allrounder Monument Test", serif;
 	font-size: clamp(1.6rem, 5vw, 3rem);
 	color: var(--gold-primary);
-	margin-bottom: 1.5rem;
+	margin-bottom: 0.75rem;
 	font-weight: 700;
+}
+
+.author-socials {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+	margin-bottom: 1.5rem;
+	flex-wrap: wrap;
+}
+
+.author-socials a {
+	font-size: 0.85rem;
+	font-weight: 600;
+	color: var(--text-light);
+	text-decoration: none;
+	border-bottom: 1px solid var(--beige-warm);
+	padding-bottom: 1px;
+	transition: color 0.2s;
+}
+
+.author-socials a:hover {
+	color: var(--gold-primary);
+	border-bottom-color: var(--gold-primary);
 }
 
 .author-bio {
