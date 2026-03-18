@@ -25,21 +25,19 @@ If what you are sitting with right now is something that feels like disappointme
 
 ## You Are Not the First Person to Feel This
 
-The Companions of the Prophet ﷺ, the best generation of Muslims, people who had seen miracles with their own eyes, reached a moment where they asked this:
+The Messengers of Allah were tested. The people who believed them were tested. The Companions were tested. Allah says:
 
-> *"Or do you think you will enter Paradise without being tested like those before you? They were struck by suffering and adversity and were so ˹violently˺ shaken that ˹even˺ the Messenger and the believers with him cried out, 'When will Allah's help come?' Indeed, Allah's help is ˹always˺ near."*
+> *”Do you think you will be admitted into Paradise without being tested like those before you? They were afflicted with suffering and adversity and were so ˹violently˺ shaken that ˹even˺ the Messenger and the believers with him cried out, “When will Allah’s help come?” Indeed, Allah’s help is ˹always˺ near.”*
 >
 > ([Quran 2:214](https://quran.com/2/214), Dr. Mustafa Khattab, The Clear Quran)
 
-Read that slowly. These were people standing beside the Prophet ﷺ himself. They were being shaken so hard that they cried out: when is the help coming? And Allah did not rebuke them for the question. He answered it. He said: it is near. It was already near.
-
-That question, the one that feels like doubt, the one that feels dangerous to even admit, was recorded in the Quran forever. Not as a warning about what not to feel. As a description of what faith actually looks like when it is being tested.
+And so are you. This is not a sign that you are abandoned. It is a sign that you are in the same company as everyone who came before you and held on.
 
 ## The Prophets Waited Too
 
 Prophet Ayyub (peace be upon him) lost his health, his wealth, and his family. He did not receive an immediate answer. For years, he endured. When he finally spoke, he did not demand. He simply said:
 
-> *"˹Remember˺ when he cried out to his Lord, 'I have been touched with adversity, and You are the Most Merciful of the merciful.'"*
+> *"And ˹remember˺ when Job cried out to his Lord, “I have been touched with adversity, and You are the Most Merciful of the merciful."*
 >
 > ([Quran 21:83](https://quran.com/21/83), Dr. Mustafa Khattab, The Clear Quran)
 
@@ -53,19 +51,41 @@ Prophet Yunus (peace be upon him) found himself swallowed by a whale in the midd
 >
 > ([Quran 21:87](https://quran.com/21/87), Dr. Mustafa Khattab, The Clear Quran)
 
-Not a detailed request. Not a list of what he needed. Just acknowledgment of who Allah is, and honesty about his own state. And Allah brought him out.
+Prophet Yaqub (peace be upon him) lost his son Yusuf when Yusuf was still a child. He did not know if his son was alive or dead. He grieved for years, so deeply and for so long that he lost his sight from weeping. Allah describes it:
 
-These are not stories about people who had an easier time of it than you. These are stories about people who did not receive what they were asking for, kept turning toward Allah anyway, and then received far more than they had asked.
+> *"He turned away from them, lamenting, “Alas, poor Joseph!” And his eyes turned white out of the grief he suppressed."*
+>
+> ([Quran 12:84](https://quran.com/12/84), Dr. Mustafa Khattab, The Clear Quran)
 
-## What the Feeling Is Actually Telling You
+He did not stop believing. He did not stop hoping. When his sons told him to stop grieving, he said he was bringing his pain to Allah alone. And decades later, he held his son again.
 
-Disappointment means you expected something. It means the relationship mattered enough to you that you brought your deepest needs to it. That is not a sign of weak faith. It is a sign that you take Allah seriously.
+These are stories about people who did not receive what they were asking for, kept turning toward Allah anyway, and then received far more than they had asked.
 
-The danger is not the feeling itself. The danger is what you do with it.
+## This Is a Test
 
-Some people feel disappointed and pull away. They stop praying. They stop asking. They decide that the relationship is not real or not worth it. And in doing so they close the door on the very answer they were waiting for.
+What you are feeling right now is a test. Not a punishment. Not a sign that your worship was rejected. A test.
 
-What the Prophets modeled, and what the Companions modeled, was something different: they brought the disappointment itself back to Allah. They did not hide it. They did not perform certainty they did not have. They turned toward Him with whatever was actually in their hearts, including the confusion and the grief, and that honest turning became the opening.
+Allah says:
+
+> *"Do people think once they say, “We believe,” that they will be left without being put to the test? We certainly tested those before them. And ˹in this way˺ Allah will clearly distinguish between those who are truthful and those who are liars."*
+>
+> ([Quran 29:2-3](https://quran.com/29/2), Dr. Mustafa Khattab, The Clear Quran)
+
+The test is not whether you get what you asked for. The test is what you do when you do not. Do you keep praying? Do you keep believing that Allah is good, that He is wise, that He knows what you do not know? Or do you walk away?
+
+And here is the hope in that: Allah also says:
+
+> *"Allah does not require of any soul more than what it can afford"*
+>
+> ([Quran 2:286](https://quran.com/2/286), Dr. Mustafa Khattab, The Clear Quran)
+
+This moment, as heavy as it feels, is not beyond you. Allah knows exactly what you can carry. He would not have placed this in your path if you could not come through it.
+
+## Be Careful of Shaitan in This Moment
+
+This is exactly the moment Shaitan is waiting for. When you are tired, when you feel unheard, when your hope is low, he comes with whispers. He wants you to feel like it is pointless. He wants you to stop making dua. He wants the disappointment to become distance between you and Allah. Because the moment you stop turning to Allah is the moment he wins.
+
+Do not give him that. The fact that you are feeling this does not mean it is true. It means you are being tested, and the test is right here: will you stay?
 
 ## Allah Sees What Your Worship Cost You
 
@@ -77,7 +97,7 @@ Every night you woke up, every fast you kept, every tear you shed when you thoug
 
 And he said:
 
-> *"No Muslim makes supplication but that he is given one of three things: either his supplication is answered quickly, or it is stored up for him in the Next World, or an evil equal to it is averted from him."*
+> *"No Muslim makes supplication - unless he is someone who has cut off his relatives - but that he is given one of three things: either his supplication is answered quickly, or it is stored up for him in the Next World, or an evil equal to it is averted from him."*
 >
 > ([Al-Adab Al-Mufrad 710](https://sunnah.com/adab:710))
 
@@ -89,16 +109,14 @@ Every dua you made was received. Every night you got out of bed was registered. 
 
 ## What to Do With the Feeling Right Now
 
-Do not suppress it. Do not pretend it is not there. And do not let it be the thing that pulls you away from the only One who can actually answer it.
+Acknowledge it. Do not bury it or pretend it is not there. Bring it to Allah directly. Tell Him you are tired. Tell Him you do not understand. Ask Him to strengthen your heart and keep you close to Him even in this.
 
-Bring the disappointment to Allah directly. Tell Him you are tired. Tell Him you do not understand why. Tell Him that you held up your side and you cannot see where He is in this. That honesty is not disrespect. It is the most intimate form of dua there is. It is the posture of someone who still believes, even when they cannot feel it.
+That is itself a dua. And it is one of the most honest ones you will ever make.
 
-Then get up for Tahajjud tonight. Not because it guarantees the specific outcome you are still hoping for. But because the last third of the night is the hour when Allah Himself asks who is calling on Him. And you have something real to bring.
+He heard you the first time. He heard every time after that. And He is still hearing you now. The fact that you found this article and read it to the end is not nothing. You are still looking. You are still reaching. That is a sign in itself.
 
-He heard you the first time. He heard every time after that. And He is still hearing you now.
+If you want to understand what Allah actually says about the dua you think was not answered, and why it was never wasted, read this next: [I Made Dua to Allah But He Did Not Answer](/blog/dua-not-answered/).
 
 ---
-
-*For everything you need to know about starting Tahajjud, visit our [Beginners Guide](/blog/tahajjud-for-beginners/).*
 
 *Read the accounts of people who kept showing up in the last third of the night even when they could not feel the answer coming. Pick up [The Power of Tahajjud](/).*
