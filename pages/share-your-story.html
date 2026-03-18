@@ -1,0 +1,692 @@
+---
+layout: default
+title: "Share Your Story"
+description: "Did Allah answer your dua, guide you through istikhara, or bring you ease through astaghfar? Share your story and inspire thousands of Muslims."
+permalink: /share-your-story/
+---
+
+<style>
+/* ── Hero ── */
+.story-hero {
+    min-height: 65vh;
+    display: flex;
+    align-items: center;
+    padding: 9rem 5% 5rem;
+    background: linear-gradient(to bottom, var(--cream-white) 0%, var(--cream-light) 100%);
+    text-align: center;
+}
+
+.story-hero-inner {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.story-eyebrow {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold-primary);
+    margin-bottom: 1.5rem;
+}
+
+.story-hero-title {
+    font-family: "Allrounder Monument Test", serif;
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    color: var(--text-dark);
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.story-hero-subtitle {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    color: var(--text-medium);
+    line-height: 1.8;
+    max-width: 600px;
+    margin: 0 auto 1.5rem;
+}
+
+.story-hero-hadith {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    font-style: italic;
+    color: var(--text-medium);
+    border-left: 3px solid var(--gold-primary);
+    padding-left: 1.2rem;
+    text-align: left;
+    max-width: 520px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+.story-hero-hadith cite {
+    display: block;
+    font-size: 0.85rem;
+    font-style: normal;
+    font-weight: 600;
+    color: var(--gold-primary);
+    margin-top: 0.5rem;
+}
+
+/* ── Why Share ── */
+.why-section {
+    padding: 5rem 5%;
+    background: var(--white);
+}
+
+.why-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    text-align: center;
+}
+
+.why-card {
+    padding: 2rem 1.5rem;
+}
+
+.why-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.why-title {
+    font-family: "Allrounder Monument Test", serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 0.6rem;
+}
+
+.why-body {
+    font-size: 0.95rem;
+    color: var(--text-medium);
+    line-height: 1.7;
+}
+
+@media (max-width: 680px) {
+    .why-inner {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+/* ── Form Section ── */
+.form-section {
+    padding: 5rem 5% 7rem;
+    background: var(--cream-light);
+}
+
+.form-inner {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.form-section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.form-section-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold-primary);
+    margin-bottom: 0.75rem;
+}
+
+.form-section-title {
+    font-family: "Allrounder Monument Test", serif;
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    color: var(--text-dark);
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.story-form {
+    background: var(--white);
+    border-radius: 16px;
+    padding: 3rem 3rem;
+    box-shadow: 0 4px 24px rgba(45, 37, 32, 0.07);
+}
+
+@media (max-width: 600px) {
+    .story-form {
+        padding: 2rem 1.5rem;
+    }
+}
+
+/* Field Groups */
+.field-group {
+    margin-bottom: 2rem;
+}
+
+.field-group label,
+.field-label {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+}
+
+.field-hint {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    font-weight: 400;
+    margin-left: 0.3rem;
+}
+
+.field-group input[type="text"],
+.field-group input[type="email"],
+.field-group textarea,
+.field-group select {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    border: 1.5px solid var(--beige-warm);
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-family: 'Inter', sans-serif;
+    color: var(--text-dark);
+    background: var(--cream-white);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.field-group input:focus,
+.field-group textarea:focus,
+.field-group select:focus {
+    outline: none;
+    border-color: var(--gold-primary);
+    box-shadow: 0 0 0 3px rgba(192, 137, 72, 0.12);
+}
+
+.field-group textarea {
+    resize: vertical;
+    min-height: 130px;
+    line-height: 1.6;
+}
+
+.field-hint-text {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .field-group textarea {
+        min-height: 180px;
+    }
+}
+
+/* Book selection */
+.book-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 540px) {
+    .book-options {
+        grid-template-columns: 1fr;
+    }
+}
+
+.book-option {
+    display: block;
+    padding: 0.9rem 1.1rem;
+    border: 1.5px solid var(--beige-warm);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+    user-select: none;
+    text-align: center;
+}
+
+.book-option:hover {
+    border-color: var(--gold-primary);
+    background: rgba(192, 137, 72, 0.04);
+}
+
+.book-option.selected {
+    border-color: var(--gold-primary);
+    background: rgba(192, 137, 72, 0.09);
+    box-shadow: 0 0 0 1px var(--gold-primary);
+}
+
+.book-option input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+}
+
+.book-option-text {
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+/* Divider */
+.form-divider {
+    border: none;
+    border-top: 1.5px solid var(--beige-warm);
+    margin: 2.5rem 0;
+}
+
+.form-section-heading {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold-primary);
+    margin-bottom: 1.5rem;
+}
+
+/* Agreements */
+.agreement-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.agreement-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.9rem;
+    padding: 1rem 1.2rem;
+    background: var(--cream-light);
+    border-radius: 8px;
+    border: 1.5px solid var(--beige-warm);
+}
+
+.agreement-item input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--gold-primary);
+    flex-shrink: 0;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+.agreement-item label {
+    font-size: 0.92rem;
+    color: var(--text-medium);
+    line-height: 1.6;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+.agreement-item.has-error {
+    border-color: #c04848;
+    background: rgba(192, 72, 72, 0.05);
+}
+
+.agreement-error {
+    display: none;
+    font-size: 0.8rem;
+    color: #c04848;
+    margin-top: 0.4rem;
+    padding-left: 0.2rem;
+}
+
+/* Submit */
+.form-submit-area {
+    text-align: center;
+}
+
+.form-submit-btn {
+    display: inline-block;
+    padding: 1.1rem 3.5rem;
+    background: var(--gold-primary);
+    color: var(--cream-white);
+    border: none;
+    border-radius: 10px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form-submit-btn:hover {
+    background: var(--gold-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(192, 137, 72, 0.3);
+}
+
+.form-submit-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.form-privacy-note {
+    font-size: 0.82rem;
+    color: var(--text-light);
+    margin-top: 1rem;
+    line-height: 1.6;
+}
+
+/* Success / Error states */
+.form-message {
+    display: none;
+    padding: 1.2rem 1.5rem;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.form-message.success {
+    background: rgba(74, 153, 96, 0.1);
+    border: 1.5px solid rgba(74, 153, 96, 0.4);
+    color: #2d6b43;
+}
+
+.form-message.error {
+    background: rgba(192, 72, 72, 0.08);
+    border: 1.5px solid rgba(192, 72, 72, 0.3);
+    color: #8b3030;
+}
+</style>
+
+<!-- Hero -->
+<section class="story-hero">
+    <div class="story-hero-inner">
+        <span class="story-eyebrow">Your Story Matters</span>
+        <h1 class="story-hero-title">Your Story Could Be Someone's Turning Point</h1>
+        <p class="story-hero-subtitle">
+            Every person reading these books is at their lowest point, wondering if Allah hears them.
+            Your story could be the one that keeps them going.
+        </p>
+    </div>
+</section>
+
+<!-- Why Share -->
+<section class="why-section">
+    <div class="why-inner">
+        <div class="why-card">
+            <span class="why-icon">🤲</span>
+            <h3 class="why-title">Earn Ongoing Reward</h3>
+            <p class="why-body">
+                Every person your story reaches and turns back to Allah because of it,
+                you share in that reward. That ajr continues after you.
+            </p>
+        </div>
+        <div class="why-card">
+            <span class="why-icon">🌙</span>
+            <h3 class="why-title">Revive Someone's Hope</h3>
+            <p class="why-body">
+                There are people praying in the dark right now, feeling like nothing is changing.
+                A real story from a real person is often what breaks through.
+            </p>
+        </div>
+        <div class="why-card">
+            <span class="why-icon">📖</span>
+            <h3 class="why-title">Become Part of Something Lasting</h3>
+            <p class="why-body">
+                Your story could appear in a published book read by Muslims in countries you've never
+                been to, in languages you don't speak, for years to come.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Form -->
+<section class="form-section">
+    <div class="form-inner">
+        <div class="form-section-header">
+            <p class="form-section-label">Submit Your Story</p>
+            <h2 class="form-section-title">Tell Us What Happened</h2>
+        </div>
+
+        <div class="story-form">
+
+            <div id="form-success-msg" class="form-message success">
+                JazakAllahu Khayran. Your story has been received. May Allah reward you for sharing.
+            </div>
+
+            <div id="form-error-msg" class="form-message error">
+                Something went wrong. Your answers are still in the form. Please try submitting again, or email your story directly to <a href="mailto:contact@omnitryx.ca">contact@omnitryx.ca</a>.
+            </div>
+
+            <form id="story-form" novalidate>
+
+                <!-- Book Selection -->
+                <div class="field-group">
+                    <span class="field-label">Which book does this story best fit?</span>
+                    <div class="book-options" id="book-options">
+                        <label class="book-option">
+                            <input type="radio" name="book" value="The Power of Tahajjud Vol. 2">
+                            <span class="book-option-text">The Power of Tahajjud Vol. 2</span>
+                        </label>
+                        <label class="book-option">
+                            <input type="radio" name="book" value="The Power of Dua">
+                            <span class="book-option-text">The Power of Dua</span>
+                        </label>
+                        <label class="book-option">
+                            <input type="radio" name="book" value="The Power of Istikhara">
+                            <span class="book-option-text">The Power of Istikhara</span>
+                        </label>
+                        <label class="book-option">
+                            <input type="radio" name="book" value="The Power of Astaghfar">
+                            <span class="book-option-text">The Power of Astaghfar</span>
+                        </label>
+                    </div>
+                    <p class="agreement-error" id="err_book">Please select a book before submitting.</p>
+                </div>
+
+                <hr class="form-divider">
+
+                <!-- Guided Questions -->
+                <p class="form-section-heading">Your Story</p>
+                <p style="font-size: 0.9rem; color: var(--text-medium); margin-bottom: 1.8rem; line-height: 1.7;">
+                    Answer as many of these as you can. Even a few sentences in each is enough. Write as if you're telling a close friend what happened.
+                </p>
+
+                <div class="field-group">
+                    <label for="q_context">What were you going through at the time?</label>
+                    <span class="field-hint-text">What problem, pain, or need were you facing? What made it feel impossible or hopeless?</span>
+                    <textarea id="q_context" name="q_context"></textarea>
+                </div>
+
+                <div class="field-group">
+                    <label for="q_action">What did you do? What practice did you turn to?</label>
+                    <span class="field-hint-text">Did you begin praying Tahajjud consistently? Make a specific dua? Pray istikhara? Return to astaghfar? What did that look like in practice?</span>
+                    <textarea id="q_action" name="q_action"></textarea>
+                </div>
+
+                <div class="field-group">
+                    <label for="q_timeline">How long did you wait? Did anything happen during that time?</label>
+                    <span class="field-hint-text">Days, weeks, months? Did things get harder before they changed? Did you almost give up?</span>
+                    <textarea id="q_timeline" name="q_timeline"></textarea>
+                </div>
+
+                <div class="field-group">
+                    <label for="q_miracle">What happened? What did you witness?</label>
+                    <span class="field-hint-text">Describe the answer, the change, or the miracle as specifically as you can. What shifted? What opened? What came through in a way you didn't expect?</span>
+                    <textarea id="q_miracle" name="q_miracle"></textarea>
+                </div>
+
+                <div class="field-group">
+                    <label for="q_reaction">How did you react when you saw the answer?</label>
+                    <span class="field-hint-text">What did you feel in that moment? What did you do? Were you in tears, in shock, overwhelmed with gratitude?</span>
+                    <textarea id="q_reaction" name="q_reaction"></textarea>
+                </div>
+
+                <div class="field-group">
+                    <label for="q_lesson">What do you think Allah was showing you through this?</label>
+                    <span class="field-hint-text">Looking back, what lesson or wisdom do you see in how it happened, when it happened, or the way it came through?</span>
+                    <textarea id="q_lesson" name="q_lesson"></textarea>
+                </div>
+
+                <div class="field-group">
+                    <label for="q_extra">Anything else you want the reader to know?</label>
+                    <span class="field-hint-text">A word of advice for someone who is still waiting. Something you wish you had known. Anything you want to add.</span>
+                    <textarea id="q_extra" name="q_extra"></textarea>
+                </div>
+
+                <hr class="form-divider">
+
+                <!-- Agreements -->
+                <p class="form-section-heading">Before You Submit</p>
+                <div class="agreement-group">
+                    <div class="agreement-item" id="wrap_truth">
+                        <input type="checkbox" id="agree_truth" name="agree_truth">
+                        <label for="agree_truth">
+                            I am sharing this story truthfully and to the best of my recollection. I have not fabricated any part of it.
+                        </label>
+                    </div>
+                    <p class="agreement-error" id="err_truth">Please confirm this before submitting.</p>
+                    <div class="agreement-item" id="wrap_anon">
+                        <input type="checkbox" id="agree_anon" name="agree_anon">
+                        <label for="agree_anon">
+                            I understand that my story may or may not be shared across channels including books, social media, ads, and other platforms. If it is, all identifying details will be anonymized.
+                        </label>
+                    </div>
+                    <p class="agreement-error" id="err_anon">Please confirm this before submitting.</p>
+                </div>
+
+                <!-- Submit -->
+                <div class="form-submit-area">
+                    <button type="submit" class="form-submit-btn" id="submit-btn">Submit My Story</button>
+                    <p class="form-privacy-note">
+                        Your story will always be anonymized before being shared.
+                    </p>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</section>
+
+<script>
+(function () {
+    var API_ENDPOINT = 'https://l6h0a6ig2a.execute-api.us-east-1.amazonaws.com/prod/submit-story';
+
+    var form = document.getElementById('story-form');
+    var submitBtn = document.getElementById('submit-btn');
+    var successMsg = document.getElementById('form-success-msg');
+    var errorMsg = document.getElementById('form-error-msg');
+
+    // Highlight selected book card
+    form.querySelectorAll('input[name="book"]').forEach(function (radio) {
+        radio.addEventListener('change', function () {
+            form.querySelectorAll('.book-option').forEach(function (card) {
+                card.classList.remove('selected');
+            });
+            this.closest('.book-option').classList.add('selected');
+            document.getElementById('book-options').style.outline = '';
+            document.getElementById('err_book').style.display = 'none';
+        });
+    });
+
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        // Validate checkboxes inline
+        var agreeTruth = document.getElementById('agree_truth').checked;
+        var agreeAnon = document.getElementById('agree_anon').checked;
+        var valid = true;
+
+        var wrapTruth = document.getElementById('wrap_truth');
+        var wrapAnon  = document.getElementById('wrap_anon');
+        var errTruth  = document.getElementById('err_truth');
+        var errAnon   = document.getElementById('err_anon');
+
+        if (!agreeTruth) {
+            wrapTruth.classList.add('has-error');
+            errTruth.style.display = 'block';
+            valid = false;
+        } else {
+            wrapTruth.classList.remove('has-error');
+            errTruth.style.display = 'none';
+        }
+
+        if (!agreeAnon) {
+            wrapAnon.classList.add('has-error');
+            errAnon.style.display = 'block';
+            valid = false;
+        } else {
+            wrapAnon.classList.remove('has-error');
+            errAnon.style.display = 'none';
+        }
+
+        // Collect and validate book selection
+        var selectedBook = form.querySelector('input[name="book"]:checked');
+        var book = selectedBook ? selectedBook.value : '';
+        var bookOptions = document.getElementById('book-options');
+        var errBook = document.getElementById('err_book');
+
+        if (!book) {
+            bookOptions.style.outline = '1.5px solid #c04848';
+            bookOptions.style.borderRadius = '8px';
+            errBook.style.display = 'block';
+            valid = false;
+        } else {
+            bookOptions.style.outline = '';
+            errBook.style.display = 'none';
+        }
+
+        if (!valid) return;
+
+        var payload = {
+            book:       book,
+            q_context:  document.getElementById('q_context').value.trim(),
+            q_action:   document.getElementById('q_action').value.trim(),
+            q_timeline: document.getElementById('q_timeline').value.trim(),
+            q_miracle:  document.getElementById('q_miracle').value.trim(),
+            q_reaction: document.getElementById('q_reaction').value.trim(),
+            q_lesson:   document.getElementById('q_lesson').value.trim(),
+            q_extra:    document.getElementById('q_extra').value.trim(),
+            submitted_at: new Date().toISOString()
+        };
+
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Submitting...';
+        successMsg.style.display = 'none';
+        errorMsg.style.display = 'none';
+
+        fetch(API_ENDPOINT, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+        })
+        .then(function (res) {
+            if (!res.ok) throw new Error('Server error: ' + res.status);
+            return res.json();
+        })
+        .then(function () {
+            form.reset();
+            successMsg.style.display = 'block';
+            window.scrollTo({ top: successMsg.getBoundingClientRect().top + window.scrollY - 120, behavior: 'smooth' });
+            gtag('event', 'story_submitted', { 'books': books.join(',') });
+        })
+        .catch(function (err) {
+            console.error(err);
+            errorMsg.style.display = 'block';
+            window.scrollTo({ top: errorMsg.getBoundingClientRect().top + window.scrollY - 120, behavior: 'smooth' });
+        })
+        .finally(function () {
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Submit My Story';
+        });
+    });
+})();
+</script>
