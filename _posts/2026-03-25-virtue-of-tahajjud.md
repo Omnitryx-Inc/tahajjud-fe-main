@@ -4,6 +4,10 @@ description: "Tahajjud is described in the Quran and hadith as something that el
 date: 2026-03-25
 read_time: 5
 layout: post
+related:
+  - /blog/benefits-of-tahajjud-prayer/
+  - /blog/quran-and-tahajjud/
+  - /blog/tahajjud-for-beginners/
 faq:
   - q: "What is the virtue of Tahajjud in Islam?"
     a: "The Quran promises the one who prays Tahajjud a 'praised station' (maqam mahmood) on the Day of Judgment. The hadith literature describes Tahajjud as the best prayer after the obligatory prayers, and scholars across centuries have identified it as the mark of the people closest to Allah."
@@ -58,6 +62,8 @@ When the body does not want to leave the bed and you leave it anyway, you are ch
 Allah does not need your night prayer. You need it. It is not for Him. It is the process by which a person who knows the words of Islam becomes a person whose heart has surrendered to it.
 
 The virtue of Tahajjud is real. The praised station is real. The best voluntary prayer is real. But they accrue to the person who shows up, in the dark, when no one is watching, because Allah is enough reason to get out of bed.
+
+For a deeper look at the seven specific benefits described in the Quran and hadith, read [7 Benefits of Tahajjud Prayer](/blog/benefits-of-tahajjud-prayer/).
 
 ---
 

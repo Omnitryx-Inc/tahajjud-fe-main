@@ -3,6 +3,10 @@ title: "What to Say in Tahajjud If You Don't Know Arabic"
 description: "You don't need to be fluent in Arabic to pray Tahajjud. Here's what to recite, how to make dua in your own language, and why the most powerful prayer you can offer might already be within you."
 date: 2026-02-27
 read_time: 7
+related:
+  - /blog/tahajjud-dua-list/
+  - /blog/what-to-do-after-tahajjud/
+  - /blog/tahajjud-for-beginners/
 ---
 
 One of the most common reasons people hesitate to pray Tahajjud is a quiet fear: *I don't know enough Arabic. I won't do it right.*
@@ -24,6 +28,8 @@ Tahajjud consists of voluntary rakats, typically 2 to 8, though even 2 is suffic
 **Step 2:** Pray 2 rakats as you would any voluntary prayer. Recite Surah Al-Fatiha, followed by any surah you know.
 
 **Step 3:** After your final tashahhud and salam, sit and make dua. This is the heart of Tahajjud.
+
+If this is your first time praying Tahajjud and you'd like a complete step-by-step walkthrough, the [Beginners Guide to Tahajjud](/blog/tahajjud-for-beginners/) has everything you need.
 
 ---
 
@@ -73,6 +79,8 @@ The scholars are in agreement: dua can be made in any language. Ibn Taymiyyah, I
 Sometimes you sit on the prayer mat and nothing comes out. That silence is also a form of prayer. Sit with it.
 
 Being present is enough.
+
+For a more complete collection of duas organized by what you're going through, including marriage, debt, anxiety, and grief, visit the [Tahajjud Dua List](/blog/tahajjud-dua-list/).
 
 ---
 

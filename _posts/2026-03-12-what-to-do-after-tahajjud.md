@@ -3,6 +3,10 @@ title: "What to Do After Tahajjud: Dua, Dhikr, and Making the Most of the Last T
 description: "Tahajjud doesn't end when you make tasleem. Here is what to do in the precious minutes after your prayer before Fajr, including dua, dhikr, and Quran."
 date: 2026-03-12
 read_time: 6
+related:
+  - /blog/what-to-say-in-tahajjud/
+  - /blog/tahajjud-dua-list/
+  - /blog/how-to-make-dua-after-salah/
 ---
 
 Making the tasleem at the end of Tahajjud is not the end of the experience. It is the beginning of some of the most valuable minutes of your entire night.

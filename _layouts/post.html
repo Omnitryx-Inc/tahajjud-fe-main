@@ -95,7 +95,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/main.v1.4.css">
-    <link rel="stylesheet" href="/assets/css/blog.v1.2.css">
+    <link rel="stylesheet" href="/assets/css/blog.v1.3.css">
 </head>
 
 <body>
@@ -139,9 +139,37 @@
 
         <p class="post-support">If this helped you, please consider <a href="/support-the-mission/">supporting our work</a> so we can continue writing for others who need it.</p>
 
-        <div class="post-more-articles">
-          <a href="/blog/" class="post-more-articles-link">Read More Articles &rarr;</a>
+        {% assign related_posts = "" | split: "" %}
+        {% if page.related %}
+          {% for related_url in page.related %}
+            {% for post in site.posts %}
+              {% if post.url == related_url %}
+                {% assign related_posts = related_posts | push: post %}
+              {% endif %}
+            {% endfor %}
+          {% endfor %}
+        {% else %}
+          {% for post in site.posts %}
+            {% if post.url != page.url and related_posts.size < 3 %}
+              {% assign related_posts = related_posts | push: post %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+
+        {% if related_posts.size > 0 %}
+        <div class="post-related">
+          <p class="post-related-title">Continue Reading</p>
+          <div class="post-related-grid">
+            {% for post in related_posts %}
+            <a href="{{ post.url }}" class="post-related-card">
+              <p class="post-related-meta">{{ post.read_time }} min read</p>
+              <h4>{{ post.title }}</h4>
+              <p class="post-related-desc">{{ post.description | truncate: 110 }}</p>
+            </a>
+            {% endfor %}
+          </div>
         </div>
+        {% endif %}
 
         <div class="post-cta-box">
           <p class="post-cta-title">Read Real Tahajjud Stories</p>

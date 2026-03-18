@@ -4,6 +4,10 @@ description: "Anxiety is exhausting. It runs on a loop that will not stop. Here 
 date: 2026-03-18
 read_time: 6
 layout: post
+related:
+  - /blog/your-tears-in-the-eyes-of-allah/
+  - /blog/dua-not-answered/
+  - /blog/tahajjud-for-beginners/
 faq:
   - q: "Does Tahajjud help with anxiety?"
     a: "Tahajjud creates specific conditions that counter anxiety: genuine silence at night, the physical act of sujood as a posture of surrender, a concrete outlet for fears through dua, and a reminder that Allah is governing what you cannot control."
@@ -57,7 +61,7 @@ Not after the problem was solved. Not once he felt ready. When distressed, he pr
 
 If anxiety is keeping you up at night anyway, use that time. Instead of lying there with the loop running, get up, make wudu, and pray two rakats. Then sit and make dua. Say everything that is circling in your mind, out loud or in your heart. Ask Allah to take it. Ask for peace. Ask for clarity. Ask for help with the specific things that are overwhelming you.
 
-Then go back to sleep, or stay awake until Fajr and pray that too.
+Then go back to sleep, or stay awake until Fajr and pray that too. If you've never prayed Tahajjud before and aren't sure of the structure, the [Beginners Guide to Tahajjud](/blog/tahajjud-for-beginners/) will walk you through it simply.
 
 The Prophet ﷺ said that the closest a servant ever is to Allah is in sujood. If you are in pain, that is where to bring it.
 
@@ -66,6 +70,8 @@ The Prophet ﷺ said that the closest a servant ever is to Allah is in sujood. I
 When you wake up for Tahajjud, you are not just praying. You are telling your nervous system: the night is not a threat. You are telling your heart: there is somewhere to put this. You are telling Allah: I cannot carry this alone, and I am bringing it to You.
 
 So wake up and pray tonight.
+
+If what you bring to that prayer is grief that has no name, read [Your Tears in the Eyes of Allah](/blog/your-tears-in-the-eyes-of-allah/).
 
 ---
 

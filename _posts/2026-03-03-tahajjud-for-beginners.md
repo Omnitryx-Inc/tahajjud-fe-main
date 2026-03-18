@@ -3,6 +3,10 @@ title: "Tahajjud for Beginners: A Complete Guide"
 description: "Everything you need to start praying Tahajjud: what it is, how many rakats, when to pray, and how to build a practice that actually lasts. A straightforward guide for those just starting out."
 date: 2026-03-03
 read_time: 8
+related:
+  - /blog/how-to-wake-up-for-tahajjud/
+  - /blog/best-time-to-pray-tahajjud/
+  - /blog/what-to-say-in-tahajjud/
 faq:
   - q: "How do you perform Tahajjud prayer step by step?"
     a: "Make the intention before sleeping, wake up in the last third of the night, perform wudu, then pray in pairs of 2 rakats with a closing salam after each pair. After completing your rakats, sit and make dua, speaking honestly to Allah about whatever you need."
@@ -57,7 +61,7 @@ There is no maximum for voluntary prayer, but scholars recommend not exhausting 
 
 Tahajjud can be prayed anytime between Isha (after you've slept, even briefly) and before Fajr. The strongest recommended time is the **last third of the night**.
 
-Use the app **Pray Watch** to find the exact start time of the last third of the night for your location.
+Use the app **Pray Watch** to find the exact start time of the last third of the night for your location. For a detailed explanation of why this specific hour carries such weight in the hadith, read [The Best Time to Pray Tahajjud](/blog/best-time-to-pray-tahajjud/).
 
 ---
 
@@ -88,6 +92,8 @@ This is the most important part. After completing your rakats, sit and speak to 
 Ask for what you need. Name it clearly. And if you don't know what you need, ask for what is best for you.
 
 You can speak in Arabic, English, or any language. Your dua does not need to be formal or memorized. The most powerful Tahajjud dua is the one that comes from your heart in that moment.
+
+If you're not sure what to say, the [Tahajjud Dua List](/blog/tahajjud-dua-list/) has duas organized by situation, from marriage to grief to anxiety, in plain language you can make your own.
 
 ---
 

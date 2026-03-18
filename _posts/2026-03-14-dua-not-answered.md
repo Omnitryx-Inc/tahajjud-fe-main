@@ -4,6 +4,10 @@ description: "If you have been making dua and feel like nothing is happening, th
 date: 2026-03-14
 read_time: 6
 layout: post
+related:
+  - /blog/disappointed-in-allah/
+  - /blog/powerful-dua-for-miracle/
+  - /blog/best-time-to-pray-tahajjud/
 faq:
   - q: "Why is my dua not being answered by Allah?"
     a: "According to hadith, every dua is answered in one of three ways: Allah gives you what you asked for, stores it as reward for the hereafter, or uses it to remove a harm from your path. What feels like no answer is often one of the latter two."
@@ -98,7 +102,7 @@ If you have been making dua and feel like nothing is moving, change when you ask
 
 That is not a metaphor. That is a standing invitation, renewed every single night.
 
-Wake up before Fajr. Pray two rakats. Then make your dua. Not because it is a trick or a formula, but because it is the closest you will ever be to Allah in this life. He is already there, waiting, asking who is calling on Him.
+Wake up before Fajr. Pray two rakats. Then make your dua. Not because it is a trick or a formula, but because it is the closest you will ever be to Allah in this life. He is already there, waiting, asking who is calling on Him. If you've never prayed Tahajjud before, the [Beginners Guide](/blog/tahajjud-for-beginners/) will show you exactly how.
 
 You have not been ignored. You have not been abandoned. You are in a conversation with the One who created you, and He is listening to every word.
 

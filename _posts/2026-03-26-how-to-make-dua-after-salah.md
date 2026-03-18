@@ -4,6 +4,10 @@ description: "You finished Tahajjud. Now what? A practical guide to making dua a
 date: 2026-03-26
 read_time: 5
 layout: post
+related:
+  - /blog/tahajjud-dua-list/
+  - /blog/what-to-do-after-tahajjud/
+  - /blog/what-to-say-in-tahajjud/
 faq:
   - q: "Is making dua after salah a sunnah?"
     a: "Yes. The Prophet ﷺ regularly made dua after prayer, and he taught specific duas to be said after the obligatory prayers. After Tahajjud specifically, the Prophet would remain in dua and dhikr until Fajr approached. Making dua after salah is an established sunnah, and the time right after Tahajjud is among the most powerful windows for supplication."

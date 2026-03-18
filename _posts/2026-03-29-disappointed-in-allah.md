@@ -4,6 +4,10 @@ description: "You prayed. You fasted. You cried in the last third of the night. 
 date: 2026-03-29
 read_time: 6
 layout: post
+related:
+  - /blog/dua-not-answered/
+  - /blog/your-tears-in-the-eyes-of-allah/
+  - /blog/anxiety-stress-and-tahajjud/
 faq:
   - q: "Is it wrong to feel disappointed in Allah?"
     a: "The feeling is human. What matters is what you do with it. Allah tells us in the Quran that the Messengers and those who believed were tested so severely they cried out asking when the help would come. Testing is part of the path. Bring the feeling to Allah rather than letting it pull you away from Him."

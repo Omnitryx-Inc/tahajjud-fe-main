@@ -3,6 +3,10 @@ title: "Tahajjud in the Quran: Every Verse That Mentions Night Prayer"
 description: "A focused look at every major Quran verse that references Tahajjud, Qiyam al-Layl, and night worship, with context and commentary."
 date: 2026-03-11
 read_time: 8
+related:
+  - /blog/benefits-of-tahajjud-prayer/
+  - /blog/virtue-of-tahajjud/
+  - /blog/tahajjud-for-beginners/
 ---
 
 The Quran does not repeat itself without purpose. When a theme appears again and again across different surahs, different contexts, and different periods of revelation, it is telling you something about how much weight Allah places on it.

@@ -4,6 +4,10 @@ description: "There is something sacred about crying to Allah. In Islam, the tea
 date: 2026-03-16
 read_time: 5
 layout: post
+related:
+  - /blog/dua-not-answered/
+  - /blog/disappointed-in-allah/
+  - /blog/what-to-do-after-tahajjud/
 ---
 
 There are duas that come out as words. And then there are duas that come out as tears.
@@ -51,6 +55,8 @@ Allah descends every night and asks who is calling on Him, who is seeking Him, w
 The Prophet ﷺ said that the closest a servant ever is to their Lord is in sujood. Put your face on the ground, in the last third of the night, and give Allah everything you have been carrying. Every fear. Every grief. Every longing. Every unsaid thing.
 
 You will not be ignored.
+
+If you have been making dua and feel like nothing is happening, read [I Made Dua to Allah But He Did Not Answer](/blog/dua-not-answered/). And for everything you can do in the minutes that follow Tahajjud, visit [What to Do After Tahajjud](/blog/what-to-do-after-tahajjud/).
 
 ---
 

@@ -4,6 +4,10 @@ description: "Niyyah is a decision your heart makes. Here is what intention for 
 date: 2026-03-20
 read_time: 4
 layout: post
+related:
+  - /blog/tahajjud-for-beginners/
+  - /blog/how-to-wake-up-for-tahajjud/
+  - /blog/best-time-to-pray-tahajjud/
 faq:
   - q: "Do I have to say my niyyah out loud for Tahajjud?"
     a: "No. The niyyah for Tahajjud, like all prayers, is an act of the heart, not the tongue. You do not need to say any specific words aloud. What matters is that you consciously intend before you begin that you are rising to pray Tahajjud for the sake of Allah."

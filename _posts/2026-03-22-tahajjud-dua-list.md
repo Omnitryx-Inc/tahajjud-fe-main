@@ -4,6 +4,10 @@ description: "Every dua you can make in the last third of the night, organized b
 date: 2026-03-22
 read_time: 12
 layout: post
+related:
+  - /blog/what-to-say-in-tahajjud/
+  - /blog/what-to-do-after-tahajjud/
+  - /blog/tahajjud-for-love/
 faq:
   - q: "What dua do you say when you wake up for Tahajjud?"
     a: "The Prophet ﷺ had a specific dua he would say upon waking for night prayer, recorded in Bukhari 1120. It begins with praising Allah and affirming His lordship over the heavens and earth, then asks for forgiveness and mercy. The full transliteration and translation are in this post."
@@ -24,6 +28,8 @@ You woke up. You prayed. The house is quiet. You are sitting on your prayer mat 
 This is that moment. What do you say?
 
 This post is the most complete collection of duas for Tahajjud we know how to write. Every category of human need is here. Find the one that is yours tonight.
+
+For a guide to the full structure of Tahajjud, including what to recite in each rakat before you sit to make dua, read [What to Say in Tahajjud](/blog/what-to-say-in-tahajjud/).
 
 ---
 
@@ -73,7 +79,7 @@ The duas below are written in plain language. They are not scripts. They are sta
 
 ### For Marriage: When You Are Still Waiting
 
-If you are single and longing to be married, the last third of the night was made for this conversation.
+If you are single and longing to be married, the last third of the night was made for this conversation. For a full post on why Tahajjud is particularly powerful for matters of the heart, read [Tahajjud for Love](/blog/tahajjud-for-love/).
 
 > *"O Allah, You know what my heart has been carrying. You know how long I have been waiting and how many times I have almost lost hope. I ask You for a spouse who is good for my deen, my heart, and my future. Someone who will walk this path with me toward You. O Allah, if I have been chasing the wrong things or closed myself off to Your plan, forgive me and open my heart. You are Al-Fattah, the Opener. Open this door for me at the time that is best, in the way that is best. I trust You. I place this in Your hands."*
 

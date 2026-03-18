@@ -4,6 +4,10 @@ description: "What people are actually looking for when they search for a powerf
 date: 2026-03-24
 read_time: 5
 layout: post
+related:
+  - /blog/dua-not-answered/
+  - /blog/tahajjud-dua-list/
+  - /blog/best-time-to-pray-tahajjud/
 faq:
   - q: "Is there a specific dua to make for a miracle?"
     a: "There is no special formula or set of words that guarantees a specific outcome. What Islam teaches is that sincere dua made at the right times, especially the last third of the night, during rain, or in the accepted hour of Jummah, carries great weight. The most powerful thing you can do is raise your hands to Allah honestly and ask."
@@ -131,6 +135,8 @@ The Prophet ﷺ taught that when a believer makes dua, one of three things happe
 Not one sincere dua disappears. Not one honest reaching toward Allah goes unregistered.
 
 You do not need a formula. You need to keep asking. Bring your need to the times that carry weight. Be honest. Be consistent. And trust that what you ask in sincerity, in the moments Allah designated, is heard by the One who is fully capable of answering it.
+
+For duas organized by what you're going through, from marriage to grief to the impossible, the [Tahajjud Dua List](/blog/tahajjud-dua-list/) has them all in plain language you can make your own.
 
 ---
 
