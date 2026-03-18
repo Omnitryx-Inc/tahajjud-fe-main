@@ -158,6 +158,41 @@
     font-weight: 500;
 }
 
+.post-author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.25rem;
+    font-size: 0.8rem;
+    color: var(--text-light);
+    font-weight: 500;
+    flex-wrap: wrap;
+}
+
+.post-author-socials {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.post-author-socials a {
+    color: var(--text-light);
+    text-decoration: none;
+    border-bottom: 1px solid var(--beige-warm);
+    padding-bottom: 1px;
+    transition: color 0.2s;
+}
+
+.post-author-socials a:hover {
+    color: var(--gold-primary);
+    border-bottom-color: var(--gold-primary);
+}
+
+.post-author-bottom {
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--beige-warm);
+}
+
 /* Post body */
 .post-body {
     font-size: clamp(1rem, 2.5vw, 1.1rem);
