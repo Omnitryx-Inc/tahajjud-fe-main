@@ -676,7 +676,7 @@ permalink: /share-your-story/
             form.reset();
             successMsg.style.display = 'block';
             window.scrollTo({ top: successMsg.getBoundingClientRect().top + window.scrollY - 120, behavior: 'smooth' });
-            gtag('event', 'story_submitted', { 'books': books.join(',') });
+            gtag('event', 'story_submitted', { 'book': book });
         })
         .catch(function (err) {
             console.error(err);
