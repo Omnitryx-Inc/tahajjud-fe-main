@@ -6,13 +6,15 @@ read_time: 6
 layout: post
 faq:
   - q: "Is it wrong to feel disappointed in Allah?"
-    a: "The feeling is human. What matters is what you do with it. The Companions themselves asked 'when will Allah's help come?' while they were being persecuted, and Allah did not rebuke them for the question. He answered it. Bring the feeling to Allah rather than letting it pull you away from Him."
+    a: "The feeling is human. What matters is what you do with it. Allah tells us in the Quran that the Messengers and those who believed were tested so severely they cried out asking when the help would come. Testing is part of the path. Bring the feeling to Allah rather than letting it pull you away from Him."
   - q: "Why would Allah not answer the dua of someone who prayed Tahajjud and fasted and cried?"
-    a: "Allah answers every sincere dua, but not always in the form or timing we expect. The Prophet ﷺ taught that a dua is either answered as asked, stored as reward for the Day of Judgment, or used to avert a harm. What looks like silence is often one of the latter two, working on your behalf in ways you cannot yet see."
-  - q: "Did the Prophets ever feel like their dua was not being answered?"
-    a: "Yes. Prophet Ayyub (as) endured years of illness and loss. Prophet Zakariyya asked for a child for decades. Prophet Yunus found himself in the belly of a whale. They did not receive immediate answers. What they did was continue to turn toward Allah with whatever they had left. That turning itself became the story."
+    a: "Allah answers every sincere dua, but not always in the form or timing we expect. The Prophet ﷺ taught that a dua is either answered as asked, stored as reward for the Day of Judgment, or used to avert a harm. What looks like silence is often one of the latter two, working on your behalf in ways you cannot yet see. And every night you got up, every tear you shed, none of it was lost."
+  - q: "Is feeling disappointed in Allah a sign of weak faith?"
+    a: "Not necessarily. The Prophets of Allah were tested too. Prophet Ayyub lost his health, his wealth, and his family and waited years. Prophet Yaqub grieved for his son so deeply he lost his sight. They did not stop believing. The test is not whether you feel the pain. The test is whether you stay."
+  - q: "What does Shaitan have to do with this feeling?"
+    a: "When you are tired, disappointed, and your hope is low, that is exactly when Shaitan tries to turn the feeling into distance from Allah. He wants you to stop praying and stop asking. Recognizing that is important. The disappointment itself is not the danger. Walking away from Allah because of it is."
   - q: "How do I keep going when I feel like Allah has not responded?"
-    a: "Start by being honest with Him about exactly how you feel. The relationship does not require you to perform certainty you do not have right now. Tell Him you are struggling. Tell Him you do not understand. That honesty is itself a form of dua, and it is the posture that keeps the door open rather than closing it."
+    a: "Acknowledge the feeling honestly and bring it directly to Allah. Tell Him you are tired and you do not understand. Ask Him to strengthen your heart. That itself is a dua. Every night you showed up was registered. Keep going."
 ---
 
 You did everything right.
