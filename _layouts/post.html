@@ -87,8 +87,10 @@
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-DSBQTT3LT9');
+      if (window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
+        gtag('js', new Date());
+        gtag('config', 'G-DSBQTT3LT9');
+      }
     </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">

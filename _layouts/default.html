@@ -72,13 +72,11 @@
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      // Google Analytics
-      gtag('config', 'G-DSBQTT3LT9');
-      
-      // Google Ads
-      gtag('config', 'AW-18000367082');
+      if (window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
+        gtag('js', new Date());
+        gtag('config', 'G-DSBQTT3LT9');
+        gtag('config', 'AW-18000367082');
+      }
     </script>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
