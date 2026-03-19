@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>{{ page.title }} | The Power of Tahajjud</title>
 
     <meta name="title" content="{{ page.title }}">
@@ -193,7 +193,7 @@
   </main>
 
   <!-- Sticky mobile CTA -->
-  <div id="sticky-bar" style="display:none; position:fixed; bottom:0; left:0; right:0; background:var(--text-dark); padding:0.9rem 1.5rem; z-index:999; justify-content:space-between; align-items:center;">
+  <div id="sticky-bar" style="display:none; position:fixed; bottom:0; left:0; right:0; background:var(--text-dark); padding:0.9rem 1.5rem; padding-bottom:calc(0.9rem + env(safe-area-inset-bottom)); z-index:999; justify-content:space-between; align-items:center;">
     <span style="color:var(--cream-white); font-size:0.95rem; font-weight:600; font-family:'Inter',sans-serif;">The Power of Tahajjud</span>
     <a href="/free/" style="background:var(--gold-primary); color:var(--cream-white); padding:0.55rem 1.2rem; border-radius:6px; font-size:0.88rem; font-weight:700; font-family:'Inter',sans-serif; text-decoration:none; white-space:nowrap; margin-left:1rem;" onclick="gtag('event', 'click_sticky_bar', { 'button_location': 'blog_sticky_bar' });">Get the Book Free</a>
   </div>
@@ -215,7 +215,7 @@
       var headings = body.querySelectorAll('h2');
       if (headings.length < 2) return;
       var callout = document.createElement('div');
-      callout.innerHTML = '<p style="margin:0 0 0.5rem; font-size:0.95rem; color:var(--text-dark); line-height:1.75;">Every single night, Allah descends to the lowest heaven, calling out to His servants so He can grant their needs. <strong>The Power of Tahajjud</strong> shares real stories of people who prayed during their darkest moments and witnessed extraordinary miracles that made the impossible... <strong>possible</strong>.</p><a href="/free/" style="font-size:0.9rem; font-weight:700; color:var(--gold-primary); text-decoration:none;" onclick="gtag(\'event\', \'click_inline_callout\', { \'button_location\': \'blog_mid_article\' });">Read the stories ↗</a>';
+      callout.innerHTML = '<p style="margin:0 0 0.5rem; font-size:0.95rem; color:var(--text-dark); line-height:1.75;">Every single night, Allah descends to the lowest heaven, calling out to His servants so He can grant their needs. <strong>The Power of Tahajjud</strong> shares real stories of people who prayed during their darkest moments and witnessed extraordinary miracles that made the impossible... <strong>possible</strong>.</p><a href="/free/" style="font-size:0.9rem; font-weight:700; color:var(--gold-primary); text-decoration:none;" onclick="gtag(\'event\', \'click_inline_callout\', { \'button_location\': \'blog_mid_article\' });">Read the stories</a>';
       callout.style.cssText = 'margin:2rem 0; padding:1.25rem 1.5rem; background:var(--beige-soft); border-left:3px solid var(--gold-primary); border-radius:0 8px 8px 0;';
       headings[1].before(callout);
     })();
