@@ -2,6 +2,16 @@
    BLOG — matches main site design language
    ============================================ */
 
+/* Sticky bar — mobile only */
+#sticky-bar {
+  display: none;
+}
+@media (min-width: 769px) {
+  #sticky-bar {
+    display: none !important;
+  }
+}
+
 /* Blog Index Page */
 .blog-hero {
     padding: clamp(8rem, 16vw, 11rem) 5% clamp(4rem, 8vw, 6rem);
