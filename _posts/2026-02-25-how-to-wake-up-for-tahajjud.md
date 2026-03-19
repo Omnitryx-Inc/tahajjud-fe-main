@@ -74,7 +74,3 @@ Allah descends to the lowest heaven in the last third of the night and calls out
 The alarm isn't asking you to be a different person. It's just asking you to get up and answer that call.
 
 For a deeper look at what awaits you in that hour, read [7 Benefits of Tahajjud Prayer](/blog/benefits-of-tahajjud-prayer/).
-
----
-
-*Want to read the complete Tahajjud stories from the book? Get your copy of* [The Power of Tahajjud](/)*.*

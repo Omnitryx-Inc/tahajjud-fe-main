@@ -60,7 +60,3 @@ Wake up 20 minutes before Fajr. Pray 2 rakats. Make dua. Then pray Fajr.
 That's it. You already have to wake up for Fajr since it is obligatory. Those 20 minutes before it puts you squarely in the last third of the night, exactly where the hadith points. No alarm at 3 a.m., no disrupted sleep schedule. Just an earlier alarm than usual.
 
 Start there. Everything else can come later. For the full step-by-step guide to the prayer itself, visit the [Beginners Guide to Tahajjud](/blog/tahajjud-for-beginners/). And if waking up is the harder part for you, read [How to Wake Up for Tahajjud](/blog/how-to-wake-up-for-tahajjud/).
-
----
-
-*Read the true accounts of people who discovered the power of this hour in* [The Power of Tahajjud](/)*.*

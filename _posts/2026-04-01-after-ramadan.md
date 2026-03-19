@@ -155,7 +155,3 @@ It means the closeness was real. It means the worship this month cost you someth
 That wanting is not nothing. Start there.
 
 You proved something to yourself this month. You proved you are capable of choosing differently. That proof does not expire with the month. It is yours now. Use it.
-
----
-
-*If you need more inspiration, [The Power of Tahajjud](/) collects real stories of people who witnessed miracles through the night prayer. A reminder that Allah is still answering, long after Ramadan ends.*

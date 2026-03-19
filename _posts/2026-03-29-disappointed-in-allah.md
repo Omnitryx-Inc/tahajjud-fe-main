@@ -122,7 +122,3 @@ That is itself a dua. And it is one of the most honest ones you will ever make.
 He heard you the first time. He heard every time after that. And He is still hearing you now. The fact that you found this article and read it to the end is not nothing. You are still looking. You are still reaching. That is a sign in itself.
 
 If you want to understand what Allah actually says about the dua you think was not answered, and why it was never wasted, read this next: [I Made Dua to Allah But He Did Not Answer](/blog/dua-not-answered/).
-
----
-
-*Read the accounts of people who kept showing up in the last third of the night even when they could not feel the answer coming. Pick up [The Power of Tahajjud](/).*

@@ -74,7 +74,3 @@ The dua you made is not evaporating into the air. The Prophet ﷺ said:
 What you did after your salah was worship. It was heard. It is being responded to in ways you may not yet see.
 
 Keep showing up. Keep asking. Keep ending with Ameen.
-
----
-
-*Read what happened when real people began making sincere dua in the last third of the night, consistently. Pick up [The Power of Tahajjud](/).*

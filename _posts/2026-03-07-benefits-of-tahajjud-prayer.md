@@ -121,7 +121,3 @@ Tahajjud is sometimes presented as something for the spiritually elite. Somethin
 But that framing misses what it actually is. It is a gift. A standing invitation from Allah, repeated every single night, to come and ask and be heard. The gift does not expire. It is there tonight.
 
 The only question is whether you will accept it. For everything you need to start tonight, visit the [Beginners Guide to Tahajjud](/blog/tahajjud-for-beginners/).
-
----
-
-*Read the true stories of ordinary people who prayed Tahajjud through their hardest seasons, and what happened, in* [The Power of Tahajjud](/)*.*

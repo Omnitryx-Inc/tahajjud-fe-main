@@ -266,7 +266,3 @@ The Prophet ﷺ said:
 > ([Abu Dawud 1479](https://sunnah.com/abudawud:1479))
 
 The asking is worship. The reaching toward Allah at 3am when everything is quiet and your need is real, that is one of the most valuable things a person can do. Allah is already listening before you begin.
-
----
-
-*Read accounts of real people whose dua in the last third of the night changed the direction of their lives. Pick up [The Power of Tahajjud](/).*

@@ -57,7 +57,3 @@ The Prophet ﷺ said that the closest a servant ever is to their Lord is in sujo
 You will not be ignored.
 
 If you have been making dua and feel like nothing is happening, read [I Made Dua to Allah But He Did Not Answer](/blog/dua-not-answered/). And for everything you can do in the minutes that follow Tahajjud, visit [What to Do After Tahajjud](/blog/what-to-do-after-tahajjud/).
-
----
-
-*Read real stories of ordinary people who brought their grief to Allah in Tahajjud, and what He did with it. Pick up [The Power of Tahajjud](/).*

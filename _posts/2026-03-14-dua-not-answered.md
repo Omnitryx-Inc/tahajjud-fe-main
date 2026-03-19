@@ -107,7 +107,3 @@ Wake up before Fajr. Pray two rakats. Then make your dua. Not because it is a tr
 You have not been ignored. You have not been abandoned. You are in a conversation with the One who created you, and He is listening to every word.
 
 Keep asking.
-
----
-
-*Read real stories of ordinary people who kept asking and what Allah gave them. Pick up [The Power of Tahajjud](/).*

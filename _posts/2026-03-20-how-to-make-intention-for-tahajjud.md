@@ -73,4 +73,3 @@ The Prophet ﷺ said:
 
 *If you are just beginning Tahajjud and want a full guide on how to pray it, how many rakats to pray, and what to say, visit our [Beginners Guide](/blog/tahajjud-for-beginners/).*
 
-*Read real stories of people who made Tahajjud a habit and what changed in their lives. Pick up [The Power of Tahajjud](/).*

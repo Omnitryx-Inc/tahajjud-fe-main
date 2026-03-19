@@ -93,7 +93,3 @@ If you're unsure what to ask for, here is a supplication that encompasses everyt
 Translation: *"Our Lord! Grant us the good of this world and the Hereafter, and protect us from the torment of the Fire."* ([Quran 2:201](https://quran.com/2/201), Dr. Mustafa Khattab, The Clear Quran)
 
 The companions used to say this dua frequently, and it is comprehensive. It asks for what is good in every dimension of life, without limiting Allah's generosity to what you can specifically articulate.
-
----
-
-*To read the complete stories of people whose dua was answered through Tahajjud, pick up a copy of* [The Power of Tahajjud](/)*.*

@@ -103,7 +103,3 @@ Wake up. Make wudu. Pray 2 sincere rakats. Then sit and speak to Allah. That is 
 If you want help finding the exact time of the last third of the night for your location, start with [The Best Time to Pray Tahajjud](/blog/best-time-to-pray-tahajjud/). For a complete guide to the structure of the prayer itself, visit the [Beginners Guide to Tahajjud](/blog/tahajjud-for-beginners/).
 
 The only requirement is that you show up. Allah will meet you there.
-
----
-
-*Read the true stories of ordinary people who turned to Tahajjud in their hardest moments in* [The Power of Tahajjud](/)*.*

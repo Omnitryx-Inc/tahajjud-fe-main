@@ -142,4 +142,3 @@ For duas organized by what you're going through, from marriage to grief to the i
 
 *For everything you need to know about starting Tahajjud, including how to pray it and what to say, visit our [Beginners Guide](/blog/tahajjud-for-beginners/).*
 
-*Read the actual accounts of people who asked for the impossible in the last third of the night. Pick up [The Power of Tahajjud](/).*

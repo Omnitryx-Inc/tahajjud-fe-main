@@ -178,7 +178,7 @@
         </div>
         {% endif %}
 
-        <div class="post-cta-box">
+        <!-- <div class="post-cta-box">
           <p class="post-cta-title">Read Real Tahajjud Stories</p>
           <p class="post-cta-text">The Power of Tahajjud brings together real accounts of people who prayed in their darkest moments and witnessed extraordinary miracles.</p>
           <div class="cta-group">
@@ -186,7 +186,7 @@
             <a href="{{ site.amazon_url }}" class="btn btn-secondary js-amazon-link" onclick="gtag('event', 'click_buy_page', {'button_location': 'blog_post_cta'})">Buy Physical Edition</a>
           </div>
           <p class="free-copy-notice" style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-light);">Can't afford it? <a href="/free/" style="color: var(--gold-primary); font-weight: 600; text-decoration: underline;">Get a free copy</a></p>
-        </div>
+        </div> -->
 
       </div>
     </article>
@@ -207,6 +207,17 @@
           shown = true;
         }
       }, { passive: true });
+    })();
+
+    (function() {
+      var body = document.querySelector('.post-body');
+      if (!body) return;
+      var headings = body.querySelectorAll('h2');
+      if (headings.length < 2) return;
+      var callout = document.createElement('div');
+      callout.innerHTML = '<p style="margin:0 0 0.5rem; font-size:0.95rem; color:var(--text-dark); line-height:1.75;">Every single night, Allah descends to the lowest heaven, calling out to His servants so He can grant their needs. <strong>The Power of Tahajjud</strong> shares real stories of people who prayed during their darkest moments and witnessed extraordinary miracles that made the impossible... <strong>possible</strong>.</p><a href="/free/" style="font-size:0.9rem; font-weight:700; color:var(--gold-primary); text-decoration:none;" onclick="gtag(\'event\', \'click_inline_callout\', { \'button_location\': \'blog_mid_article\' });">Read the stories ↗</a>';
+      callout.style.cssText = 'margin:2rem 0; padding:1.25rem 1.5rem; background:var(--beige-soft); border-left:3px solid var(--gold-primary); border-radius:0 8px 8px 0;';
+      headings[1].before(callout);
     })();
   </script>
 

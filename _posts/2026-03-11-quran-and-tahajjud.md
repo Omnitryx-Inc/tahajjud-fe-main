@@ -123,4 +123,3 @@ If you have been reading these verses and feeling something stir in you, that is
 
 *For a full guide to beginning Tahajjud, including how many rakats to pray and what to say, visit the [Beginners Guide](/blog/tahajjud-for-beginners/).*
 
-*Read real stories of ordinary people who turned to night prayer and found what they were looking for. Pick up [The Power of Tahajjud](/).*

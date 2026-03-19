@@ -109,7 +109,3 @@ But here is what is true: Allah knows you better than you know yourself. He know
 Tahajjud is where you practice releasing the outcome. You ask. You trust. You go back to sleep. And you wake and ask again.
 
 That is not passivity. That is the most active form of faith there is.
-
----
-
-*Read the real stories of people who brought their loneliness, their longing, and their prayers for love to the last third of the night in* [The Power of Tahajjud](/)*.*

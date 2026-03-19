@@ -128,7 +128,3 @@ Tahajjud is not for the exceptionally pious. It is not reserved for scholars, or
 It is for the person who is carrying something heavy and needs somewhere to put it down.
 
 Whatever brought you to this page, whether you're curious, desperate, or somewhere in the middle, the door is open. Tonight, and every night after.
-
----
-
-*Read the real Tahajjud stories of ordinary people who turned to night prayer in their hardest moments in* [The Power of Tahajjud](/)*.*

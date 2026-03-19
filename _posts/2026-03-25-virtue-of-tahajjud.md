@@ -69,4 +69,3 @@ For a deeper look at the seven specific benefits described in the Quran and hadi
 
 *For a complete beginner's introduction to how to pray Tahajjud, when to pray it, and what to say, visit our [Beginners Guide](/blog/tahajjud-for-beginners/).*
 
-*Read the testimonies of real people who experienced the transformation that comes from this prayer. Pick up [The Power of Tahajjud](/).*

@@ -72,7 +72,3 @@ When you wake up for Tahajjud, you are not just praying. You are telling your ne
 So wake up and pray tonight.
 
 If what you bring to that prayer is grief that has no name, read [Your Tears in the Eyes of Allah](/blog/your-tears-in-the-eyes-of-allah/).
-
----
-
-*Read real stories of ordinary people who brought their anxiety to the last third of the night and found peace. Pick up [The Power of Tahajjud](/).*
