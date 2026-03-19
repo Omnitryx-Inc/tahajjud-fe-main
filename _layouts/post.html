@@ -95,7 +95,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/main.v1.4.css">
-    <link rel="stylesheet" href="/assets/css/blog.v1.3.css">
+    <link rel="stylesheet" href="/assets/css/blog.v1.4.css">
 </head>
 
 <body>
@@ -137,7 +137,7 @@
           </span>
         </div>
 
-        <p class="post-support">If this helped you, please consider <a href="/support-the-mission/">supporting our work</a> so we can continue writing for others who need it.</p>
+        <p class="post-support" onclick="gtag('event', 'click_support_mission', { 'button_location': 'blog_post_footer' });">This blog is free because of readers who believe in this mission. If it helped you, consider <a href="/support-the-mission/">supporting the work</a> so we can keep writing for others who need it.</p>
 
         {% assign related_posts = "" | split: "" %}
         {% if page.related %}

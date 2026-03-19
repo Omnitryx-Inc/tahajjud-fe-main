@@ -194,9 +194,13 @@
 }
 
 .post-support {
-    margin-top: 1rem;
-    font-size: 0.8rem;
-    color: var(--text-light);
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--beige-warm);
+    font-size: 0.95rem;
+    color: var(--text-medium);
+    line-height: 1.7;
+    text-align: center;
 }
 
 .post-support a {
