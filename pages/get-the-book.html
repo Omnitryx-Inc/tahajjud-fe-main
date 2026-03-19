@@ -1,0 +1,472 @@
+---
+layout: default
+title: "Get Your Copy | The Power of Tahajjud"
+description: "The Power of Tahajjud is available in print and digital. Choose your country to buy from your local Amazon marketplace or preferred retailer."
+permalink: /get-the-book/
+---
+
+<style>
+  .buy-hero {
+    padding: clamp(8rem, 16vw, 11rem) 5% clamp(3rem, 6vw, 5rem);
+    background: linear-gradient(to bottom, var(--cream-white) 0%, var(--cream-light) 100%);
+    text-align: center;
+  }
+
+  .buy-hero h1 {
+    font-family: "Allrounder Monument Test", serif;
+    font-size: clamp(2rem, 6vw, 3.8rem);
+    font-weight: 700;
+    color: var(--text-dark);
+    letter-spacing: -0.5px;
+    margin-bottom: 1rem;
+  }
+
+  .buy-hero p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1rem, 3vw, 1.25rem);
+    color: var(--text-medium);
+    font-style: italic;
+    max-width: 540px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+
+  /* ── Digital Edition ── */
+  .buy-digital {
+    padding: clamp(3rem, 8vw, 5rem) 5%;
+    background: var(--cream-white);
+  }
+
+  .buy-digital-inner {
+    max-width: 700px;
+    margin: 0 auto;
+    background: var(--white);
+    border-radius: 16px;
+    padding: 2.5rem 3rem;
+    box-shadow: 0 4px 20px rgba(45, 37, 32, 0.08);
+    text-align: center;
+  }
+
+  .buy-section-label {
+    font-family: "Allrounder Monument Test", serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: var(--gold-primary);
+    margin-bottom: 0.75rem;
+  }
+
+  .buy-digital-inner h2 {
+    font-family: "Allrounder Monument Test", serif;
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 0.75rem;
+  }
+
+  .buy-digital-inner p {
+    font-size: clamp(0.92rem, 2.5vw, 1.05rem);
+    color: var(--text-medium);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+  }
+
+  /* ── Paperback Marketplaces ── */
+  .buy-print {
+    padding: clamp(1rem, 10vw, 1rem) 5%;
+    background: var(--cream-light);
+  }
+
+  .buy-print-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .buy-print-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .buy-print-header h2 {
+    font-family: "Allrounder Monument Test", serif;
+    font-size: clamp(1.5rem, 4vw, 2.2rem);
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+  }
+
+  .buy-print-header p {
+    font-size: clamp(0.92rem, 2.5vw, 1.05rem);
+    color: var(--text-medium);
+    line-height: 1.6;
+  }
+
+  .marketplace-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
+    gap: 1.5rem;
+  }
+
+  .marketplace-card {
+    background: var(--white);
+    border-radius: 14px;
+    padding: 1.75rem 2rem;
+    box-shadow: 0 4px 12px rgba(45, 37, 32, 0.07);
+    border-top: 3px solid var(--gold-primary);
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  .marketplace-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(45, 37, 32, 0.12);
+  }
+
+  .marketplace-flag {
+    font-size: 2.2rem;
+    line-height: 1;
+    margin-bottom: 0.25rem;
+  }
+
+  .marketplace-country {
+    font-family: "Allrounder Monument Test", serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-dark);
+  }
+
+  .marketplace-retailer {
+    font-size: 0.82rem;
+    color: var(--text-light);
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    margin-bottom: 0.25rem;
+  }
+
+  .marketplace-reviews {
+    font-size: 0.82rem;
+    color: var(--text-medium);
+    margin-bottom: 1.25rem;
+  }
+
+  .marketplace-reviews .stars {
+    color: var(--gold-primary);
+    margin-right: 0.3rem;
+  }
+
+  .marketplace-btn {
+    display: inline-block;
+    margin-top: auto;
+    padding: 0.65rem 1.25rem;
+    background: var(--text-dark);
+    color: #fff;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.2s ease;
+  }
+
+  .marketplace-btn:hover {
+    background: var(--gold-primary);
+  }
+
+  /* ── FAQ ── */
+  .buy-faq {
+    padding: clamp(4rem, 10vw, 7rem) 5%;
+    background: var(--cream-white);
+  }
+
+  .buy-faq-inner {
+    max-width: 780px;
+    margin: 0 auto;
+  }
+
+  .buy-faq-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .buy-faq-header h2 {
+    font-family: "Allrounder Monument Test", serif;
+    font-size: clamp(1.4rem, 4vw, 2rem);
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+  }
+
+  .faq-item {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 1.75rem 2rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 8px rgba(45, 37, 32, 0.05);
+    border-left: 3px solid var(--gold-primary);
+  }
+
+  .faq-q {
+    font-family: "Allrounder Monument Test", serif;
+    font-size: clamp(1rem, 2.5vw, 1.1rem);
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+  }
+
+  .faq-a {
+    font-size: clamp(0.92rem, 2.5vw, 1rem);
+    color: var(--text-medium);
+    line-height: 1.75;
+    margin: 0;
+  }
+
+  .faq-a a {
+    color: var(--gold-primary);
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .faq-a a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 640px) {
+    .marketplace-grid {
+      grid-template-columns: 1fr;
+    }
+    .buy-faq {
+      padding: 3rem 1.25rem;
+    }
+    .faq-item {
+      padding: 1.25rem 1.25rem;
+    }
+  }
+</style>
+
+<!-- HERO -->
+<section class="buy-hero">
+  <div>
+    <p class="buy-section-label">The Power of Tahajjud</p>
+    <h1>Get Your Copy</h1>
+    <p>Available in paperback across 15 countries. Choose your marketplace below.</p>
+  </div>
+</section>
+
+<!-- PAPERBACK MARKETPLACES -->
+<section class="buy-print">
+  <div class="buy-print-inner">
+
+    <div class="marketplace-grid">
+
+      <div class="marketplace-card">
+        <div class="marketplace-flag">🇺🇸</div>
+        <div class="marketplace-country">United States</div>
+        <div class="marketplace-retailer">Amazon.com</div>
+        <div class="marketplace-reviews"><span class="stars">★★★★★</span> 8 reviews</div>
+        <a href="https://www.amazon.com/dp/B0GNJBL9R6?maas=maas_adg_62C10F819BF209231F51DA0AD8FE079B_afap_abs&ref_=aa_maas&tag=maas"
+           class="marketplace-btn" target="_blank" rel="noopener"
+           onclick="gtag('event', 'click_buy_physical', { country: 'US', button_location: 'buy_page' });">
+          Buy on Amazon
+        </a>
+      </div>
+
+      <div class="marketplace-card">
+        <div class="marketplace-flag">🇨🇦</div>
+        <div class="marketplace-country">Canada</div>
+        <div class="marketplace-retailer">Amazon.ca</div>
+        <div class="marketplace-reviews"><span class="stars">★★★★★</span> 8 reviews</div>
+        <a href="https://www.amazon.ca/dp/B0GNJBL9R6?maas=maas_adg_08451E03146D5C1B7D59A801989D9BFF_afap_abs&ref_=aa_maas&tag=maas"
+           class="marketplace-btn" target="_blank" rel="noopener"
+           onclick="gtag('event', 'click_buy_physical', { country: 'CA', button_location: 'buy_page' });">
+          Buy on Amazon
+        </a>
+      </div>
+
+      <div class="marketplace-card">
+        <div class="marketplace-flag">🇬🇧</div>
+        <div class="marketplace-country">United Kingdom</div>
+        <div class="marketplace-retailer">Amazon.co.uk</div>
+        <div class="marketplace-reviews"><span class="stars">★★★★★</span> 11 reviews</div>
+        <a href="https://www.amazon.co.uk/dp/B0GNJBL9R6?maas=maas_adg_114D87FAD27416DCF6A5F47D7A852634_afap_abs&ref_=aa_maas&tag=maas"
+           class="marketplace-btn" target="_blank" rel="noopener"
+           onclick="gtag('event', 'click_buy_physical', { country: 'UK', button_location: 'buy_page' });">
+          Buy on Amazon
+        </a>
+      </div>
+
+      <div class="marketplace-card">
+        <div class="marketplace-flag">🇦🇺</div>
+        <div class="marketplace-country">Australia</div>
+        <div class="marketplace-retailer">Amazon.com.au</div>
+        <div class="marketplace-reviews"><span class="stars">★★★★★</span> 8 reviews</div>
+        <a href="https://www.amazon.com.au/dp/B0GNJBL9R6"
+           class="marketplace-btn" target="_blank" rel="noopener"
+           onclick="gtag('event', 'click_buy_physical', { country: 'AU', button_location: 'buy_page' });">
+          Buy on Amazon
+        </a>
+      </div>
+
+      <div class="marketplace-card">
+        <div class="marketplace-flag">🇮🇳</div>
+        <div class="marketplace-country">India</div>
+        <div class="marketplace-retailer">Amazon.in</div>
+        <div class="marketplace-reviews"><span class="stars">★★★★★</span> 6 reviews</div>
+        <a href="https://www.amazon.in/dp/B0GNJBL9R6"
+           class="marketplace-btn" target="_blank" rel="noopener"
+           onclick="gtag('event', 'click_buy_physical', { country: 'IN', button_location: 'buy_page' });">
+          Buy on Amazon
+        </a>
+      </div>
+
+      <div class="marketplace-card">
+        <div class="marketplace-flag">🇩🇪</div>
+        <div class="marketplace-country">Germany</div>
+        <div class="marketplace-retailer">Amazon.de</div>
+        <div class="marketplace-reviews"><span class="stars">★★★★★</span> 9 reviews</div>
+        <a href="https://www.amazon.de/dp/B0GNJBL9R6?maas=maas_adg_F020092D8BC6C422AB23AEA15587D625_afap_abs&ref_=aa_maas&tag=maas"
+           class="marketplace-btn" target="_blank" rel="noopener"
+           onclick="gtag('event', 'click_buy_physical', { country: 'DE', button_location: 'buy_page' });">
+          Buy on Amazon
+        </a>
+      </div>
+
+      <div class="marketplace-card">
+        <div class="marketplace-flag">🇫🇷</div>
+        <div class="marketplace-country">France</div>
+        <div class="marketplace-retailer">Amazon.fr</div>
+        <div class="marketplace-reviews"><span class="stars">★★★★★</span> 8 reviews</div>
+        <a href="https://www.amazon.fr/dp/B0GNJBL9R6?maas=maas_adg_F7D6037B45424B21B8BBD4490C59A9CB_afap_abs&ref_=aa_maas&tag=maas"
+           class="marketplace-btn" target="_blank" rel="noopener"
+           onclick="gtag('event', 'click_buy_physical', { country: 'FR', button_location: 'buy_page' });">
+          Buy on Amazon
+        </a>
+      </div>
+
+      <div class="marketplace-card">
+        <div class="marketplace-flag">🇮🇹</div>
+        <div class="marketplace-country">Italy</div>
+        <div class="marketplace-retailer">Amazon.it</div>
+        <div class="marketplace-reviews"><span class="stars">★★★★★</span> 8 reviews</div>
+        <a href="https://www.amazon.it/dp/B0GNJBL9R6?maas=maas_adg_A2FDBE0A3A89F451EF87FA823D273A03_afap_abs&ref_=aa_maas&tag=maas"
+           class="marketplace-btn" target="_blank" rel="noopener"
+           onclick="gtag('event', 'click_buy_physical', { country: 'IT', button_location: 'buy_page' });">
+          Buy on Amazon
+        </a>
+      </div>
+
+      <div class="marketplace-card">
+        <div class="marketplace-flag">🇪🇸</div>
+        <div class="marketplace-country">Spain</div>
+        <div class="marketplace-retailer">Amazon.es</div>
+        <div class="marketplace-reviews"><span class="stars">★★★★★</span> 8 reviews</div>
+        <a href="https://www.amazon.es/dp/B0GNJBL9R6?maas=maas_adg_FFF1086C328BBC8D6CCDCAFBAFB8EA53_afap_abs&ref_=aa_maas&tag=maas"
+           class="marketplace-btn" target="_blank" rel="noopener"
+           onclick="gtag('event', 'click_buy_physical', { country: 'ES', button_location: 'buy_page' });">
+          Buy on Amazon
+        </a>
+      </div>
+
+      <div class="marketplace-card">
+        <div class="marketplace-flag">🇳🇱</div>
+        <div class="marketplace-country">Netherlands</div>
+        <div class="marketplace-retailer">Amazon.nl</div>
+        <div class="marketplace-reviews"><span class="stars">★★★★★</span> 8 reviews</div>
+        <a href="https://www.amazon.nl/dp/B0GNJBL9R6?maas=maas_adg_D00CBA4C79DDAE9BDA47018BA26AD786_afap_abs&ref_=aa_maas&tag=maas"
+           class="marketplace-btn" target="_blank" rel="noopener"
+           onclick="gtag('event', 'click_buy_physical', { country: 'NL', button_location: 'buy_page' });">
+          Buy on Amazon
+        </a>
+      </div>
+
+      <div class="marketplace-card">
+        <div class="marketplace-flag">🇧🇪</div>
+        <div class="marketplace-country">Belgium</div>
+        <div class="marketplace-retailer">Amazon.com.be</div>
+        <div class="marketplace-reviews"><span class="stars">★★★★★</span> 8 reviews</div>
+        <a href="https://www.amazon.com.be/dp/B0GNJBL9R6?language=en_GB"
+           class="marketplace-btn" target="_blank" rel="noopener"
+           onclick="gtag('event', 'click_buy_physical', { country: 'BE', button_location: 'buy_page' });">
+          Buy on Amazon
+        </a>
+      </div>
+
+      <div class="marketplace-card">
+        <div class="marketplace-flag">🇮🇪</div>
+        <div class="marketplace-country">Ireland</div>
+        <div class="marketplace-retailer">Amazon.ie</div>
+        <div class="marketplace-reviews"><span class="stars">★★★★★</span> 8 reviews</div>
+        <a href="https://www.amazon.ie/dp/B0GNJBL9R6"
+           class="marketplace-btn" target="_blank" rel="noopener"
+           onclick="gtag('event', 'click_buy_physical', { country: 'IE', button_location: 'buy_page' });">
+          Buy on Amazon
+        </a>
+      </div>
+
+      <div class="marketplace-card">
+        <div class="marketplace-flag">🇵🇱</div>
+        <div class="marketplace-country">Poland</div>
+        <div class="marketplace-retailer">Amazon.pl</div>
+        <div class="marketplace-reviews"><span class="stars">★★★★★</span> 8 reviews</div>
+        <a href="https://www.amazon.pl/dp/B0GNJBL9R6"
+           class="marketplace-btn" target="_blank" rel="noopener"
+           onclick="gtag('event', 'click_buy_physical', { country: 'PL', button_location: 'buy_page' });">
+          Buy on Amazon
+        </a>
+      </div>
+
+      <div class="marketplace-card">
+        <div class="marketplace-flag">🇸🇪</div>
+        <div class="marketplace-country">Sweden</div>
+        <div class="marketplace-retailer">Amazon.se</div>
+        <div class="marketplace-reviews"><span class="stars">★★★★★</span> 8 reviews</div>
+        <a href="https://www.amazon.se/dp/B0GNJBL9R6"
+           class="marketplace-btn" target="_blank" rel="noopener"
+           onclick="gtag('event', 'click_buy_physical', { country: 'SE', button_location: 'buy_page' });">
+          Buy on Amazon
+        </a>
+      </div>
+
+      <div class="marketplace-card">
+        <div class="marketplace-flag">🇯🇵</div>
+        <div class="marketplace-country">Japan</div>
+        <div class="marketplace-retailer">Amazon.co.jp</div>
+        <div class="marketplace-reviews"><span class="stars">★★★★★</span> 8 reviews</div>
+        <a href="https://www.amazon.co.jp/dp/B0GNJBL9R6"
+           class="marketplace-btn" target="_blank" rel="noopener"
+           onclick="gtag('event', 'click_buy_physical', { country: 'JP', button_location: 'buy_page' });">
+          Buy on Amazon
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="buy-faq">
+  <div class="buy-faq-inner">
+    <div class="buy-faq-header">
+      <h2>Common Questions</h2>
+    </div>
+
+    <div class="faq-item">
+      <p class="faq-q">My country is not listed. Can I still get the book?</p>
+      <p class="faq-a">We are actively working to expand availability to more countries. If your country is not listed and you believe you can help bring the book to your local market, we would be glad to hear from you. Please reach out at <a href="mailto:support@omnitryx.ca" onclick="gtag('event', 'click_contact_email', { source: 'faq_my_country' });">support@omnitryx.ca</a>.</p>
+    </div>
+
+    <div class="faq-item">
+      <p class="faq-q">I am a publisher or bookseller. Can I carry The Power of Tahajjud?</p>
+      <p class="faq-a">Yes. If you are interested in stocking The Power of Tahajjud in your bookstore, distribution network, or catalogue, we would like to speak with you. Please contact us at <a href="mailto:support@omnitryx.ca" onclick="gtag('event', 'click_contact_email', { source: 'faq_publisher' });">support@omnitryx.ca</a> with details about your organization and we will follow up promptly.</p>
+    </div>
+
+    <div class="faq-item">
+      <p class="faq-q">Can I place a bulk order for multiple copies?</p>
+      <p class="faq-a">Yes. We accept bulk orders for mosques, Islamic schools, community events, corporate gifts, and more. Bulk ordering is available for any country where Amazon delivers. Send your request to <a href="mailto:support@omnitryx.ca" onclick="gtag('event', 'click_contact_email', { source: 'faq_bulk_order' });">support@omnitryx.ca</a> with the quantity and delivery location and we will provide a quote.</p>
+    </div>
+
+  </div>
+</section>

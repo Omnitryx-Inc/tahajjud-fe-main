@@ -25,7 +25,7 @@ stripe_buy_url: "https://buy.stripe.com/6oUaEZ9UG8WDbQsaNzdUY0h"
 stripe_donate_url: "https://donate.stripe.com/cNi9AV7My7Szg6If3PdUY0e"
 
 # Amazon links
-amazon_url: "https://www.amazon.co.uk/dp/B0GNJBL9R6?maas=maas_adg_114D87FAD27416DCF6A5F47D7A852634_afap_abs&ref_=aa_maas&tag=maas"
+amazon_url: "/get-the-book/"
 amazon_review_url: "https://www.amazon.co.uk/dp/B0GNJBL9R6#customerReviews"
 
 # Book-specific metadata
