@@ -342,15 +342,51 @@ permalink: /free/
     box-shadow: 0 0 0 3px rgba(192, 137, 72, 0.1);
 }
 
-select.form-input {
-    appearance: none;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23555' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 1.2rem center;
-    background-color: var(--white);
-    padding-right: 2.5rem;
+/* Country typeahead */
+.country-wrapper {
+    position: relative;
+}
+
+.country-dropdown {
+    display: none;
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+    right: 0;
+    background: var(--white);
+    border: 2px solid var(--gold-primary);
+    border-radius: 10px;
+    max-height: 220px;
+    overflow-y: auto;
+    z-index: 100;
+    box-shadow: 0 8px 24px rgba(45, 37, 32, 0.1);
+}
+
+.country-dropdown.open {
+    display: block;
+}
+
+.country-option {
+    padding: 0.75rem 1.2rem;
+    font-size: 0.95rem;
     color: var(--text-dark);
     cursor: pointer;
+    transition: background 0.15s ease;
+}
+
+.country-option:hover,
+.country-option.highlighted {
+    background: rgba(192, 137, 72, 0.08);
+}
+
+.country-option.no-results {
+    color: var(--text-light);
+    font-style: italic;
+    cursor: default;
+}
+
+.country-option.no-results:hover {
+    background: transparent;
 }
 
 .submit-btn {
@@ -380,6 +416,84 @@ select.form-input {
     color: var(--text-light);
     font-style: italic;
     text-align: center;
+}
+
+/* Amazon radio group */
+.radio-group-label {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 0.75rem;
+    display: block;
+}
+
+.radio-options {
+    display: flex;
+    gap: 1rem;
+}
+
+.radio-option {
+    flex: 1;
+    position: relative;
+}
+
+.radio-option input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.radio-option label {
+    display: block;
+    padding: 0.9rem 1.2rem;
+    background: var(--white);
+    border: 2px solid var(--beige-warm);
+    border-radius: 10px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-medium);
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.radio-option input[type="radio"]:checked + label {
+    border-color: var(--gold-primary);
+    color: var(--text-dark);
+    background: rgba(192, 137, 72, 0.06);
+}
+
+.radio-option label:hover {
+    border-color: var(--gold-primary);
+    color: var(--text-dark);
+}
+
+/* ARC reveal */
+.arc-reveal {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.35s ease, opacity 0.3s ease, margin 0.3s ease;
+    margin-top: 0;
+}
+
+.arc-reveal.visible {
+    max-height: 300px;
+    opacity: 1;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.arc-explain {
+    font-size: 0.88rem;
+    color: var(--text-medium);
+    line-height: 1.65;
+    margin-bottom: 1rem;
+    padding: 0.9rem 1.1rem;
+    background: rgba(192, 137, 72, 0.06);
+    border-left: 3px solid var(--gold-primary);
+    border-radius: 0 8px 8px 0;
 }
 
 </style>
@@ -577,18 +691,51 @@ select.form-input {
                     >
                 </div>
                 <div class="form-group">
-                    <select class="form-input" id="countryInput" required>
-                        <option value="" disabled selected>Select your country</option>
-                        <option value="United States">United States</option>
-                        <option value="United Kingdom">United Kingdom</option>
-                        <option value="Canada">Canada</option>
-                        <option value="Australia">Australia</option>
-                        <option value="Saudi Arabia">Saudi Arabia</option>
-                        <option value="UAE">UAE</option>
-                        <option value="Pakistan">Pakistan</option>
-                        <option value="India">India</option>
-                        <option value="Other">Other</option>
-                    </select>
+                    <div class="country-wrapper">
+                        <input
+                            type="text"
+                            class="form-input"
+                            id="countryInputText"
+                            placeholder="Type your country..."
+                            autocomplete="off"
+                            required
+                        >
+                        <input type="hidden" id="countryInput">
+                        <div class="country-dropdown" id="countryDropdown"></div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <span class="radio-group-label">Want to join our ARC reader team?</span>
+                    <div class="radio-options">
+                        <div class="radio-option">
+                            <input type="radio" name="joinArc" id="joinArcYes" value="yes">
+                            <label for="joinArcYes">Yes, tell me more</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" name="joinArc" id="joinArcNo" value="no">
+                            <label for="joinArcNo">No thanks</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="arc-reveal" id="arcReveal">
+                    <p class="arc-explain">
+                        ARC (Advanced Reader Copies) members get free copies of new books before they're
+                        published. In return, we ask for an honest review on Amazon. No obligation beyond that.
+                    </p>
+                    <div class="form-group" style="margin-bottom: 0;">
+                        <span class="radio-group-label">Do you have an Amazon account?</span>
+                        <div class="radio-options">
+                            <div class="radio-option">
+                                <input type="radio" name="hasAmazon" id="freeAmazonYes" value="yes">
+                                <label for="freeAmazonYes">Yes, I do</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="hasAmazon" id="freeAmazonNo" value="no">
+                                <label for="freeAmazonNo">No, I don't</label>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <button type="submit" class="submit-btn">Get My Free PDF</button>
             </form>
@@ -628,19 +775,175 @@ document.getElementById('requestCopyBtn').addEventListener('click', function() {
 
 <!-- ORIGINAL form submit script (restored) -->
 <script>
+(function() {
+    var COUNTRIES = [
+        'Afghanistan','Albania','Algeria','Andorra','Angola','Antigua and Barbuda',
+        'Argentina','Armenia','Australia','Austria','Azerbaijan','Bahamas','Bahrain',
+        'Bangladesh','Barbados','Belarus','Belgium','Belize','Benin','Bhutan','Bolivia',
+        'Bosnia and Herzegovina','Botswana','Brazil','Brunei','Bulgaria','Burkina Faso',
+        'Burundi','Cabo Verde','Cambodia','Cameroon','Canada','Central African Republic',
+        'Chad','Chile','China','Colombia','Comoros','Congo','Costa Rica','Croatia','Cuba',
+        'Cyprus','Czech Republic','Denmark','Djibouti','Dominica','Dominican Republic',
+        'DR Congo','Ecuador','Egypt','El Salvador','Equatorial Guinea','Eritrea','Estonia',
+        'Eswatini','Ethiopia','Fiji','Finland','France','Gabon','Gambia','Georgia','Germany',
+        'Ghana','Greece','Grenada','Guatemala','Guinea','Guinea-Bissau','Guyana','Haiti',
+        'Honduras','Hungary','Iceland','India','Indonesia','Iran','Iraq','Ireland',
+        'Italy','Ivory Coast','Jamaica','Japan','Jordan','Kazakhstan','Kenya','Kiribati',
+        'Kuwait','Kyrgyzstan','Laos','Latvia','Lebanon','Lesotho','Liberia','Libya',
+        'Liechtenstein','Lithuania','Luxembourg','Madagascar','Malawi','Malaysia','Maldives',
+        'Mali','Malta','Marshall Islands','Mauritania','Mauritius','Mexico','Micronesia',
+        'Moldova','Monaco','Mongolia','Montenegro','Morocco','Mozambique','Myanmar','Namibia',
+        'Nauru','Nepal','Netherlands','New Zealand','Nicaragua','Niger','Nigeria',
+        'North Korea','North Macedonia','Norway','Oman','Pakistan','Palau','Palestine',
+        'Panama','Papua New Guinea','Paraguay','Peru','Philippines','Poland','Portugal',
+        'Qatar','Romania','Russia','Rwanda','Saint Kitts and Nevis','Saint Lucia',
+        'Saint Vincent and the Grenadines','Samoa','San Marino','Sao Tome and Principe',
+        'Saudi Arabia','Senegal','Serbia','Seychelles','Sierra Leone','Singapore',
+        'Slovakia','Slovenia','Solomon Islands','Somalia','South Africa','South Korea',
+        'South Sudan','Spain','Sri Lanka','Sudan','Suriname','Sweden','Switzerland',
+        'Syria','Taiwan','Tajikistan','Tanzania','Thailand','Timor-Leste','Togo','Tonga',
+        'Trinidad and Tobago','Tunisia','Turkey','Turkmenistan','Tuvalu','UAE','Uganda',
+        'Ukraine','United Kingdom','United States','Uruguay','Uzbekistan','Vanuatu',
+        'Vatican City','Venezuela','Vietnam','Yemen','Zambia','Zimbabwe'
+    ];
+
+    var input = document.getElementById('countryInputText');
+    var hidden = document.getElementById('countryInput');
+    var dropdown = document.getElementById('countryDropdown');
+    var highlighted = -1;
+
+    function getMatches(query) {
+        if (!query) return COUNTRIES.slice(0, 8);
+        var q = query.toLowerCase();
+        return COUNTRIES.filter(function(c) {
+            return c.toLowerCase().indexOf(q) !== -1;
+        }).slice(0, 10);
+    }
+
+    function renderDropdown(matches) {
+        dropdown.innerHTML = '';
+        highlighted = -1;
+        if (matches.length === 0) {
+            var el = document.createElement('div');
+            el.className = 'country-option no-results';
+            el.textContent = 'No countries found';
+            dropdown.appendChild(el);
+        } else {
+            matches.forEach(function(country) {
+                var el = document.createElement('div');
+                el.className = 'country-option';
+                el.textContent = country;
+                el.addEventListener('mousedown', function(e) {
+                    e.preventDefault();
+                    selectCountry(country);
+                });
+                dropdown.appendChild(el);
+            });
+        }
+        dropdown.classList.add('open');
+    }
+
+    function selectCountry(country) {
+        input.value = country;
+        hidden.value = country;
+        input.setCustomValidity('');
+        dropdown.classList.remove('open');
+    }
+
+    function closeDropdown() {
+        dropdown.classList.remove('open');
+        if (hidden.value !== input.value) {
+            hidden.value = '';
+            if (input.value) {
+                input.setCustomValidity('Please select a country from the list.');
+            }
+        }
+    }
+
+    input.addEventListener('input', function() {
+        hidden.value = '';
+        input.setCustomValidity('');
+        renderDropdown(getMatches(input.value));
+    });
+
+    input.addEventListener('focus', function() {
+        renderDropdown(getMatches(input.value));
+    });
+
+    input.addEventListener('blur', function() {
+        setTimeout(closeDropdown, 150);
+    });
+
+    input.addEventListener('keydown', function(e) {
+        var options = dropdown.querySelectorAll('.country-option:not(.no-results)');
+        if (!options.length) return;
+
+        if (e.key === 'ArrowDown') {
+            e.preventDefault();
+            highlighted = Math.min(highlighted + 1, options.length - 1);
+        } else if (e.key === 'ArrowUp') {
+            e.preventDefault();
+            highlighted = Math.max(highlighted - 1, 0);
+        } else if (e.key === 'Enter') {
+            e.preventDefault();
+            if (highlighted >= 0 && options[highlighted]) {
+                selectCountry(options[highlighted].textContent);
+            }
+            return;
+        } else if (e.key === 'Escape') {
+            dropdown.classList.remove('open');
+            return;
+        }
+
+        options.forEach(function(el, i) {
+            el.classList.toggle('highlighted', i === highlighted);
+            if (i === highlighted) el.scrollIntoView({ block: 'nearest' });
+        });
+    });
+
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.country-wrapper')) {
+            dropdown.classList.remove('open');
+        }
+    });
+
+    // ARC reveal
+    document.querySelectorAll('input[name="joinArc"]').forEach(function(radio) {
+        radio.addEventListener('change', function() {
+            var reveal = document.getElementById('arcReveal');
+            reveal.classList.toggle('visible', this.value === 'yes');
+        });
+    });
+})();
+
 document.getElementById('freeBookForm').addEventListener('submit', async function(e) {
     e.preventDefault();
 
-    const email = document.getElementById('emailInput').value;
-    const country = document.getElementById('countryInput').value;
+    var country = document.getElementById('countryInput').value;
+    if (!country) {
+        var countryInput = document.getElementById('countryInputText');
+        countryInput.setCustomValidity('Please select a country from the list.');
+        countryInput.reportValidity();
+        return;
+    }
 
-    gtag('event', 'click_free_pdf_form_submit', { 'button_location': 'free_page', 'country': country });
+    const email = document.getElementById('emailInput').value;
+    const joinArcEl = document.querySelector('input[name="joinArc"]:checked');
+    const hasAmazonEl = document.querySelector('input[name="hasAmazon"]:checked');
+    const joinArc = joinArcEl ? joinArcEl.value : '';
+    const hasAmazon = hasAmazonEl ? hasAmazonEl.value : '';
+
+    gtag('event', 'click_free_pdf_form_submit', { 'button_location': 'free_page', 'country': country, 'join_arc': joinArc });
+
+    const payload = { email: email, country: country };
+    if (joinArc) payload.join_arc = joinArc;
+    if (hasAmazon) payload.has_amazon = hasAmazon;
 
     try {
         await fetch('https://vdpgnhnqoc.execute-api.us-east-1.amazonaws.com/prod/collect-email', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ email: email, country: country })
+            body: JSON.stringify(payload)
         });
     } catch (error) {
         // Ignore errors
