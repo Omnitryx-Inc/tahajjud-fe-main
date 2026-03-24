@@ -176,7 +176,7 @@ body.nav-open {
 }
 
 /* Desktop: show inline nav group, hide hamburger and overlay */
-@media (min-width: 768px) {
+@media (min-width: 1100px) {
 	header {
 		padding: 1.2rem 5%;
 	}
