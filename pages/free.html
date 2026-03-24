@@ -469,32 +469,6 @@ permalink: /free/
     color: var(--text-dark);
 }
 
-/* ARC reveal */
-.arc-reveal {
-    overflow: hidden;
-    max-height: 0;
-    opacity: 0;
-    transition: max-height 0.35s ease, opacity 0.3s ease, margin 0.3s ease;
-    margin-top: 0;
-}
-
-.arc-reveal.visible {
-    max-height: 300px;
-    opacity: 1;
-    margin-top: 1.2rem;
-    margin-bottom: 1.2rem;
-}
-
-.arc-explain {
-    font-size: 0.88rem;
-    color: var(--text-medium);
-    line-height: 1.65;
-    margin-bottom: 1rem;
-    padding: 0.9rem 1.1rem;
-    background: rgba(192, 137, 72, 0.06);
-    border-left: 3px solid var(--gold-primary);
-    border-radius: 0 8px 8px 0;
-}
 
 </style>
 
@@ -705,35 +679,15 @@ permalink: /free/
                     </div>
                 </div>
                 <div class="form-group">
-                    <span class="radio-group-label">Want to join our ARC reader team?</span>
+                    <span class="radio-group-label">Do you have an Amazon account?</span>
                     <div class="radio-options">
                         <div class="radio-option">
-                            <input type="radio" name="joinArc" id="joinArcYes" value="yes">
-                            <label for="joinArcYes">Yes, I'm in</label>
+                            <input type="radio" name="hasAmazon" id="freeAmazonYes" value="yes">
+                            <label for="freeAmazonYes">Yes, I do</label>
                         </div>
                         <div class="radio-option">
-                            <input type="radio" name="joinArc" id="joinArcNo" value="no">
-                            <label for="joinArcNo">No thanks</label>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="arc-reveal" id="arcReveal">
-                    <p class="arc-explain">
-                        ARC (Advanced Reader Copies) members get free copies of new books before they're
-                        published. In return, we ask for an honest review on Amazon. No obligation beyond that.
-                    </p>
-                    <div class="form-group" style="margin-bottom: 0;">
-                        <span class="radio-group-label">Do you have an Amazon account?</span>
-                        <div class="radio-options">
-                            <div class="radio-option">
-                                <input type="radio" name="hasAmazon" id="freeAmazonYes" value="yes">
-                                <label for="freeAmazonYes">Yes, I do</label>
-                            </div>
-                            <div class="radio-option">
-                                <input type="radio" name="hasAmazon" id="freeAmazonNo" value="no">
-                                <label for="freeAmazonNo">No, I don't</label>
-                            </div>
+                            <input type="radio" name="hasAmazon" id="freeAmazonNo" value="no">
+                            <label for="freeAmazonNo">No, I don't</label>
                         </div>
                     </div>
                 </div>
@@ -907,13 +861,7 @@ document.getElementById('requestCopyBtn').addEventListener('click', function() {
         }
     });
 
-    // ARC reveal
-    document.querySelectorAll('input[name="joinArc"]').forEach(function(radio) {
-        radio.addEventListener('change', function() {
-            var reveal = document.getElementById('arcReveal');
-            reveal.classList.toggle('visible', this.value === 'yes');
-        });
-    });
+
 })();
 
 document.getElementById('freeBookForm').addEventListener('submit', async function(e) {
@@ -928,15 +876,12 @@ document.getElementById('freeBookForm').addEventListener('submit', async functio
     }
 
     const email = document.getElementById('emailInput').value;
-    const joinArcEl = document.querySelector('input[name="joinArc"]:checked');
     const hasAmazonEl = document.querySelector('input[name="hasAmazon"]:checked');
-    const joinArc = joinArcEl ? joinArcEl.value : '';
     const hasAmazon = hasAmazonEl ? hasAmazonEl.value : '';
 
-    gtag('event', 'click_free_pdf_form_submit', { 'button_location': 'free_page', 'country': country, 'join_arc': joinArc });
+    gtag('event', 'click_free_pdf_form_submit', { 'button_location': 'free_page', 'country': country });
 
     const payload = { email: email, country: country };
-    if (joinArc) payload.join_arc = joinArc;
     if (hasAmazon) payload.has_amazon = hasAmazon;
 
     try {
