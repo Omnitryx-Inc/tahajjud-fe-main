@@ -16,7 +16,6 @@ permalink: /blog/
         <div class="blog-grid">
             {% for post in site.posts %}
             <div class="blog-card">
-                <p class="blog-card-meta">{{ post.date | date: "%B %-d, %Y" }} &nbsp;&bull;&nbsp; {{ post.read_time }} min read</p>
                 <h2>{{ post.title }}</h2>
                 <p>{{ post.description }}</p>
                 <a href="{{ post.url }}" class="blog-card-link">Read Article &rarr;</a>

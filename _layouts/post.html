@@ -52,8 +52,7 @@
       "datePublished": "{{ page.date | date_to_xmlschema }}",
       "dateModified": "{{ page.date | date_to_xmlschema }}",
       "image": "{{ site.url }}/assets/images/The_Power_of_Tahajjud__Display_Art_.jpeg",
-      "url": "{{ site.url }}{{ page.url }}",
-      "timeRequired": "PT{{ page.read_time }}M"
+      "url": "{{ site.url }}{{ page.url }}"
     }
     </script>
 
@@ -113,7 +112,6 @@
         </div>
 
         <div class="post-header">
-          <p class="post-meta">{{ page.date | date: "%B %-d, %Y" }} &nbsp;&bull;&nbsp; {{ page.read_time }} min read</p>
           <h1 class="post-title">{{ page.title }}</h1>
           <p class="post-description">{{ page.description }}</p>
           <div class="post-author">
@@ -169,7 +167,6 @@
           <div class="post-related-grid">
             {% for post in related_posts %}
             <a href="{{ post.url }}" class="post-related-card">
-              <p class="post-related-meta">{{ post.read_time }} min read</p>
               <h4>{{ post.title }}</h4>
               <p class="post-related-desc">{{ post.description | truncate: 110 }}</p>
             </a>
