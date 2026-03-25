@@ -559,65 +559,55 @@ permalink: /free/
 <section class="free-section">
     <div class="free-inner">
 
-        <p class="section-label" style="text-align: left;">How You Can Give Back</p>
-        <h2 class="section-title" style="text-align: left;">Other Ways to Support Us</h2>
-        <p class="section-subtitle" style="text-align: left; margin: 0 0 0.5rem;">
-            You don't have to support us financially to make a difference.
-            These four things mean just as much to us:
+        <p class="section-label" style="text-align: left;">The Full Edition</p>
+        <h2 class="section-title" style="text-align: left;">You're Getting the Free Edition</h2>
+        <p class="section-subtitle" style="text-align: left; margin: 0 0 2rem;">
+            This is a limited selection. The full edition includes every chapter. Here's what's waiting for you:
         </p>
 
-        <div class="asks-list">
+        <div class="asks-list" style="margin-bottom: 2.5rem;">
 
             <div class="ask-item">
-                <span class="ask-item-icon">⭐</span>
-                <p class="ask-item-title">Leave an Amazon Review</p>
+                <span class="ask-item-icon">💍</span>
+                <p class="ask-item-title">Love and Marriage</p>
                 <p class="ask-item-body">
-                    After you've read it, an honest review on Amazon helps more Muslims find this book
-                    than anything else we can do. It only takes two minutes.
+                    Stories of people who brought their relationships to Tahajjud and found answers they couldn't find anywhere else.
                 </p>
             </div>
 
             <div class="ask-item">
-                <span class="ask-item-icon">📲</span>
-                <p class="ask-item-title">Tag Us on Instagram or TikTok</p>
+                <span class="ask-item-icon">🤲</span>
+                <p class="ask-item-title">Pain and Qadr</p>
                 <p class="ask-item-body">
-                    Share what moved you. Tag <a href="https://www.instagram.com/jawwad_ab/" target="_blank" style="color: var(--gold-primary); font-weight: 700; text-decoration: none;">@jawwad_ab</a>. Your story
-                    might be exactly what someone else needed to see today.
+                    Stories from people who prayed through loss, hardship, and heartbreak, and came out the other side with a faith stronger than before.
                 </p>
             </div>
 
             <div class="ask-item">
-                <span class="ask-item-icon">🗣️</span>
-                <p class="ask-item-title">Tell Someone About It</p>
+                <span class="ask-item-icon">🪞</span>
+                <p class="ask-item-title">Reflections After Every Story</p>
                 <p class="ask-item-body">
-                    Recommend it to a friend or family member who might benefit.
-                    Word of mouth is how this reaches people who need it most.
+                    Every story in the full edition ends with a reflection, drawing out what we can learn and how to apply it in our own lives. You don't just read, you walk away with something.
                 </p>
             </div>
 
             <div class="ask-item">
-                <span class="ask-item-icon">🔒</span>
-                <p class="ask-item-title">Keep It as an Amanah</p>
+                <span class="ask-item-icon">✨</span>
+                <p class="ask-item-title">And More</p>
                 <p class="ask-item-body">
-                    Please don't share or distribute the PDF publicly. This is a
-                    trust between us. Honor the spirit of it.
+                    The full edition covers the complete breadth of what Tahajjud can be, chapters that don't appear in the free edition at all.
                 </p>
             </div>
 
         </div>
 
-        <!-- Note about the free vs full edition -->
-        <div class="ask-item" style="margin-bottom: 2rem; border-left-color: var(--gold-primary); background: var(--beige-soft);">
-            <span class="ask-item-icon">📖</span>
-            <p class="ask-item-title">A note about this edition</p>
-            <p class="ask-item-body">
-                The free edition is a genuine gift and we hope it benefits you deeply.
-                That said, it's a curated selection. The full edition includes additional chapters and a richer, more complete experience.
-                If you ever want everything the book has to offer, the full edition is available on
-                <a href="{{ site.amazon_url }}" style="color: var(--gold-primary); font-weight: 700; text-decoration: none;">Amazon</a>
-                or as a
-                <a href="{{ site.stripe_buy_url }}" target="_blank" style="color: var(--gold-primary); font-weight: 700; text-decoration: none;">Digital PDF</a>.
-            </p>
+        <div style="display: flex; gap: 1rem; margin-bottom: 2.5rem;">
+            <a href="{{ site.stripe_buy_url }}" target="_blank" class="purchase-card-btn btn-gold" style="flex: 1;" onclick="gtag('event', 'click_buy_digital', {'button_location': 'free_page_upsell'})">
+                Buy Digital PDF
+            </a>
+            <a href="{{ site.amazon_url }}" class="purchase-card-btn btn-dark" style="flex: 1;" onclick="gtag('event', 'click_buy_page', {'button_location': 'free_page_upsell'})">
+                Buy on Amazon
+            </a>
         </div>
 
         <!-- ======================================================
