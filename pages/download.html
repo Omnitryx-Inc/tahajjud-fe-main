@@ -587,7 +587,7 @@ sitemap: false
 </section>
 
 <!-- Three Asks -->
-<section class="asks-section">
+<section class="asks-section" id="dl-asks">
     <div class="asks-header">
         <p class="asks-label">Before You Start Reading</p>
         <h2 class="asks-title">Three Ways to Make This Book Count</h2>
@@ -690,7 +690,7 @@ sitemap: false
 </section>
 
 <!-- Amazon Review -->
-<section class="review-section">
+<section class="review-section" id="dl-review">
     <div class="review-inner">
         <span class="review-stars">★★★★★</span>
         <p class="review-label">After You've Read It</p>
@@ -707,38 +707,119 @@ sitemap: false
     </div>
 </section>
 
-<div class="section-divider">
+<div class="section-divider" id="dl-divider">
     <span class="section-divider-icon">🌙</span>
 </div>
 
 <!-- Bottom Download -->
-<section class="dl-final-section">
+<section class="dl-final-section" id="dl-final">
     <div class="dl-final-inner">
         <p class="dl-final-label">Your copy</p>
         <h2 class="dl-final-title">Here's Your PDF</h2>
         <p class="dl-final-sub">Thank you for reading this first. May every story bring you closer to Him.</p>
-        <div class="dl-final-card">
+        <div id="dl-download-card" class="dl-final-card">
             <p class="dl-book-name">The Power of Tahajjud</p>
             <p class="dl-book-author">by Jawwad Ahmed Abbasi</p>
-            <a href="/assets/pdf/The_Power_of_Tahajjud.pdf" download class="dl-btn" style="width: 100%; justify-content: center; box-sizing: border-box;" onclick="var _t = new URLSearchParams(window.location.search).get('type'); gtag('event', _t === 'paid' ? 'click_paid_pdf_downloaded' : 'click_free_pdf_downloaded', { 'button_location': 'download_page' })">
+            <a id="pdf-dl-btn" href="#" download class="dl-btn" style="width: 100%; justify-content: center; box-sizing: border-box;">
                 <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                 Download PDF
             </a>
             <p class="dl-mobile-tip">
                 <strong>On mobile?</strong> Tap download, then use your browser's share button to save the PDF to your device.
             </p>
-            <p class="review-amanah">
-                Please treat this PDF as an amanah — don't distribute it publicly.
+            <p id="dl-amanah" class="review-amanah">
+                Please treat this PDF as an amanah, please don't distribute it publicly.
             </p>
+
+            <!-- Free edition upsell — shown only for type=free -->
+            <div id="dl-free-upsell" style="display:none; margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--beige-warm);">
+                <p style="font-size: 0.88rem; color: var(--text-medium); line-height: 1.75; margin: 0;">
+                    You're downloading the <strong>free edition</strong>, a curated selection of the book. For every chapter and the complete experience, the full edition is available on digital or paperback.
+                </p>
+            </div>
+        </div>
+
+        <!-- Unavailable card — shown when no valid type param -->
+        <div id="dl-unavailable-card" class="dl-final-card" style="display:none;">
+            <p class="dl-book-name" style="margin-bottom: 0.5rem;">PDF Unavailable</p>
+            <p class="dl-book-author" style="margin-bottom: 1.2rem;">We couldn't locate your download.</p>
+            <p style="font-size: 0.95rem; color: var(--text-medium); line-height: 1.75; margin-bottom: 1.5rem;">
+                It looks like you arrived here without a valid download link. This usually happens if the link was incomplete or expired. Please reach out and we'll get it sorted for you.
+            </p>
+            <a href="mailto:support@omnitryx.ca" style="display:block; padding: 1rem 1.5rem; border-radius: 8px; font-size: 1rem; font-weight: 700; font-family: 'Inter', sans-serif; text-decoration: none; text-align: center; background: var(--text-dark); color: var(--cream-white);">
+                Contact Us at support@omnitryx.ca
+            </a>
         </div>
     </div>
 </section>
 
 <!-- Closing Dua -->
-<section class="dua-section">
+<section class="dua-section" id="dl-dua">
     <p class="dua-text">
         May Allah accept this from us and from you. May these stories inspire you to rise in the
         last third of the night — and may you witness the power of Tahajjud in your own life.
     </p>
     <span class="dua-moon">🌙</span>
 </section>
+
+<script>
+(function() {
+    var type = new URLSearchParams(window.location.search).get('type');
+    var dlBtn = document.getElementById('pdf-dl-btn');
+    var downloadCard = document.getElementById('dl-download-card');
+    var unavailableCard = document.getElementById('dl-unavailable-card');
+    var freeUpsell = document.getElementById('dl-free-upsell');
+
+    if (type === 'paid') {
+        dlBtn.href = '/assets/pdf/The_Power_of_Tahajjud_full_edition.pdf';
+        dlBtn.addEventListener('click', function() {
+            gtag('event', 'click_paid_pdf_downloaded', { 'button_location': 'download_page' });
+        });
+        // Paid users own the book — no amanah note needed
+        var amanah = document.getElementById('dl-amanah');
+        if (amanah) amanah.style.display = 'none';
+
+    } else if (type === 'free') {
+        dlBtn.href = '/assets/pdf/The_Power_of_Tahajjud_free_edition.pdf';
+        dlBtn.addEventListener('click', function() {
+            gtag('event', 'click_free_pdf_downloaded', { 'button_location': 'download_page' });
+        });
+        if (freeUpsell) freeUpsell.style.display = 'block';
+
+    } else {
+        // No valid type param — show unavailable state, hide everything else
+        downloadCard.style.display = 'none';
+        unavailableCard.style.display = 'block';
+
+        var eyebrow = document.querySelector('.dl-eyebrow');
+        var title = document.querySelector('.dl-title');
+        var subtitle = document.querySelector('.dl-subtitle');
+        var check = document.querySelector('.dl-check');
+        var scrollHint = document.querySelector('.dl-scroll-hint');
+        var finalLabel = document.querySelector('.dl-final-label');
+        var finalTitle = document.querySelector('.dl-final-title');
+        var finalSub = document.querySelector('.dl-final-sub');
+
+        if (eyebrow) eyebrow.textContent = 'Something went wrong';
+        if (title) title.textContent = 'PDF Not Available';
+        if (subtitle) subtitle.textContent = "We couldn't find a valid download for this link. Please contact us and we'll get it sorted.";
+        if (check) check.style.display = 'none';
+        if (scrollHint) scrollHint.style.display = 'none';
+        if (finalLabel) finalLabel.textContent = 'Need help?';
+        if (finalTitle) finalTitle.textContent = 'Contact Us';
+        if (finalSub) finalSub.textContent = 'Reach out at support@omnitryx.ca and we\'ll get your copy sorted.';
+
+        var asks = document.getElementById('dl-asks');
+        var review = document.getElementById('dl-review');
+        var divider = document.getElementById('dl-divider');
+        var giftSection = document.getElementById('gift-section');
+        var dua = document.getElementById('dl-dua');
+
+        if (asks) asks.style.display = 'none';
+        if (review) review.style.display = 'none';
+        if (divider) divider.style.display = 'none';
+        if (giftSection) giftSection.style.display = 'none';
+        if (dua) dua.style.display = 'none';
+    }
+})();
+</script>
