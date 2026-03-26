@@ -55,54 +55,7 @@ permalink: /media/
     object-fit: cover;
     display: block;
     background: var(--beige-soft);
-    cursor: zoom-in;
-    transition: opacity 0.2s ease;
-  }
-
-  .media-card-img:hover {
-    opacity: 0.9;
-  }
-
-  /* Lightbox */
-  .lightbox {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.88);
-    z-index: 2000;
-    align-items: center;
-    justify-content: center;
-    padding: 1.5rem;
-  }
-
-  .lightbox.is-open {
-    display: flex;
-  }
-
-  .lightbox img {
-    max-width: 100%;
-    max-height: 90vh;
-    object-fit: contain;
-    border-radius: 6px;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
-  }
-
-  .lightbox-close {
-    position: fixed;
-    top: 1.25rem;
-    right: 1.5rem;
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 2rem;
     cursor: pointer;
-    line-height: 1;
-    padding: 0.25rem 0.5rem;
-    opacity: 0.8;
-  }
-
-  .lightbox-close:hover {
-    opacity: 1;
   }
 
   .media-card-img.cover-ratio {
@@ -204,7 +157,7 @@ permalink: /media/
   <div class="media-grid">
 
     <div class="media-card">
-      <img src="/assets/images/book-cover-background-licensed.jpg" alt="Cover background — gold glitter on dark sky" class="media-card-img" data-lightbox>
+      <a href="/assets/images/book-cover-background-licensed.jpg" target="_blank"><img src="/assets/images/book-cover-background-licensed.jpg" alt="Cover background — gold glitter on dark sky" class="media-card-img"></a>
       <div class="media-card-body">
         <p class="media-card-label">Background</p>
         <p class="media-card-title">Cover Background (iStock Licensed)</p>
@@ -217,7 +170,7 @@ permalink: /media/
     </div>
 
     <div class="media-card">
-      <img src="/assets/images/book-front-cover.jpg" alt="The Power of Tahajjud front cover" class="media-card-img" data-lightbox>
+      <a href="/assets/images/book-front-cover.jpg" target="_blank"><img src="/assets/images/book-front-cover.jpg" alt="The Power of Tahajjud front cover" class="media-card-img"></a>
       <div class="media-card-body">
         <p class="media-card-label">Cover Art</p>
         <p class="media-card-title">Front Cover</p>
@@ -230,7 +183,7 @@ permalink: /media/
     </div>
 
     <div class="media-card">
-      <img src="/assets/images/The_Power_of_Tahajjud__Display_Art_.jpeg" alt="The Power of Tahajjud 3D display mockup" class="media-card-img" data-lightbox>
+      <a href="/assets/images/The_Power_of_Tahajjud__Display_Art_.jpeg" target="_blank"><img src="/assets/images/The_Power_of_Tahajjud__Display_Art_.jpeg" alt="The Power of Tahajjud 3D display mockup" class="media-card-img"></a>
       <div class="media-card-body">
         <p class="media-card-label">3D Mockup</p>
         <p class="media-card-title">Front of Marble</p>
@@ -243,7 +196,7 @@ permalink: /media/
     </div>
 
     <div class="media-card">
-      <img src="/assets/images/book-mockup-standing-stack.png" alt="Book standing upright with stack of copies" class="media-card-img" data-lightbox>
+      <a href="/assets/images/book-mockup-standing-stack.png" target="_blank"><img src="/assets/images/book-mockup-standing-stack.png" alt="Book standing upright with stack of copies" class="media-card-img"></a>
       <div class="media-card-body">
         <p class="media-card-label">3D Mockup</p>
         <p class="media-card-title">Standing Stack with Tea</p>
@@ -256,7 +209,7 @@ permalink: /media/
     </div>
 
     <div class="media-card">
-      <img src="/assets/images/book-mockup-flat-gray.png" alt="Book lying flat on gray surface" class="media-card-img" data-lightbox>
+      <a href="/assets/images/book-mockup-flat-gray.png" target="_blank"><img src="/assets/images/book-mockup-flat-gray.png" alt="Book lying flat on gray surface" class="media-card-img"></a>
       <div class="media-card-body">
         <p class="media-card-label">3D Mockup</p>
         <p class="media-card-title">Flat on Gray with Coffee</p>
@@ -269,7 +222,7 @@ permalink: /media/
     </div>
 
     <div class="media-card">
-      <img src="/assets/images/book-flatlay-marble.png" alt="Book flatlay on marble surface with coffee and flowers" class="media-card-img" data-lightbox>
+      <a href="/assets/images/book-flatlay-marble.png" target="_blank"><img src="/assets/images/book-flatlay-marble.png" alt="Book flatlay on marble surface with coffee and flowers" class="media-card-img"></a>
       <div class="media-card-body">
         <p class="media-card-label">Photo</p>
         <p class="media-card-title">Flatlay on Marble</p>
@@ -282,7 +235,7 @@ permalink: /media/
     </div>
 
     <div class="media-card">
-      <img src="/assets/images/book-stack-hand.png" alt="Hand picking a copy from a stack of books" class="media-card-img" data-lightbox>
+      <a href="/assets/images/book-stack-hand.png" target="_blank"><img src="/assets/images/book-stack-hand.png" alt="Hand picking a copy from a stack of books" class="media-card-img"></a>
       <div class="media-card-body">
         <p class="media-card-label">Photo</p>
         <p class="media-card-title">Stack with Hand</p>
@@ -295,7 +248,7 @@ permalink: /media/
     </div>
 
     <div class="media-card">
-      <img src="/assets/images/book-mockup-library.png" alt="Book on a wooden desk with library in background" class="media-card-img" data-lightbox>
+      <a href="/assets/images/book-mockup-library.png" target="_blank"><img src="/assets/images/book-mockup-library.png" alt="Book on a wooden desk with library in background" class="media-card-img"></a>
       <div class="media-card-body">
         <p class="media-card-label">3D Mockup</p>
         <p class="media-card-title">Library Desk</p>
@@ -308,7 +261,7 @@ permalink: /media/
     </div>
 
     <div class="media-card">
-      <img src="/assets/images/book-flatlay-tasbih.png" alt="Book with tasbih beads and journal on wood" class="media-card-img" data-lightbox>
+      <a href="/assets/images/book-flatlay-tasbih.png" target="_blank"><img src="/assets/images/book-flatlay-tasbih.png" alt="Book with tasbih beads and journal on wood" class="media-card-img"></a>
       <div class="media-card-body">
         <p class="media-card-label">3D Mockup</p>
         <p class="media-card-title">Flatlay with Tasbih</p>
@@ -327,37 +280,3 @@ permalink: /media/
   </p>
 
 </section>
-
-<div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
-  <button class="lightbox-close" id="lightbox-close" aria-label="Close">&times;</button>
-  <img id="lightbox-img" src="" alt="">
-</div>
-
-<script>
-  (function () {
-    var lightbox = document.getElementById('lightbox');
-    var lightboxImg = document.getElementById('lightbox-img');
-
-    document.querySelectorAll('[data-lightbox]').forEach(function (img) {
-      img.addEventListener('click', function () {
-        lightboxImg.src = img.src;
-        lightboxImg.alt = img.alt;
-        lightbox.classList.add('is-open');
-        document.body.style.overflow = 'hidden';
-      });
-    });
-
-    function close() {
-      lightbox.classList.remove('is-open');
-      document.body.style.overflow = '';
-    }
-
-    document.getElementById('lightbox-close').addEventListener('click', close);
-    lightbox.addEventListener('click', function (e) {
-      if (e.target === lightbox) close();
-    });
-    document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape') close();
-    });
-  })();
-</script>
