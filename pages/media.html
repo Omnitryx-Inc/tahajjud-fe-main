@@ -279,4 +279,75 @@ permalink: /media/
     These images are for editorial, social media, and press use related to The Power of Tahajjud. Please do not alter or use them out of context. Questions? Reach us at <a href="mailto:support@omnitryx.ca" style="color: var(--gold-primary); font-weight: 600; text-decoration: none;">support@omnitryx.ca</a>
   </p>
 
+  <!-- Share Captions -->
+  <div style="margin-top: 4rem;">
+    <p class="section-label" style="text-align:left; margin-bottom: 0.5rem;">Ready to Share</p>
+    <h2 class="section-title" style="text-align:left; margin-bottom: 0.5rem;">Captions</h2>
+    <p style="font-size: 0.92rem; color: var(--text-medium); margin-bottom: 2rem; line-height: 1.7;">Pick a caption, copy it, and share it along with one of the photos above.</p>
+
+    <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+
+      <div style="background: var(--cream-light); border: 1px solid var(--beige-warm); border-radius: 10px; padding: 1.5rem;">
+        <p id="mc-1" style="font-size: 0.95rem; color: var(--text-dark); line-height: 1.8; margin-bottom: 1.5rem;">Every single night, Allah descends to the lowest heaven, calling out to His servants so He can grant their needs. The Power of Tahajjud shares real stories of people who prayed during their darkest moments and witnessed extraordinary miracles that made the impossible... possible. Available on Amazon or at PowerOfTahajjud.com</p>
+        <div class="mc-btn-group" data-cap="mc-1"></div>
+      </div>
+
+      <div style="background: var(--cream-light); border: 1px solid var(--beige-warm); border-radius: 10px; padding: 1.5rem;">
+        <p id="mc-2" style="font-size: 0.95rem; color: var(--text-dark); line-height: 1.8; margin-bottom: 1.5rem;">Maybe you've tried everything and nothing seems to work. You've applied to hundreds of jobs with no offers. You've made du'a for years but feel like Allah isn't listening. You're struggling with addiction, loneliness, or a pain so deep you can't name it. Going through the motions but feeling empty inside. You're not alone. The Power of Tahajjud shares real stories of people who faced the same struggles, turned to Allah in the night, and witnessed things they couldn't explain. Available on Amazon or at PowerOfTahajjud.com</p>
+        <div class="mc-btn-group" data-cap="mc-2"></div>
+      </div>
+
+      <div style="background: var(--cream-light); border: 1px solid var(--beige-warm); border-radius: 10px; padding: 1.5rem;">
+        <p id="mc-3" style="font-size: 0.95rem; color: var(--text-dark); line-height: 1.8; margin-bottom: 1.5rem;">The Power of Tahajjud is for anyone who wants to see night prayer in action through real stories and miracles. For those who feel lost, overwhelmed, or distant from Allah. For people facing career setbacks, relationship struggles, financial hardships, or destructive habits who need hope and a way forward. Whether you're spiritually thriving or barely hanging on, these stories will meet you where you are. Available on Amazon or at PowerOfTahajjud.com</p>
+        <div class="mc-btn-group" data-cap="mc-3"></div>
+      </div>
+
+    </div>
+  </div>
+
 </section>
+
+<script>
+(function () {
+  var siteUrl = 'https://poweroftahajjud.com';
+
+  function getText(id) {
+    return document.getElementById(id).innerText;
+  }
+
+  document.querySelectorAll('.mc-btn-group').forEach(function (group) {
+    var capId = group.dataset.cap;
+    group.style.cssText = 'display:flex;align-items:center;gap:0.6rem;';
+
+    // Copy button (always visible)
+    var copyBtn = document.createElement('button');
+    copyBtn.title = 'Copy caption';
+    copyBtn.style.cssText = 'display:inline-flex;align-items:center;justify-content:center;padding:0.6rem;border-radius:8px;background:var(--beige-warm);color:var(--text-dark);border:none;cursor:pointer;flex-shrink:0;';
+    copyBtn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>';
+    copyBtn.addEventListener('click', function () {
+      navigator.clipboard.writeText(getText(capId)).then(function () {
+        copyBtn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>';
+        copyBtn.style.background = '#d4edda';
+        setTimeout(function () {
+          copyBtn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>';
+          copyBtn.style.background = 'var(--beige-warm)';
+        }, 2000);
+      });
+      gtag('event', 'click_share', { platform: 'copy', location: capId });
+    });
+    group.appendChild(copyBtn);
+
+    // Share button (mobile only)
+    if (navigator.share) {
+      var shareBtn = document.createElement('button');
+      shareBtn.style.cssText = 'display:inline-flex;align-items:center;gap:0.6rem;padding:0.6rem 1.1rem;border-radius:8px;background:var(--gold-primary);color:#fff;font-size:0.88rem;font-weight:700;font-family:Inter,sans-serif;border:none;cursor:pointer;';
+      shareBtn.innerHTML = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg> Share';
+      shareBtn.addEventListener('click', function () {
+        navigator.share({ title: 'The Power of Tahajjud', text: getText(capId), url: siteUrl });
+        gtag('event', 'click_share', { platform: 'native', location: capId });
+      });
+      group.insertBefore(shareBtn, copyBtn);
+    }
+  });
+})();
+</script>
