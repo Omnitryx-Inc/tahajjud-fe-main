@@ -39,8 +39,7 @@ The response is promised. What is not promised is that the response will look th
 
 The Prophet ﷺ said:
 
-> *"No Muslim makes supplication - unless he is someone who has cut off his relatives - but that he is given one of three things:
-either his supplication is answered quickly, or it is stored up for him in the Next World, or an evil equal to it is averted from him."*
+> *"No Muslim makes supplication - unless he is someone who has cut off his relatives - but that he is given one of three things: either his supplication is answered quickly, or it is stored up for him in the Next World, or an evil equal to it is averted from him."*
 >
 > ([Al-Adab Al-Mufrad 710](https://sunnah.com/adab:710))
 
