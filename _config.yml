@@ -24,6 +24,9 @@ twitter:
 stripe_buy_url: "https://buy.stripe.com/6oUaEZ9UG8WDbQsaNzdUY0h"
 stripe_donate_url: "https://donate.stripe.com/cNi9AV7My7Szg6If3PdUY0e"
 
+# Google Play Books
+google_play_url: "https://play.google.com/store/books/details?id=KuPLEQAAQBAJ"
+
 # Amazon links
 amazon_url: "/get-the-book/"
 amazon_review_url: "https://www.amazon.co.uk/dp/B0GNJBL9R6#customerReviews"
@@ -57,6 +60,7 @@ social:
     - https://www.linkedin.com/in/jaabbasi/
     - https://github.com/jawwadabbasi
     - https://amazon.com/author/jawwadabbasi
+    - https://www.goodreads.com/author/show/68627780.Jawwad_Ahmed_Abbasi
 
 include:
   - pages
