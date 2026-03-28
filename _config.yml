@@ -27,6 +27,10 @@ stripe_donate_url: "https://donate.stripe.com/cNi9AV7My7Szg6If3PdUY0e"
 # Google Play Books
 google_play_url: "https://play.google.com/store/books/details?id=KuPLEQAAQBAJ"
 
+# Goodreads
+goodreads_author_url: "https://www.goodreads.com/author/show/68627780.Jawwad_Ahmed_Abbasi"
+goodreads_book_url: "https://www.goodreads.com/book/show/248071210-the-power-of-tahajjud"
+
 # Amazon links
 amazon_url: "/get-the-book/"
 amazon_review_url: "https://www.amazon.co.uk/dp/B0GNJBL9R6#customerReviews"
