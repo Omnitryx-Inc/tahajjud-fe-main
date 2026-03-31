@@ -216,6 +216,18 @@
       callout.style.cssText = 'margin:2rem 0; padding:1.25rem 1.5rem; background:var(--beige-soft); border-left:3px solid var(--gold-primary); border-radius:0 8px 8px 0;';
       headings[1].before(callout);
     })();
+
+    (function() {
+      var body = document.querySelector('.post-body');
+      if (!body) return;
+      var headings = body.querySelectorAll('h2');
+      if (headings.length < 2) return;
+      var lastHeading = headings[headings.length - 1];
+      var promo = document.createElement('div');
+      promo.innerHTML = '<p style="margin:0 0 1rem; font-size:0.95rem; color:var(--text-dark); line-height:1.8;">Maybe you have tried everything and nothing seems to work. You have applied to hundreds of jobs with no offers. You have made dua for years but feel like Allah is not listening. You are struggling with addiction, loneliness, or a pain so deep you cannot name it. You feel spiritually disconnected, going through the motions but feeling empty inside. You want to reconnect with Allah but are unsure where to begin. You are not alone. Every person in this book felt the same way until they discovered <strong>The Power of Tahajjud</strong>.</p><div style="display:flex; gap:0.75rem; flex-wrap:wrap;"><a href="/get-the-book/" style="font-size:0.9rem; font-weight:700; color:#fff; background:var(--gold-primary); padding:0.55rem 1.2rem; border-radius:6px; text-decoration:none;" onclick="gtag(\'event\', \'click_inline_promo\', { \'button_location\': \'blog_pre_last_heading\' });">Get the Book</a></div>';
+      promo.style.cssText = 'margin:2rem 0; padding:1.25rem 1.5rem; background:var(--beige-soft); border-left:3px solid var(--gold-primary); border-radius:0 8px 8px 0;';
+      lastHeading.before(promo);
+    })();
   </script>
 
   {% include footer.html %}
