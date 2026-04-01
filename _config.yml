@@ -19,6 +19,7 @@ locale: "en_US"
 # Twitter/Social Cards (ADD THIS)
 twitter:
   card: summary_large_image
+  username: jawwad_ab
 
 # Stripe payment links
 stripe_buy_url: "https://buy.stripe.com/6oUaEZ9UG8WDbQsaNzdUY0h"
