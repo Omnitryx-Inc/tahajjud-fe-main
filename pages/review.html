@@ -1,0 +1,441 @@
+---
+layout: default
+title: "Leave a Review | The Power of Tahajjud"
+description: "Enjoyed The Power of Tahajjud? Your honest review helps others discover the book. Choose your platform and leave a review in just a few minutes."
+permalink: /review/
+---
+
+<style>
+  .review-hero {
+    padding: clamp(8rem, 16vw, 11rem) 5% clamp(1.5rem, 3vw, 2.5rem);
+    background: linear-gradient(to bottom, var(--cream-white) 0%, var(--cream-light) 100%);
+    text-align: center;
+  }
+
+  .review-hero h1 {
+    font-family: "Allrounder Monument Test", serif;
+    font-size: clamp(2rem, 6vw, 3.8rem);
+    font-weight: 700;
+    color: var(--text-dark);
+    letter-spacing: -0.5px;
+    margin-bottom: 1rem;
+  }
+
+  .review-hero p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1rem, 3vw, 1.3rem);
+    color: var(--text-medium);
+    font-style: italic;
+    max-width: 560px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+
+  /* ── Platform choice ── */
+  .review-platforms {
+    padding: clamp(3rem, 8vw, 5rem) 5% clamp(1rem, 3vw, 2rem);
+    background: var(--cream-white);
+  }
+
+  .review-platforms-inner {
+    max-width: 780px;
+    margin: 0 auto;
+  }
+
+  .review-section-label {
+    font-family: "Allrounder Monument Test", serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: var(--gold-primary);
+    text-align: center;
+    margin-bottom: 0.6rem;
+  }
+
+  .review-section-title {
+    font-family: "Allrounder Monument Test", serif;
+    font-size: clamp(1.3rem, 3.5vw, 1.9rem);
+    font-weight: 700;
+    color: var(--text-dark);
+    text-align: center;
+    margin-bottom: 0.6rem;
+  }
+
+  .review-section-sub {
+    font-size: clamp(0.9rem, 2.5vw, 1.05rem);
+    color: var(--text-medium);
+    text-align: center;
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+  }
+
+  /* ── Marketplace list ── */
+  .marketplace-list {
+    background: var(--white);
+    border-radius: 14px;
+    box-shadow: 0 4px 16px rgba(45, 37, 32, 0.07);
+    overflow: hidden;
+  }
+
+  .marketplace-row {
+    display: flex;
+    align-items: center;
+    padding: 0.85rem 1.5rem;
+    border-bottom: 1px solid var(--beige-warm);
+    gap: 1rem;
+  }
+
+  .marketplace-row:last-child {
+    border-bottom: none;
+  }
+
+  .marketplace-flag {
+    font-size: 1.5rem;
+    line-height: 1;
+    flex-shrink: 0;
+  }
+
+  .marketplace-info {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .marketplace-country {
+    font-family: "Allrounder Monument Test", serif;
+    font-size: 0.97rem;
+    font-weight: 700;
+    color: var(--text-dark);
+  }
+
+  .marketplace-retailer {
+    font-size: 0.78rem;
+    color: var(--text-light);
+  }
+
+  .marketplace-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-shrink: 0;
+  }
+
+  .marketplace-btn {
+    padding: 0.45rem 1rem;
+    background: var(--text-dark);
+    color: #fff;
+    border-radius: 7px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.2s ease;
+  }
+
+  .marketplace-btn:hover {
+    background: var(--gold-primary);
+  }
+
+  @media (max-width: 540px) {
+    .marketplace-row {
+      flex-wrap: wrap;
+      padding: 0.9rem 1.1rem;
+    }
+  }
+
+  /* ── Alternatives section ── */
+  .review-alt {
+    padding: clamp(3rem, 8vw, 5rem) 5%;
+    background: var(--cream-light);
+  }
+
+  .review-alt-inner {
+    max-width: 780px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .review-alt-inner p {
+    font-size: clamp(0.92rem, 2.5vw, 1.05rem);
+    color: var(--text-medium);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+  }
+
+  .review-alt-cards {
+    display: flex;
+    gap: 1.25rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .review-alt-card {
+    background: var(--white);
+    border-radius: 14px;
+    padding: 2rem 2.25rem;
+    box-shadow: 0 4px 16px rgba(45, 37, 32, 0.07);
+    flex: 1;
+    min-width: 220px;
+    max-width: 320px;
+    text-decoration: none;
+    color: inherit;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .review-alt-card:hover {
+    box-shadow: 0 8px 28px rgba(45, 37, 32, 0.13);
+    transform: translateY(-2px);
+  }
+
+  .review-alt-card-icon {
+    font-size: 2rem;
+    line-height: 1;
+  }
+
+  .review-alt-card-name {
+    font-family: "Allrounder Monument Test", serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text-dark);
+  }
+
+  .review-alt-card-desc {
+    font-size: 0.85rem;
+    color: var(--text-medium);
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .review-alt-card-cta {
+    margin-top: 0.5rem;
+    padding: 0.4rem 1.1rem;
+    background: var(--gold-primary);
+    color: #fff;
+    border-radius: 7px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: opacity 0.2s ease;
+  }
+
+  .review-alt-card:hover .review-alt-card-cta {
+    opacity: 0.85;
+  }
+
+  @media (max-width: 540px) {
+    .review-alt-cards {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .review-alt-card {
+      max-width: 100%;
+    }
+  }
+</style>
+
+<!-- HERO -->
+<section class="review-hero">
+  <div>
+    <p class="review-section-label">The Power of Tahajjud</p>
+    <h1>Leave a Review</h1>
+    <p>If the book moved you, your honest words will help others find it. It only takes a minute.</p>
+  </div>
+</section>
+
+<!-- AMAZON MARKETPLACES -->
+<section class="review-platforms">
+  <div class="review-platforms-inner">
+    <p class="review-section-label">Amazon</p>
+    <h2 class="review-section-title">Choose Your Marketplace</h2>
+    <p class="review-section-sub">Select the Amazon store for your country. You will be taken directly to the review section.</p>
+
+    <div class="marketplace-list">
+
+      <div class="marketplace-row">
+        <div class="marketplace-flag">🇺🇸</div>
+        <div class="marketplace-info">
+          <div class="marketplace-country">United States</div>
+          <div class="marketplace-retailer">Amazon.com</div>
+        </div>
+        <div class="marketplace-actions">
+          <a href="https://www.amazon.com/dp/B0GNJBL9R6#customerReviews" class="marketplace-btn" target="_blank" rel="noopener" onclick="gtag('event','click_leave_review',{platform:'amazon',country:'US',button_location:'review_page'});">Review</a>
+        </div>
+      </div>
+
+      <div class="marketplace-row">
+        <div class="marketplace-flag">🇨🇦</div>
+        <div class="marketplace-info">
+          <div class="marketplace-country">Canada</div>
+          <div class="marketplace-retailer">Amazon.ca</div>
+        </div>
+        <div class="marketplace-actions">
+          <a href="https://www.amazon.ca/dp/B0GNJBL9R6#customerReviews" class="marketplace-btn" target="_blank" rel="noopener" onclick="gtag('event','click_leave_review',{platform:'amazon',country:'CA',button_location:'review_page'});">Review</a>
+        </div>
+      </div>
+
+      <div class="marketplace-row">
+        <div class="marketplace-flag">🇬🇧</div>
+        <div class="marketplace-info">
+          <div class="marketplace-country">United Kingdom</div>
+          <div class="marketplace-retailer">Amazon.co.uk</div>
+        </div>
+        <div class="marketplace-actions">
+          <a href="https://www.amazon.co.uk/dp/B0GNJBL9R6#customerReviews" class="marketplace-btn" target="_blank" rel="noopener" onclick="gtag('event','click_leave_review',{platform:'amazon',country:'UK',button_location:'review_page'});">Review</a>
+        </div>
+      </div>
+
+      <div class="marketplace-row">
+        <div class="marketplace-flag">🇦🇺</div>
+        <div class="marketplace-info">
+          <div class="marketplace-country">Australia</div>
+          <div class="marketplace-retailer">Amazon.com.au</div>
+        </div>
+        <div class="marketplace-actions">
+          <a href="https://www.amazon.com.au/dp/B0GNJBL9R6#customerReviews" class="marketplace-btn" target="_blank" rel="noopener" onclick="gtag('event','click_leave_review',{platform:'amazon',country:'AU',button_location:'review_page'});">Review</a>
+        </div>
+      </div>
+
+      <div class="marketplace-row">
+        <div class="marketplace-flag">🇩🇪</div>
+        <div class="marketplace-info">
+          <div class="marketplace-country">Germany</div>
+          <div class="marketplace-retailer">Amazon.de</div>
+        </div>
+        <div class="marketplace-actions">
+          <a href="https://www.amazon.de/dp/B0GNJBL9R6#customerReviews" class="marketplace-btn" target="_blank" rel="noopener" onclick="gtag('event','click_leave_review',{platform:'amazon',country:'DE',button_location:'review_page'});">Review</a>
+        </div>
+      </div>
+
+      <div class="marketplace-row">
+        <div class="marketplace-flag">🇫🇷</div>
+        <div class="marketplace-info">
+          <div class="marketplace-country">France</div>
+          <div class="marketplace-retailer">Amazon.fr</div>
+        </div>
+        <div class="marketplace-actions">
+          <a href="https://www.amazon.fr/dp/B0GNJBL9R6#customerReviews" class="marketplace-btn" target="_blank" rel="noopener" onclick="gtag('event','click_leave_review',{platform:'amazon',country:'FR',button_location:'review_page'});">Review</a>
+        </div>
+      </div>
+
+      <div class="marketplace-row">
+        <div class="marketplace-flag">🇮🇹</div>
+        <div class="marketplace-info">
+          <div class="marketplace-country">Italy</div>
+          <div class="marketplace-retailer">Amazon.it</div>
+        </div>
+        <div class="marketplace-actions">
+          <a href="https://www.amazon.it/dp/B0GNJBL9R6#customerReviews" class="marketplace-btn" target="_blank" rel="noopener" onclick="gtag('event','click_leave_review',{platform:'amazon',country:'IT',button_location:'review_page'});">Review</a>
+        </div>
+      </div>
+
+      <div class="marketplace-row">
+        <div class="marketplace-flag">🇪🇸</div>
+        <div class="marketplace-info">
+          <div class="marketplace-country">Spain</div>
+          <div class="marketplace-retailer">Amazon.es</div>
+        </div>
+        <div class="marketplace-actions">
+          <a href="https://www.amazon.es/dp/B0GNJBL9R6#customerReviews" class="marketplace-btn" target="_blank" rel="noopener" onclick="gtag('event','click_leave_review',{platform:'amazon',country:'ES',button_location:'review_page'});">Review</a>
+        </div>
+      </div>
+
+      <div class="marketplace-row">
+        <div class="marketplace-flag">🇳🇱</div>
+        <div class="marketplace-info">
+          <div class="marketplace-country">Netherlands</div>
+          <div class="marketplace-retailer">Amazon.nl</div>
+        </div>
+        <div class="marketplace-actions">
+          <a href="https://www.amazon.nl/dp/B0GNJBL9R6#customerReviews" class="marketplace-btn" target="_blank" rel="noopener" onclick="gtag('event','click_leave_review',{platform:'amazon',country:'NL',button_location:'review_page'});">Review</a>
+        </div>
+      </div>
+
+      <div class="marketplace-row">
+        <div class="marketplace-flag">🇧🇪</div>
+        <div class="marketplace-info">
+          <div class="marketplace-country">Belgium</div>
+          <div class="marketplace-retailer">Amazon.com.be</div>
+        </div>
+        <div class="marketplace-actions">
+          <a href="https://www.amazon.com.be/dp/B0GNJBL9R6#customerReviews" class="marketplace-btn" target="_blank" rel="noopener" onclick="gtag('event','click_leave_review',{platform:'amazon',country:'BE',button_location:'review_page'});">Review</a>
+        </div>
+      </div>
+
+      <div class="marketplace-row">
+        <div class="marketplace-flag">🇮🇪</div>
+        <div class="marketplace-info">
+          <div class="marketplace-country">Ireland</div>
+          <div class="marketplace-retailer">Amazon.ie</div>
+        </div>
+        <div class="marketplace-actions">
+          <a href="https://www.amazon.ie/dp/B0GNJBL9R6#customerReviews" class="marketplace-btn" target="_blank" rel="noopener" onclick="gtag('event','click_leave_review',{platform:'amazon',country:'IE',button_location:'review_page'});">Review</a>
+        </div>
+      </div>
+
+      <div class="marketplace-row">
+        <div class="marketplace-flag">🇵🇱</div>
+        <div class="marketplace-info">
+          <div class="marketplace-country">Poland</div>
+          <div class="marketplace-retailer">Amazon.pl</div>
+        </div>
+        <div class="marketplace-actions">
+          <a href="https://www.amazon.pl/dp/B0GNJBL9R6#customerReviews" class="marketplace-btn" target="_blank" rel="noopener" onclick="gtag('event','click_leave_review',{platform:'amazon',country:'PL',button_location:'review_page'});">Review</a>
+        </div>
+      </div>
+
+      <div class="marketplace-row">
+        <div class="marketplace-flag">🇸🇪</div>
+        <div class="marketplace-info">
+          <div class="marketplace-country">Sweden</div>
+          <div class="marketplace-retailer">Amazon.se</div>
+        </div>
+        <div class="marketplace-actions">
+          <a href="https://www.amazon.se/dp/B0GNJBL9R6#customerReviews" class="marketplace-btn" target="_blank" rel="noopener" onclick="gtag('event','click_leave_review',{platform:'amazon',country:'SE',button_location:'review_page'});">Review</a>
+        </div>
+      </div>
+
+      <div class="marketplace-row">
+        <div class="marketplace-flag">🇯🇵</div>
+        <div class="marketplace-info">
+          <div class="marketplace-country">Japan</div>
+          <div class="marketplace-retailer">Amazon.co.jp</div>
+        </div>
+        <div class="marketplace-actions">
+          <a href="https://www.amazon.co.jp/dp/B0GNJBL9R6#customerReviews" class="marketplace-btn" target="_blank" rel="noopener" onclick="gtag('event','click_leave_review',{platform:'amazon',country:'JP',button_location:'review_page'});">Review</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ALTERNATIVES -->
+<section class="review-alt">
+  <div class="review-alt-inner">
+    <p class="review-section-label">No Amazon Account?</p>
+    <h2 class="review-section-title">Other Ways to Review</h2>
+    <p>Reviews on Goodreads and Google Play Books are just as valuable and help readers discover the book across different platforms.</p>
+
+    <div class="review-alt-cards">
+
+      <a href="{{ site.goodreads_book_url }}" class="review-alt-card" target="_blank" rel="noopener" onclick="gtag('event','click_leave_review',{platform:'goodreads',button_location:'review_page'});">
+        <div class="review-alt-card-icon">📚</div>
+        <div class="review-alt-card-name">Goodreads</div>
+        <div class="review-alt-card-desc">The world's largest book community. Rate, review, and add it to your shelf.</div>
+        <div class="review-alt-card-cta">Review on Goodreads</div>
+      </a>
+
+      <a href="{{ site.google_play_url }}" class="review-alt-card" target="_blank" rel="noopener" onclick="gtag('event','click_leave_review',{platform:'google_play',button_location:'review_page'});">
+        <div class="review-alt-card-icon">▶</div>
+        <div class="review-alt-card-name">Google Play Books</div>
+        <div class="review-alt-card-desc">Read and reviewed on Google Play? Leave your rating directly on the listing.</div>
+        <div class="review-alt-card-cta">Review on Google Play</div>
+      </a>
+
+    </div>
+  </div>
+</section>
