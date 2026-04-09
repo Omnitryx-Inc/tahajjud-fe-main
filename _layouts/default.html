@@ -114,5 +114,50 @@
   {% include footer.html %}
   {% include utm-overrides.html %}
 
+  <!-- Geo-based Stripe link rules -->
+  <script>
+  (function () {
+    var STRIPE_PREFIX = 'https://buy.stripe.com/';
+    var CACHE_KEY = 'visitor_country';
+
+    // ── Rules ────────────────────────────────────────────────────────────────
+    // action: 'swap'   → replace Stripe link with the given URL
+    // action: 'hide'   → remove the link from the page entirely
+    // ─────────────────────────────────────────────────────────────────────────
+    var RULES = {
+      'IN': { action: 'swap', url: 'https://www.amazon.in/dp/B0GGY91C71' },
+      // 'PK': { action: 'hide' },
+      // 'BD': { action: 'swap', url: 'https://example.com/your-link' },
+    };
+
+    function applyRule(rule) {
+      document.querySelectorAll('a[href^="' + STRIPE_PREFIX + '"]').forEach(function (a) {
+        if (rule.action === 'swap') {
+          a.href = rule.url;
+          a.target = '_blank';
+          a.rel = 'noopener';
+        } else if (rule.action === 'hide') {
+          a.style.display = 'none';
+        }
+      });
+    }
+
+    var cached = sessionStorage.getItem(CACHE_KEY);
+    if (cached !== null) {
+      if (RULES[cached]) applyRule(RULES[cached]);
+      return;
+    }
+
+    fetch('https://ipapi.co/country/')
+      .then(function (r) { return r.text(); })
+      .then(function (country) {
+        country = country.trim();
+        sessionStorage.setItem(CACHE_KEY, country);
+        if (RULES[country]) applyRule(RULES[country]);
+      })
+      .catch(function () {});
+  })();
+  </script>
+
 </body>
 </html>
