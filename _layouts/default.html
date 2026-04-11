@@ -127,6 +127,7 @@
     // action: 'hide'   → hide the link from the page entirely
     // ─────────────────────────────────────────────────────────────────────────
     var HIDE = { action: 'hide' };
+    var GOOGLE_PLAY = { action: 'swap', url: '{{ site.google_play_url }}' };
 
     var RULES = {
       // Swap to local alternative
@@ -136,18 +137,18 @@
       // 'PK': { action: 'swap', url: 'https://example.com/your-link' },
       // 'BD': { action: 'swap', url: 'https://example.com/your-link' },
 
-      // Africa — hide Stripe due to high fraud rates
-      'NG': HIDE, 'GH': HIDE, 'CM': HIDE, 'CI': HIDE, 'SN': HIDE,
-      'ML': HIDE, 'BJ': HIDE, 'TG': HIDE, 'NE': HIDE, 'BF': HIDE,
-      'GN': HIDE, 'GW': HIDE, 'MR': HIDE, 'LR': HIDE, 'SL': HIDE,
-      'CF': HIDE, 'TD': HIDE, 'CG': HIDE, 'CD': HIDE, 'GA': HIDE,
-      'GQ': HIDE, 'ST': HIDE, 'AO': HIDE, 'ZM': HIDE, 'ZW': HIDE,
-      'MZ': HIDE, 'MW': HIDE, 'TZ': HIDE, 'UG': HIDE, 'RW': HIDE,
-      'BI': HIDE, 'KE': HIDE, 'ET': HIDE, 'SO': HIDE, 'SD': HIDE,
-      'SS': HIDE, 'ER': HIDE, 'DJ': HIDE, 'KM': HIDE, 'MG': HIDE,
-      'MU': HIDE, 'SC': HIDE, 'LS': HIDE, 'SZ': HIDE, 'BW': HIDE,
-      'NA': HIDE, 'ZA': HIDE, 'DZ': HIDE, 'MA': HIDE, 'TN': HIDE,
-      'LY': HIDE, 'EG': HIDE, 'CV': HIDE, 'GM': HIDE,
+      // Africa — redirect to Google Play Books due to high fraud rates
+      'NG': GOOGLE_PLAY, 'GH': GOOGLE_PLAY, 'CM': GOOGLE_PLAY, 'CI': GOOGLE_PLAY, 'SN': GOOGLE_PLAY,
+      'ML': GOOGLE_PLAY, 'BJ': GOOGLE_PLAY, 'TG': GOOGLE_PLAY, 'NE': GOOGLE_PLAY, 'BF': GOOGLE_PLAY,
+      'GN': GOOGLE_PLAY, 'GW': GOOGLE_PLAY, 'MR': GOOGLE_PLAY, 'LR': GOOGLE_PLAY, 'SL': GOOGLE_PLAY,
+      'CF': GOOGLE_PLAY, 'TD': GOOGLE_PLAY, 'CG': GOOGLE_PLAY, 'CD': GOOGLE_PLAY, 'GA': GOOGLE_PLAY,
+      'GQ': GOOGLE_PLAY, 'ST': GOOGLE_PLAY, 'AO': GOOGLE_PLAY, 'ZM': GOOGLE_PLAY, 'ZW': GOOGLE_PLAY,
+      'MZ': GOOGLE_PLAY, 'MW': GOOGLE_PLAY, 'TZ': GOOGLE_PLAY, 'UG': GOOGLE_PLAY, 'RW': GOOGLE_PLAY,
+      'BI': GOOGLE_PLAY, 'KE': GOOGLE_PLAY, 'ET': GOOGLE_PLAY, 'SO': GOOGLE_PLAY, 'SD': GOOGLE_PLAY,
+      'SS': GOOGLE_PLAY, 'ER': GOOGLE_PLAY, 'DJ': GOOGLE_PLAY, 'KM': GOOGLE_PLAY, 'MG': GOOGLE_PLAY,
+      'MU': GOOGLE_PLAY, 'SC': GOOGLE_PLAY, 'LS': GOOGLE_PLAY, 'SZ': GOOGLE_PLAY, 'BW': GOOGLE_PLAY,
+      'NA': GOOGLE_PLAY, 'ZA': GOOGLE_PLAY, 'DZ': GOOGLE_PLAY, 'MA': GOOGLE_PLAY, 'TN': GOOGLE_PLAY,
+      'LY': GOOGLE_PLAY, 'EG': GOOGLE_PLAY, 'CV': GOOGLE_PLAY, 'GM': GOOGLE_PLAY,
     };
 
     function applyRule(rule) {
