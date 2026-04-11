@@ -418,7 +418,7 @@ permalink: /review/
   <div class="review-alt-inner">
     <p class="review-section-label">No Amazon Account?</p>
     <h2 class="review-section-title">Other Ways to Review</h2>
-    <p>A review on Goodreads is just as valuable and helps readers discover the book across different platforms.</p>
+    <p>Reviews on Goodreads and Google Play Books are just as valuable and help readers discover the book across different platforms.</p>
 
     <div class="review-alt-cards">
 
@@ -427,6 +427,13 @@ permalink: /review/
         <div class="review-alt-card-name">Goodreads</div>
         <div class="review-alt-card-desc">The world's largest book community. Rate, review, and add it to your shelf.</div>
         <div class="review-alt-card-cta">Review on Goodreads</div>
+      </a>
+
+      <a href="{{ site.google_play_url }}" class="review-alt-card" target="_blank" rel="noopener" onclick="gtag('event','click_leave_review',{platform:'google_play',button_location:'review_page'});">
+        <div class="review-alt-card-icon">▶</div>
+        <div class="review-alt-card-name">Google Play Books</div>
+        <div class="review-alt-card-desc">Read it on Google Play? Leave your rating directly on the listing.</div>
+        <div class="review-alt-card-cta">Review on Google Play</div>
       </a>
 
     </div>
