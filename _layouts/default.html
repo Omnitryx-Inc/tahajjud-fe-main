@@ -132,12 +132,13 @@
     var RULES = {
       // Swap to local alternative
       'IN': { action: 'swap', url: 'https://www.amazon.in/dp/B0GGY91C71' },
-
-      // Add swap examples:
-      // 'PK': { action: 'swap', url: 'https://example.com/your-link' },
-      // 'BD': { action: 'swap', url: 'https://example.com/your-link' },
-
-      // Africa — redirect to Google Play Books due to high fraud rates
+      'PK': GOOGLE_PLAY, 'BD': GOOGLE_PLAY, 'VN': GOOGLE_PLAY,
+      'ID': GOOGLE_PLAY, 'PH': GOOGLE_PLAY,
+      'RU': GOOGLE_PLAY, 'UA': GOOGLE_PLAY, 'RO': GOOGLE_PLAY,
+      'MD': GOOGLE_PLAY, 'BY': GOOGLE_PLAY,
+      'IQ': GOOGLE_PLAY, 'IR': GOOGLE_PLAY, 'SY': GOOGLE_PLAY, 'YE': GOOGLE_PLAY,
+      'VE': GOOGLE_PLAY, 'BR': GOOGLE_PLAY, 'MX': GOOGLE_PLAY,
+      'CU': GOOGLE_PLAY, 'KP': GOOGLE_PLAY,
       'NG': GOOGLE_PLAY, 'GH': GOOGLE_PLAY, 'CM': GOOGLE_PLAY, 'CI': GOOGLE_PLAY, 'SN': GOOGLE_PLAY,
       'ML': GOOGLE_PLAY, 'BJ': GOOGLE_PLAY, 'TG': GOOGLE_PLAY, 'NE': GOOGLE_PLAY, 'BF': GOOGLE_PLAY,
       'GN': GOOGLE_PLAY, 'GW': GOOGLE_PLAY, 'MR': GOOGLE_PLAY, 'LR': GOOGLE_PLAY, 'SL': GOOGLE_PLAY,
