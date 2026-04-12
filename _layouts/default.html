@@ -237,6 +237,34 @@
 
     };
 
+    // ── Countries where free option is hidden ────────────────────────────────
+    // Paperback is available on Amazon, or Middle East where we don't offer free
+    var FREE_BLOCK = {
+      // Amazon paperback countries
+      'US': 1, // United States
+      'CA': 1, // Canada
+      'GB': 1, // United Kingdom
+      'AU': 1, // Australia
+      'DE': 1, // Germany
+      'FR': 1, // France
+      'IT': 1, // Italy
+      'ES': 1, // Spain
+      'NL': 1, // Netherlands
+      'BE': 1, // Belgium
+      'IE': 1, // Ireland
+      'PL': 1, // Poland
+      'SE': 1, // Sweden
+      'JP': 1, // Japan
+      // Middle East
+      'AE': 1, // United Arab Emirates
+      'SA': 1, // Saudi Arabia
+      'BH': 1, // Bahrain
+      'KW': 1, // Kuwait
+      'QA': 1, // Qatar
+      'OM': 1, // Oman
+      'JO': 1, // Jordan
+    };
+
     function applyRule(rule) {
       document.querySelectorAll('a[href^="' + STRIPE_PREFIX + '"]').forEach(function (a) {
         if (rule.action === 'swap') {
@@ -249,9 +277,37 @@
       });
     }
 
+    function applyFreeBlock() {
+      // Hide "Can't afford it?" notices and free FAQs (shared classes used site-wide)
+      document.querySelectorAll('.free-copy-notice, .js-free-faq').forEach(function (el) {
+        el.style.display = 'none';
+      });
+      // Sticky bar defaults to /get-the-book/ — keep it as-is for blocked countries
+      // Hide any remaining bare /free/ links
+      document.querySelectorAll('a[href="/free/"], a[href="/free"]').forEach(function (a) {
+        a.closest('p') ? a.closest('p').style.display = 'none' : a.style.display = 'none';
+      });
+      // Redirect if currently on the free page
+      var path = window.location.pathname;
+      if (path === '/free/' || path === '/free') {
+        window.location.replace('/');
+      }
+    }
+
+    function enableFreeSticky() {
+      // Sticky bar defaults to /get-the-book/ — upgrade to /free/ for allowed countries
+      var stickyLink = document.getElementById('sticky-bar-link');
+      if (stickyLink) {
+        stickyLink.href = '/free/';
+        stickyLink.textContent = 'Get the Book Free';
+      }
+    }
+
     var cached = sessionStorage.getItem(CACHE_KEY);
     if (cached !== null) {
       if (RULES[cached]) applyRule(RULES[cached]);
+      if (FREE_BLOCK[cached]) applyFreeBlock();
+      else enableFreeSticky();
       return;
     }
 
@@ -261,8 +317,13 @@
         country = country.trim();
         sessionStorage.setItem(CACHE_KEY, country);
         if (RULES[country]) applyRule(RULES[country]);
+        if (FREE_BLOCK[country]) applyFreeBlock();
+        else enableFreeSticky();
       })
-      .catch(function () {});
+      .catch(function () {
+        // On API failure, default to enabling free (safe fallback)
+        enableFreeSticky();
+      });
   })();
   </script>
 
