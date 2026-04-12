@@ -127,29 +127,112 @@
     // action: 'hide'   → hide the link from the page entirely
     // ─────────────────────────────────────────────────────────────────────────
     var HIDE = { action: 'hide' };
+    var GUMROAD = { action: 'swap', url: 'https://omnitryx.gumroad.com/l/poweroftahajjud' };
     var GOOGLE_PLAY = { action: 'swap', url: '{{ site.google_play_url }}' };
 
     var RULES = {
-      // Swap to local alternative
-      'IN': { action: 'swap', url: 'https://www.amazon.in/dp/B0GGY91C71' },
-      'BD': GOOGLE_PLAY, 'VN': GOOGLE_PLAY,
-      'ID': GOOGLE_PLAY, 'PH': GOOGLE_PLAY,
-      'RU': GOOGLE_PLAY, 'UA': GOOGLE_PLAY, 'RO': GOOGLE_PLAY,
-      'MD': GOOGLE_PLAY, 'BY': GOOGLE_PLAY,
-      'IQ': GOOGLE_PLAY, 'IR': GOOGLE_PLAY, 'SY': GOOGLE_PLAY, 'YE': GOOGLE_PLAY,
-      'VE': GOOGLE_PLAY, 'BR': GOOGLE_PLAY, 'MX': GOOGLE_PLAY,
-      'CU': GOOGLE_PLAY, 'KP': GOOGLE_PLAY,
-      'NG': GOOGLE_PLAY, 'GH': GOOGLE_PLAY, 'CM': GOOGLE_PLAY, 'CI': GOOGLE_PLAY, 'SN': GOOGLE_PLAY,
-      'ML': GOOGLE_PLAY, 'BJ': GOOGLE_PLAY, 'TG': GOOGLE_PLAY, 'NE': GOOGLE_PLAY, 'BF': GOOGLE_PLAY,
-      'GN': GOOGLE_PLAY, 'GW': GOOGLE_PLAY, 'MR': GOOGLE_PLAY, 'LR': GOOGLE_PLAY, 'SL': GOOGLE_PLAY,
-      'CF': GOOGLE_PLAY, 'TD': GOOGLE_PLAY, 'CG': GOOGLE_PLAY, 'CD': GOOGLE_PLAY, 'GA': GOOGLE_PLAY,
-      'GQ': GOOGLE_PLAY, 'ST': GOOGLE_PLAY, 'AO': GOOGLE_PLAY, 'ZM': GOOGLE_PLAY, 'ZW': GOOGLE_PLAY,
-      'MZ': GOOGLE_PLAY, 'MW': GOOGLE_PLAY, 'TZ': GOOGLE_PLAY, 'UG': GOOGLE_PLAY, 'RW': GOOGLE_PLAY,
-      'BI': GOOGLE_PLAY, 'KE': GOOGLE_PLAY, 'ET': GOOGLE_PLAY, 'SO': GOOGLE_PLAY, 'SD': GOOGLE_PLAY,
-      'SS': GOOGLE_PLAY, 'ER': GOOGLE_PLAY, 'DJ': GOOGLE_PLAY, 'KM': GOOGLE_PLAY, 'MG': GOOGLE_PLAY,
-      'MU': GOOGLE_PLAY, 'SC': GOOGLE_PLAY, 'LS': GOOGLE_PLAY, 'SZ': GOOGLE_PLAY, 'BW': GOOGLE_PLAY,
-      'NA': GOOGLE_PLAY, 'ZA': GOOGLE_PLAY, 'DZ': GOOGLE_PLAY, 'MA': GOOGLE_PLAY, 'TN': GOOGLE_PLAY,
-      'LY': GOOGLE_PLAY, 'EG': GOOGLE_PLAY, 'CV': GOOGLE_PLAY, 'GM': GOOGLE_PLAY,
+
+      // ── South Asia ───────────────────────────────────────────────────────────
+      'IN': { action: 'swap', url: 'https://www.amazon.in/dp/B0GGY91C71' }, // India — Kindle
+      'BD': GUMROAD, // Bangladesh
+      'AF': GUMROAD, // Afghanistan
+
+      // ── Southeast Asia ───────────────────────────────────────────────────────
+      'ID': GOOGLE_PLAY, // Indonesia
+      'VN': GUMROAD,     // Vietnam
+      'PH': GUMROAD,     // Philippines
+
+      // ── Central Asia ─────────────────────────────────────────────────────────
+      'TJ': GUMROAD, // Tajikistan
+      'UZ': GUMROAD, // Uzbekistan
+      'TM': GUMROAD, // Turkmenistan
+
+      // ── Eastern Europe ───────────────────────────────────────────────────────
+      'RU': GUMROAD, // Russia
+      'UA': GUMROAD, // Ukraine
+      'RO': GUMROAD, // Romania
+      'MD': GUMROAD, // Moldova
+      'BY': GUMROAD, // Belarus
+
+      // ── Middle East ──────────────────────────────────────────────────────────
+      'IQ': GUMROAD, // Iraq
+      'IR': GUMROAD, // Iran (US-sanctioned)
+      'SY': GUMROAD, // Syria (US-sanctioned)
+      'YE': GUMROAD, // Yemen
+
+      // ── Latin America ────────────────────────────────────────────────────────
+      'VE': GUMROAD, // Venezuela
+      'BR': GUMROAD, // Brazil
+      'MX': GUMROAD, // Mexico
+
+      // ── Sanctioned / Stripe auto-blocks ──────────────────────────────────────
+      'CU': GUMROAD, // Cuba
+      'KP': GUMROAD, // North Korea
+
+      // ── Africa (West) ────────────────────────────────────────────────────────
+      'NG': GUMROAD, // Nigeria
+      'GH': GUMROAD, // Ghana
+      'CM': GUMROAD, // Cameroon
+      'CI': GUMROAD, // Ivory Coast
+      'SN': GUMROAD, // Senegal
+      'ML': GUMROAD, // Mali
+      'BJ': GUMROAD, // Benin
+      'TG': GUMROAD, // Togo
+      'NE': GUMROAD, // Niger
+      'BF': GUMROAD, // Burkina Faso
+      'GN': GUMROAD, // Guinea
+      'GW': GUMROAD, // Guinea-Bissau
+      'MR': GUMROAD, // Mauritania
+      'LR': GUMROAD, // Liberia
+      'SL': GUMROAD, // Sierra Leone
+      'CV': GUMROAD, // Cape Verde
+      'GM': GUMROAD, // Gambia
+
+      // ── Africa (Central) ─────────────────────────────────────────────────────
+      'CF': GUMROAD, // Central African Republic
+      'TD': GUMROAD, // Chad
+      'CG': GUMROAD, // Republic of the Congo
+      'CD': GUMROAD, // DR Congo
+      'GA': GUMROAD, // Gabon
+      'GQ': GUMROAD, // Equatorial Guinea
+      'ST': GUMROAD, // São Tomé and Príncipe
+      'AO': GUMROAD, // Angola
+
+      // ── Africa (East) ────────────────────────────────────────────────────────
+      'ET': GUMROAD, // Ethiopia
+      'KE': GUMROAD, // Kenya
+      'TZ': GUMROAD, // Tanzania
+      'UG': GUMROAD, // Uganda
+      'RW': GUMROAD, // Rwanda
+      'BI': GUMROAD, // Burundi
+      'SO': GUMROAD, // Somalia
+      'SD': GUMROAD, // Sudan (sanctioned)
+      'SS': GUMROAD, // South Sudan
+      'ER': GUMROAD, // Eritrea
+      'DJ': GUMROAD, // Djibouti
+      'KM': GUMROAD, // Comoros
+      'MG': GUMROAD, // Madagascar
+      'MU': GUMROAD, // Mauritius
+      'SC': GUMROAD, // Seychelles
+
+      // ── Africa (Southern) ────────────────────────────────────────────────────
+      'ZM': GUMROAD, // Zambia
+      'ZW': GUMROAD, // Zimbabwe
+      'MZ': GUMROAD, // Mozambique
+      'MW': GUMROAD, // Malawi
+      'LS': GUMROAD, // Lesotho
+      'SZ': GUMROAD, // Eswatini
+      'BW': GUMROAD, // Botswana
+      'NA': GUMROAD, // Namibia
+      'ZA': GUMROAD, // South Africa
+
+      // ── Africa (North) ───────────────────────────────────────────────────────
+      'DZ': GUMROAD, // Algeria
+      'MA': GUMROAD, // Morocco
+      'TN': GUMROAD, // Tunisia
+      'LY': GUMROAD, // Libya
+      'EG': GUMROAD, // Egypt
+
     };
 
     function applyRule(rule) {
