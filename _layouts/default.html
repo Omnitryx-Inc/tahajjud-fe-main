@@ -297,9 +297,10 @@
       document.querySelectorAll('a[href="/free/"], a[href="/free"]').forEach(function (a) {
         a.closest('p') ? a.closest('p').style.display = 'none' : a.style.display = 'none';
       });
-      // Redirect if currently on the free page
+      // Redirect if currently on the free page (bypass with ?redirect=no)
       var path = window.location.pathname;
-      if (path === '/free/' || path === '/free') {
+      var params = new URLSearchParams(window.location.search);
+      if ((path === '/free/' || path === '/free') && params.get('redirect') !== 'no') {
         window.location.replace('/');
       }
     }
