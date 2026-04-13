@@ -127,113 +127,113 @@
     // action: 'hide'   → hide the link from the page entirely
     // ─────────────────────────────────────────────────────────────────────────
     var HIDE = { action: 'hide' };
-    var GUMROAD = { action: 'swap', url: 'https://omnitryx.gumroad.com/l/poweroftahajjud' };
+    var LEMON = { action: 'swap', url: 'https://omnitryx.lemonsqueezy.com/checkout/buy/c2ae844f-4ad1-4b04-a482-4b1a22082562?logo=0' };
     var GOOGLE_PLAY = { action: 'swap', url: '{{ site.google_play_url }}' };
 
     var RULES = {
 
       // ── South Asia ───────────────────────────────────────────────────────────
       'IN': { action: 'swap', url: 'https://www.amazon.in/dp/B0GGY91C71' }, // India — Kindle
-      // 'PK': GUMROAD, // Pakistan — using Stripe directly
-      'BD': GUMROAD, // Bangladesh
-      'AF': GUMROAD, // Afghanistan
-      'LK': GUMROAD, // Sri Lanka
+      'PK': LEMON, // Pakistan
+      'BD': LEMON, // Bangladesh
+      'AF': LEMON, // Afghanistan
+      'LK': LEMON, // Sri Lanka
 
       // ── Southeast Asia ───────────────────────────────────────────────────────
-      'ID': GOOGLE_PLAY, // Indonesia
-      'VN': GUMROAD,     // Vietnam
-      'PH': GUMROAD,     // Philippines
+      'ID': LEMON, // Indonesia
+      'VN': LEMON,     // Vietnam
+      'PH': LEMON,     // Philippines
 
       // ── Central Asia ─────────────────────────────────────────────────────────
-      'TJ': GUMROAD, // Tajikistan
-      'UZ': GUMROAD, // Uzbekistan
-      'TM': GUMROAD, // Turkmenistan
+      'TJ': LEMON, // Tajikistan
+      'UZ': LEMON, // Uzbekistan
+      'TM': LEMON, // Turkmenistan
 
       // ── Eastern Europe ───────────────────────────────────────────────────────
-      'RU': GUMROAD, // Russia
-      'UA': GUMROAD, // Ukraine
-      'RO': GUMROAD, // Romania
-      'MD': GUMROAD, // Moldova
-      'BY': GUMROAD, // Belarus
+      'RU': LEMON, // Russia
+      'UA': LEMON, // Ukraine
+      'RO': LEMON, // Romania
+      'MD': LEMON, // Moldova
+      'BY': LEMON, // Belarus
 
       // ── Middle East ──────────────────────────────────────────────────────────
-      'IQ': GUMROAD, // Iraq
-      'IR': GUMROAD, // Iran (US-sanctioned)
-      'SY': GUMROAD, // Syria (US-sanctioned)
-      'YE': GUMROAD, // Yemen
+      'IQ': LEMON, // Iraq
+      'IR': LEMON, // Iran (US-sanctioned)
+      'SY': LEMON, // Syria (US-sanctioned)
+      'YE': LEMON, // Yemen
 
       // ── Latin America ────────────────────────────────────────────────────────
-      'VE': GUMROAD, // Venezuela
-      'BR': GUMROAD, // Brazil
-      'MX': GUMROAD, // Mexico
+      'VE': LEMON, // Venezuela
+      'BR': LEMON, // Brazil
+      'MX': LEMON, // Mexico
 
       // ── Sanctioned / Stripe auto-blocks ──────────────────────────────────────
-      'CU': GUMROAD, // Cuba
-      'KP': GUMROAD, // North Korea
+      'CU': LEMON, // Cuba
+      'KP': LEMON, // North Korea
 
       // ── Africa (West) ────────────────────────────────────────────────────────
-      'NG': GUMROAD, // Nigeria
-      'GH': GUMROAD, // Ghana
-      'CM': GUMROAD, // Cameroon
-      'CI': GUMROAD, // Ivory Coast
-      'SN': GUMROAD, // Senegal
-      'ML': GUMROAD, // Mali
-      'BJ': GUMROAD, // Benin
-      'TG': GUMROAD, // Togo
-      'NE': GUMROAD, // Niger
-      'BF': GUMROAD, // Burkina Faso
-      'GN': GUMROAD, // Guinea
-      'GW': GUMROAD, // Guinea-Bissau
-      'MR': GUMROAD, // Mauritania
-      'LR': GUMROAD, // Liberia
-      'SL': GUMROAD, // Sierra Leone
-      'CV': GUMROAD, // Cape Verde
-      'GM': GUMROAD, // Gambia
+      'NG': LEMON, // Nigeria
+      'GH': LEMON, // Ghana
+      'CM': LEMON, // Cameroon
+      'CI': LEMON, // Ivory Coast
+      'SN': LEMON, // Senegal
+      'ML': LEMON, // Mali
+      'BJ': LEMON, // Benin
+      'TG': LEMON, // Togo
+      'NE': LEMON, // Niger
+      'BF': LEMON, // Burkina Faso
+      'GN': LEMON, // Guinea
+      'GW': LEMON, // Guinea-Bissau
+      'MR': LEMON, // Mauritania
+      'LR': LEMON, // Liberia
+      'SL': LEMON, // Sierra Leone
+      'CV': LEMON, // Cape Verde
+      'GM': LEMON, // Gambia
 
       // ── Africa (Central) ─────────────────────────────────────────────────────
-      'CF': GUMROAD, // Central African Republic
-      'TD': GUMROAD, // Chad
-      'CG': GUMROAD, // Republic of the Congo
-      'CD': GUMROAD, // DR Congo
-      'GA': GUMROAD, // Gabon
-      'GQ': GUMROAD, // Equatorial Guinea
-      'ST': GUMROAD, // São Tomé and Príncipe
-      'AO': GUMROAD, // Angola
+      'CF': LEMON, // Central African Republic
+      'TD': LEMON, // Chad
+      'CG': LEMON, // Republic of the Congo
+      'CD': LEMON, // DR Congo
+      'GA': LEMON, // Gabon
+      'GQ': LEMON, // Equatorial Guinea
+      'ST': LEMON, // São Tomé and Príncipe
+      'AO': LEMON, // Angola
 
       // ── Africa (East) ────────────────────────────────────────────────────────
-      'ET': GUMROAD, // Ethiopia
-      'KE': GUMROAD, // Kenya
-      'TZ': GUMROAD, // Tanzania
-      'UG': GUMROAD, // Uganda
-      'RW': GUMROAD, // Rwanda
-      'BI': GUMROAD, // Burundi
-      'SO': GUMROAD, // Somalia
-      'SD': GUMROAD, // Sudan (sanctioned)
-      'SS': GUMROAD, // South Sudan
-      'ER': GUMROAD, // Eritrea
-      'DJ': GUMROAD, // Djibouti
-      'KM': GUMROAD, // Comoros
-      'MG': GUMROAD, // Madagascar
-      'MU': GUMROAD, // Mauritius
-      'SC': GUMROAD, // Seychelles
+      'ET': LEMON, // Ethiopia
+      'KE': LEMON, // Kenya
+      'TZ': LEMON, // Tanzania
+      'UG': LEMON, // Uganda
+      'RW': LEMON, // Rwanda
+      'BI': LEMON, // Burundi
+      'SO': LEMON, // Somalia
+      'SD': LEMON, // Sudan (sanctioned)
+      'SS': LEMON, // South Sudan
+      'ER': LEMON, // Eritrea
+      'DJ': LEMON, // Djibouti
+      'KM': LEMON, // Comoros
+      'MG': LEMON, // Madagascar
+      'MU': LEMON, // Mauritius
+      'SC': LEMON, // Seychelles
 
       // ── Africa (Southern) ────────────────────────────────────────────────────
-      'ZM': GUMROAD, // Zambia
-      'ZW': GUMROAD, // Zimbabwe
-      'MZ': GUMROAD, // Mozambique
-      'MW': GUMROAD, // Malawi
-      'LS': GUMROAD, // Lesotho
-      'SZ': GUMROAD, // Eswatini
-      'BW': GUMROAD, // Botswana
-      'NA': GUMROAD, // Namibia
-      'ZA': GUMROAD, // South Africa
+      'ZM': LEMON, // Zambia
+      'ZW': LEMON, // Zimbabwe
+      'MZ': LEMON, // Mozambique
+      'MW': LEMON, // Malawi
+      'LS': LEMON, // Lesotho
+      'SZ': LEMON, // Eswatini
+      'BW': LEMON, // Botswana
+      'NA': LEMON, // Namibia
+      'ZA': LEMON, // South Africa
 
       // ── Africa (North) ───────────────────────────────────────────────────────
-      'DZ': GUMROAD, // Algeria
-      'MA': GUMROAD, // Morocco
-      'TN': GUMROAD, // Tunisia
-      'LY': GUMROAD, // Libya
-      'EG': GUMROAD, // Egypt
+      'DZ': LEMON, // Algeria
+      'MA': LEMON, // Morocco
+      'TN': LEMON, // Tunisia
+      'LY': LEMON, // Libya
+      'EG': LEMON, // Egypt
 
     };
 
@@ -270,6 +270,7 @@
       'CH': 1, // Switzerland
       'FI': 1, // Finland
       'CY': 1, // Cyprus
+      'DK': 1, // Denmark
       // Other
       'MV': 1, // Maldives
     };
