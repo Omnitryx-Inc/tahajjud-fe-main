@@ -88,7 +88,7 @@ We compiled these accounts in *The Power of Tahajjud: Real Stories of Success an
 
 The marriage and relationship stories in the book are among the most striking. Not because they are dramatic, but because of how often the people who told them described the same thing: reaching a point where they had stopped believing it was possible, then deciding to ask anyway, then watching something happen that their own effort had not and could not have produced.
 
-The book is available on [Amazon](https://poweroftahajjud.com/get-the-book/) or you can get it directly [here](https://buy.stripe.com/6oUaEZ9UG8WDbQsaNzdUY0h).
+The book is available on [Amazon](https://poweroftahajjud.com/get-the-book/) or you can get it directly [here]({{ site.stripe_buy_url }}).
 
 ---
 

@@ -64,7 +64,7 @@ It covers stories across different areas of life: provision and financial relief
 
 ## Where to Get It
 
-*The Power of Tahajjud: Real Stories of Success and Miracles* is available on [Amazon](https://poweroftahajjud.com/get-the-book/) or you can get it directly [here](https://buy.stripe.com/6oUaEZ9UG8WDbQsaNzdUY0h).
+*The Power of Tahajjud: Real Stories of Success and Miracles* is available on [Amazon](https://poweroftahajjud.com/get-the-book/) or you can get it directly [here]({{ site.stripe_buy_url }}).
 
 ---
 
