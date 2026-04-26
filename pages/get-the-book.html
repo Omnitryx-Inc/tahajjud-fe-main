@@ -498,3 +498,12 @@ permalink: /get-the-book/
 
   </div>
 </section>
+
+<script>
+  fbq('track', 'ViewContent');
+  document.querySelectorAll('a[href*="buy.stripe.com"], a[href*="lemonsqueezy.com"]').forEach(function(a) {
+    a.addEventListener('click', function() {
+      fbq('track', 'InitiateCheckout');
+    });
+  });
+</script>

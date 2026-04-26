@@ -558,10 +558,14 @@ sitemap: false
 }
 </style>
 
-<!-- Google Ads Conversion: fires only for paid downloads -->
+<!-- Conversion events: Google Ads + Meta Pixel -->
 <script>
-  if (new URLSearchParams(window.location.search).get('type') === 'paid') {
+  var _dlType = new URLSearchParams(window.location.search).get('type');
+  if (_dlType === 'paid') {
     gtag('event', 'conversion_event_purchase');
+    fbq('track', 'Purchase', {value: 19.99, currency: 'CAD'});
+  } else if (_dlType === 'free') {
+    fbq('track', 'Lead');
   }
 </script>
 
