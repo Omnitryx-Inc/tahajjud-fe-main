@@ -26,6 +26,12 @@ twitter:
 stripe_buy_url: "https://buy.stripe.com/bJefZj0k64Gn4o04pbdUY0k"
 stripe_donate_url: "https://donate.stripe.com/cNi9AV7My7Szg6If3PdUY0e"
 
+# Lemon Squeezy
+lemon_buy_url: "https://omnitryx.lemonsqueezy.com/checkout/buy/c2ae844f-4ad1-4b04-a482-4b1a22082562?logo=0"
+
+# Paddle
+paddle_buy_url: "https://buy.paddle.com/product/PLACEHOLDER"
+
 # Google Play Books
 google_play_url: "https://play.google.com/store/books/details?id=KuPLEQAAQBAJ"
 

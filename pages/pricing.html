@@ -1,0 +1,285 @@
+---
+layout: default
+title: "The Power of Tahajjud - Get the Book"
+description: "Real stories of people who prayed during their darkest moments and witnessed extraordinary miracles. Get The Power of Tahajjud today."
+permalink: /pricing/
+sitemap: false
+robots: noindex
+---
+
+<style>
+.buy-page {
+    min-height: 100vh;
+    padding: 8rem 5% 6rem;
+    background: linear-gradient(to bottom, var(--cream-white), var(--cream-light));
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.buy-inner {
+    max-width: 860px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: start;
+}
+
+/* ── Left: Book Visual ── */
+.buy-book-wrap {
+    position: sticky;
+    top: 7rem;
+    text-align: center;
+}
+
+.buy-book-img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 20px 60px rgba(45, 37, 32, 0.18);
+}
+
+.buy-stars {
+    margin-top: 1.5rem;
+    color: var(--gold-primary);
+    font-size: 1.1rem;
+    letter-spacing: 0.1em;
+}
+
+.buy-stars-label {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    margin-top: 0.3rem;
+}
+
+/* ── Right: Info + CTA ── */
+.buy-info {
+    padding-top: 0.5rem;
+}
+
+.buy-eyebrow {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold-primary);
+    margin-bottom: 0.75rem;
+}
+
+.buy-title {
+    font-family: "Allrounder Monument Test", serif;
+    font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+    color: var(--text-dark);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+
+.buy-subtitle {
+    font-size: 1rem;
+    color: var(--text-medium);
+    font-style: italic;
+    margin-bottom: 1.75rem;
+}
+
+.buy-description {
+    font-size: 1.05rem;
+    color: var(--text-medium);
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+
+.buy-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem;
+}
+
+.buy-features li {
+    font-size: 0.98rem;
+    color: var(--text-medium);
+    line-height: 1.6;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--beige-warm);
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+}
+
+.buy-features li:last-child {
+    border-bottom: none;
+}
+
+.buy-features li::before {
+    content: "✓";
+    color: var(--gold-primary);
+    font-weight: 700;
+    flex-shrink: 0;
+    margin-top: 0.05rem;
+}
+
+/* ── Price + CTA ── */
+.buy-cta-block {
+    background: var(--white);
+    border: 2px solid var(--beige-warm);
+    border-radius: 16px;
+    padding: 2rem;
+}
+
+.buy-price-row {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.buy-price {
+    font-family: "Allrounder Monument Test", serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.buy-price-currency {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-medium);
+}
+
+.buy-price-note {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    margin-bottom: 1.25rem;
+}
+
+.buy-btn {
+    display: block;
+    width: 100%;
+    padding: 1.1rem 2rem;
+    background: var(--gold-primary);
+    color: var(--cream-white);
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.buy-btn:hover {
+    background: var(--gold-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(192, 137, 72, 0.3);
+}
+
+.buy-guarantee {
+    margin-top: 1rem;
+    font-size: 0.82rem;
+    color: var(--text-light);
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* ── Testimonial ── */
+.buy-testimonial {
+    margin-top: 2.5rem;
+    background: var(--beige-soft);
+    border-left: 3px solid var(--gold-primary);
+    border-radius: 0 10px 10px 0;
+    padding: 1.5rem;
+}
+
+.buy-testimonial-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    font-style: italic;
+    color: var(--text-dark);
+    line-height: 1.7;
+    margin-bottom: 0.75rem;
+}
+
+.buy-testimonial-author {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--gold-primary);
+}
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+    .buy-inner {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .buy-book-wrap {
+        position: static;
+    }
+
+    .buy-book-img {
+        max-width: 220px;
+    }
+}
+</style>
+
+<section class="buy-page">
+    <div class="buy-inner">
+
+        <!-- Book cover -->
+        <div class="buy-book-wrap">
+            <img
+                src="/assets/images/The_Power_of_Tahajjud__Display_Art_.jpeg"
+                alt="The Power of Tahajjud book cover"
+                class="buy-book-img"
+            >
+            <div class="buy-stars">★★★★★</div>
+            <p class="buy-stars-label">Readers worldwide</p>
+        </div>
+
+        <!-- Info + CTA -->
+        <div class="buy-info">
+            <p class="buy-eyebrow">Digital Edition</p>
+            <h1 class="buy-title">The Power of Tahajjud</h1>
+            <p class="buy-subtitle">Real Stories of Success and Miracles</p>
+
+            <p class="buy-description">
+                Every single night, Allah descends to the lowest heaven, calling out to His servants
+                so He can grant their needs. This book collects the real stories of people who prayed
+                during their darkest moments and witnessed extraordinary miracles that made the
+                impossible... possible.
+            </p>
+
+            <ul class="buy-features">
+                <li>Real accounts of Tahajjud answered across every kind of struggle</li>
+                <li>Chapters on rizq, marriage, health, grief, and turning back to Allah</li>
+                <li>Practical reflection sections to take into your own night prayer</li>
+                <li>Instant PDF delivery, read anywhere</li>
+            </ul>
+
+            <div class="buy-cta-block">
+                <div class="buy-price-row">
+                    <span class="buy-price">$14.99</span>
+                    <span class="buy-price-currency">USD</span>
+                </div>
+                <p class="buy-price-note">Digital edition. Instant access.</p>
+                <a href="{{ site.stripe_buy_url }}" class="buy-btn">
+                    Get Instant Access
+                </a>
+                <p class="buy-guarantee">Secure checkout. No account required.</p>
+            </div>
+
+            <div class="buy-testimonial">
+                <p class="buy-testimonial-text">
+                    "This book is so beautifully written. Completely unputdownable. There is a story
+                    that speaks to each struggle many of us face in this life. Something will resonate
+                    with you. I can almost guarantee it."
+                </p>
+                <p class="buy-testimonial-author">Shabnam, United Kingdom</p>
+            </div>
+        </div>
+
+    </div>
+</section>
