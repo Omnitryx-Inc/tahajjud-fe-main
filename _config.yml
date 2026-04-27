@@ -30,7 +30,8 @@ stripe_donate_url: "https://donate.stripe.com/cNi9AV7My7Szg6If3PdUY0e"
 lemon_buy_url: "https://omnitryx.lemonsqueezy.com/checkout/buy/c2ae844f-4ad1-4b04-a482-4b1a22082562?logo=0"
 
 # Paddle
-paddle_buy_url: "https://buy.paddle.com/product/PLACEHOLDER"
+paddle_token: "live_bf8ba7d65402a6986d846acbf11"
+paddle_price_id: "pri_01kq7z3k255v1h2jkqrjp4b2n5"
 
 # Google Play Books
 google_play_url: "https://play.google.com/store/books/details?id=KuPLEQAAQBAJ"
