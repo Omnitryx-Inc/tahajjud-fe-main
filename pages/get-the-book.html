@@ -505,7 +505,9 @@ permalink: /get-the-book/
   ttq.track('ViewContent', {contents: _book, value: 19.99, currency: 'CAD'});
   document.querySelectorAll('a[href*="buy.stripe.com"], a[href*="lemonsqueezy.com"]').forEach(function(a) {
     a.addEventListener('click', function() {
+      fbq('track', 'AddToCart');
       fbq('track', 'InitiateCheckout');
+      ttq.track('AddToCart', {contents: _book, value: 19.99, currency: 'CAD'});
       ttq.track('InitiateCheckout', {contents: _book, value: 19.99, currency: 'CAD'});
     });
   });
