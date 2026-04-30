@@ -498,6 +498,18 @@ permalink: /
 </script>
 
 <script>
+  var _book = [{content_id: 'power-of-tahajjud', content_type: 'product', content_name: 'The Power of Tahajjud'}];
+  fbq('track', 'ViewContent');
+  ttq.track('ViewContent', {contents: _book, value: 19.99, currency: 'CAD'});
+  document.querySelectorAll('a[href*="buy.stripe.com"], a[href*="lemonsqueezy.com"]').forEach(function(a) {
+    a.addEventListener('click', function() {
+      fbq('track', 'InitiateCheckout');
+      ttq.track('InitiateCheckout', {contents: _book, value: 19.99, currency: 'CAD'});
+    });
+  });
+</script>
+
+<script>
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {

@@ -558,14 +558,18 @@ sitemap: false
 }
 </style>
 
-<!-- Conversion events: Google Ads + Meta Pixel -->
+<!-- Conversion events: Google Ads + Meta Pixel + TikTok Pixel -->
 <script>
   var _dlType = new URLSearchParams(window.location.search).get('type');
+  var _book = [{content_id: 'power-of-tahajjud', content_type: 'product', content_name: 'The Power of Tahajjud'}];
   if (_dlType === 'paid') {
     gtag('event', 'conversion_event_purchase');
     fbq('track', 'Purchase', {value: 19.99, currency: 'CAD'});
+    ttq.track('Purchase', {contents: _book, value: 19.99, currency: 'CAD'});
+    ttq.track('PlaceAnOrder', {contents: _book, value: 19.99, currency: 'CAD'});
   } else if (_dlType === 'free') {
     fbq('track', 'Lead');
+    ttq.track('CompleteRegistration', {contents: _book, value: 0, currency: 'CAD'});
   }
 </script>
 
