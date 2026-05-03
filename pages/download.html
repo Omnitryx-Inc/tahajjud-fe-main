@@ -558,7 +558,7 @@ sitemap: false
 }
 </style>
 
-<!-- Conversion events: Google Ads + Meta Pixel + TikTok Pixel -->
+<!-- Conversion events: Google Ads + Meta Pixel + TikTok Pixel + Pinterest -->
 <script>
   var _dlType = new URLSearchParams(window.location.search).get('type');
   var _book = [{content_id: 'power-of-tahajjud', content_type: 'product', content_name: 'The Power of Tahajjud'}];
@@ -567,9 +567,11 @@ sitemap: false
     fbq('track', 'Purchase', {value: 19.99, currency: 'CAD'});
     ttq.track('Purchase', {contents: _book, value: 19.99, currency: 'CAD'});
     ttq.track('PlaceAnOrder', {contents: _book, value: 19.99, currency: 'CAD'});
+    pintrk('track', 'checkout', {value: 19.99, order_quantity: 1, currency: 'CAD'});
   } else if (_dlType === 'free') {
     fbq('track', 'Lead');
     ttq.track('CompleteRegistration', {contents: _book, value: 0, currency: 'CAD'});
+    pintrk('track', 'lead');
   }
 </script>
 

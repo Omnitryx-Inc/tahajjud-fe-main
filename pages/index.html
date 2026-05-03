@@ -507,6 +507,7 @@ permalink: /
       fbq('track', 'InitiateCheckout');
       ttq.track('AddToCart', {contents: _book, value: 19.99, currency: 'CAD'});
       ttq.track('InitiateCheckout', {contents: _book, value: 19.99, currency: 'CAD'});
+      pintrk('track', 'addtocart', {value: 19.99, order_quantity: 1, currency: 'CAD'});
     });
   });
 </script>
