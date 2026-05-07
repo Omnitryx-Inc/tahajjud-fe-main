@@ -38,14 +38,14 @@ goodreads_book_url: "https://www.goodreads.com/book/show/248071210-the-power-of-
 
 # Amazon links
 amazon_url: "/get-the-book/"
-amazon_review_url: "https://www.amazon.co.uk/dp/B0GNJBL9R6#customerReviews"
+amazon_review_url: "https://www.amazon.co.uk/dp/1067506608#customerReviews"
 
 # Book-specific metadata
 book:
-  isbn: "B0GNJBL9R6"
+  isbn: "1067506608"
   price: "19.99"
   currency: "CAD"
-  amazon_url: "https://www.amazon.ca/dp/B0GNJBL9R6"
+  amazon_url: "https://www.amazon.ca/dp/1067506608"
 
 # Keywords for AI search engines
 keywords: "Tahajjud, night prayer, tahajjud in ramadan, Islamic prayer, spiritual growth, miracles, success stories, Muslim prayer, Allah, dua, faith, spiritual book, Islamic book, tahajjud miracles, tahajjud success stories, power of prayer, night worship, Islamic spirituality"
