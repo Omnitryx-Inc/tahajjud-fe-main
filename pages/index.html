@@ -43,7 +43,11 @@ permalink: /
                 <a href="{{ site.amazon_url }}" class="btn btn-secondary js-amazon-link" onclick="gtag('event', 'click_buy_page', {'button_location': 'index_hero'})">Buy Physical Edition</a>
             </div>
 
-            <div class="guarantee">
+            <div class="pk-in-notice" style="display:none; margin-top:1.5rem; border-radius:8px; border:1px solid rgba(255,255,255,0.12); background:rgba(255,255,255,0.05); max-width:420px;">
+                <p style="margin:0; font-size:0.86rem; line-height:1.75; color:inherit; opacity:0.85;">The paperback is not available in Pakistan or India. We made several genuine attempts to bring it to both regions, but persistent issues with fraud and unreliable print fulfilment partners made it impossible to guarantee a good experience. The complete book is available as a digital PDF only.</p>
+            </div>
+
+            <div class="guarantee js-guarantee">
                 Instant digital access • Premium print on Amazon
             </div>
 
@@ -91,7 +95,7 @@ permalink: /
             <p class="quote-text">
                 "An amazing, well written book. The stories are written in an engaging manner and love the reflection section! It really makes you think and ponder on how you can apply it to your life. A great means of Sadqah Jariyah and I'm sure every reader will take benefit from this book inshallah!"
             </p>
-            <p class="quote-author">— Amatullah., United Kingdom</p>
+            <p class="quote-author">— Amatullah, United Kingdom</p>
         </div>
     </div>
     <div class="testimonial-dots" id="testimonialDots">
@@ -398,6 +402,10 @@ permalink: /
         <a href="{{ site.amazon_url }}" class="btn btn-secondary js-amazon-link" onclick="gtag('event', 'click_buy_page', {'button_location': 'index_final_cta'})">Buy Physical Edition</a>
     </div>
 
+    <div class="pk-in-notice" style="display:none; margin-top:1.5rem; padding:1rem 1.1rem; border-radius:8px; border:1px solid rgba(255,255,255,0.12); background:rgba(255,255,255,0.05); max-width:460px; margin-left:auto; margin-right:auto;">
+        <p style="margin:0; font-size:0.86rem; line-height:1.75; color:inherit; opacity:0.85;">The paperback is not available in Pakistan or India. We made several genuine attempts to bring it to both regions, but persistent issues with fraud and unreliable print fulfilment partners made it impossible to guarantee a good experience. The complete book is available as a digital PDF, priced in your local currency, with instant access.</p>
+    </div>
+
     <p class="free-copy-notice" style="margin-top: 2rem; font-size: 1.05rem; opacity: 0.9;">
         Can't afford it? <a href="/free/" style="color: var(--cream-white); font-weight: 600; text-decoration: underline;">Get a free copy</a>
     </p>
@@ -510,6 +518,27 @@ permalink: /
       pintrk('track', 'addtocart', {value: 19.99, order_quantity: 1, currency: 'CAD'});
     });
   });
+</script>
+
+<script>
+(function() {
+    fetch('https://www.cloudflare.com/cdn-cgi/trace')
+        .then(function(r) { return r.text(); })
+        .then(function(t) {
+            var m = t.match(/loc=([A-Z]{2})/);
+            var d = { country_code: m ? m[1] : null };
+            if (!d.country_code || (d.country_code !== 'PK' && d.country_code !== 'IN')) return;
+            document.querySelectorAll('.js-amazon-link').forEach(function(el) {
+                el.style.display = 'none';
+            });
+            document.querySelectorAll('.pk-in-notice').forEach(function(el) {
+                el.style.display = 'block';
+            });
+            var g = document.querySelector('.js-guarantee');
+            if (g) g.textContent = 'Instant digital access • Priced in your local currency';
+        })
+        .catch(function() {});
+})();
 </script>
 
 <script>
