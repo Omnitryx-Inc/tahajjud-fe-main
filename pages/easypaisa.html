@@ -1,0 +1,755 @@
+---
+layout: default
+title: "Order via Easypaisa | The Power of Tahajjud"
+description: "Order The Power of Tahajjud digital PDF from Pakistan using Easypaisa. Send payment, upload your screenshot, and receive the book by email."
+permalink: /easypaisa/
+---
+
+<style>
+.ep-hero {
+    min-height: 55vh;
+    display: flex;
+    align-items: center;
+    padding: 9rem 5% 4rem;
+    background: linear-gradient(to bottom, var(--cream-white) 0%, var(--cream-light) 100%);
+    text-align: center;
+}
+
+.ep-hero-inner {
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.ep-eyebrow {
+    display: inline-block;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold-primary);
+    margin-bottom: 1.25rem;
+}
+
+.ep-hero-title {
+    font-family: "Allrounder Monument Test", serif;
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    color: var(--text-dark);
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+}
+
+.ep-hero-sub {
+    font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+    color: var(--text-medium);
+    line-height: 1.8;
+    max-width: 560px;
+    margin: 0 auto 2rem;
+}
+
+.ep-pdf-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(192, 137, 72, 0.1);
+    border: 1.5px solid rgba(192, 137, 72, 0.3);
+    border-radius: 100px;
+    padding: 0.5rem 1.1rem;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--gold-primary);
+}
+
+/* Steps section */
+.ep-steps {
+    padding: 5rem 5%;
+    background: var(--white);
+}
+
+.ep-steps-inner {
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.ep-section-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold-primary);
+    margin-bottom: 0.75rem;
+    text-align: center;
+}
+
+.ep-section-title {
+    font-family: "Allrounder Monument Test", serif;
+    font-size: clamp(1.3rem, 3vw, 1.9rem);
+    color: var(--text-dark);
+    font-weight: 700;
+    line-height: 1.3;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.ep-payment-card {
+    background: var(--cream-light);
+    border: 2px solid rgba(192, 137, 72, 0.25);
+    border-radius: 14px;
+    padding: 2rem 2.5rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.ep-payment-label {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+}
+
+.ep-payment-amount {
+    font-family: "Allrounder Monument Test", serif;
+    font-size: clamp(2rem, 6vw, 3rem);
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 0.25rem;
+}
+
+.ep-payment-desc {
+    font-size: 0.88rem;
+    color: var(--text-medium);
+    margin-bottom: 1.5rem;
+}
+
+.ep-account-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.75rem;
+}
+
+.ep-account-item {
+    background: var(--white);
+    border: 1.5px solid var(--beige-warm);
+    border-radius: 8px;
+    padding: 0.7rem 1.25rem;
+    text-align: center;
+    min-width: 160px;
+}
+
+.ep-account-item-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-light);
+    margin-bottom: 0.25rem;
+}
+
+.ep-account-item-value {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    font-family: "Allrounder Monument Test", serif;
+}
+
+.ep-steps-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.ep-step {
+    display: flex;
+    gap: 1.25rem;
+    align-items: flex-start;
+}
+
+.ep-step-num {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--gold-primary);
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.ep-step-body {
+    flex: 1;
+}
+
+.ep-step-title {
+    font-weight: 700;
+    color: var(--text-dark);
+    font-size: 0.97rem;
+    margin-bottom: 0.25rem;
+}
+
+.ep-step-desc {
+    font-size: 0.9rem;
+    color: var(--text-medium);
+    line-height: 1.65;
+    margin: 0;
+}
+
+/* Form section */
+.ep-form-section {
+    padding: 5rem 5% 7rem;
+    background: var(--cream-light);
+}
+
+.ep-form-inner {
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.ep-form-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.ep-form-card {
+    background: var(--white);
+    border-radius: 16px;
+    padding: 3rem;
+    box-shadow: 0 4px 24px rgba(45, 37, 32, 0.07);
+}
+
+@media (max-width: 600px) {
+    .ep-form-card {
+        padding: 2rem 1.5rem;
+    }
+    .ep-payment-card {
+        padding: 1.5rem 1.25rem;
+    }
+}
+
+.ep-field {
+    margin-bottom: 1.75rem;
+}
+
+.ep-field label {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 0.4rem;
+}
+
+.ep-field-hint {
+    font-size: 0.83rem;
+    color: var(--text-light);
+    font-weight: 400;
+    margin-left: 0.25rem;
+}
+
+.ep-field input[type="email"] {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    border: 1.5px solid var(--beige-warm);
+    border-radius: 8px;
+    font-size: 0.97rem;
+    font-family: 'Inter', sans-serif;
+    color: var(--text-dark);
+    background: var(--cream-white);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.ep-field input[type="email"]:focus {
+    outline: none;
+    border-color: var(--gold-primary);
+    box-shadow: 0 0 0 3px rgba(192, 137, 72, 0.12);
+}
+
+.ep-upload-zone {
+    border: 2px dashed var(--beige-warm);
+    border-radius: 10px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.2s ease, background 0.2s ease;
+    background: var(--cream-white);
+    position: relative;
+}
+
+.ep-upload-zone:hover,
+.ep-upload-zone.drag-over {
+    border-color: var(--gold-primary);
+    background: rgba(192, 137, 72, 0.04);
+}
+
+.ep-upload-zone input[type="file"] {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+.ep-upload-icon {
+    font-size: 1.8rem;
+    margin-bottom: 0.6rem;
+    display: block;
+}
+
+.ep-upload-text {
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 0.25rem;
+}
+
+.ep-upload-sub {
+    font-size: 0.8rem;
+    color: var(--text-light);
+}
+
+.ep-upload-preview {
+    display: none;
+    margin-top: 1rem;
+    padding: 0.6rem 1rem;
+    background: rgba(192, 137, 72, 0.08);
+    border: 1.5px solid rgba(192, 137, 72, 0.25);
+    border-radius: 7px;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--gold-primary);
+    text-align: left;
+}
+
+.ep-field-error {
+    display: none;
+    font-size: 0.8rem;
+    color: #c04848;
+    margin-top: 0.35rem;
+}
+
+.ep-field.has-error input,
+.ep-field.has-error .ep-upload-zone {
+    border-color: #c04848;
+}
+
+.ep-field.has-error .ep-field-error {
+    display: block;
+}
+
+.ep-submit-area {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.ep-submit-btn {
+    display: inline-block;
+    padding: 1.1rem 3.5rem;
+    background: var(--gold-primary);
+    color: var(--cream-white);
+    border: none;
+    border-radius: 10px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 360px;
+}
+
+.ep-submit-btn:hover {
+    background: var(--gold-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(192, 137, 72, 0.3);
+}
+
+.ep-submit-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.ep-privacy-note {
+    font-size: 0.8rem;
+    color: var(--text-light);
+    margin-top: 1rem;
+    line-height: 1.6;
+}
+
+.ep-msg {
+    display: none;
+    padding: 1.2rem 1.5rem;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.ep-msg.success {
+    background: rgba(74, 153, 96, 0.1);
+    border: 1.5px solid rgba(74, 153, 96, 0.4);
+    color: #2d6b43;
+}
+
+.ep-msg.error {
+    background: rgba(192, 72, 72, 0.08);
+    border: 1.5px solid rgba(192, 72, 72, 0.3);
+    color: #8b3030;
+}
+
+/* What happens next */
+.ep-next {
+    padding: 4rem 5%;
+    background: var(--white);
+}
+
+.ep-next-inner {
+    max-width: 680px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ep-next-title {
+    font-family: "Allrounder Monument Test", serif;
+    font-size: clamp(1.1rem, 3vw, 1.5rem);
+    color: var(--text-dark);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.ep-next-steps {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ep-next-item {
+    flex: 1;
+    min-width: 160px;
+    max-width: 200px;
+    padding: 1.25rem 1rem;
+    background: var(--cream-light);
+    border-radius: 12px;
+    font-size: 0.88rem;
+    color: var(--text-medium);
+    line-height: 1.6;
+    text-align: center;
+}
+
+.ep-next-item-icon {
+    font-size: 1.4rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.ep-next-item-text {
+    font-size: 0.85rem;
+    color: var(--text-medium);
+    line-height: 1.6;
+}
+</style>
+
+<!-- Hero -->
+<section class="ep-hero">
+    <div class="ep-hero-inner">
+        <span class="ep-eyebrow">Pakistan Orders</span>
+        <h1 class="ep-hero-title">Get The Book via Easypaisa or JazzCash</h1>
+        <p class="ep-hero-sub">
+            Pay using Easypaisa or JazzCash, send us your payment screenshot, and we will email you the book within 48 hours.
+        </p>
+        <span class="ep-pdf-badge">Digital PDF edition only, not paperback</span>
+        <p style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--text-light);">
+            Have a credit card? <a href="https://omnitryx-pakistan.lemonsqueezy.com/checkout/buy/388c04c5-a834-4796-8952-b90d836fb0d0" target="_blank" rel="noopener" style="color: var(--gold-primary); font-weight: 600; text-decoration: none;" onclick="gtag('event','click_buy_digital',{button_location:'easypaisa_hero_card_alt'});">Pay by card instead</a>
+        </p>
+    </div>
+</section>
+
+<!-- Payment Instructions -->
+<section class="ep-steps">
+    <div class="ep-steps-inner">
+        <p class="ep-section-label">How to Order</p>
+        <h2 class="ep-section-title">Three Simple Steps</h2>
+
+        <div class="ep-payment-card">
+            <p class="ep-payment-label">Amount to Send</p>
+            <p class="ep-payment-amount">PKR 1,000</p>
+            <p class="ep-payment-desc">One-time payment. You keep the PDF forever.</p>
+
+            <div class="ep-account-row">
+                <div class="ep-account-item">
+                    <div class="ep-account-item-label">Mobile Number</div>
+                    <div class="ep-account-item-value" id="ep-number">0333-2193794</div>
+                </div>
+                <div class="ep-account-item">
+                    <div class="ep-account-item-label">Account Name</div>
+                    <div class="ep-account-item-value" id="ep-name">Mohammed Rehan</div>
+                </div>
+            </div>
+            <p style="font-size: 0.82rem; color: var(--text-light); margin-top: 0.75rem;">Easypaisa and JazzCash both accepted</p>
+        </div>
+
+        <ol class="ep-steps-list">
+            <li class="ep-step">
+                <div class="ep-step-num">1</div>
+                <div class="ep-step-body">
+                    <p class="ep-step-title">Open your Easypaisa or JazzCash app</p>
+                    <p class="ep-step-desc">Go to Send Money, enter the number above, and send exactly PKR 1,000. Make sure the name shown matches the account name above before confirming.</p>
+                </div>
+            </li>
+            <li class="ep-step">
+                <div class="ep-step-num">2</div>
+                <div class="ep-step-body">
+                    <p class="ep-step-title">Take a screenshot of the confirmation</p>
+                    <p class="ep-step-desc">Once the payment goes through, take a screenshot of the success screen showing the transaction ID, amount, and recipient. This confirms your payment.</p>
+                </div>
+            </li>
+            <li class="ep-step">
+                <div class="ep-step-num">3</div>
+                <div class="ep-step-body">
+                    <p class="ep-step-title">Fill in the form below</p>
+                    <p class="ep-step-desc">Enter your email address and upload the screenshot. We will verify and email you the PDF, usually within a few hours and no longer than 48 hours.</p>
+                </div>
+            </li>
+        </ol>
+    </div>
+</section>
+
+<!-- Form -->
+<section class="ep-form-section">
+    <div class="ep-form-inner">
+        <div class="ep-form-header">
+            <p class="ep-section-label">Submit Your Order</p>
+            <h2 class="ep-section-title">Send Us Your Details</h2>
+        </div>
+
+        <div class="ep-form-card">
+            <div id="ep-success-msg" class="ep-msg success">
+                JazakAllahu Khayran. Your order has been received. We will email you the PDF within 48 hours, in sha Allah.
+            </div>
+            <div id="ep-error-msg" class="ep-msg error">
+                Something went wrong. Please try again or contact us at <a href="mailto:support@omnitryx.ca">support@omnitryx.ca</a>.
+            </div>
+
+            <form id="ep-form" novalidate>
+                <div class="ep-field" id="field-method">
+                    <label>Payment Method <span class="ep-field-hint">which app did you use?</span></label>
+                    <div style="display: flex; gap: 0.75rem; margin-top: 0.4rem;">
+                        <label style="flex: 1; display: flex; align-items: center; gap: 0.6rem; padding: 0.75rem 1rem; border: 1.5px solid var(--beige-warm); border-radius: 8px; cursor: pointer; transition: border-color 0.2s, background 0.2s;" class="ep-method-opt" id="opt-easypaisa">
+                            <input type="radio" name="method" value="Easypaisa" style="accent-color: var(--gold-primary);" checked>
+                            <span style="font-size: 0.93rem; font-weight: 600; color: var(--text-dark);">Easypaisa</span>
+                        </label>
+                        <label style="flex: 1; display: flex; align-items: center; gap: 0.6rem; padding: 0.75rem 1rem; border: 1.5px solid var(--beige-warm); border-radius: 8px; cursor: pointer; transition: border-color 0.2s, background 0.2s;" class="ep-method-opt" id="opt-jazzcash">
+                            <input type="radio" name="method" value="JazzCash" style="accent-color: var(--gold-primary);">
+                            <span style="font-size: 0.93rem; font-weight: 600; color: var(--text-dark);">JazzCash</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="ep-field" id="field-email">
+                    <label for="ep-email">Your Email Address <span class="ep-field-hint">we will send the PDF here</span></label>
+                    <input type="email" id="ep-email" name="email" placeholder="you@example.com" autocomplete="email">
+                    <p class="ep-field-error" id="err-email">Please enter a valid email address.</p>
+                </div>
+
+                <div class="ep-field" id="field-screenshot">
+                    <label for="ep-screenshot">Payment Screenshot <span class="ep-field-hint">from Easypaisa or JazzCash</span></label>
+                    <div class="ep-upload-zone" id="upload-zone">
+                        <input type="file" id="ep-screenshot" name="screenshot" accept="image/*,.pdf">
+                        <span class="ep-upload-icon">📸</span>
+                        <p class="ep-upload-text">Tap to choose your screenshot</p>
+                        <p class="ep-upload-sub">JPG, PNG, or any image format</p>
+                    </div>
+                    <div class="ep-upload-preview" id="upload-preview"></div>
+                    <p class="ep-field-error" id="err-screenshot">Please attach your payment screenshot.</p>
+                </div>
+
+                <div class="ep-submit-area">
+                    <button type="submit" class="ep-submit-btn" id="ep-submit-btn">Send My Order</button>
+                    <p class="ep-privacy-note">All sales are final. No refunds.</p>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- What happens next -->
+<section class="ep-next">
+    <div class="ep-next-inner">
+        <h2 class="ep-next-title">What happens after you submit</h2>
+        <div class="ep-next-steps">
+            <div class="ep-next-item">
+                <span class="ep-next-item-icon">✅</span>
+                <p class="ep-next-item-text">We receive your screenshot and verify the payment</p>
+            </div>
+            <div class="ep-next-item">
+                <span class="ep-next-item-icon">📧</span>
+                <p class="ep-next-item-text">We email the PDF to the address you provided</p>
+            </div>
+            <div class="ep-next-item">
+                <span class="ep-next-item-icon">📖</span>
+                <p class="ep-next-item-text">You download and read the book on any device</p>
+            </div>
+        </div>
+        <p style="font-size: 0.85rem; color: var(--text-light); margin-top: 2rem; line-height: 1.7;">
+            Questions? Email us at <a href="mailto:support@omnitryx.ca" style="color: var(--gold-primary); font-weight: 600; text-decoration: none;">support@omnitryx.ca</a>
+        </p>
+    </div>
+</section>
+
+<script>
+(function () {
+    /*
+     * SETUP REQUIRED:
+     * 1. Replace BOT_TOKEN with your Telegram bot token from @BotFather
+     * 2. Replace CHAT_ID with your Telegram group chat ID (a negative number, e.g. -1001234567890)
+     *
+     * The bot token is visible in page source. This is intentional for a static site.
+     * The only risk is someone spamming your group. To reduce this, restrict the bot
+     * to only post in your specific group and nothing else.
+     */
+    var BOT_TOKEN = '8977343018:AAFPl5Xr4AJzmaAs2lGKq--3t0Qyl5ZFXjM';
+    var CHAT_ID   = '-5152195779';
+
+    var form       = document.getElementById('ep-form');
+    var submitBtn  = document.getElementById('ep-submit-btn');
+    var successMsg = document.getElementById('ep-success-msg');
+    var errorMsg   = document.getElementById('ep-error-msg');
+    var preview    = document.getElementById('upload-preview');
+    var fileInput  = document.getElementById('ep-screenshot');
+    var uploadZone = document.getElementById('upload-zone');
+
+    form.querySelectorAll('input[name="method"]').forEach(function (radio) {
+        radio.addEventListener('change', function () {
+            form.querySelectorAll('.ep-method-opt').forEach(function (opt) {
+                opt.style.borderColor = 'var(--beige-warm)';
+                opt.style.background = '';
+            });
+            var selected = radio.closest('.ep-method-opt');
+            if (selected) {
+                selected.style.borderColor = 'var(--gold-primary)';
+                selected.style.background = 'rgba(192, 137, 72, 0.07)';
+            }
+        });
+        if (radio.checked) radio.dispatchEvent(new Event('change'));
+    });
+
+    fileInput.addEventListener('change', function () {
+        if (fileInput.files.length > 0) {
+            preview.textContent = 'Selected: ' + fileInput.files[0].name;
+            preview.style.display = 'block';
+            document.getElementById('field-screenshot').classList.remove('has-error');
+        } else {
+            preview.style.display = 'none';
+        }
+    });
+
+    uploadZone.addEventListener('dragover', function (e) {
+        e.preventDefault();
+        uploadZone.classList.add('drag-over');
+    });
+
+    uploadZone.addEventListener('dragleave', function () {
+        uploadZone.classList.remove('drag-over');
+    });
+
+    uploadZone.addEventListener('drop', function (e) {
+        e.preventDefault();
+        uploadZone.classList.remove('drag-over');
+        if (e.dataTransfer.files.length > 0) {
+            fileInput.files = e.dataTransfer.files;
+            preview.textContent = 'Selected: ' + e.dataTransfer.files[0].name;
+            preview.style.display = 'block';
+            document.getElementById('field-screenshot').classList.remove('has-error');
+        }
+    });
+
+    function isValidEmail(val) {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val.trim());
+    }
+
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        var email = document.getElementById('ep-email').value.trim();
+        var file  = fileInput.files[0];
+        var valid = true;
+
+        var fieldEmail      = document.getElementById('field-email');
+        var fieldScreenshot = document.getElementById('field-screenshot');
+
+        if (!isValidEmail(email)) {
+            fieldEmail.classList.add('has-error');
+            valid = false;
+        } else {
+            fieldEmail.classList.remove('has-error');
+        }
+
+        if (!file) {
+            fieldScreenshot.classList.add('has-error');
+            valid = false;
+        } else {
+            fieldScreenshot.classList.remove('has-error');
+        }
+
+        if (!valid) return;
+
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Sending...';
+        successMsg.style.display = 'none';
+        errorMsg.style.display = 'none';
+
+        var method = (form.querySelector('input[name="method"]:checked') || {}).value || 'Unknown';
+
+        var caption = 'New Pakistan Order\n'
+            + 'Method: ' + method + '\n'
+            + 'Email: ' + email + '\n'
+            + 'Time: ' + new Date().toLocaleString('en-PK', { timeZone: 'Asia/Karachi' }) + ' PKT';
+
+        var fd = new FormData();
+        fd.append('chat_id', CHAT_ID);
+        fd.append('caption', caption);
+        fd.append('document', file, file.name);
+
+        fetch('https://api.telegram.org/bot' + BOT_TOKEN + '/sendDocument', {
+            method: 'POST',
+            body: fd
+        })
+        .then(function (res) { return res.json(); })
+        .then(function (data) {
+            if (!data.ok) throw new Error(data.description || 'Telegram error');
+            form.reset();
+            preview.style.display = 'none';
+            successMsg.style.display = 'block';
+            window.scrollTo({ top: successMsg.getBoundingClientRect().top + window.scrollY - 120, behavior: 'smooth' });
+            if (typeof gtag !== 'undefined') gtag('event', 'easypaisa_order_submitted');
+            if (typeof fbq !== 'undefined') fbq('track', 'Purchase', { currency: 'PKR', value: 1000 });
+        })
+        .catch(function (err) {
+            console.error(err);
+            errorMsg.style.display = 'block';
+            window.scrollTo({ top: errorMsg.getBoundingClientRect().top + window.scrollY - 120, behavior: 'smooth' });
+        })
+        .finally(function () {
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Send My Order';
+        });
+    });
+})();
+</script>
