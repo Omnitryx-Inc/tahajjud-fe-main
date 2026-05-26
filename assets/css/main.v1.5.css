@@ -1304,6 +1304,40 @@ footer {
     }
 }
 
+.sales-review {
+    text-align: center;
+    padding: 2.5rem 1rem;
+    margin-bottom: 4rem;
+    border-top: 1px solid rgba(45, 37, 32, 0.1);
+    border-bottom: 1px solid rgba(45, 37, 32, 0.1);
+}
+
+.sales-review-stars {
+    color: var(--gold-primary);
+    font-size: 1rem;
+    letter-spacing: 0.12em;
+    margin: 0 0 1rem;
+}
+
+.sales-review-quote {
+    font-family: "Allrounder Monument Test", serif;
+    font-size: clamp(1.1rem, 3vw, 1.45rem);
+    color: var(--text-dark);
+    font-style: italic;
+    line-height: 1.5;
+    margin: 0 auto 0.85rem;
+    max-width: 560px;
+    padding: 0;
+    border: none;
+}
+
+.sales-review-author {
+    font-size: 0.88rem;
+    color: var(--text-light);
+    letter-spacing: 0.06em;
+    margin: 0;
+}
+
 .sales-cta {
     display: flex;
     flex-wrap: wrap;
