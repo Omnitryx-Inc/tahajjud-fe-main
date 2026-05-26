@@ -60,6 +60,67 @@ permalink: /easypaisa/
     color: var(--gold-primary);
 }
 
+/* Choice buttons */
+.ep-choice-group {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.ep-choice-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 1.4rem 2rem;
+    border-radius: 12px;
+    text-decoration: none;
+    min-width: 180px;
+    transition: all 0.25s ease;
+}
+
+.ep-choice-primary {
+    background: var(--gold-primary);
+    color: var(--cream-white);
+}
+
+.ep-choice-primary:hover {
+    background: var(--gold-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(192, 137, 72, 0.35);
+}
+
+.ep-choice-secondary {
+    background: var(--white);
+    border: 2px solid var(--beige-warm);
+    color: var(--text-dark);
+}
+
+.ep-choice-secondary:hover {
+    border-color: var(--gold-primary);
+    background: rgba(192, 137, 72, 0.05);
+    transform: translateY(-2px);
+}
+
+.ep-choice-icon {
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.ep-choice-label {
+    font-size: 0.97rem;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+}
+
+.ep-choice-sub {
+    font-size: 0.78rem;
+    opacity: 0.75;
+    font-family: 'Inter', sans-serif;
+}
+
 /* Steps section */
 .ep-steps {
     padding: 5rem 5%;
@@ -469,73 +530,50 @@ permalink: /easypaisa/
 <section class="ep-hero">
     <div class="ep-hero-inner">
         <span class="ep-eyebrow">Pakistan Orders</span>
-        <h1 class="ep-hero-title">Get The Book via Easypaisa or JazzCash</h1>
+        <h1 class="ep-hero-title">How would you like to pay?</h1>
         <p class="ep-hero-sub">
-            Pay using Easypaisa or JazzCash, send us your payment screenshot, and we will email you the book within 48 hours.
+            Choose your preferred payment method below. Both options get you the same PDF.
         </p>
         <span class="ep-pdf-badge">Digital PDF edition only, not paperback</span>
-        <p style="margin-top: 1.5rem; font-size: 0.88rem; color: var(--text-light);">
-            Have a credit card? <a href="https://omnitryx-pakistan.lemonsqueezy.com/checkout/buy/388c04c5-a834-4796-8952-b90d836fb0d0" target="_blank" rel="noopener" style="color: var(--gold-primary); font-weight: 600; text-decoration: none;" onclick="gtag('event','click_buy_digital',{button_location:'easypaisa_hero_card_alt'});">Pay by card instead</a>
-        </p>
+
+        <div class="ep-choice-group">
+            <a href="https://omnitryx-pakistan.lemonsqueezy.com/checkout/buy/388c04c5-a834-4796-8952-b90d836fb0d0" target="_blank" rel="noopener" class="ep-choice-btn ep-choice-primary" onclick="gtag('event','click_buy_digital',{button_location:'easypaisa_hero_card'});">
+                <span class="ep-choice-icon">💳</span>
+                <span class="ep-choice-label">Pay by Credit Card</span>
+                <span class="ep-choice-sub">Get your PDF in seconds</span>
+            </a>
+            <a href="#" id="ep-jazzcash-btn" class="ep-choice-btn ep-choice-secondary">
+                <span class="ep-choice-icon">📱</span>
+                <span class="ep-choice-label">Easypaisa / JazzCash</span>
+                <span class="ep-choice-sub">Get your PDF in 24-48 hours</span>
+            </a>
+        </div>
     </div>
 </section>
 
-<!-- Payment Instructions -->
-<section class="ep-steps">
-    <div class="ep-steps-inner">
-        <p class="ep-section-label">How to Order</p>
-        <h2 class="ep-section-title">Three Simple Steps</h2>
+<div id="ep-easypaisa-content" style="display:none;">
 
-        <div class="ep-payment-card">
-            <p class="ep-payment-label">Amount to Send</p>
-            <p class="ep-payment-amount">PKR 1,000</p>
-            <p class="ep-payment-desc">One-time payment. You keep the PDF forever.</p>
+<!-- Form -->
+<section class="ep-form-section" id="easypaisa-form">
+    <div class="ep-form-inner">
 
-            <div class="ep-account-row">
-                <div class="ep-account-item">
+        <div class="ep-payment-card" style="margin-bottom: 2rem;">
+            <p class="ep-payment-label">Send exactly</p>
+            <p class="ep-payment-amount">PKR 999</p>
+            <div class="ep-account-row" style="margin-top: 1rem;">
+                <div class="ep-account-item" style="display:flex; flex-direction:column; align-items:center;">
                     <div class="ep-account-item-label">Mobile Number</div>
-                    <div class="ep-account-item-value" id="ep-number">0333-2193794</div>
-                </div>
-                <div class="ep-account-item">
-                    <div class="ep-account-item-label">Account Name</div>
-                    <div class="ep-account-item-value" id="ep-name">Mohammed Rehan</div>
+                    <div style="display:flex; align-items:center; gap:0.5rem;">
+                        <div class="ep-account-item-value" id="ep-number">03332193794</div>
+                        <button id="ep-copy-btn" onclick="var n=document.getElementById('ep-number').textContent; navigator.clipboard.writeText(n).then(function(){var b=document.getElementById('ep-copy-btn'); b.textContent='✓'; setTimeout(function(){b.textContent='⎘';},1500);})" style="background:none; border:none; cursor:pointer; font-size:1.1rem; color:var(--gold-primary); padding:0.1rem 0.2rem; line-height:1;" title="Copy number">⎘</button>
+                    </div>
                 </div>
             </div>
             <p style="font-size: 0.82rem; color: var(--text-light); margin-top: 0.75rem;">Easypaisa and JazzCash both accepted</p>
         </div>
 
-        <ol class="ep-steps-list">
-            <li class="ep-step">
-                <div class="ep-step-num">1</div>
-                <div class="ep-step-body">
-                    <p class="ep-step-title">Open your Easypaisa or JazzCash app</p>
-                    <p class="ep-step-desc">Go to Send Money, enter the number above, and send exactly PKR 1,000. Make sure the name shown matches the account name above before confirming.</p>
-                </div>
-            </li>
-            <li class="ep-step">
-                <div class="ep-step-num">2</div>
-                <div class="ep-step-body">
-                    <p class="ep-step-title">Take a screenshot of the confirmation</p>
-                    <p class="ep-step-desc">Once the payment goes through, take a screenshot of the success screen showing the transaction ID, amount, and recipient. This confirms your payment.</p>
-                </div>
-            </li>
-            <li class="ep-step">
-                <div class="ep-step-num">3</div>
-                <div class="ep-step-body">
-                    <p class="ep-step-title">Fill in the form below</p>
-                    <p class="ep-step-desc">Enter your email address and upload the screenshot. We will verify and email you the PDF, usually within a few hours and no longer than 48 hours.</p>
-                </div>
-            </li>
-        </ol>
-    </div>
-</section>
-
-<!-- Form -->
-<section class="ep-form-section">
-    <div class="ep-form-inner">
-        <div class="ep-form-header">
-            <p class="ep-section-label">Submit Your Order</p>
-            <h2 class="ep-section-title">Send Us Your Details</h2>
+        <div class="ep-form-header" style="margin-bottom: 1.5rem;">
+            <h2 class="ep-section-title" style="margin-bottom: 0;">Then fill in the form below</h2>
         </div>
 
         <div class="ep-form-card">
@@ -568,7 +606,7 @@ permalink: /easypaisa/
                 </div>
 
                 <div class="ep-field" id="field-screenshot">
-                    <label for="ep-screenshot">Payment Screenshot <span class="ep-field-hint">from Easypaisa or JazzCash</span></label>
+                    <label for="ep-screenshot">Attach your payment screenshot <span class="ep-field-hint">from the app confirmation screen</span></label>
                     <div class="ep-upload-zone" id="upload-zone">
                         <input type="file" id="ep-screenshot" name="screenshot" accept="image/*,.pdf">
                         <span class="ep-upload-icon">📸</span>
@@ -580,7 +618,7 @@ permalink: /easypaisa/
                 </div>
 
                 <div class="ep-submit-area">
-                    <button type="submit" class="ep-submit-btn" id="ep-submit-btn">Send My Order</button>
+                    <button type="submit" class="ep-submit-btn" id="ep-submit-btn">Place My Order</button>
                     <p class="ep-privacy-note">All sales are final. No refunds.</p>
                 </div>
 
@@ -589,31 +627,27 @@ permalink: /easypaisa/
     </div>
 </section>
 
-<!-- What happens next -->
 <section class="ep-next">
     <div class="ep-next-inner">
-        <h2 class="ep-next-title">What happens after you submit</h2>
-        <div class="ep-next-steps">
-            <div class="ep-next-item">
-                <span class="ep-next-item-icon">✅</span>
-                <p class="ep-next-item-text">We receive your screenshot and verify the payment</p>
-            </div>
-            <div class="ep-next-item">
-                <span class="ep-next-item-icon">📧</span>
-                <p class="ep-next-item-text">We email the PDF to the address you provided</p>
-            </div>
-            <div class="ep-next-item">
-                <span class="ep-next-item-icon">📖</span>
-                <p class="ep-next-item-text">You download and read the book on any device</p>
-            </div>
-        </div>
-        <p style="font-size: 0.85rem; color: var(--text-light); margin-top: 2rem; line-height: 1.7;">
-            Questions? Email us at <a href="mailto:support@omnitryx.ca" style="color: var(--gold-primary); font-weight: 600; text-decoration: none;">support@omnitryx.ca</a>
+        <p style="font-size: 0.88rem; color: var(--text-light); line-height: 1.8;">
+            If you do not receive your PDF within 48 hours, email us at <a href="mailto:support@omnitryx.ca" style="color: var(--gold-primary); font-weight: 600; text-decoration: none;">support@omnitryx.ca</a> with your payment screenshot and we will sort it out.
         </p>
     </div>
 </section>
 
+</div><!-- end #ep-easypaisa-content -->
+
 <script>
+document.getElementById('ep-jazzcash-btn').addEventListener('click', function (e) {
+    e.preventDefault();
+    gtag('event', 'click_easypaisa_jazzcash', { button_location: 'easypaisa_hero' });
+    var content = document.getElementById('ep-easypaisa-content');
+    content.style.display = 'block';
+    setTimeout(function () {
+        document.getElementById('easypaisa-form').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 50);
+});
+
 (function () {
     /*
      * SETUP REQUIRED:
@@ -748,7 +782,7 @@ permalink: /easypaisa/
         })
         .finally(function () {
             submitBtn.disabled = false;
-            submitBtn.textContent = 'Send My Order';
+            submitBtn.textContent = 'Place My Order';
         });
     });
 })();
