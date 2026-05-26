@@ -60,6 +60,59 @@ permalink: /easypaisa/
     color: var(--gold-primary);
 }
 
+/* Offer strip */
+.ep-offer-strip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.ep-offer-original {
+    font-size: 1rem;
+    color: var(--text-light);
+    text-decoration: line-through;
+    font-weight: 500;
+}
+
+.ep-offer-now {
+    font-family: "Allrounder Monument Test", serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.ep-offer-tag {
+    display: inline-block;
+    background: var(--gold-primary);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.3rem 0.75rem;
+    border-radius: 100px;
+}
+
+/* Payment card pricing */
+.ep-payment-was {
+    font-size: 1rem;
+    color: var(--text-light);
+    text-decoration: line-through;
+    margin-bottom: 0.1rem;
+}
+
+.ep-payment-saving {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--gold-primary);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
 /* Choice buttons */
 .ep-choice-group {
     display: flex;
@@ -536,6 +589,12 @@ permalink: /easypaisa/
         </p>
         <span class="ep-pdf-badge">Digital PDF edition only, not paperback</span>
 
+        <div class="ep-offer-strip">
+            <span class="ep-offer-original">PKR 1,250</span>
+            <span class="ep-offer-now">PKR 999</span>
+            <span class="ep-offer-tag">25% OFF · Limited time</span>
+        </div>
+
         <div class="ep-choice-group">
             <a href="https://omnitryx-pakistan.lemonsqueezy.com/checkout/buy/388c04c5-a834-4796-8952-b90d836fb0d0" target="_blank" rel="noopener" class="ep-choice-btn ep-choice-primary" onclick="gtag('event','click_buy_digital',{button_location:'easypaisa_hero_card'});">
                 <span class="ep-choice-icon">💳</span>
@@ -559,7 +618,9 @@ permalink: /easypaisa/
 
         <div class="ep-payment-card" style="margin-bottom: 2rem;">
             <p class="ep-payment-label">Send exactly</p>
+            <p class="ep-payment-was">PKR 1,250</p>
             <p class="ep-payment-amount">PKR 999</p>
+            <p class="ep-payment-saving">You save 25% · Limited time offer</p>
             <div class="ep-account-row" style="margin-top: 1rem;">
                 <div class="ep-account-item" style="display:flex; flex-direction:column; align-items:center;">
                     <div class="ep-account-item-label">Mobile Number</div>
