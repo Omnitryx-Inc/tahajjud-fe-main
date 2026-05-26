@@ -237,10 +237,8 @@ body.nav-open {
 /* HERO SECTION */
 .hero {
 	position: relative;
-	min-height: 100vh;
 	display: flex;
-	align-items: center;
-	padding: 10rem 5% 6rem;
+	padding: 7rem 5% 2rem;
 	background: linear-gradient(to bottom, var(--cream-white) 0%, var(--cream-light) 100%);
 }
 
@@ -975,9 +973,31 @@ body.nav-open {
 	text-align: center;
 }
 
+.author .section-title {
+    font-size: clamp(0.75rem, 2vw, 0.85rem);
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: var(--text-light);
+    margin-bottom: 1.75rem;
+}
+
+.author-photo {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    height: 320px;
+    border-radius: 14px;
+    object-fit: cover;
+    object-position: top center;
+    margin: 0 auto 1.75rem;
+    box-shadow: 0 20px 50px rgba(45, 37, 32, 0.18);
+}
+
 .author-name {
 	font-family: "Allrounder Monument Test", serif;
-	font-size: clamp(1.6rem, 5vw, 3rem);
+	font-size: clamp(1.2rem, 3vw, 1.6rem);
 	color: var(--gold-primary);
 	margin-bottom: 0.75rem;
 	font-weight: 700;
@@ -1007,7 +1027,7 @@ body.nav-open {
 }
 
 .author-bio {
-	font-size: clamp(0.90rem, 2.5vw, 1.25rem);
+	font-size: clamp(0.8rem, 2.5vw, 1.25rem);
 	line-height: 1.9;
 	color: var(--text-medium);
 }
@@ -1096,34 +1116,124 @@ footer {
 /* Desktop Layout */
 @media (min-width: 768px) {
 	.hero-container {
-		grid-template-columns: 1.1fr 1fr;
-		gap: 6rem;
+		grid-template-columns: 1fr;
+		gap: 3rem;
 	}
 
 	.hero-content {
-		order: 1;
-		text-align: left;
-	}
-
-	.hero-visual {
-		order: 2;
+		text-align: center;
+		max-width: 760px;
+		margin: 0 auto;
 	}
 
 	.cta-group {
-		justify-content: flex-start;
+		justify-content: center;
 	}
 
 	.guarantee {
-		justify-content: flex-start;
+		justify-content: center;
 	}
+}
 
-	.value-props {
-		margin-left: 0;
-	}
+/* Hero video: portrait, centered */
+.hero-video {
+    margin: 2rem auto;
+    max-width: 240px;
+    width: 100%;
+}
 
-	.social-proof-badge {
-		left: -30px;
-	}
+.hero-video iframe {
+    width: 100%;
+    aspect-ratio: 9 / 16;
+    border-radius: 14px;
+    display: block;
+    border: none;
+}
+
+/* PDF button with offer text */
+.btn-offer {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+    line-height: 1.2;
+}
+
+.btn-main-text {
+    display: block;
+}
+
+.btn-offer-text {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: rgba(255, 210, 130, 0.95);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+/* Mini reviews: inline paragraph, natural text flow */
+.hero-mini-reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+    margin: 1.5rem auto 0;
+    max-width: 100%;
+}
+
+.hero-mini-review {
+    font-size: 0.85rem;
+    text-align: center;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.mini-stars {
+    color: var(--gold-primary);
+    font-size: 0.78rem;
+}
+
+.mini-quote {
+    color: var(--text-dark);
+    font-style: italic;
+    font-weight: 500;
+}
+
+.mini-sep {
+    color: var(--text-light);
+}
+
+.mini-author {
+    color: var(--text-light);
+    font-size: 0.82rem;
+    white-space: nowrap;
+}
+
+/* Social proof count */
+.social-proof-count {
+    font-size: 0.95rem;
+    color: var(--text-medium);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+/* Goodreads link */
+.goodreads-link {
+    display: inline-block;
+    font-size: 0.85rem;
+    color: var(--text-medium);
+    text-decoration: underline;
+    text-decoration-color: var(--beige-warm);
+    margin-top: 0.75rem;
+    font-weight: 500;
+}
+
+.goodreads-link:hover {
+    color: var(--text-dark);
+}
+
+.hero-content .cta-group {
+    margin-top: 0.5rem;
 }
 
 /* Footer */
@@ -1146,6 +1256,60 @@ footer {
     justify-content: center;
     gap: 1.25rem;
     margin-bottom: 1.25rem;
+}
+
+/* Book sales section: alternating photo + text */
+.book-sales {
+    padding: clamp(4rem, 8vw, 7rem) 5%;
+    background: var(--cream-light);
+}
+
+.book-sales-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.sales-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.5rem;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.sales-row-img img {
+    width: 100%;
+    height: 395px;
+    object-fit: cover;
+    border-radius: 14px;
+    display: block;
+}
+
+.sales-row-text p {
+    font-size: clamp(1rem, 2.5vw, 1.15rem);
+    color: var(--text-medium);
+    line-height: 1.9;
+    margin: 0;
+}
+
+@media (max-width: 640px) {
+    .sales-row {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .sales-row--reverse .sales-row-img {
+        order: -1;
+    }
+}
+
+.sales-cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    justify-content: center;
+    margin-top: 1rem;
 }
 
 .footer-socials a {
