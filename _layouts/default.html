@@ -315,46 +315,7 @@
 
     };
 
-    // ── Countries where free option is hidden ────────────────────────────────
-    // Paperback is available on Amazon, or Middle East where we don't offer free
-    var FREE_BLOCK = {
-      // Amazon paperback countries
-      'US': 1, // United States
-      'CA': 1, // Canada
-      'GB': 1, // United Kingdom
-      'AU': 1, // Australia
-      'DE': 1, // Germany
-      'FR': 1, // France
-      'IT': 1, // Italy
-      'ES': 1, // Spain
-      'NL': 1, // Netherlands
-      'BE': 1, // Belgium
-      'IE': 1, // Ireland
-      'PL': 1, // Poland
-      'SE': 1, // Sweden
-      'JP': 1, // Japan
-      // Middle East
-      'AE': 1, // United Arab Emirates
-      'SA': 1, // Saudi Arabia
-      'BH': 1, // Bahrain
-      'KW': 1, // Kuwait
-      'QA': 1, // Qatar
-      'OM': 1, // Oman
-      'JO': 1, // Jordan
-      // Southeast Asia
-      'MY': 1, // Malaysia
-      'SG': 1, // Singapore
-      'IN': 1, // India
-      'PK': 1, // Pakistan
-      'BD': 1, // Bangladesh
-      // Europe (wealthy, not on Amazon list)
-      'CH': 1, // Switzerland
-      'FI': 1, // Finland
-      'CY': 1, // Cyprus
-      'DK': 1, // Denmark
-      // Other
-      'MV': 1, // Maldives
-    };
+    var FREE_BLOCK = {};
 
     function applyRule(rule) {
       document.querySelectorAll('a[href^="' + STRIPE_PREFIX + '"]').forEach(function (a) {
