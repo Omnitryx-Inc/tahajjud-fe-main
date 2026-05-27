@@ -506,8 +506,9 @@ permalink: /free/
                     The complete book, all chapters and all stories, as an instant PDF download.
                     Read on any device, anywhere in the world. Your purchase directly supports this mission.
                 </p>
-                <a href="{{ site.stripe_buy_url }}" target="_blank" class="purchase-card-btn btn-gold" onclick="gtag('event', 'click_buy_digital', {'button_location': 'free_page'})">
-                    Buy Digital
+                <a href="{{ site.stripe_buy_url }}" target="_blank" class="purchase-card-btn btn-gold btn-offer" onclick="gtag('event', 'click_buy_digital', {'button_location': 'free_page'})">
+                    <span class="btn-main-text">Buy Instant PDF</span>
+                    <span class="btn-offer-text">Save 25% · Limited time</span>
                 </a>
             </div>
 
@@ -602,8 +603,9 @@ permalink: /free/
         </div>
 
         <div style="display: flex; gap: 1rem; margin-bottom: 2.5rem;">
-            <a href="{{ site.stripe_buy_url }}" target="_blank" class="purchase-card-btn btn-gold" style="flex: 1;" onclick="gtag('event', 'click_buy_digital', {'button_location': 'free_page_upsell'})">
-                Buy Digital PDF
+            <a href="{{ site.stripe_buy_url }}" target="_blank" class="purchase-card-btn btn-gold btn-offer" style="flex: 1;" onclick="gtag('event', 'click_buy_digital', {'button_location': 'free_page_upsell'})">
+                <span class="btn-main-text">Buy Instant PDF</span>
+                <span class="btn-offer-text">Save 25% · Limited time</span>
             </a>
             <a href="{{ site.amazon_url }}" class="purchase-card-btn btn-dark" style="flex: 1;" onclick="gtag('event', 'click_buy_page', {'button_location': 'free_page_upsell'})">
                 Buy on Amazon
