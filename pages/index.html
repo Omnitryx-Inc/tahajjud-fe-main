@@ -36,6 +36,10 @@ permalink: /
                 <p style="margin:0; font-size:0.86rem; line-height:1.75; color:inherit; opacity:0.85;">The paperback is not currently available in Pakistan. Despite our best efforts to make it work, we weren't able to establish reliable fulfilment in the region. The complete book is available as PDF only.</p>
             </div>
 
+            <div class="in-notice" style="display:none; margin-top:1.5rem; border-radius:8px; border:1px solid rgba(255,255,255,0.12); background:rgba(255,255,255,0.05); max-width:420px;">
+                <p style="margin:0; font-size:0.86rem; line-height:1.75; color:inherit; opacity:0.85;">The paperback is not currently available for delivery to India. The complete book is available as a digital PDF via PhonePe, Google Pay, or UPI.</p>
+            </div>
+
             <div class="guarantee js-guarantee">
                 Instant digital access • Premium print on Amazon
             </div>
@@ -240,6 +244,10 @@ permalink: /
         <p style="margin:0; font-size:0.86rem; line-height:1.75; color:inherit; opacity:0.85;">The paperback is not currently available in Pakistan. Despite our best efforts to make it work, we weren't able to establish reliable fulfilment in the region. The complete book is available as PDF only.</p>
     </div>
 
+    <div class="in-notice" style="display:none; margin-top:1.5rem; padding:1rem 1.1rem; border-radius:8px; border:1px solid rgba(255,255,255,0.12); background:rgba(255,255,255,0.05); max-width:460px; margin-left:auto; margin-right:auto;">
+        <p style="margin:0; font-size:0.86rem; line-height:1.75; color:inherit; opacity:0.85;">The paperback is not currently available for delivery to India. The complete book is available as a digital PDF via PhonePe, Google Pay, or UPI.</p>
+    </div>
+
     <p class="free-copy-notice" style="margin-top: 2rem; font-size: 1.05rem; opacity: 0.9;">
         Can't afford it? <a href="/free/" style="color: var(--cream-white); font-weight: 600; text-decoration: underline;">Get a free copy</a>
     </p>
@@ -360,16 +368,20 @@ permalink: /
         .then(function(r) { return r.text(); })
         .then(function(t) {
             var m = t.match(/loc=([A-Z]{2})/);
-            var d = { country_code: m ? m[1] : null };
-            if (!d.country_code || (d.country_code !== 'PK')) return;
-            document.querySelectorAll('.js-amazon-link').forEach(function(el) {
-                el.style.display = 'none';
-            });
-            document.querySelectorAll('.pk-in-notice').forEach(function(el) {
-                el.style.display = 'block';
-            });
-            var g = document.querySelector('.js-guarantee');
-            if (g) g.textContent = 'Instant digital access • Priced in your local currency';
+            var country = m ? m[1] : null;
+            if (!country) return;
+            if (country === 'PK') {
+                document.querySelectorAll('.js-amazon-link').forEach(function(el) { el.style.display = 'none'; });
+                document.querySelectorAll('.pk-in-notice').forEach(function(el) { el.style.display = 'block'; });
+                var g = document.querySelector('.js-guarantee');
+                if (g) g.textContent = 'Instant digital access • Priced in your local currency';
+            }
+            if (country === 'IN') {
+                document.querySelectorAll('.js-amazon-link').forEach(function(el) { el.style.display = 'none'; });
+                document.querySelectorAll('.in-notice').forEach(function(el) { el.style.display = 'block'; });
+                var g = document.querySelector('.js-guarantee');
+                if (g) g.textContent = 'Instant digital access • Priced in your local currency';
+            }
         })
         .catch(function() {});
 })();
