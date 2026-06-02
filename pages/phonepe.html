@@ -212,6 +212,38 @@ permalink: /phonepe/
     margin: 0 auto;
     text-align: center;
 }
+
+.ep-qr-wrap {
+    text-align: center;
+    margin: 0.75rem 0 1rem;
+}
+
+.ep-qr-label {
+    font-size: 0.78rem;
+    color: var(--text-light);
+    margin-top: 0.4rem;
+}
+
+.ep-upi-open-btn {
+    display: inline-block;
+    width: 100%;
+    max-width: 360px;
+    padding: 0.9rem 1.5rem;
+    border: 2px solid var(--gold-primary);
+    border-radius: 10px;
+    background: transparent;
+    color: var(--gold-primary);
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.25s ease;
+}
+
+.ep-upi-open-btn:hover {
+    background: rgba(192, 137, 72, 0.08);
+}
 </style>
 
 <!-- Hero -->
@@ -252,17 +284,20 @@ permalink: /phonepe/
         <div class="ep-form-card">
 
             <div style="background: var(--cream-light); border: 1.5px solid rgba(192,137,72,0.25); border-radius: 10px; padding: 1.1rem 1.25rem; margin-bottom: 2rem;">
-                <p style="font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-light); margin-bottom: 0.5rem;">Step 1 — Send payment</p>
-                <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem;">
-                    <div>
-                        <span style="font-family: 'Allrounder Monument Test', serif; font-size: 1.4rem; font-weight: 700; color: var(--text-dark);">INR 349</span>
-                        <span style="font-size: 0.88rem; color: var(--text-medium); margin-left: 0.5rem;">via PhonePe, Google Pay, or any UPI app</span>
-                    </div>
-                    <div style="display: flex; align-items: center; gap: 0.4rem;">
-                        <span style="font-size: 0.82rem; color: var(--text-light);">to UPI ID</span>
-                        <span id="ep-upi-id" style="font-family: 'Allrounder Monument Test', serif; font-size: 1.05rem; font-weight: 700; color: var(--text-dark);">7776930795</span>
-                        <button id="ep-copy-btn" onclick="var n=document.getElementById('ep-upi-id').textContent.trim(); navigator.clipboard.writeText(n).then(function(){var b=document.getElementById('ep-copy-btn'); b.textContent='✓'; setTimeout(function(){b.textContent='⎘';},1500);})" style="background:none; border:none; cursor:pointer; font-size:1.1rem; color:var(--gold-primary); padding:0.1rem 0.2rem; line-height:1;" title="Copy UPI ID">⎘</button>
-                    </div>
+                <p style="font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-light); margin-bottom: 0.75rem;">Step 1 — Send payment</p>
+
+                <div style="margin-bottom: 1rem;">
+                    <span style="font-family: 'Allrounder Monument Test', serif; font-size: 1.4rem; font-weight: 700; color: var(--text-dark);">INR 349</span>
+                    <span style="font-size: 0.88rem; color: var(--text-medium); margin-left: 0.5rem;">via PhonePe, Google Pay, or any UPI app</span>
+                </div>
+
+                <div class="ep-qr-wrap">
+                    <img src="/assets/images/phonepe-qrcode.jpg" alt="Scan to pay via PhonePe or Google Pay" width="180" style="border-radius: 8px; border: 1px solid rgba(192,137,72,0.2); display: block; margin: 0 auto;">
+                    <p class="ep-qr-label">Scan with any UPI app</p>
+                </div>
+
+                <div style="text-align: center;">
+                    <a href="upi://pay?pa=7776930795@ybl&pn=KHAN%20AYESHA%20AINULLAH&am=349&cu=INR" class="ep-upi-open-btn">Open in PhonePe / Google Pay</a>
                 </div>
             </div>
 
