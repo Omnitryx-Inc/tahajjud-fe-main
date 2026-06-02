@@ -32,12 +32,12 @@ permalink: /
                 <a href="{{ site.amazon_url }}" class="btn btn-secondary js-amazon-link" onclick="gtag('event', 'click_buy_page', {'button_location': 'index_hero'})">Buy Physical Edition</a>
             </div>
 
-            <div class="pk-in-notice" style="display:none; margin-top:1.5rem; border-radius:8px; border:1px solid rgba(255,255,255,0.12); background:rgba(255,255,255,0.05); max-width:420px;">
+            <div class="pk-in-notice" style="display:none; margin-top:1.5rem; border-radius:8px; border:1px solid rgba(255,255,255,0.12); background:rgba(255,255,255,0.05); max-width:420px; margin-left:auto; margin-right:auto;">
                 <p style="margin:0; font-size:0.86rem; line-height:1.75; color:inherit; opacity:0.85;">The paperback is not currently available in Pakistan. Despite our best efforts to make it work, we weren't able to establish reliable fulfilment in the region. The complete book is available as PDF only.</p>
             </div>
 
-            <div class="in-notice" style="display:none; margin-top:1.5rem; border-radius:8px; border:1px solid rgba(255,255,255,0.12); background:rgba(255,255,255,0.05); max-width:420px;">
-                <p style="margin:0; font-size:0.86rem; line-height:1.75; color:inherit; opacity:0.85;">The paperback is not currently available for delivery to India. The complete book is available as a digital PDF via PhonePe, Google Pay, or UPI.</p>
+            <div class="in-notice" style="display:none; margin-top:1.5rem; border-radius:8px; border:1px solid rgba(255,255,255,0.12); background:rgba(255,255,255,0.05); max-width:420px; padding:1rem 1.1rem; margin-left:auto; margin-right:auto;">
+                <p style="margin:0 0 0.75rem; font-size:0.86rem; line-height:1.75; color:inherit; opacity:0.85;">The paperback is not currently available in India. Despite our best efforts to make it work, we weren't able to establish reliable fulfilment in the region. The complete book is available as PDF only.</p>
             </div>
 
             <div class="guarantee js-guarantee">
@@ -377,7 +377,7 @@ permalink: /
                 if (g) g.textContent = 'Instant digital access • Priced in your local currency';
             }
             if (country === 'IN') {
-                document.querySelectorAll('.js-amazon-link').forEach(function(el) { el.style.display = 'none'; });
+                document.querySelectorAll('.js-amazon-link').forEach(function(el) { el.style.display = 'block'; });
                 document.querySelectorAll('.in-notice').forEach(function(el) { el.style.display = 'block'; });
                 var g = document.querySelector('.js-guarantee');
                 if (g) g.textContent = 'Instant digital access • Priced in your local currency';
