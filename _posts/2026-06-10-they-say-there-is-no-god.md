@@ -73,7 +73,7 @@ Allah says:
 >
 > ([Quran 57:3](https://quran.com/57/3), Dr. Mustafa Khattab, The Clear Quran)
 
-The question "who created God" takes a rule that only fits created things and applies it to the uncreated. Once you see that, the question dissolves.
+The question "who created God" takes a rule that only fits created things and applies it to the uncreated. It is like asking what is north of the North Pole. The question sounds meaningful until you realise the rules that make it feel meaningful do not apply there. Once you see that, the question dissolves.
 
 ---
 
