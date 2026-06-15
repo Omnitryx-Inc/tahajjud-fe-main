@@ -1346,6 +1346,58 @@ footer {
     margin-top: 1rem;
 }
 
+.toc-heading {
+    font-family: "Allrounder Monument Test", serif;
+    font-size: clamp(1.4rem, 3vw, 1.9rem);
+    font-weight: 700;
+    color: var(--text-dark);
+    margin: 0 0 1.5rem;
+}
+
+.toc-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.toc-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 0.85rem 0;
+    border-bottom: 1px solid rgba(45, 37, 32, 0.08);
+}
+
+.toc-item:last-child {
+    border-bottom: none;
+}
+
+.toc-item-num {
+    flex-shrink: 0;
+    width: 1.75rem;
+    font-family: "Allrounder Monument Test", serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--gold-primary);
+}
+
+.toc-item-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin: 0 0 0.25rem;
+}
+
+.toc-item-desc {
+    font-size: 0.88rem;
+    color: var(--text-medium);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.mid-cta {
+    margin-bottom: 4rem;
+}
+
 .footer-socials a {
     color: var(--text-light);
     display: flex;
