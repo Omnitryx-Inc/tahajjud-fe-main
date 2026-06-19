@@ -1394,6 +1394,31 @@ footer {
     margin: 0;
 }
 
+.toc-stories {
+    list-style: none;
+    padding: 0;
+    margin: 0.4rem 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.toc-stories li {
+    font-size: 0.85rem;
+    font-style: italic;
+    color: var(--text-medium);
+    padding-left: 0.85rem;
+    position: relative;
+}
+
+.toc-stories li::before {
+    content: "–";
+    position: absolute;
+    left: 0;
+    color: var(--gold-primary);
+    font-style: normal;
+}
+
 .mid-cta {
     margin-bottom: 4rem;
 }
