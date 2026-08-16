@@ -272,66 +272,8 @@ permalink: /phonepe/
                 <span class="ep-choice-icon">📖</span>
                 <span class="ep-choice-label">Buy on Kindle</span>
                 <span class="ep-choice-sub">Amazon.in · Local currency</span>
-                <span style="display:inline-block; margin-top:0.3rem; background:#c45500; color:#fff; font-size:0.65rem; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; padding:0.15rem 0.55rem; border-radius:100px;">#1 Bestseller · Islam</span>
-            </a>
-            <a href="#" id="ep-upi-btn" class="ep-choice-btn ep-choice-secondary">
-                <span class="ep-choice-icon">📱</span>
-                <span class="ep-choice-label">PhonePe, Google Pay</span>
-                <span class="ep-choice-sub">Get your PDF in 24-48 hours</span>
+                <!-- <span style="display:inline-block; margin-top:0.3rem; background:#c45500; color:#fff; font-size:0.65rem; font-weight:700; letter-spacing:0.06em; text-transform:uppercase; padding:0.15rem 0.55rem; border-radius:100px;">#1 Bestseller · Islam</span> -->
             </a>
         </div>
     </div>
 </section>
-
-<div id="ep-upi-content" style="display:none;">
-
-<section class="ep-form-section" id="phonepe-form">
-    <div class="ep-form-inner">
-        <div class="ep-form-card">
-
-            <div style="background: var(--cream-light); border: 1.5px solid rgba(192,137,72,0.25); border-radius: 10px; padding: 1.1rem 1.25rem; margin-bottom: 2rem;">
-                <p style="font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-light); margin-bottom: 0.75rem;">Step 1 — Send payment</p>
-
-                <div style="margin-bottom: 1rem;">
-                    <span style="font-family: 'Allrounder Monument Test', serif; font-size: 1.4rem; font-weight: 700; color: var(--text-dark);">INR 349</span>
-                    <span style="font-size: 0.88rem; color: var(--text-medium); margin-left: 0.5rem;">via PhonePe, Google Pay, or any UPI app</span>
-                </div>
-
-                <div style="text-align: center;">
-                    <p style="font-size: 0.88rem; color: var(--text-medium); margin-bottom: 0.75rem; line-height: 1.6;">Tap the button below to open your UPI app with the amount pre-filled.</p>
-                    <a href="upi://pay?pa=7776930795@ybl&pn=KHAN%20AYESHA%20AINULLAH&am=349&cu=INR" class="ep-submit-btn" style="text-decoration:none;" onclick="gtag('event','click_phonepe_open_app');">Tap to Pay INR 349</a>
-                </div>
-            </div>
-
-            <p style="font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-light); margin-bottom: 0.6rem;">Step 2 — Email us your screenshot</p>
-            <p style="font-size: 0.9rem; color: var(--text-medium); line-height: 1.7; margin-bottom: 1.5rem;">Tap the button below, attach your payment screenshot, and send. We will reply with the PDF.</p>
-
-            <div style="text-align: center;">
-                <a href="mailto:support@omnitryx.ca?subject=UPI%20Payment%20%E2%80%94%20Power%20of%20Tahajjud&body=Salam%2C%0A%0AI%20have%20sent%20INR%20349%20via%20PhonePe%2FGoogle%20Pay%2FUPI.%0A%0AI%20have%20attached%20my%20payment%20screenshot." class="ep-submit-btn" style="text-decoration:none;" onclick="gtag('event','phonepe_email_clicked');">Email Us Your Screenshot</a>
-                <p style="font-size: 0.82rem; color: var(--text-light); margin-top: 1rem; line-height: 1.6;">All sales are final. No refunds.</p>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<section class="ep-next">
-    <div class="ep-next-inner">
-        <p style="font-size: 0.88rem; color: var(--text-light); line-height: 1.8;">
-            If you do not receive your PDF within 48 hours, email us at <a href="mailto:support@omnitryx.ca" style="color: var(--gold-primary); font-weight: 600; text-decoration: none;" onclick="gtag('event','phonepe_support_email_clicked');">support@omnitryx.ca</a> with your payment screenshot and we will sort it out.
-        </p>
-    </div>
-</section>
-
-</div><!-- end #ep-upi-content -->
-
-<script>
-document.getElementById('ep-upi-btn').addEventListener('click', function (e) {
-    e.preventDefault();
-    gtag('event', 'click_phonepe_upi', { button_location: 'phonepe_hero' });
-    document.getElementById('ep-upi-content').style.display = 'block';
-    setTimeout(function () {
-        document.getElementById('phonepe-form').scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }, 50);
-});
-</script>
