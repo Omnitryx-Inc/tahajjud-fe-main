@@ -568,10 +568,6 @@ sitemap: false
     ttq.track('Purchase', {contents: _book, value: 19.99, currency: 'CAD'});
     ttq.track('PlaceAnOrder', {contents: _book, value: 19.99, currency: 'CAD'});
     pintrk('track', 'checkout', {value: 19.99, order_quantity: 1, currency: 'CAD'});
-  } else if (_dlType === 'free') {
-    fbq('track', 'Lead');
-    ttq.track('CompleteRegistration', {contents: _book, value: 0, currency: 'CAD'});
-    pintrk('track', 'lead');
   }
 </script>
 
@@ -740,13 +736,6 @@ sitemap: false
             <p id="dl-amanah" class="review-amanah">
                 Please treat this PDF as an amanah, please don't distribute it publicly.
             </p>
-
-            <!-- Free edition upsell — shown only for type=free -->
-            <div id="dl-free-upsell" style="display:none; margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--beige-warm);">
-                <p style="font-size: 0.88rem; color: var(--text-medium); line-height: 1.75; margin: 0;">
-                    You're downloading the <strong>free edition</strong>, a curated selection of the book. For every chapter and the complete experience, the full edition is available on digital or paperback.
-                </p>
-            </div>
         </div>
 
         <!-- Unavailable card — shown when no valid type param -->
@@ -778,7 +767,6 @@ sitemap: false
     var dlBtn = document.getElementById('pdf-dl-btn');
     var downloadCard = document.getElementById('dl-download-card');
     var unavailableCard = document.getElementById('dl-unavailable-card');
-    var freeUpsell = document.getElementById('dl-free-upsell');
 
     if (type === 'paid') {
         dlBtn.href = '/assets/pdf/The_Power_of_Tahajjud_full_edition.pdf';
@@ -788,13 +776,6 @@ sitemap: false
         // Paid users own the book — no amanah note needed
         var amanah = document.getElementById('dl-amanah');
         if (amanah) amanah.style.display = 'none';
-
-    } else if (type === 'free') {
-        dlBtn.href = '/assets/pdf/The_Power_of_Tahajjud_free_edition.pdf';
-        dlBtn.addEventListener('click', function() {
-            gtag('event', 'click_free_pdf_downloaded', { 'button_location': 'download_page' });
-        });
-        if (freeUpsell) freeUpsell.style.display = 'block';
 
     } else {
         // No valid type param — show unavailable state, hide everything else

@@ -16,13 +16,6 @@
     var utmCampaign = cam || sessionStorage.getItem('utm_campaign');
 
     var isGoogle = utmSource === 'google';
-    var isCpc    = isGoogle && utmMedium === 'cpc' && utmCampaign === 'tahajjud_book';
-
-    if (isCpc) {
-        document.querySelectorAll('.free-copy-notice, .js-free-faq').forEach(function(el) {
-            el.style.display = 'none';
-        });
-    }
 
     if (isGoogle) {
         var amazonCpcUrl = 'https://www.amazon.co.uk/dp/1067506608';

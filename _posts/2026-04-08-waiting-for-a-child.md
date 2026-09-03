@@ -159,7 +159,7 @@ The stories of Ibrahim and Zakariyah are not the only ones.
 
 I compiled a book of them. *The Power of Tahajjud: Real Stories of Success and Miracles* is a collection of accounts from ordinary Muslims, people with no special status, no prophetic lineage, just people who were desperate and showed up in the last third of the night and kept showing up. The book covers stories across many areas of life, and yes, there is a story in there from someone who was struggling with infertility but doesn't end the way you think it does.
 
-It is available on Amazon. And if you cannot afford it, you can still download it for free from this website. No one who needs this book should be without it because of money.
+It is available on Amazon as a paperback, or as an instant digital PDF on this website.
 
 Show up. Keep showing up.
 
